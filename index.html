@@ -25,7 +25,6 @@
       --shadow: 0 8px 26px rgba(32, 33, 36, 0.065);
     }
 
-          <article class="card"><h3>帰路の予約便<span class="zh" lang="zh-Hans">返程已订航班</span></h3><p><strong>JL073：10/9 ホノルル 12:15発 → 10/10 東京 15:55着（翌日）。</strong><br><strong>JL021：10/11 東京 08:50発 → 北京 12:00着。</strong><br>東京での1泊は10/10–11。翌朝早い出発のため、自由時間は主に10/10の夕方〜夜。画像は都市名のみで、東京・北京の空港名とターミナルは詳細控えで確認する。<span class="zh" lang="zh-Hans"><strong>JL073：10/9 檀香山12:15出发 → 10/10 东京15:55抵达（次日）。</strong><br><strong>JL021：10/11 东京08:50出发 → 北京12:00抵达。</strong><br>东京住宿为10/10–11一晚。次晨出发较早，自由时间主要在10/10傍晚至晚上。截图仅显示城市名，东京及北京的机场与航站楼需核对详细凭证。</span></p></article>
     * {
       box-sizing: border-box;
     }
@@ -1394,6 +1393,10 @@
     .day-route { margin-top: 14px; }
     .day-cost { font-size: .8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 10px; margin: 16px 0 0; line-height: 1.6; }
     .planning-link { display: inline-block; margin-top: 12px; font-size: .875rem; }
+    .tour-cost-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .875rem; }
+    .tour-cost-table th, .tour-cost-table td { padding: 12px 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+    .tour-cost-table th:first-child, .tour-cost-table td:first-child { width: 30%; }
+    #tour-terms { scroll-margin-top: 150px; }
     .planning-alternatives { margin-top: 22px; }
     .planning-alternatives summary { cursor: pointer; font-weight: 700; padding: 12px 0; }
     .comparison-day { margin-top: 18px; scroll-margin-top: 150px; }
@@ -1518,41 +1521,52 @@
         </article>
 
         <article id="current-day-ca-1002" class="daily-section">
-          <div class="daily-head"><div class="daily-date"><strong>10/2</strong><span>金曜日 / Fountain Valley → Milpitas</span><span class="zh" lang="zh-Hans">星期五 / Fountain Valley → Milpitas</span></div><p class="route-summary">ツアー行程。07:00に9125 Recreation Cir, Fountain Valleyの#1 loadから乗車し、18:00にMilpitasのSheratonへ到着する案です。<span class="zh" lang="zh-Hans">旅游团安排：07:00在Fountain Valley 9125 Recreation Cir的#1 load上车，18:00抵达Milpitas Sheraton。</span></p></div>
-          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/2</strong><span>Tour day / Fountain Valley → Milpitas</span><span class="zh" lang="zh-Hans">旅游日 / Fountain Valley → Milpitas</span></div><div class="schedule-body">
-            <div class="schedule-row"><time>07:00</time><div><strong>Tour bus乗車</strong><p class="day-note">9125 Recreation Cir, Fountain Valley, CA #1 load。集合時刻・車両は予約元で要確認。</p></div></div>
-            <div class="schedule-row"><time>07:00–18:00</time><div><strong>ツアー移動</strong><p class="day-note">ユーザー提供のルートに従う。途中の観光内容・休憩は未入力。</p></div></div>
-            <div class="schedule-row"><time>18:00</time><div><strong>Milpitas Sheraton check-in</strong><p class="day-note">Barber Ln周辺。ホテル名・部屋・送迎条件は予約元で確認。</p></div></div>
+          <div class="daily-head"><div class="daily-date"><strong>10/2</strong><span>金曜日 / ツアー1日目：Los Angeles → 17-Mile Drive → San Jose</span><span class="zh" lang="zh-Hans">星期五 / 团程第1天：洛杉矶 → 17里湾 → 圣何塞</span></div><p class="route-summary">3日間ツアーの1日目。海岸線・17-Mile Driveを経てSan Jose方面へ。以下は提供された商品資料の参考行程で、予約確定・集合地点の指定を示す画面ではない。時刻・訪問順・宿泊施設は出団通知と当日の案内で確定する。<span class="zh" lang="zh-Hans">三日团第1天，经海岸线与17里湾前往圣何塞方向。以下按所提供商品资料整理，不等于订单确认或已选上车点；时间、游览顺序及酒店以出团通知和当天安排为准。</span></p></div>
+          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/2</strong><span>Tour D1 / Los Angeles → 17-Mile Drive → San Jose</span><span class="zh" lang="zh-Hans">团程D1 / 洛杉矶 → 17里湾 → 圣何塞</span></div><div class="schedule-body">
+            <div class="schedule-row"><time>07:00–08:30</time><div><strong>指定した集合地点から乗車<span class="zh" lang="zh-Hans">从所选集合点上车</span></strong><p class="day-note">従来の07:00 Fountain Valleyは仮置き。資料には6候補があり、選択済み地点・集合時刻・車両は出団通知で確認する。朝食は自費で済ませる。<span class="zh" lang="zh-Hans">原先07:00 Fountain Valley仅作暂定；资料列有6个候选，以出团通知确认已选地点、集合时间与车辆。早餐自理。</span></p></div></div>
+            <div class="schedule-row"><time data-zh="12:30左右">12:30頃</time><div><strong>17-Mile Drive・太平洋沿岸の景色<span class="zh" lang="zh-Hans">17里湾与太平洋海岸景色</span></strong><p class="day-note">17-Mile Drive、Pebble Beach、Monterey Bayは外観・景観見学。California Highway 1は車窓。資料の観光枠は約1時間20分、昼食は自費。ゴルフや水族館入場を含む案内ではない。<span class="zh" lang="zh-Hans">17里湾、圆石滩、蒙特雷湾为外观与景观游览；加州1号公路为车览。资料列游览约1小时20分，午餐自理，不表示含高尔夫或水族馆入场。</span></p></div></div>
+            <div class="schedule-row"><time data-zh="18:00左右">18:00頃</time><div><strong>San Jose方面のホテルへ・夕食<span class="zh" lang="zh-Hans">前往圣何塞方向酒店并晚餐</span></strong><p class="day-note">夕食は自費。宿泊は商品掲載のSheratonまたは同等クラス、参考到着時刻は18:00。<span class="zh" lang="zh-Hans">晚餐自理。住宿为商品所列喜来登或同等级酒店，参考抵达时间18:00。</span></p></div></div>
           </div></article>
-          <div class="notice"><h3>ツアー地図<span class="zh" lang="zh-Hans">旅游团地图</span></h3><p>Day2–4共通のユーザー提供リンクです。各日の停車地と到着時刻は予約元で確認します。</p><a class="button" href="https://maps.app.goo.gl/d6ueUFs1jq4qLbyRA" target="_blank" rel="noreferrer">ツアー地図 / 旅游地图</a></div>
-          <div class="card hotel-card"><h3>宿泊候補: Sheraton San Jose Silicon Valley（SHERATON, Milpitas）</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-sheraton-san-jose.jpg" alt="Sheraton San Jose Silicon Valley の外観" loading="lazy"><figcaption><a class="credit" href="https://www.marriott.com/en-us/hotels/sjcsa-sheraton-san-jose-silicon-valley/photos/" target="_blank" rel="noreferrer">写真出典: Marriott公式ギャラリー（外観）</a><span class="zh" lang="zh-Hans">照片来源：Marriott官方画廊（外观）</span></figcaption></figure><p class="small">Barber Ln, Milpitas, CA 95035。画像はこの地域の正式名称候補であるSheraton San Jose Silicon Valleyの外観です。予約元に表示された正式ホテル名・予約情報は要確認。<span class="zh" lang="zh-Hans">位于Milpitas的Barber Ln附近（CA 95035）；图片为该地区正式名称候选Sheraton San Jose Silicon Valley的外观。预约来源显示的正式酒店名称和预订信息待确认。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton+Barber+Lane+Milpitas+California" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
-          <p class="day-cost">小計：金額未記録。ツアー代・宿泊・食事の内訳と、ツアー料金に含まれる範囲を確認。<span class="zh" lang="zh-Hans">小计：金额尚未记录。需确认团费、住宿、餐饮明细及团费包含范围。</span></p>
+          <div class="link-row"><a class="button" href="https://maps.app.goo.gl/d6ueUFs1jq4qLbyRA" target="_blank" rel="noreferrer">ツアーのルート地図<span class="zh" lang="zh-Hans">旅游团路线地图</span></a></div>
+          <details class="planning-alternatives"><summary>商品資料の乗車候補6か所・地図<span class="zh" lang="zh-Hans">商品资料的6个上车点与地图</span></summary><ul>
+            <li>07:00 — Motel 6 Fountain Valley<br><a href="https://www.google.com/maps/search/?api=1&amp;query=9125%20Recreation%20Circle%2C%20Fountain%20Valley%2C%20CA%2092708" target="_blank" rel="noreferrer">9125 Recreation Circle, Fountain Valley, CA 92708</a></li>
+            <li>07:00 — Starbucks Irvine<br><a href="https://www.google.com/maps/search/?api=1&amp;query=505%20Spectrum%20Center%20Dr%2C%20Irvine%2C%20CA%2092618" target="_blank" rel="noreferrer">505 Spectrum Center Dr, Irvine, CA 92618</a></li>
+            <li>07:15 — Walmart City of Industry<br><a href="https://www.google.com/maps/search/?api=1&amp;query=17150%20Gale%20Ave%2C%20City%20of%20Industry%2C%20CA%2091745" target="_blank" rel="noreferrer">17150 Gale Ave, City of Industry, CA 91745</a></li>
+            <li>07:30 — Holiday Inn El Monte<br><a href="https://www.google.com/maps/search/?api=1&amp;query=9920%20Valley%20Blvd%2C%20El%20Monte%2C%20CA%2091731" target="_blank" rel="noreferrer">9920 Valley Blvd, El Monte, CA 91731</a></li>
+            <li>08:00 — Courtyard Marriott Monterey Park<br><a href="https://www.google.com/maps/search/?api=1&amp;query=555%20N%20Atlantic%20Blvd%2C%20Monterey%20Park%2C%20CA%2091754" target="_blank" rel="noreferrer">555 N Atlantic Blvd, Monterey Park, CA 91754</a></li>
+            <li>08:30 — Union Station (Main Entrance)<br><a href="https://www.google.com/maps/search/?api=1&amp;query=800%20N%20Alameda%20St%2C%20Los%20Angeles%2C%20CA%2090012" target="_blank" rel="noreferrer">800 N Alameda St, Los Angeles, CA 90012</a></li>
+          </ul><p class="small">予約時の備考または販売窓口で乗車地点を指定する。商品画面はシステム上、先頭のFountain Valleyだけが集合欄に表示される場合がある。前泊はMonterey Parkなので08:00 Courtyard乗車の可否も確認するが、宿泊先Holiday Innとは別施設。ここでは乗車変更を確定しない。<span class="zh" lang="zh-Hans">需在预订备注或向客服指定上车点。页面受录入限制，集合栏可能仅显示首个Fountain Valley地点。前晚住Monterey Park，可向客服确认08:00 Courtyard上车是否可选，但它与住宿的Holiday Inn并非同一家酒店；此处不视为已更改上车点。</span></p></details>
+          <div class="card hotel-card"><h3>ツアー掲載宿: Sheraton San Jose Silicon Valley（SHERATON, Milpitas）<span class="zh" lang="zh-Hans">团程所列住宿：Sheraton San Jose Silicon Valley（SHERATON, Milpitas）</span></h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-sheraton-san-jose.jpg" alt="Sheraton San Jose Silicon Valley の外観" loading="lazy"><figcaption><a class="credit" href="https://www.marriott.com/en-us/hotels/sjcsa-sheraton-san-jose-silicon-valley/photos/" target="_blank" rel="noreferrer">写真出典: Marriott公式ギャラリー（外観）</a><span class="zh" lang="zh-Hans">照片来源：Marriott官方画廊（外观）</span></figcaption></figure><p class="small">商品資料は「圣何塞喜来登（San Jose Sheraton）」を18:00到着の参考時刻で掲載。既存候補はSheraton San Jose Silicon Valley（Barber Ln, Milpitas, CA 95035）。正式施設・住所は出団通知で照合する。1泊分はツアー本体代に含まれ、同等クラスの宿へ変更される場合あり。4ダイヤ表記は携程の分類。食事は自費。<span class="zh" lang="zh-Hans">商品资料列有“圣何塞喜来登”，参考抵达时间18:00。现有候选为Sheraton San Jose Silicon Valley（Barber Ln, Milpitas, CA 95035），正式酒店与地址以出团通知核对。此晚住宿包含在团费内，可能更换同等级酒店；4钻为携程评级，餐饮自理。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton+Barber+Lane+Milpitas+California" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
+          <a class="planning-link" href="#tour-terms">ツアーの追加費用・参加条件を見る<span class="zh" lang="zh-Hans">查看旅游团附加费用与参加条件</span></a>
+          <p class="day-cost">当日分：チップ USD 36（18 × 2人）。この夜の宿泊はツアー本体代に含むため別加算しない。ツアー本体代・食事・集合地点までの交通は金額未記録。3日共通の指定観光費USD 140は下記の共通費用に1回だけ計上。<span class="zh" lang="zh-Hans">当天费用：小费 USD 36（18 × 2人）。此晚住宿已含团费，不另加。团费、餐饮及前往集合点的交通金额未记录。三日共用的指定景点费USD 140仅在下方共同费用中计一次。</span></p>
         </article>
 
         <article id="current-day-ca-1003" class="daily-section">
-          <div class="daily-head"><div class="daily-date"><strong>10/3</strong><span>土曜日 / Tour → Modesto</span><span class="zh" lang="zh-Hans">星期六 / 旅游团 → Modesto</span></div><p class="route-summary">ツアー日。終了時刻や停車地はまだ入力せず、Modestoの宿泊先だけ確定候補として表示します。<span class="zh" lang="zh-Hans">旅游团行程日；结束时间和停靠点尚未输入，只显示Modesto住宿候选。</span></p></div>
-          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/3</strong><span>Tour day / Modesto</span><span class="zh" lang="zh-Hans">旅游日 / Modesto</span></div><div class="schedule-body">
-            <div class="schedule-row"><time>未入力</time><div><strong>ツアー行程</strong><p class="day-note">集合・出発・停車地・終了時刻を予約元の案内で補完する。</p></div></div>
-            <div class="schedule-row"><time>Evening</time><div><strong>Modesto check-in</strong><p class="day-note">La Casa Modesto, Ascend Hotel Collectionへ移動。</p></div></div>
+          <div class="daily-head"><div class="daily-date"><strong>10/3</strong><span>土曜日 / ツアー2日目：San Jose → San Francisco → Modesto</span><span class="zh" lang="zh-Hans">星期六 / 团程第2天：圣何塞 → 旧金山 → 莫德斯托</span></div><p class="route-summary">サンフランシスコの主要景観を巡り、夕方にModestoへ移動する日。湾内クルーズと追加市内観光は任意・別料金として分け、基本行程に自動で追加しない。<span class="zh" lang="zh-Hans">游览旧金山主要景观，傍晚前往莫德斯托。海湾游船与深度市区游为自愿自费项目，不自动加入基本行程。</span></p></div>
+          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/3</strong><span>Tour D2 / San Francisco → Modesto</span><span class="zh" lang="zh-Hans">团程D2 / 旧金山 → 莫德斯托</span></div><div class="schedule-body">
+            <div class="schedule-row"><time>07:00 / 08:00</time><div><strong>朝食後、San Franciscoへ<span class="zh" lang="zh-Hans">早餐后前往旧金山</span></strong><p class="day-note">資料では07:00朝食（自費）、08:00移動開始。各地の絶対到着時刻は固定せず、ガイドの集合案内に従う。<span class="zh" lang="zh-Hans">资料列07:00早餐（自理）、08:00开始移动。各景点抵达时间不固定，以导游集合安排为准。</span></p></div></div>
+            <div class="schedule-row"><time data-zh="上午至下午">午前〜午後</time><div><strong>Golden Gate Bridge → Palace of Fine Arts → Lombard Street<span class="zh" lang="zh-Hans">金门大桥 → 艺术宫 → 九曲花街</span></strong><p class="day-note">Golden Gate Bridge 約45分 → Palace of Fine Arts 約30分 → Lombard Street 約45分。いずれも外観・景観中心の参考順序。<span class="zh" lang="zh-Hans">金门大桥约45分钟 → 艺术宫约30分钟 → 九曲花街约45分钟。均以外观与景观为主，顺序仅供参考。</span></p></div></div>
+            <div class="schedule-row"><time data-zh="约2小时30分">約2時間30分</time><div><strong>Fisherman’s Wharf・昼食・自由時間<span class="zh" lang="zh-Hans">渔人码头、午餐与自由时间</span></strong><p class="day-note">Fisherman’s Wharfで昼食は自費。希望者は別料金の湾内クルーズに参加できる。料金・運航・所要時間はガイドへ確認。<span class="zh" lang="zh-Hans">渔人码头午餐自理，可自费选择海湾游船，价格、班次与时长向导游确认。</span></p></div></div>
+            <div class="schedule-row"><time data-zh="自愿自费">任意・別料金</time><div><strong>San Francisco追加市内観光<span class="zh" lang="zh-Hans">旧金山深度游（自愿自费）</span></strong><p class="day-note">St. Mary’s Cathedral 約30分 → City Hall 約40分 → Twin Peaks 約25分 → Treasure Island通過。参加しない場合の待機場所・再集合を確認する。内容は変更の可能性あり。<span class="zh" lang="zh-Hans">圣玛丽大教堂约30分钟 → 市政厅约40分钟 → 双子峰约25分钟 → 金银岛途经。不参加时确认等候地点与重新集合安排，内容可能调整。</span></p></div></div>
+            <div class="schedule-row"><time>18:00 / 18:30</time><div><strong>夕食 → La Casa Modestoへ<span class="zh" lang="zh-Hans">晚餐 → La Casa Modesto</span></strong><p class="day-note">資料では18:00夕食（自費）、18:30ホテル。La Casa Modestoまたは同等クラスへ宿泊する。<span class="zh" lang="zh-Hans">资料列18:00晚餐（自理）、18:30入住La Casa Modesto或同等级酒店。</span></p></div></div>
           </div></article>
-          <div class="card hotel-card"><h3>宿泊: La Casa Modesto, Ascend Hotel Collection</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-la-casa-modesto.jpg" alt="La Casa Modesto, Ascend Hotel Collection の館内" loading="lazy"><figcaption><a class="credit" href="https://www.hrs.com/en/hotel/159335" target="_blank" rel="noreferrer">写真出典: HRSホテルギャラリー（館内・代表画像）</a><span class="zh" lang="zh-Hans">照片来源：HRS酒店画廊（室内・代表性照片）</span></figcaption></figure><p class="small">1720 Sisk Rd, Modesto, CA 95350。画像は安定して取得できた館内の代表画像です。チェックイン時刻、ツアーの送迎場所、朝食条件は要確認。<span class="zh" lang="zh-Hans">地址：1720 Sisk Rd, Modesto, CA 95350；图片为可稳定取得的室内代表性照片。入住时间、旅游团接送点和早餐条件待确认。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=La+Casa+Modesto+Ascend+Hotel+Collection" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
-
-        <div class="link-row"><a class="button" href="https://maps.app.goo.gl/d6ueUFs1jq4qLbyRA" target="_blank" rel="noreferrer" data-zh="旅游团路线地图">ツアーのルート地図</a></div>
-          <p class="day-cost">小計：金額未記録。宿泊・食事がツアー代に含まれるか確認し、重複計上しない。<span class="zh" lang="zh-Hans">小计：金额尚未记录。先确认住宿与餐饮是否包含在团费中，避免重复计算。</span></p>
+          <div class="card hotel-card"><h3>ツアー掲載宿: La Casa Modesto, Ascend Hotel Collection<span class="zh" lang="zh-Hans">团程所列住宿：La Casa Modesto, Ascend Hotel Collection</span></h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-la-casa-modesto.jpg" alt="La Casa Modesto, Ascend Hotel Collection の館内" loading="lazy"><figcaption><a class="credit" href="https://www.hrs.com/en/hotel/159335" target="_blank" rel="noreferrer">写真出典: HRSホテルギャラリー（館内・代表画像）</a><span class="zh" lang="zh-Hans">照片来源：HRS酒店画廊（室内・代表性照片）</span></figcaption></figure><p class="small">商品資料の参考時刻は18:30。La Casa Modesto, Ascend Hotel Collection（1720 Sisk Rd, Modesto, CA 95350）の1泊分はツアー本体代に含まれる。同等クラス変更あり、最終施設・到着時刻は出団通知とガイドの案内に従う。3ダイヤ表記は携程の分類。朝食を含め食事は自費。<span class="zh" lang="zh-Hans">商品资料参考入住时间18:30。La Casa Modesto, Ascend Hotel Collection（1720 Sisk Rd, Modesto, CA 95350）一晚住宿包含在团费内，可能更换同等级酒店；最终酒店与抵达时间以出团通知及导游安排为准。3钻为携程评级，包括早餐在内的餐饮自理。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=La+Casa+Modesto+Ascend+Hotel+Collection" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
+          <a class="planning-link" href="#tour-terms">ツアーの追加費用・参加条件を見る<span class="zh" lang="zh-Hans">查看旅游团附加费用与参加条件</span></a>
+          <p class="day-cost">当日分：チップ USD 36（18 × 2人）。宿泊はツアー本体代に含み、別加算なし。食事・湾内クルーズ・追加市内観光は未計上。<span class="zh" lang="zh-Hans">当天费用：小费 USD 36（18 × 2人）。住宿已含团费，不另加。未计餐饮、海湾游船及深度市区游。</span></p>
         </article>
 
         <article id="current-day-ca-1004" class="daily-section">
-          <div class="daily-head"><div class="daily-date"><strong>10/4</strong><span>日曜日 / Yosemite・El Capitan → Los Angeles</span><span class="zh" lang="zh-Hans">星期日 / 优胜美地・El Capitan → 洛杉矶</span></div><p class="route-summary">07:00出発、YosemiteのEl Capitanを訪問。Union Stationへ18:00頃に戻れるかは未確定です。<span class="zh" lang="zh-Hans">07:00出发，参观优胜美地El Capitan；能否在18:00左右返回Union Station尚未确定。</span></p></div>
-          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/4</strong><span>Yosemite / El Capitan → Union Station? → LAX hotel</span><span class="zh" lang="zh-Hans">优胜美地 / El Capitan → Union Station? → LAX酒店</span></div><div class="schedule-body">
-            <div class="schedule-row"><time>07:00</time><div><strong>出発</strong><p class="day-note">ツアー指定の出発。荷物・朝食・集合条件は要確認。</p></div></div>
-            <div class="schedule-row"><time>日中</time><div><strong>Yosemite / El Capitan</strong><p class="day-note">観光範囲・滞在時間はツアー行程に従う。</p></div></div>
-            <div class="schedule-row"><time>18:00頃?</time><div><strong>Union Stationへ戻る?</strong><p class="day-note">到着駅と時刻は未確定。確定しない場合はLAXホテルへの移動方法を予約元に確認。</p></div></div>
-            <div class="schedule-row"><time>Evening</time><div><strong>LAX Airport hotel check-in</strong><p class="day-note">翌朝便のため、ホテルからLAXまでの送迎と所要時間を確認。</p></div></div>
+          <div class="daily-head"><div class="daily-date"><strong>10/4</strong><span>日曜日 / ツアー3日目：Modesto → Yosemite → Los Angeles</span><span class="zh" lang="zh-Hans">星期日 / 团程第3天：莫德斯托 → 优胜美地 → 洛杉矶</span></div><p class="route-summary">資料では07:00が朝食、08:00が出発。Yosemite観光後にLos Angelesへ戻り、解散の目安は19:00〜20:00。掲載解散地点はFountain Valleyで、Union Station 18:00着という従来の仮定は使わない。<span class="zh" lang="zh-Hans">资料列07:00早餐、08:00出发。游览优胜美地后返回洛杉矶，约19:00–20:00结束；所列解散点为Fountain Valley，不采用原先18:00抵达Union Station的假设。</span></p></div>
+          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/4</strong><span>Tour D3 / Yosemite → Los Angeles → LAX hotel</span><span class="zh" lang="zh-Hans">团程D3 / 优胜美地 → 洛杉矶 → LAX酒店</span></div><div class="schedule-body">
+            <div class="schedule-row"><time>07:00 / 08:00</time><div><strong>朝食・チェックアウト → Yosemiteへ<span class="zh" lang="zh-Hans">早餐、退房 → 前往优胜美地</span></strong><p class="day-note">朝食は自費。08:00出発が資料上の参考時刻。荷物を積み、集合時刻はガイドの指示に従う。<span class="zh" lang="zh-Hans">早餐自理。资料参考出发时间08:00；带齐行李，实际集合以导游通知为准。</span></p></div></div>
+            <div class="schedule-row"><time data-zh="中午左右">昼ごろ</time><div><strong>Yosemite National Parkの景観観光<span class="zh" lang="zh-Hans">优胜美地国家公园景观游览</span></strong><p class="day-note">Yosemite Valley、Half Dome、Yosemite Falls、El Capitanなどの景観が案内されている。登頂や全地点への立寄りは確約されていない。資料の入園時刻は12:00、滞在・昼食は当日調整。<span class="zh" lang="zh-Hans">优胜美地山谷、半圆顶、优胜美地瀑布、酋长岩等为资料中的景观，不表示含登顶或保证逐一停靠。资料列12:00入园，停留与午餐以当天安排为准。</span></p></div></div>
+            <div class="schedule-row"><time data-zh="下午至傍晚">午後〜夕方</time><div><strong>Los Angelesへ戻る・夕食<span class="zh" lang="zh-Hans">返回洛杉矶并晚餐</span></strong><p class="day-note">昼食・夕食は自費。資料では夕食17:30の目安。天候・山火事・道路閉鎖でYosemiteへ入れない場合、Solvang・Santa Barbaraへ変更する可能性がある。<span class="zh" lang="zh-Hans">午晚餐自理，资料参考晚餐时间17:30。遇恶劣天气、山火或封路无法进入优胜美地时，可能改去丹麦城Solvang与圣芭芭拉。</span></p></div></div>
+            <div class="schedule-row"><time data-zh="19:00–20:00左右">19:00–20:00頃</time><div><strong>ツアー解散 → LAXホテルへ<span class="zh" lang="zh-Hans">旅游团结束 → 前往LAX酒店</span></strong><p class="day-note">資料の解散欄は20:00・9125 Recreation Circle, Fountain Valley。実際の降車地点・時刻は未確定で、当日ガイドに確認。解散後のLAXホテルへの移動費・所要時間を別途確保する。<span class="zh" lang="zh-Hans">资料解散栏列20:00、9125 Recreation Circle, Fountain Valley。实际下车地点与时间尚未确定，返程当天向导游确认；另行预留前往LAX酒店的时间与费用。</span></p></div></div>
+            <div class="schedule-row"><time data-zh="晚上">夜</time><div><strong>Holiday Inn LAXへチェックイン<span class="zh" lang="zh-Hans">入住Holiday Inn LAX</span></strong><p class="day-note">翌10/5はAS801・07:00発。ホテルへの到着が遅くなる想定で、空港シャトルの始発と手続き締切から逆算して翌朝の出発を決める。<span class="zh" lang="zh-Hans">次日10/5乘AS801，07:00起飞。预计较晚抵达酒店，应按机场接驳首班与值机截止时间倒推次晨出发。</span></p></div></div>
           </div></article>
           <div class="card hotel-card"><h3>宿泊: Holiday Inn Los Angeles LAX Airport by IHG</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-holiday-inn-lax.jpg" alt="Holiday Inn Los Angeles LAX Airport の外観" loading="lazy"><figcaption><a class="credit" href="https://www.ihg.com/holidayinn/hotels/us/en/los-angeles/laxia/hoteldetail/gallery" target="_blank" rel="noreferrer">写真出典: IHG公式ギャラリー（外観）</a><span class="zh" lang="zh-Hans">照片来源：IHG官方画廊（外观）</span></figcaption></figure><p class="small">10/4–10/5、Los Angeles、CNY 1,029。キャンセルポリシーの表示はあるが、無料キャンセルとは分類しない。税・手数料・空港シャトルは予約画面で再確認。<span class="zh" lang="zh-Hans">10/4–10/5，洛杉矶，1,029元。显示取消政策，但不将其分类为免费取消；税费、手续费和机场接驳请在预订页面复核。</span></p><div class="link-row"><a class="button" href="https://www.booking.com/hotel/us/holiday-inn-los-angeles-international-airport.ja.html" target="_blank" rel="noreferrer">Booking</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Holiday+Inn+Los+Angeles+LAX+Airport" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
-
-        <div class="link-row"><a class="button" href="https://maps.app.goo.gl/d6ueUFs1jq4qLbyRA" target="_blank" rel="noreferrer" data-zh="旅游团路线地图">ツアーのルート地図</a></div>
-          <p class="day-cost">小計：宿泊 CNY 1,029。ツアー代・食事・ホテルへの移動費は未計上。<span class="zh" lang="zh-Hans">小计：住宿 CNY 1,029。未计团费、餐饮及前往酒店的交通费。</span></p>
+          <a class="planning-link" href="#tour-terms">ツアーの追加費用・参加条件を見る<span class="zh" lang="zh-Hans">查看旅游团附加费用与参加条件</span></a>
+          <p class="day-cost">当日分：宿泊 CNY 1,029 ＋ チップ USD 36。2人とも16歳以上の米国非居住者で対象年パスを使わない場合、Yosemite追加料USD 200を加え、USD分は236。指定観光費は3日共通欄に別計上。食事・解散後のホテル移動費は未計上。<span class="zh" lang="zh-Hans">当天费用：住宿 CNY 1,029 ＋ 小费 USD 36。若两人均为16岁以上非美国居民且无适用年卡，另加优胜美地附加费USD 200，美元部分为236。指定景点费在三日共同费用中单列；未计餐饮及散团后前往酒店的交通。</span></p>
         </article>
 
         <article id="current-day-hi-1005" class="daily-section">
@@ -1637,6 +1651,7 @@
         <article id="current-japan-after-arrival" class="daily-section">
           <div class="daily-head"><div class="daily-date"><strong>10/9–11</strong><span>自由時間 + 国内1泊</span><span class="zh" lang="zh-Hans">抵达日本后 / 自由时间 + 日本国内一晚</span></div><p class="route-summary">日本到着後にも自由時間があり、その後に日本国内でさらに1泊する予定です。ショッピング・食事・居酒屋を優先し、到着時刻・場所・翌日の動線が合えば温泉も候補にします。<span class="zh" lang="zh-Hans">抵达日本后还有自由时间，之后计划在日本国内再住一晚。优先购物、用餐和居酒屋；若抵达时间、地点及次日动线合适，也将温泉列为候选。</span></p></div>
 
+          <article class="card"><h3>帰路の予約便<span class="zh" lang="zh-Hans">返程已订航班</span></h3><p><strong>JL073：10/9 ホノルル 12:15発 → 10/10 東京 15:55着（翌日）。</strong><br><strong>JL021：10/11 東京 08:50発 → 北京 12:00着。</strong><br>東京での1泊は10/10–11。翌朝早い出発のため、自由時間は主に10/10の夕方〜夜。画像は都市名のみで、東京・北京の空港名とターミナルは詳細控えで確認する。<span class="zh" lang="zh-Hans"><strong>JL073：10/9 檀香山12:15出发 → 10/10 东京15:55抵达（次日）。</strong><br><strong>JL021：10/11 东京08:50出发 → 北京12:00抵达。</strong><br>东京住宿为10/10–11一晚。次晨出发较早，自由时间主要在10/10傍晚至晚上。截图仅显示城市名，东京及北京的机场与航站楼需核对详细凭证。</span></p></article>
           <div class="card"><h3>日本でやることの候補<span class="zh" lang="zh-Hans">抵达日本后的活动候选</span></h3><div class="grid two">
             <div class="card compact"><h3>🛍️ ショッピング<span class="zh" lang="zh-Hans">购物</span></h3><p class="small">空港・宿泊地・翌日の移動動線に近い商業施設を優先し、営業時間と荷物の扱いを確認する。<span class="zh" lang="zh-Hans">优先选择靠近机场、住宿地或次日交通动线的商业设施，并确认营业时间和行李安排。</span></p></div>
             <div class="card compact"><h3>🍜 食事<span class="zh" lang="zh-Hans">用餐</span></h3><p class="small">到着後すぐに無理なく入れる店と、翌日に回せる店を分け、移動を増やしすぎない。<span class="zh" lang="zh-Hans">区分抵达后可轻松用餐的店和可留到次日的店，避免增加过多移动。</span></p></div>
@@ -1652,13 +1667,36 @@
 <div class="section-head"><h2>出発前の予約・調整<span class="zh" lang="zh-Hans">出发前的预约与调整</span></h2></div>
 <p class="small">予約の未確定点と、当日どこを短縮するかを日付順にまとめました。Getty・Diamond Head・Haleakalā・USS Arizonaの条件は2026/9/12に公式案内を再確認。空き状況・天候・運行は出発前に確認します。<span class="zh" lang="zh-Hans">按日期整理尚未确定的预订与当天可缩短的安排。Getty、钻石山、哈雷阿卡拉与USS Arizona的条件于2026年9月12日再次核对官方说明；余位、天气及运行情况需在出发前确认。</span></p><div class="grid two">
 <article class="card compact"><h3>10/1：到着遅れと荷物預かり<span class="zh" lang="zh-Hans">10/1：抵达延误与行李寄存</span></h3><p class="small">Gettyの入場枠を先に取り、当日の到着見込みに合わせてBeverly Hillsを短縮する。12:15以降の空港出発ならBeverly Hillsを外す目安とし、Gettyも予約時刻に間に合うか確認。荷物預かりサービス Bounceは住所・営業時間・夜の受取条件を予約画面で確認し、貴重品は持ち歩く。<span class="zh" lang="zh-Hans">先订Getty入场时段，再按当天预计抵达时间缩短比佛利山。若12:15后才离开机场，以取消比佛利山为调整基准，并确认是否仍赶得上Getty预约。通过行李寄存服务Bounce的预订页面核对地址、营业时间和晚间取件条件，贵重物品随身携带。</span></p><a href="#current-day-ca-1001">該当日の行程へ<span class="zh" lang="zh-Hans">前往当天行程</span></a></article>
-<article class="card compact"><h3>10/2–5：ツアー終了と翌朝の飛行機<span class="zh" lang="zh-Hans">10/2–5：旅游团结束与次日早班机</span></h3><p class="small">10/2の集合時刻・場所、10/3の行程、10/4の最終降車地点と時刻をツアー会社に確認する。Union Stationへ戻れると仮定せず、LAX近くのホテルへの移動を確保。10/5の07:00発に合わせ、航空会社の手続き締切から逆算してホテル出発と送迎を決める。<span class="zh" lang="zh-Hans">向旅行团确认10/2集合时间地点、10/3行程、10/4最终下车地点与时间。不要预设会返回Union Station，需安排前往LAX附近酒店的交通。根据10/5的07:00航班及航空公司的办理截止时间，倒推酒店出发与接驳安排。</span></p><a href="#current-day-ca-1004">該当日の行程へ<span class="zh" lang="zh-Hans">前往当天行程</span></a></article>
+<article class="card compact"><h3>10/2–5：乗降場所・現地費用・翌朝便<span class="zh" lang="zh-Hans">10/2–5：上下车点、当地费用与次晨航班</span></h3><p class="small">乗車候補は6か所。前泊地Monterey Parkにある08:00 Courtyard集合の可否を確認するが、指定済みとは扱わない。10/4は19〜20時の解散目安で、掲載地点はFountain Valley。実際の降車地点とLAXホテルへの移動を確認し、翌10/5のAS801・07:00発に備える。指定観光費と国立公園追加料の支払方法も確認する。<span class="zh" lang="zh-Hans">有6个上车点，可确认前晚住宿地Monterey Park的08:00 Courtyard上车是否可选，但不视为已指定。10/4约19–20点结束，所列地点为Fountain Valley；确认实际下车点及前往LAX酒店的交通，为次日AS801・07:00航班做准备。另确认指定景点费与国家公园附加费的支付方式。</span></p><a href="#tour-terms">ツアーの条件・費用へ<span class="zh" lang="zh-Hans">前往旅游团条件与费用</span></a></article>
 <article class="card compact"><h3>10/5：到着日の歩きすぎと入場時刻<span class="zh" lang="zh-Hans">10/5：抵达当天的体力与入场时间</span></h3><p class="small">ホノルル到着後は国内線の荷物受取とホテルへの移動を見込む。Diamond Headは入場枠の開始から30分以内に着けるときだけ予約案を採用する。暑さ・行列・遅延があればHenry’s PlaceかLeonard’sを短縮し、それでも間に合わなければハイキングを別日に回す。<span class="zh" lang="zh-Hans">抵达檀香山后需预留国内航班取行李及前往酒店的时间。只有能在钻石山预约时段开始后30分钟内到达时才采用该安排。遇炎热、排队或延误，缩短Henry’s Place或Leonard’s；仍赶不上则把徒步改到其他日期。</span></p><a href="#current-day-hi-1005">該当日の行程へ<span class="zh" lang="zh-Hans">前往当天行程</span></a></article>
 <article class="card compact"><h3>10/6–7：マウイの運転と翌朝の返車<span class="zh" lang="zh-Hans">10/6–7：茂宜岛驾驶与次晨还车</span></h3><p class="small">08:50 OGG着の当日は日の出観光を組まない。Haleakalāの昼間・夕景案は山上の天候と暗くなる時間、Kiheiへの帰路、翌朝08:40便の返車に余裕があるかで判断。疲労や天候が厳しければPāʻia・Kihei中心の短い行程を選ぶ。レンタカーの受取・返却営業時間と保険・駐車を予約時に確認する。<span class="zh" lang="zh-Hans">08:50抵达OGG当天不安排日出。哈雷阿卡拉白天或日落方案取决于山顶天气、天黑时间、返回Kihei的驾驶，以及次晨08:40航班前是否有足够还车时间。疲劳或天气不佳时选择Pāʻia、Kihei为主的短路线。预订租车时核对取还车营业时间、保险及停车。</span></p><a href="#current-day-hi-1006">該当日の行程へ<span class="zh" lang="zh-Hans">前往当天行程</span></a></article>
 <article class="card compact"><h3>10/7–9：ホテル移動と夕食の時間を確保<span class="zh" lang="zh-Hans">10/7–9：预留换酒店与晚餐时间</span></h3><p class="small">10/7–10/8はSheraton、10/8–10/9はThe Twin Finで、宿泊の空白・重複はなし。10/8は11:00までにSheratonをチェックアウトし、荷物預かりと次のホテルへの移動を観光に組み込む。10/7は18:00台の夕食前に着替える時間を確保する。<span class="zh" lang="zh-Hans">10/7–10/8住Sheraton，10/8–10/9住The Twin Fin，无住宿空缺或日期重叠。10/8需在11:00前退房，将行李寄存与前往下一家酒店的交通安排进观光行程。10/7在18:00左右的晚餐前预留更衣时间。</span></p><a href="#current-day-hi-1007">該当日の行程へ<span class="zh" lang="zh-Hans">前往当天行程</span></a></article>
 <article class="card compact"><h3>10/8：Pearl Harborを起点に立ち寄りを絞る<span class="zh" lang="zh-Hans">10/8：以Pearl Harbor为起点筛选停留点</span></h3><p class="small">USS Arizona記念館の船で渡るプログラムに参加するなら事前予約し、開始1時間前の現地到着を目安にする。予約不要のビジターセンターと博物館だけを見る案も残す。Doleの有料体験やNorth Shoreの浜は必須にせず、帰路の渋滞と翌日の出発に合わせて省く。<span class="zh" lang="zh-Hans">若参加乘船前往USS Arizona纪念馆的项目，需提前预约，并以开始前1小时到达为目标。也可只参观无需预约的游客中心与博物馆。Dole收费体验和North Shore海滩并非必到，按返程拥堵及次日出发安排删减。</span></p><a href="#current-day-hi-1008">該当日の行程へ<span class="zh" lang="zh-Hans">前往当天行程</span></a></article>
 <article class="card compact"><h3>日本滞在：帰国便と国内1泊をつなげる<span class="zh" lang="zh-Hans">日本停留：衔接赴日航班与国内一晚</span></h3><p class="small">10/10 15:55東京着、10/11 08:50東京発を予約画面で確認。空港・ターミナルと10/10の宿を確定し、近くの買い物・食事・居酒屋を選ぶ。温泉は移動と休息の時間が残る場合だけ追加する。<span class="zh" lang="zh-Hans">预订页面已确认10/10 15:55抵达东京、10/11 08:50从东京出发。确认机场、航站楼与10/10住宿，再选择附近购物、餐饮和居酒屋。只有交通与休息时间充足时才加入温泉。</span></p><a href="#current-japan-after-arrival">該当日の行程へ<span class="zh" lang="zh-Hans">前往当天行程</span></a></article>
 </div>
+<details id="tour-terms" class="planning-alternatives"><summary>10/2–4 ツアー共通：料金・参加条件・出発前チェック<span class="zh" lang="zh-Hans">10/2–4 三日团：共同费用、参加条件与出发前检查</span></summary>
+  <p class="small">資料：2026/9/12提供の携程商品画面21枚。ツアー本体の予約金額・申込確定・選択済み乗車地点は画像では確認できない。商品資料の時刻と訪問順は参考で、出団通知（最終行程・集合案内）を優先する。<span class="zh" lang="zh-Hans">依据2026/9/12提供的21张携程商品截图。截图未显示团费订单金额、订单确认状态或已选上车点。商品中的时间与游览顺序仅供参考，以出团通知（最终行程与集合说明）为准。</span></p>
+  <div class="grid two">
+    <article class="card compact"><h3>ツアー本体に含まれるもの<span class="zh" lang="zh-Hans">团费包含</span></h3><p class="small">3日間のツアー車両・1人1席、普通話（中国語）のドライバー兼ガイド、2名1室のホテル2泊。掲載宿はSan Jose方面のSheratonとLa Casa Modestoで、同等クラスへ変更される場合がある。最大14名・他社客との混乗あり、行程途中でガイドや車両が変わる形式。少人数時は小型車を使用する場合がある。商品は買物立寄り0件と掲載。<span class="zh" lang="zh-Hans">三天旅游用车、一人一座、当地普通话司机兼导游、标准两人一间的两晚酒店。所列酒店为圣何塞方向喜来登及La Casa Modesto，可能更换同等级酒店。最多14人，可与其他旅行社客人拼团，不同路段可能更换导游或车辆，人数少时可能使用小车。商品标明0购物。</span></p></article>
+    <article class="card compact"><h3>別料金・含まれないもの<span class="zh" lang="zh-Hans">团费不含</span></h3><p class="small">朝昼夕の全9食、毎日のチップ、指定観光費、任意の湾内クルーズ・追加市内観光、対象者の国立公園非居住者追加料。航空券、ビザ費用、ホテル保証金、超過荷物・預かり、個人消費、自由時間の交通も別。集合地点までと解散後のホテル移動はこのサイトで別枠管理する。<span class="zh" lang="zh-Hans">全部9餐、每日小费、指定景点费、自愿海湾游船及深度游、适用旅客的国家公园非居民附加费。机票、签证费、酒店押金、超额或寄存行李、个人消费及自由活动交通另计。前往集合点及散团后前往酒店的交通在本站另列。</span></p></article>
+  </div>
+  <h3>2人分の追加費用<span class="zh" lang="zh-Hans">两人附加费用</span></h3>
+  <table class="tour-cost-table"><thead><tr><th>項目<span class="zh" lang="zh-Hans">项目</span></th><th>金額と計上方法<span class="zh" lang="zh-Hans">金额与计入方式</span></th></tr></thead><tbody>
+    <tr><td>ガイドへのチップ<span class="zh" lang="zh-Hans">导游小费</span></td><td>USD 18 × 2人 × 3日 = <strong>USD 108</strong>。各日USD 36ずつ小計に反映。<span class="zh" lang="zh-Hans">USD 18 × 2人 × 3天 = <strong>USD 108</strong>。每日小计各计USD 36。</span></td></tr>
+    <tr><td>指定観光費：Yosemite＋17-Mile Drive<span class="zh" lang="zh-Hans">指定景点费：优胜美地＋17里湾</span></td><td>USD 70 × 2人 = <strong>USD 140</strong>。3日共通としてここに1回だけ計上。資料には現地払い、または事前払い可能との記載があり、支払済みなら再加算しない。<span class="zh" lang="zh-Hans">USD 70 × 2人 = <strong>USD 140</strong>。三日共同费用仅在此计一次。资料说明可现场支付或预付，若已支付不重复计入。</span></td></tr>
+    <tr><td>Yosemiteの非居住者追加料（条件付き）<span class="zh" lang="zh-Hans">优胜美地非居民附加费（有条件）</span></td><td>16歳以上の米国非居住者で対象パスなしの場合、USD 100 × 2人 = <strong>USD 200</strong>。10/4の条件付き小計に反映。<span class="zh" lang="zh-Hans">16岁以上非美国居民且无适用年卡时，USD 100 × 2人 = <strong>USD 200</strong>。计入10/4的条件性小计。</span></td></tr>
+  </tbody></table>
+  <p><strong>3日間の追加費用：USD 248 ／ 非居住者追加料が2人とも必要なら USD 448。<span class="zh" lang="zh-Hans">三天附加费用：USD 248 ／ 两人均需非居民附加费时为 USD 448。</span></strong><span class="small">日別のチップ・条件付き追加料と、共通の指定観光費USD 140の合計。各欄に再加算しない。ツアー本体代・食事・任意参加・集合解散の交通は含めない。<span class="zh" lang="zh-Hans">此为每日小费、条件性附加费与共同景点费USD 140的合计，不重复相加。不含团费、餐饮、自愿项目或集合散团交通。</span></span></p>
+  <p class="small">NPS公式（2026/9/12確認）：このUSD 100は国籍だけでなく米国居住資格で判定され、商業ツアーにも適用。非居住者向け年パスはUSD 250で、商業ツアーでは所持者＋同じ同行グループの成人3人までの非居住者追加料をカバーする。年パス利用時も販売店のUSD 70一括観光費が自動免除になるとは限らないため、ガイド・販売店へ事前確認する。2人でYosemiteだけなら、追加料USD 200と年パスUSD 250を比較する。<span class="zh" lang="zh-Hans">NPS官方（2026/9/12核对）：USD 100按美国居住资格而非仅国籍判断，也适用于商业团。非居民年卡USD 250，在商业团中覆盖持卡人及同一同行小组另外3名成人的非居民附加费。使用年卡不代表商家USD 70打包景点费自动免除，需提前向导游或客服确认。两人只去优胜美地时，比较USD 200附加费与USD 250年卡。</span> <a href="https://www.nps.gov/aboutus/commercial-tours-and-nonresident-fees.htm" target="_blank" rel="noreferrer">NPS：商業ツアーと非居住者料金<span class="zh" lang="zh-Hans">NPS：商业团与非居民费用</span></a></p>
+  <h3>予約元へ確認すること<span class="zh" lang="zh-Hans">向预订方确认</span></h3>
+  <ul>
+    <li>申込金額・入金状況と、USD 70指定観光費を既に払っているか。クルーズ・追加市内観光の価格、参加しない場合の待機と再集合。<span class="zh" lang="zh-Hans">订单金额、付款状态及USD 70指定景点费是否已付；游船、深度游价格与不参加时的等候和重集合安排。</span></li>
+    <li>10/2の乗車地点と10/4の降車地点。解散は19〜20時目安で、翌朝07:00の便に備えるLAXホテル移動を先に決める。<span class="zh" lang="zh-Hans">10/2上车点与10/4下车点。约19–20点结束，需安排前往LAX酒店的交通，为次晨07:00航班做准备。</span></li>
+    <li>出団通知・ガイド連絡先・最終ホテル名。商品説明では注文後通常7日以内にメール案内予定とあるが、実際の送付予定を確認し、控えをオフライン保存する。途中離団・行程順の希望は事前相談。<span class="zh" lang="zh-Hans">出团通知、导游联系方式与最终酒店名称。商品说明称通常下单后7天内邮件发送，需确认实际发送安排并离线保存。提前离团或游览顺序有特殊要求时预先咨询。</span></li>
+    <li>取消・変更の最終規定。画像には「その他ツアー：7日前・違約金100%」の案内があるが、正式な違約条項や出行須知の詳細画面は未提供。実際の予約契約の適用条件・締切を確認し、この要約だけで取消可否を判断しない。<span class="zh" lang="zh-Hans">取消与变更的最终条款。截图有“其他团行程前7天100%”的提示，但未展开正式违约条款与出行须知；核对实际订单适用条件和截止时间，不仅凭本摘要判断退改。</span></li>
+  </ul>
+  <p class="small">商品画面の一部には距離・所要時間と予定時刻が整合しない表示があるため、サイトでは主要行程と参考時刻のみ採用。天候・交通・閉園で順序や内容が調整される場合がある。<span class="zh" lang="zh-Hans">商品页面部分距离、时长与时刻不一致，本站仅采用主要行程与参考时间；天气、交通或关闭可能导致顺序与内容调整。</span></p>
+</details>
 <p class="small">出発までに、海外用の通信プラン eSIMをスマホへ設定し、現金・少額紙幣、カードの海外利用設定を準備する。予約控えと地図はオフラインで見られるよう保存する。<span class="zh" lang="zh-Hans">出发前在手机设置境外数据套餐eSIM，准备现金与小额纸币，并开通银行卡境外使用。离线保存预订凭证与地图。</span></p><details class="planning-alternatives"><summary>10/6–8の別案を比較する<span class="zh" lang="zh-Hans">比较10/6–8的备选方案</span></summary>
 <div id="compare-1006" class="comparison-day"><h3>10/6</h3><div class="plan-options" data-plan-options data-plan-group="current-day-hi-1006">
             <div class="plan-tabs" role="tablist" aria-label="10/6の提案"></div>
@@ -2151,6 +2189,37 @@
       var root = document.getElementById("daily-plan");
       var language = document.documentElement.getAttribute("data-language");
       var places = [
+        ["17-Mile Drive", "17 Mile Drive Pebble Beach"],
+        ["Pebble Beach", "Pebble Beach California"],
+        ["Monterey Bay", "Monterey Bay California"],
+        ["17里湾", "17 Mile Drive Pebble Beach"],
+        ["圆石滩", "Pebble Beach California"],
+        ["蒙特雷湾", "Monterey Bay California"],
+        ["Golden Gate Bridge", "Golden Gate Bridge San Francisco"],
+        ["Palace of Fine Arts", "Palace of Fine Arts San Francisco"],
+        ["Lombard Street", "Lombard Street San Francisco"],
+        ["金门大桥", "Golden Gate Bridge San Francisco"],
+        ["艺术宫", "Palace of Fine Arts San Francisco"],
+        ["九曲花街", "Lombard Street San Francisco"],
+        ["Fisherman’s Wharf", "Fishermans Wharf San Francisco"],
+        ["渔人码头", "Fishermans Wharf San Francisco"],
+        ["St. Mary’s Cathedral", "Cathedral of Saint Mary of the Assumption San Francisco"],
+        ["City Hall", "San Francisco City Hall"],
+        ["Twin Peaks", "Twin Peaks San Francisco"],
+        ["Treasure Island", "Treasure Island San Francisco"],
+        ["圣玛丽大教堂", "Cathedral of Saint Mary of the Assumption San Francisco"],
+        ["市政厅", "San Francisco City Hall"],
+        ["双子峰", "Twin Peaks San Francisco"],
+        ["金银岛", "Treasure Island San Francisco"],
+        ["Yosemite Valley", "Yosemite Valley"],
+        ["Half Dome", "Half Dome Yosemite"],
+        ["Yosemite Falls", "Yosemite Falls"],
+        ["El Capitan", "El Capitan Yosemite"],
+        ["优胜美地山谷", "Yosemite Valley"],
+        ["半圆顶", "Half Dome Yosemite"],
+        ["优胜美地瀑布", "Yosemite Falls"],
+        ["酋长岩", "El Capitan Yosemite"],
+        ["9125 Recreation Circle, Fountain Valley", "9125 Recreation Circle Fountain Valley CA 92708"],
         ["9125 Recreation Cir, Fountain Valley", "9125 Recreation Cir Fountain Valley California"],
         ["1720 Sisk Rd, Modesto, CA 95350", "1720 Sisk Rd Modesto CA 95350"],
         ["2255 Kalākaua Avenue, Honolulu, HI 96815", "2255 Kalakaua Avenue Honolulu HI 96815"],
