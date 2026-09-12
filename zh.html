@@ -1,0 +1,2245 @@
+<!doctype html>
+<!-- Public copy: reservation confirmation codes omitted. -->
+<html data-language="zh" lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>2026年10月加州旅行计划 / Los Angeles・优胜美地・檀香山</title>
+<style>
+    :root {
+      --paper: #f7f6f2;
+      --panel: #ffffff;
+      --ink: #202124;
+      --muted: #667085;
+      --line: #d8d7d1;
+      --teal: #167c80;
+      --teal-soft: #dff2f1;
+      --coral: #c84f3d;
+      --coral-soft: #fae8e3;
+      --gold: #a47516;
+      --gold-soft: #fff1c7;
+      --green: #44785a;
+      --green-soft: #e4f0e8;
+      --violet: #6057a8;
+      --violet-soft: #ebe9fb;
+      --shadow: 0 8px 26px rgba(32, 33, 36, 0.065);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Segoe UI", sans-serif;
+      line-height: 1.65;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: #126b6e;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 6px 20px rgba(32, 33, 36, 0.05);
+      backdrop-filter: blur(14px);
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 0;
+      padding: 12px 0;
+    }
+
+    .brand {
+      display: grid;
+      gap: 2px;
+      min-width: 260px;
+    }
+
+    .brand strong {
+      font-size: clamp(1.1rem, 2vw, 1.45rem);
+    }
+
+    .brand span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .topbar nav {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 8px;
+      justify-content: flex-end;
+      min-width: 0;
+      overflow-x: auto;
+      padding: 2px 1px 4px;
+      scrollbar-width: thin;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .topbar nav a,
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 7px 11px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fff;
+      color: var(--ink);
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+      flex: 0 0 auto;
+    }
+
+    .topbar nav a:hover,
+    .button:hover {
+      border-color: #98a2b3;
+      text-decoration: none;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    .button:focus-visible {
+      outline: 3px solid rgba(22, 124, 128, 0.3);
+      outline-offset: 2px;
+    }
+
+    main {
+      display: grid;
+      gap: 28px;
+      padding: 26px 0 44px;
+    }
+
+    section {
+      scroll-margin-top: 108px;
+    }
+
+    .band {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      padding: clamp(18px, 3vw, 28px);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 920px;
+      margin-bottom: 12px;
+      font-size: clamp(2rem, 4.3vw, 3.2rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-bottom: 0;
+      font-size: clamp(1.45rem, 3vw, 2.1rem);
+      line-height: 1.18;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+      line-height: 1.3;
+    }
+
+    .lead {
+      max-width: 850px;
+      color: #3f444b;
+      font-size: 1.04rem;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .small {
+      font-size: 0.9rem;
+    }
+
+    .zh {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 0.86em;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    h1 .zh {
+      font-size: clamp(1rem, 2.1vw, 1.55rem);
+    }
+
+    h2 .zh,
+    h3 .zh {
+      font-size: 0.72em;
+    }
+
+    /* Small emoji signposts keep the dense itinerary scannable without adding
+       decoration to every paragraph or photo card. They are intentionally
+       presentational; the adjacent text remains the accessible label. */
+    .brand strong::before,
+    #overview h1::before,
+    main > section.grid.two > .band:first-child .section-head h2::before,
+    main > section.grid.two > .band:nth-child(2) .section-head h2::before,
+    #packing .section-head h2::before,
+    #reservations .section-head h2::before,
+    #glossary .section-head h2::before,
+    #flights .section-head h2::before,
+    #maps-source .section-head h2::before,
+    #daily-plan > .section-head h2::before,
+    #sources .section-head h2::before,
+    .daily-date::before,
+    .day-jumpbar::before,
+    .notice h3::before,
+    #packing .packing-card h3::before,
+    .topbar nav > a[href="#overview"]::before,
+    .topbar nav > a[href="#daily-plan"]::before,
+    .topbar nav > a[href="#flights"]::before,
+    .topbar nav > a[href="#packing"]::before,
+    .topbar nav > a[href="#reservations"]::before,
+    .topbar nav > a[href="#glossary"]::before,
+    .topbar nav > a[href="#sources"]::before {
+      display: inline-block;
+      margin-right: 0.38em;
+      line-height: 1;
+      vertical-align: -0.08em;
+      font-family: "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+      font-weight: 400;
+      text-transform: none;
+    }
+
+    .brand strong::before { content: "🧭"; font-size: 0.82em; }
+    #overview h1::before { content: "✈️"; font-size: 0.78em; }
+    main > section.grid.two > .band:first-child .section-head h2::before { content: "✅"; }
+    main > section.grid.two > .band:nth-child(2) .section-head h2::before { content: "⚠️"; }
+    #packing .section-head h2::before { content: "🎒"; }
+    #reservations .section-head h2::before { content: "🎟️"; }
+    #glossary .section-head h2::before { content: "💡"; }
+    #flights .section-head h2::before { content: "✈️"; }
+    #maps-source .section-head h2::before { content: "🗺️"; }
+    #daily-plan > .section-head h2::before { content: "🗓️"; }
+    #sources .section-head h2::before { content: "🔗"; }
+
+    .topbar nav > a[href="#overview"]::before { content: "🧭"; }
+    .topbar nav > a[href="#daily-plan"]::before { content: "🗓️"; }
+    .topbar nav > a[href="#flights"]::before { content: "✈️"; }
+    .topbar nav > a[href="#packing"]::before { content: "🎒"; }
+    .topbar nav > a[href="#reservations"]::before { content: "🎟️"; }
+    .topbar nav > a[href="#glossary"]::before { content: "💡"; }
+    .topbar nav > a[href="#sources"]::before { content: "🔗"; }
+
+    .notice.risk h3::before { content: "⚠️"; }
+    .notice.ok h3::before { content: "✅"; }
+    .notice:not(.risk):not(.ok) h3::before { content: "ℹ️"; }
+
+    #packing .packing-card:nth-child(1) h3::before { content: "🛂"; }
+    #packing .packing-card:nth-child(2) h3::before { content: "🔌"; }
+    #packing .packing-card:nth-child(3) h3::before { content: "🥾"; }
+    #packing .packing-card:nth-child(4) h3::before { content: "🩹"; }
+
+    .daily-date::before { content: "📅"; font-size: 1rem; }
+    .day-jumpbar::before {
+      content: "🗓️";
+      flex: 0 0 auto;
+      align-self: center;
+      padding: 0 3px;
+      font-size: 1.05rem;
+    }
+
+    .lead .zh,
+    .route-summary .zh,
+    .small .zh,
+    .checklist .zh {
+      font-size: 0.92em;
+      font-weight: 500;
+    }
+
+    .stat .zh {
+      font-size: 0.72rem;
+      text-transform: none;
+    }
+
+    .language-ja .zh {
+      display: none;
+    }
+
+    .language-zh .ja-text {
+      display: none;
+    }
+
+    .language-zh .zh {
+      display: block;
+    }
+
+    .language-links {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      margin-left: 2px;
+      padding-left: 8px;
+      border-left: 1px solid var(--line);
+    }
+
+    .language-links a[aria-current="page"] {
+      border-color: var(--teal);
+      background: var(--teal-soft);
+      color: #0f5f62;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .stat {
+      min-height: 88px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfbf9;
+    }
+
+    .stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .stat strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 1.08rem;
+    }
+
+    .route-map {
+      display: flex;
+      overflow: hidden;
+      min-height: 340px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #e9ece7;
+    }
+
+    .route-map iframe {
+      display: block;
+      flex: 1;
+      min-width: 0;
+      width: 100%;
+      height: auto;
+      min-height: 340px;
+      border: 0;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid.three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid.four {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .card {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 15px;
+    }
+
+    .card.compact {
+      padding: 12px;
+    }
+
+    .card p:last-child,
+    .notice p:last-child {
+      margin-bottom: 0;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 8px 0 12px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #eef0f2;
+      color: #475467;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .tag.teal {
+      background: var(--teal-soft);
+      color: #0a5d60;
+    }
+
+    .tag.coral {
+      background: var(--coral-soft);
+      color: #963525;
+    }
+
+    .tag.gold {
+      background: var(--gold-soft);
+      color: #6c4b08;
+    }
+
+    .tag.green {
+      background: var(--green-soft);
+      color: #2f6145;
+    }
+
+    .tag.violet {
+      background: var(--violet-soft);
+      color: #45408a;
+    }
+
+    .flight {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .airport {
+      display: grid;
+      gap: 4px;
+    }
+
+    .time {
+      font-size: 1.45rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .plane-line {
+      min-width: 78px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--teal), var(--coral));
+      position: relative;
+    }
+
+    .plane-line::after {
+      content: "";
+      position: absolute;
+      right: -1px;
+      top: -4px;
+      width: 9px;
+      height: 9px;
+      border-top: 2px solid var(--coral);
+      border-right: 2px solid var(--coral);
+      transform: rotate(45deg);
+    }
+
+    .notice {
+      border-left: 5px solid var(--gold);
+      background: #fffaf0;
+      padding: 14px;
+      border-radius: 8px;
+    }
+
+    .notice.risk {
+      border-left-color: var(--coral);
+      background: #fff4f1;
+    }
+
+    .notice.ok {
+      border-left-color: var(--green);
+      background: #f1faf4;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding-left: 20px;
+      list-style: disc;
+    }
+
+    .reservation-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .reservation-list li::marker {
+      color: var(--teal);
+      font-weight: 900;
+    }
+
+    .reservation-list strong {
+      color: #263238;
+    }
+
+    .reservation-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .checklist li {
+      padding-left: 2px;
+    }
+
+    .map-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .mini-map {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #edf0eb;
+    }
+
+    .mini-map iframe {
+      display: block;
+      width: 100%;
+      height: 210px;
+      border: 0;
+    }
+
+    .mini-map .map-caption {
+      padding: 12px;
+      background: #fff;
+      border-top: 1px solid var(--line);
+    }
+
+    .place-map {
+      overflow: hidden;
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #edf0eb;
+    }
+
+    .place-map iframe {
+      display: block;
+      width: 100%;
+      height: 170px;
+      border: 0;
+    }
+
+    .place-map .map-caption {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 7px 10px;
+      border-top: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+
+    .photo-card .place-map,
+    .lodging-box .place-map {
+      margin: 0;
+      border-width: 1px 0 0;
+      border-radius: 0;
+    }
+
+    .photo-card .place-map iframe,
+    .lodging-box .place-map iframe {
+      height: 160px;
+    }
+
+    .daily-route-map {
+      margin: 14px 0 16px;
+    }
+
+    .daily-route-map .mini-map {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      align-items: stretch;
+    }
+
+    .daily-route-map .mini-map iframe {
+      height: 100%;
+      min-height: 210px;
+    }
+
+    .daily-route-map .mini-map .map-caption {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .photo-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 4px 16px rgba(32, 33, 36, 0.045);
+      transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+    }
+
+    .photo-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      background: #e6e8e3;
+    }
+
+    .photo-card .photo-body {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 8px;
+      padding: 13px;
+    }
+
+    .photo-card .photo-body .link-row {
+      margin-top: auto;
+    }
+
+    .photo-card .photo-body p {
+      margin-bottom: 0;
+    }
+
+    .credit {
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    .hotel-eyecatch-figure {
+      max-width: 560px;
+      margin: 10px 0 14px;
+    }
+
+    .hotel-eyecatch {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #e6e8e3;
+    }
+
+    .hotel-eyecatch-figure figcaption {
+      margin-top: 6px;
+      line-height: 1.45;
+    }
+
+    .hotel-eyecatch-figure .credit {
+      font-weight: 600;
+    }
+
+    .daily-plan {
+      display: grid;
+      gap: 18px;
+    }
+
+    #daily-plan {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    #legacy-plan {
+      display: none;
+    }
+
+    #daily-plan > .section-head {
+      margin-bottom: 14px;
+      padding: 0 4px;
+    }
+
+    .day-jumpbar {
+      display: flex;
+      gap: 7px;
+      justify-content: flex-start;
+      margin-bottom: 14px;
+      padding: 8px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.88);
+      box-shadow: 0 4px 16px rgba(32, 33, 36, 0.04);
+      scrollbar-width: thin;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .day-jumpbar a {
+      display: inline-flex;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: center;
+      min-width: 52px;
+      min-height: 36px;
+      padding: 6px 10px;
+      border: 1px solid #c9dfdf;
+      border-radius: 999px;
+      background: var(--teal-soft);
+      color: #0a5d60;
+      font-size: 0.84rem;
+      text-decoration: none;
+    }
+
+    .day-jumpbar a:hover {
+      border-color: var(--teal);
+      text-decoration: none;
+    }
+
+    .daily-section {
+      display: grid;
+      gap: 16px;
+      padding: clamp(16px, 3vw, 24px);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--teal);
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: var(--shadow);
+      scroll-margin-top: 108px;
+    }
+
+    .daily-head {
+      display: grid;
+      grid-template-columns: minmax(140px, 0.22fr) 1fr;
+      gap: 16px;
+      align-items: start;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #ecebea;
+    }
+
+    .daily-date {
+      display: grid;
+      gap: 4px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: var(--teal-soft);
+      color: #344054;
+      font-weight: 900;
+    }
+
+    .daily-date strong {
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    .daily-date span {
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-weight: 800;
+    }
+
+    .route-summary {
+      margin-bottom: 0;
+      color: #3f444b;
+    }
+
+    .schedule-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .schedule-day {
+      display: grid;
+      grid-template-columns: minmax(128px, 0.18fr) 1fr;
+      gap: 14px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .schedule-day.inline-schedule {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 2px;
+      padding: 12px 14px;
+      border-color: #e3e5df;
+      border-radius: 12px;
+      background: #fbfbf8;
+      box-shadow: none;
+    }
+
+    .schedule-day.inline-schedule .schedule-date {
+      display: none;
+    }
+
+    .schedule-date {
+      position: sticky;
+      top: 96px;
+      display: grid;
+      align-self: start;
+      align-content: start;
+      gap: 5px;
+      padding: 10px;
+      border-radius: 10px;
+      background: #fbfbf9;
+      color: #344054;
+      font-weight: 900;
+    }
+
+    .schedule-date strong {
+      font-size: 1.15rem;
+      line-height: 1;
+    }
+
+    .schedule-date span {
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .schedule-body {
+      display: grid;
+      gap: 11px;
+    }
+
+    .schedule-day.inline-schedule .schedule-body {
+      gap: 10px;
+    }
+
+    .schedule-row {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ecebea;
+    }
+
+    .schedule-row:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .scheduled-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 12px;
+      grid-column: 1 / -1;
+      margin-top: 2px;
+    }
+
+    .scheduled-details .photo-card {
+      display: grid;
+      grid-template-columns: minmax(150px, 0.42fr) 1fr;
+      border-color: #d8e5dd;
+      box-shadow: none;
+    }
+
+    .scheduled-details .photo-card img {
+      height: 100%;
+      min-height: 180px;
+      aspect-ratio: auto;
+    }
+
+    .proposal-heading {
+      display: grid;
+      gap: 3px;
+      margin: 2px 0 10px;
+    }
+
+    .proposal-heading h3,
+    .proposal-heading p {
+      margin: 0;
+    }
+
+    .proposal-heading p {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .plan-options {
+      display: grid;
+      gap: 0;
+      margin-top: 2px;
+    }
+
+    .plan-tabs {
+      display: flex;
+      gap: 4px;
+      align-items: flex-end;
+      overflow-x: auto;
+      padding: 0 10px;
+      border-bottom: 1px solid var(--line);
+      scrollbar-width: thin;
+    }
+
+    .plan-tabs[hidden] {
+      display: none;
+    }
+
+    .plan-tab {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: center;
+      min-width: 78px;
+      min-height: 42px;
+      margin-bottom: -1px;
+      padding: 8px 16px 9px;
+      border: 1px solid var(--line);
+      border-bottom-color: var(--line);
+      border-radius: 10px 10px 0 0;
+      background: #eef0f2;
+      color: #667085;
+      font-size: 0.9rem;
+      font-weight: 900;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .plan-tab:hover {
+      background: #f7f8f8;
+      color: var(--ink);
+    }
+
+    .plan-tab[aria-selected="true"] {
+      z-index: 2;
+      border-color: var(--teal);
+      border-bottom-color: #fff;
+      background: #fff;
+      color: #0a5d60;
+    }
+
+    .plan-tab:focus-visible {
+      z-index: 3;
+    }
+
+    .plan-panels {
+      border: 1px solid var(--line);
+      border-top: 0;
+      border-radius: 0 10px 10px 10px;
+      background: #fff;
+    }
+
+    .plan-panel {
+      display: grid;
+      gap: 10px;
+      padding: 16px;
+    }
+
+    .plan-panel:not(:first-child) {
+      display: none;
+    }
+
+    .plan-panel.is-active {
+      display: grid;
+    }
+
+    .plan-panel[hidden] {
+      display: none;
+    }
+
+    .plan-panel-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px 14px;
+    }
+
+    .plan-panel-head h3 {
+      margin-bottom: 0;
+    }
+
+    .plan-panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .schedule-row time {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      min-height: 27px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--teal-soft);
+      color: #4c5563;
+      font-size: 0.86rem;
+      font-weight: 900;
+    }
+
+    .schedule-row strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .day-note {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .cost-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .cost-pill {
+      display: inline-flex;
+      min-height: 26px;
+      align-items: center;
+      padding: 4px 8px;
+      border: 1px solid #e1dfd7;
+      border-radius: 999px;
+      background: #fbfbf9;
+      color: #475467;
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    .spot-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .lodging-box {
+      display: grid;
+      grid-template-columns: minmax(180px, 240px) 1fr;
+      gap: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid #d9e5dd;
+      border-radius: 12px;
+      background: #f7fbf8;
+    }
+
+    .lodging-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 170px;
+      object-fit: cover;
+      background: #e9efeb;
+    }
+
+    .lodging-body {
+      display: grid;
+      align-content: center;
+      gap: 10px;
+      padding: 14px;
+    }
+
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 14px;
+    }
+
+    .day {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 16px;
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .date {
+      display: grid;
+      align-content: start;
+      gap: 5px;
+      color: #344054;
+      font-weight: 900;
+    }
+
+    .date span {
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-weight: 800;
+    }
+
+    .day-body {
+      display: grid;
+      gap: 10px;
+    }
+
+    .slot {
+      display: grid;
+      grid-template-columns: 88px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ecebea;
+    }
+
+    .slot:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .slot time {
+      color: #4c5563;
+      font-size: 0.86rem;
+      font-weight: 900;
+    }
+
+    .source-list {
+      columns: 2;
+      column-gap: 28px;
+      margin-bottom: 0;
+      padding-left: 20px;
+    }
+
+    .source-list li {
+      break-inside: avoid;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      padding: 26px 0 34px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 940px) {
+      .topbar,
+      .section-head,
+      .hero-grid {
+        display: grid;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .brand {
+        min-width: 0;
+      }
+
+      .topbar nav {
+        justify-content: flex-start;
+      }
+
+      section,
+      .daily-section {
+        scroll-margin-top: 160px;
+      }
+
+      .schedule-date {
+        top: 150px;
+      }
+
+      .route-map {
+        min-height: 300px;
+      }
+
+      .route-map iframe {
+        height: 300px;
+        min-height: 300px;
+      }
+
+      .stats,
+      .grid.four,
+      .grid.three,
+      .photo-grid,
+      .spot-grid,
+      .map-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 680px) {
+      .wrap {
+        width: min(100% - 22px, 1180px);
+      }
+
+      .band {
+        padding: 16px;
+      }
+
+      .stats,
+      .grid.two,
+      .grid.three,
+      .grid.four,
+      .photo-grid,
+      .spot-grid,
+      .map-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .flight,
+      .day,
+      .slot,
+      .daily-head,
+      .schedule-day,
+      .schedule-row {
+        grid-template-columns: 1fr;
+      }
+
+      .plane-line {
+        width: 100%;
+      }
+
+      .source-list {
+        columns: 1;
+      }
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .photo-card:hover {
+        transform: translateY(-2px);
+        border-color: #bccdcc;
+        box-shadow: 0 10px 26px rgba(32, 33, 36, 0.09);
+      }
+    }
+
+    @media (max-width: 680px) {
+      body {
+        overflow-x: clip;
+      }
+
+      .topbar {
+        gap: 9px;
+        padding: 9px 0;
+      }
+
+      .brand > span {
+        display: none;
+      }
+
+      .topbar nav a,
+      .button,
+      .day-jumpbar a {
+        min-height: 44px;
+      }
+
+      #daily-plan > .section-head {
+        padding-inline: 2px;
+      }
+
+      .day-jumpbar {
+        margin-inline: -2px;
+        padding: 7px;
+      }
+
+      .daily-section {
+        padding: 14px;
+        border-left-width: 3px;
+      }
+
+      section,
+      .daily-section {
+        scroll-margin-top: 112px;
+      }
+
+      .daily-date {
+        padding: 10px 12px;
+      }
+
+      .schedule-date {
+        position: static;
+        padding: 0;
+        background: transparent;
+      }
+
+      .route-map {
+        min-height: 240px;
+      }
+
+      .route-map iframe {
+        height: 240px;
+        min-height: 240px;
+      }
+
+      .mini-map iframe {
+        height: 175px;
+      }
+
+      .place-map iframe,
+      .photo-card .place-map iframe,
+      .lodging-box .place-map iframe {
+        height: 150px;
+      }
+
+      .daily-route-map .mini-map {
+        grid-template-columns: 1fr;
+      }
+
+      .daily-route-map .mini-map iframe {
+        min-height: 175px;
+      }
+
+      .lodging-box {
+        grid-template-columns: 1fr;
+      }
+
+      .lodging-image {
+        height: 180px;
+        min-height: 0;
+      }
+
+      .scheduled-details,
+      .scheduled-details .photo-card {
+        grid-template-columns: 1fr;
+      }
+
+      .scheduled-details .photo-card img {
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 16 / 10;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .photo-card {
+        transition: none;
+      }
+
+      .photo-card:hover {
+        transform: none;
+      }
+    }
+
+    /* Keep the itinerary independent of external map availability. */
+    iframe[data-map-src][hidden], .map-load-prompt[hidden] {
+      display: none !important;
+    }
+    .map-load-prompt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 105px;
+      padding: 18px 14px;
+      text-align: center;
+    }
+    .route-map .map-load-prompt {
+      min-height: 280px;
+    }
+    .map-load-button {
+      cursor: pointer;
+      font: inherit;
+    }
+    .map-load-note {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+  </style>
+<meta name="robots" content="noindex, nofollow, noarchive">
+</head>
+<body class="language-zh">
+<header>
+<div class="wrap topbar">
+<div class="brand">
+<strong data-ja="2026年10月 カリフォルニア旅行計画" data-zh="2026年10月加州旅行计划">2026年10月加州旅行计划</strong>
+<span><span class="ja-text">LAX到着、Los Angeles → Yosemiteツアー → HNL → Maui → Oahu → 日本</span></span>
+<span class="zh" lang="zh-Hans">抵达LAX，洛杉矶 → 优胜美地跟团 → 檀香山 → 茂宜岛 → 瓦胡岛 → 日本</span>
+</div>
+<nav aria-label="ページ内ナビゲーション">
+<a data-ja="概要" data-zh="概览" href="#overview">概览</a>
+<a data-ja="日別" data-zh="按日期" href="#daily-plan">按日期</a>
+<a data-ja="フライト" data-zh="航班" href="#flights">航班</a>
+<a data-ja="用語" data-zh="术语" href="#glossary">术语</a>
+<a data-ja="持ち物" data-zh="行李" href="#packing">行李</a>
+<a data-ja="予約" data-zh="预约" href="#reservations">预约</a>
+<a data-ja="リンク" data-zh="链接" href="#sources">链接</a>
+<span aria-label="言語 / 语言" class="language-links">
+<a data-ja="日本語" data-zh="日文" href="index.html">日文</a>
+<a aria-current="page" data-ja="中文" data-zh="中文" href="zh.html">中文</a>
+</span>
+</nav>
+</div>
+</header>
+<main class="wrap" id="current-plan">
+<section class="band" id="overview">
+<div class="hero-grid">
+<div>
+<div class="tag-row">
+<span class="tag teal"><span class="zh fallback-translation" lang="zh-Hans">当前方案</span></span>
+<span class="tag green">2人 / 2人</span>
+<span class="tag gold">更新 / 更新: 2026-09-11</span>
+</div>
+<h1>LAX → Los Angeles → HNL → Maui → Oahu → 日本</h1>
+<p class="lead"><span class="ja-text">Day1〜4はLAX到着後のLos Angeles観光とツアー行程、Day5〜8はホノルル・マウイ・オアフ島の後半案です。Day5〜8は宿泊とフライトの骨格を反映しつつ、候補地の組み合わせ、移動時間、営業時間、予約、レンタカー、疲労度を見ながら設計します。日本到着後の自由時間と国内1泊も未定です。</span><span class="zh" lang="zh-Hans">第1至4天为抵达LAX后的洛杉矶观光和旅游团行程，第5至8天为檀香山、茂宜岛和瓦胡岛的后半方案。第5至8天已反映住宿和航班骨架，但地点组合、交通时间、营业时间、预约、租车和疲劳度仍需比较设计。抵达日本后的自由时间及日本国内一晚住宿尚未确定。</span></p>
+<div class="stats">
+<div class="stat"><span><span class="ja-text">現行期間</span><span class="zh" lang="zh-Hans">当前日期</span></span><strong>2026/10/1–10/8+</strong></div>
+<div class="stat"><span><span class="ja-text">Day5–8</span><span class="zh" lang="zh-Hans">第5至8天</span></span><strong>HNL・Maui・Oahu</strong></div>
+<div class="stat"><span><span class="ja-text">固定骨格</span><span class="zh" lang="zh-Hans">已定骨架</span></span><strong><span class="zh fallback-translation" lang="zh-Hans">住宿 + 岛际航班</span></strong></div>
+<div class="stat"><span><span class="ja-text">設計方針</span><span class="zh" lang="zh-Hans">设计方针</span></span><strong>余白・疲労優先</strong></div>
+</div>
+</div>
+<div aria-label="Day1 Los Angelesルートの地図" class="route-map">
+<iframe loading="lazy" hidden data-map-src="https://www.google.com/maps?q=LAX%20Getty%20Center%20Beverly%20Hills%201160%20N%20Vermont%20Ave%20Griffith%20Observatory%20Monterey%20Park&amp;output=embed" title="Los Angeles Day1 route map"></iframe>
+</div>
+</div>
+</section>
+<section class="band" id="glossary">
+<div class="section-head">
+<h2><span class="ja-text">用語ミニ解説</span><span class="zh" lang="zh-Hans">术语小注</span></h2>
+<span class="muted small"><span class="ja-text">このページで使う略語・タグ・旅行用語を短く整理しています。</span><span class="zh" lang="zh-Hans">简要整理本页面使用的缩写、标签和旅行术语。</span></span>
+</div>
+<div class="grid two">
+<article class="card compact">
+<h3><span class="ja-text">固定・候補・条件付き</span><span class="zh" lang="zh-Hans">已定、候选、有条件</span></h3>
+<p><span class="ja-text">「固定」は予約や方針として決まったもの、「候補」は比較中、「条件付き」は時刻・天候・体力などを満たす場合だけ採用する案です。</span><span class="zh" lang="zh-Hans">“已定”表示已经预约或确定的事项；“候选”表示仍在比较；“有条件”表示只有满足时间、天气或体力等条件时才采用。</span></p>
+</article>
+<article class="card compact">
+<h3><span class="ja-text">LAX・HNL・OGG・PEK</span><span class="zh" lang="zh-Hans">LAX、HNL、OGG、PEK</span></h3>
+<p><span class="ja-text">空港コードです。LAX＝ロサンゼルス国際空港、HNL＝ホノルル、OGG＝マウイ島カフルイ、PEK＝北京首都国際空港を指します。</span><span class="zh" lang="zh-Hans">这些是机场代码：LAX＝洛杉矶国际机场，HNL＝檀香山机场，OGG＝茂宜岛卡胡卢伊机场，PEK＝北京首都国际机场。</span></p>
+</article>
+<article class="card compact">
+<h3><span class="ja-text">時間指定予約・通常入園</span><span class="zh" lang="zh-Hans">预约时段、普通入场</span></h3>
+<p><span class="ja-text">「時間指定予約」は指定された時間帯に入場する予約です。「通常入園」は特別イベントや指定プログラムを含まない通常の入場を指します。</span><span class="zh" lang="zh-Hans">“预约时段”表示在指定时间段入场；“普通入场”表示不包含特别活动或指定项目的日常参观。</span></p>
+</article>
+<article class="card compact">
+<h3><span class="ja-text">動線・余白・buffer</span><span class="zh" lang="zh-Hans">动线、缓冲时间、buffer</span></h3>
+<p><span class="ja-text">「動線」は荷物・交通・次の目的地を含めた移動の流れ、「余白」やbufferは、入国審査・行列・渋滞・道迷いのために残す追加時間です。</span><span class="zh" lang="zh-Hans">“动线”是结合行李、交通和下一站的整体移动路线；“余量”或buffer是为入境审查、排队、堵车和迷路预留的额外时间。</span></p>
+</article>
+<article class="card compact">
+<h3><span class="ja-text">Bounce・Uber / Lyft・DASH</span><span class="zh" lang="zh-Hans">Bounce、Uber / Lyft、DASH</span></h3>
+<p><span class="ja-text">Bounceは行李預かりサービス、Uber / Lyftはアプリ配車、DASHはロサンゼルスの路線バスです。Bounceは予約後に住所やQRコードが確定します。</span><span class="zh" lang="zh-Hans">Bounce是行李寄存服务，Uber / Lyft是网约车，DASH是洛杉矶的公交系统。Bounce通常在预约后才确定地址和二维码。</span></p>
+</article>
+<article class="card compact">
+<h3><span class="ja-text">返金不可・無料キャンセル</span><span class="zh" lang="zh-Hans">不可退款、免费取消</span></h3>
+<p><span class="ja-text">「返金不可」は取消しても宿泊費が戻らない条件、「無料キャンセル」は表示された締切時刻までなら料金なしで取消できる条件です。予約画面の期限を優先します。</span><span class="zh" lang="zh-Hans">“不可退款”表示取消后通常不退住宿费；“免费取消”表示在预订页面标明的截止时间前取消不会收费。以预订页面期限为准。</span></p>
+</article>
+<article class="card compact">
+<h3><span class="ja-text">Visitor Center・USS Arizona Memorial</span><span class="zh" lang="zh-Hans">游客中心、USS Arizona Memorial</span></h3>
+<p><span class="ja-text">Pearl HarborのVisitor Centerは案内・展示の入口、USS Arizona Memorialは別枠の記念施設プログラムです。後者に参加する場合だけ、枠の予約を先に確認します。</span><span class="zh" lang="zh-Hans">Pearl Harbor的游客中心是咨询和展览入口；USS Arizona Memorial是另一个纪念设施项目。只有参加后者时，才需要优先确认项目名额。</span></p>
+</article>
+<article class="card compact">
+<h3><span class="ja-text">Dole Whip・Pineapple Express・Maze</span><span class="zh" lang="zh-Hans">Dole Whip、Pineapple Express、Maze</span></h3>
+<p><span class="ja-text">Dole Whipはパイナップル味のソフトクリーム、Pineapple Expressは園内列車、Mazeは迷路、Garden Tourは庭園ガイドツアーです。後ろ3つは有料アクティビティとして確認します。</span><span class="zh" lang="zh-Hans">Dole Whip是菠萝软冰淇淋，Pineapple Express是园内小火车，Maze是迷宫，Garden Tour是花园导览。后三项按付费活动确认。</span></p>
+</article>
+</div>
+</section>
+<section aria-label="旅行前ToDo" class="grid two">
+<div class="band">
+<div class="section-head"><h2><span class="ja-text">旅行前ToDo</span><span class="zh" lang="zh-Hans">出发前待办</span></h2></div>
+<ul class="checklist">
+<li><span><span class="ja-text">Gettyの12:00前後の時間指定予約を確保する。</span><span class="zh" lang="zh-Hans">确认盖蒂中心12:00左右的预约时段。</span></span></li>
+<li><span><span class="ja-text">1160 N Vermont Ave付近のBounceが24時間営業の掲載を維持しているか再確認する。</span><span class="zh" lang="zh-Hans">再次确认1160 N Vermont Ave附近Bounce是否仍标注为24小时营业。</span></span></li>
+<li><span><span class="ja-text">現金を必要額だけ確保し、少額紙幣と予備の支払い手段を用意する。</span><span class="zh" lang="zh-Hans">准备必要金额的现金，并备好小额纸币和备用支付方式。</span></span></li>
+<li><span><span class="ja-text">eSIMを契約し、対応端末・開通手順・データ容量・現地到着後の切替を確認する。</span><span class="zh" lang="zh-Hans">办理eSIM，确认设备兼容性、开通步骤、流量额度及抵达后切换方式。</span></span></li>
+<li><span><span class="ja-text">クレカの海外利用設定、暗証番号、利用通知、予備カードを準備する。</span><span class="zh" lang="zh-Hans">准备信用卡境外使用设置、PIN、消费通知和备用卡。</span></span></li>
+<li><span><span class="ja-text">Day2–4ツアーの集合場所・車両・各日の詳細を予約元で確認する。</span><span class="zh" lang="zh-Hans">向旅行团确认第2至4天的集合地点、车辆和每日详情。</span></span></li>
+<li><span><span class="ja-text">Day4のUnion Station到着可否と、Day5の航空会社・便名・ターミナルを確定する。</span><span class="zh" lang="zh-Hans">确认第4天能否返回Union Station，以及第5天航空公司、航班号和航站楼。</span></span></li>
+</ul>
+</div>
+<div class="band">
+<div class="section-head"><h2><span class="ja-text">リスクと判断</span><span class="zh" lang="zh-Hans">风险与判断</span></h2></div>
+<div class="grid">
+<div class="notice risk"><h3><span class="ja-text">LAXの遅延はBeverly Hillsから調整</span><span class="zh" lang="zh-Hans">延误时先缩短比佛利山</span></h3><p><span class="ja-text">11:15までに空港を出られれば全行程。11:45以降はBeverly Hillsを短縮し、12:15以降は外します。GettyとGriffithを優先します。</span><span class="zh" lang="zh-Hans">11:15前离开机场可完成全程；11:45后缩短比佛利山，12:15后取消。优先保留盖蒂中心和格里菲斯。</span></p></div>
+<div class="notice"><h3><span class="ja-text">荷物はBounceへ</span><span class="zh" lang="zh-Hans">行李寄存Bounce</span></h3><p><span class="ja-text">スーツケース1個のみ預け、パスポート・現金・カード・薬・PC・カメラは手元に残します。営業時間と受取条件は要確認です。</span><span class="zh" lang="zh-Hans">只寄存一个行李箱；护照、现金、银行卡、药品、电脑和相机随身携带。营业时间和取件条件待确认。</span></p></div>
+<div class="notice"><h3><span class="ja-text">Day4・Day5は未確定点あり</span><span class="zh" lang="zh-Hans">第4至5天仍有待确认事项</span></h3><p><span class="ja-text">YosemiteからUnion Stationへ戻る時刻と、07:00 LAX→10:00 HNL便の実予約情報は要確認です。</span><span class="zh" lang="zh-Hans">从优胜美地返回Union Station的时间，以及07:00 LAX→10:00 HNL航班的实际预订信息待确认。</span></p></div>
+</div>
+</div>
+</section>
+<section class="band" id="packing">
+<div class="section-head">
+<h2><span class="ja-text">持ち物チェックリスト</span><span class="zh" lang="zh-Hans">行李清单</span></h2>
+<span class="muted small"><span class="ja-text">LAX・Los Angeles／Yosemite・Hawaii・長時間フライト向け。必要なものから確認。</span><span class="zh" lang="zh-Hans">适用于LAX、洛杉矶／优胜美地、夏威夷和长途飞行；先确认必需品。</span></span>
+</div>
+<div class="grid four">
+<article class="card packing-card">
+<div class="tag-row"><span class="tag teal" data-zh="证件与支付">证件与支付</span></div>
+<h3><span class="ja-text">出入国・予約・運転</span><span class="zh" lang="zh-Hans">入境、预订与驾驶</span></h3>
+<ul class="checklist">
+<li><span><span class="ja-text">パスポート（残存有効期間・入国条件は出発前に確認）。</span><span class="zh" lang="zh-Hans">护照（出发前确认有效期和入境条件）。</span></span></li>
+<li><span><span class="ja-text">航空券・ホテル・ツアー・レンタカーの予約控えをオフライン保存。</span><span class="zh" lang="zh-Hans">离线保存机票、酒店、旅游团和租车预订确认。</span></span></li>
+<li><span><span class="ja-text">海外旅行保険・緊急連絡先・旅程表の控え。</span><span class="zh" lang="zh-Hans">准备旅行保险、紧急联系人和行程备份。</span></span></li>
+<li><span><span class="ja-text">クレジットカード2枚・現金・少額紙幣。</span><span class="zh" lang="zh-Hans">两张信用卡、现金和小额纸币。</span></span></li>
+<li><span><span class="ja-text">運転免許証・国際運転許可証（レンタカーを使う場合）。</span><span class="zh" lang="zh-Hans">驾照和国际驾照（租车时）。</span></span></li>
+</ul>
+</article>
+<article class="card packing-card">
+<div class="tag-row"><span class="tag teal" data-zh="电子设备">电子设备</span></div>
+<h3><span class="ja-text">通信・充電・機内持込み</span><span class="zh" lang="zh-Hans">通信、充电与随身携带</span></h3>
+<ul class="checklist">
+<li><span><span class="ja-text">スマホ・eSIM開通情報・オフライン地図。</span><span class="zh" lang="zh-Hans">手机、eSIM开通信息和离线地图。</span></span></li>
+<li><span><span class="ja-text">充電器・USBケーブル・予備バッテリー。</span><span class="zh" lang="zh-Hans">充电器、USB线和备用电池。</span></span></li>
+<li><span><span class="ja-text">モバイルバッテリーは機内持込みに分ける。</span><span class="zh" lang="zh-Hans">将充电宝单独放在随身行李中登机。</span></span></li>
+<li><span><span class="ja-text">変換プラグ・延長タップ（必要な機器がある場合）。</span><span class="zh" lang="zh-Hans">转换插头和多孔插座（有需要的设备时）。</span></span></li>
+<li><span><span class="ja-text">イヤホン・カメラの予備メモリ／電池。</span><span class="zh" lang="zh-Hans">耳机，以及相机备用存储卡和电池。</span></span></li>
+</ul>
+</article>
+<article class="card packing-card">
+<div class="tag-row"><span class="tag gold" data-zh="衣物与户外">衣物与户外</span></div>
+<h3><span class="ja-text">都市・Yosemite・Hawaiiに対応</span><span class="zh" lang="zh-Hans">适应城市、优胜美地和夏威夷</span></h3>
+<ul class="checklist">
+<li><span><span class="ja-text">都市・ツアー・ハイキング兼用の歩きやすい靴。</span><span class="zh" lang="zh-Hans">适合城市、旅游团和徒步的舒适步行鞋。</span></span></li>
+<li><span><span class="ja-text">薄手の重ね着・長袖（LAの夜、Yosemite、機内用）。</span><span class="zh" lang="zh-Hans">薄外套和长袖（洛杉矶夜间、优胜美地和机内）。</span></span></li>
+<li><span><span class="ja-text">防風・防雨の軽いアウター。</span><span class="zh" lang="zh-Hans">轻便的防风防雨外套。</span></span></li>
+<li><span><span class="ja-text">水着・サンダル（Hawaii用）。</span><span class="zh" lang="zh-Hans">泳衣和凉鞋（夏威夷用）。</span></span></li>
+<li><span><span class="ja-text">帽子・サングラス・日焼け止め。</span><span class="zh" lang="zh-Hans">帽子、太阳镜和防晒用品。</span></span></li>
+<li><span><span class="ja-text">折りたたみデイパック・再利用ボトル。</span><span class="zh" lang="zh-Hans">折叠日包和可重复使用的水瓶。</span></span></li>
+</ul>
+</article>
+<article class="card packing-card">
+<div class="tag-row"><span class="tag coral" data-zh="健康与舒适">健康与舒适</span></div>
+<h3><span class="ja-text">薬・睡眠・荷物管理</span><span class="zh" lang="zh-Hans">药品、睡眠与行李管理</span></h3>
+<ul class="checklist">
+<li><span><span class="ja-text">服用中の薬と処方情報を機内持込みにする。</span><span class="zh" lang="zh-Hans">将常用药和处方信息放入随身行李。</span></span></li>
+<li><span><span class="ja-text">常備薬・絆創膏・酔い止め。</span><span class="zh" lang="zh-Hans">常用药、创可贴和防晕车药。</span></span></li>
+<li><span><span class="ja-text">眼鏡・コンタクト用品。</span><span class="zh" lang="zh-Hans">眼镜和隐形眼镜用品。</span></span></li>
+<li><span><span class="ja-text">洗面具・衛生用品・手指消毒用品。</span><span class="zh" lang="zh-Hans">洗漱用品、卫生用品和手部消毒用品。</span></span></li>
+<li><span><span class="ja-text">耳栓・アイマスク・ネックピロー。</span><span class="zh" lang="zh-Hans">耳塞、眼罩和颈枕。</span></span></li>
+<li><span><span class="ja-text">荷物タグ・スーツケースの施錠具。</span><span class="zh" lang="zh-Hans">行李牌和行李锁。</span></span></li>
+</ul>
+</article>
+</div>
+<p class="reservation-note"><span class="ja-text">液体・電池・薬・モバイルバッテリーの機内持込み条件は、利用する航空会社と空港の最新案内を出発前に確認します。</span><span class="zh" lang="zh-Hans">液体、电池、药品和充电宝的登机规则，请在出发前按所乘航空公司和机场的最新说明确认。</span></p>
+</section>
+<section class="band" id="reservations">
+<div class="section-head">
+<h2><span class="ja-text">予約が必要なもの / 予約推奨と不要</span><span class="zh" lang="zh-Hans">需要预约的项目 / 建议预约与通常无需预约</span></h2>
+<span class="muted small"><span class="ja-text">公式ページ確認: 2026/9/11。空き・営業時間・休園は出発前に再確認。</span><span class="zh" lang="zh-Hans">官方页面核对：2026年9月11日。余位、营业时间和闭园信息请在出发前复核。</span></span>
+</div>
+<div class="grid two">
+<div class="notice risk">
+<div class="tag-row"><span class="tag coral"><span class="zh fallback-translation" lang="zh-Hans">请先预约</span></span><span class="tag"><span class="zh fallback-translation" lang="zh-Hans">确保行程可执行的项目</span></span></div>
+<h3><span class="ja-text">この旅を成立させる予約</span><span class="zh" lang="zh-Hans">使行程成立的预约</span></h3>
+<ul class="reservation-list">
+<li><strong><span class="ja-text">航空券・宿泊</span></strong><span class="ja-text"> — 未予約のLAX→HNL、HNL→OGG、OGG→HNL、帰国便、日本国内1泊と、Day1–8の各ホテルを確定する。</span><span class="zh" lang="zh-Hans">确认尚未预订的航班、回国航班、日本国内一晚及第1至8天各晚住宿。</span></li>
+<li><strong><span class="ja-text">Day2–4ツアー</span></strong><span class="ja-text"> — 予約元で集合場所・車両・各日の詳細を確認し、予約番号を手元に置く。</span><span class="zh" lang="zh-Hans">向旅行团确认集合点、车辆、每日详情，并保存预订编号。</span></li>
+<li><strong><span class="ja-text">Getty Center</span></strong><span class="ja-text"> — 無料だが時間指定入場予約が必要。10/1は12:00前後を先に確保する。</span><span class="zh" lang="zh-Hans">免费但需要预约入场时段；10月1日先确保12点左右的时段。</span></li>
+<li><strong><span class="ja-text">Diamond Head</span></strong><span class="ja-text"> — 非居住者は入場・駐車予約が必要。Day5に採用する場合だけ、候補を決めたら予約する。</span><span class="zh" lang="zh-Hans">非居民需要预约入场和停车；只有在第5天采用时才预约。</span></li>
+<li><strong><span class="ja-text">レンタカー</span></strong><span class="ja-text"> — Day6 OGG、Day7–8 HNLを使うなら、受取・返却場所、保険、営業時間を含めて予約する。</span><span class="zh" lang="zh-Hans">若第6天在OGG、第7至8天在HNL租车，连同取还车地点、保险和营业时间一起预订。</span></li>
+<li><strong><span class="ja-text">Pearl Harbor / USS Arizona Memorial</span></strong><span class="ja-text"> — Visitor Center・博物館ではなく、USS Arizona Memorialプログラムを選ぶ場合の枠を先に確保する。</span><span class="zh" lang="zh-Hans">需要预订的是USS Arizona Memorial项目，不是游客中心或博物馆本身。</span></li>
+</ul>
+<p class="reservation-note"><span class="zh fallback-translation" lang="zh-Hans">机票、住宿和租车并非设施规定的“必须预约”，但对执行本次行程而言是实际必需。</span></p>
+<div class="link-row"><a class="button" href="https://www.getty.edu/visit/center/faqs/" rel="noreferrer" target="_blank">Getty公式FAQ</a><a class="button" href="https://gostateparks.hawaii.gov/diamondhead/about" rel="noreferrer" target="_blank">Diamond Head予約</a><a class="button" href="https://www.nps.gov/thingstodo/visit-the-uss-arizona-memorial.htm" rel="noreferrer" target="_blank">Pearl Harbor公式</a></div>
+</div>
+<div class="notice">
+<div class="tag-row"><span class="tag gold"><span class="zh fallback-translation" lang="zh-Hans">有条件</span></span><span class="tag teal"><span class="zh fallback-translation" lang="zh-Hans">建议尽早</span></span></div>
+<h3><span class="ja-text">候補に採るなら確保・確認</span><span class="zh" lang="zh-Hans">若纳入方案则应预订或确认</span></h3>
+<ul class="reservation-list">
+<li><strong><span class="ja-text">Haleakalā</span></strong><span class="ja-text"> — 日の出（3:00–7:00）なら車両ごとの事前予約が必須。現在の08:50 OGG到着後のDay6案では日の出に間に合わないため、希望するなら前泊・日程変更と予約が必要。昼間・夕景は日の出予約の対象外だが、入園料・道路・天候を確認する。</span><span class="zh" lang="zh-Hans">若看日出（3:00–7:00），每辆车必须提前预约；按目前08:50抵达OGG后的第6天方案赶不上日出，若要看日出需前一晚住宿或调整日期并预约。白天或日落不需要日出预约，但要确认门票、道路和天气。</span></li>
+<li><strong><span class="ja-text">Bishop Museum</span></strong><span class="ja-text"> — 一般入場はオンライン購入を推奨。予約枠がなくても当日入場できるとは限らず、最終チェックインは16:00。</span><span class="zh" lang="zh-Hans">建议提前购买普通入场券；无预约不保证当天入场，最后签到时间为16:00。</span></li>
+<li><strong><span class="ja-text">Bounce</span></strong><span class="ja-text"> — その場利用も可能だが、予約後に住所・QRコードが確定する。今回の荷物動線なら事前予約で保管枠と受取時間を押さえる。</span><span class="zh" lang="zh-Hans">可现场使用，但预约后才会确定地址和二维码；本行程应提前锁定容量和取件时间。</span></li>
+<li><strong><span class="ja-text">Dole Plantation</span></strong><span class="ja-text"> — Dole Whip・売店だけなら予約不要。Pineapple Express、Maze、Garden Tourなど有料アクティビティを入れるならチケットを先に確認・購入する。</span><span class="zh" lang="zh-Hans">只吃Dole Whip或逛商店通常无需预约；若参加火车、迷宫或花园导览等付费活动，先确认并购票。</span></li>
+</ul>
+<div class="link-row"><a class="button" href="https://www.nps.gov/hale/planyourvisit/sunrise.htm" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">哈雷阿卡拉日出</span></a><a class="button" href="https://www.bishopmuseum.org/visit/tickets/" rel="noreferrer" target="_blank">Bishop入場券</a><a class="button" href="https://bounce.com/" rel="noreferrer" target="_blank">Bounce</a><a class="button" href="https://booking.doleplantation.com/" rel="noreferrer" target="_blank">Dole予約</a></div>
+</div>
+<div class="notice ok">
+<div class="tag-row"><span class="tag green">通常予約不要</span><span class="tag"><span class="zh fallback-translation" lang="zh-Hans">确认当天条件</span></span></div>
+<h3><span class="ja-text">予約を前提にしない候補</span><span class="zh" lang="zh-Hans">不以预约为前提的候选</span></h3>
+<p><strong><span class="ja-text">Pearl Harbor Visitor Center・2つの博物館</span></strong><span class="ja-text">は入場予約不要。</span><strong><span class="ja-text">Byodo-In</span></strong><span class="ja-text">はオンラインまたは入口でチケット購入可。</span><strong><span class="ja-text">Ho‘omaluhia</span></strong><span class="ja-text">の通常入園、Griffith Observatory、North Shoreの浜・街歩き・通常の飲食も予約必須とは扱わない。特別イベント、釣り、写真撮影、休園・荒天時の扱いは別途確認する。</span><span class="zh" lang="zh-Hans"><strong>Pearl Harbor游客中心和两座博物馆</strong>无需预约；<strong>Byodo-In</strong>可在线或入口购票；<strong>Ho‘omaluhia</strong>普通入园、Griffith Observatory、North Shore海滩/街区/一般餐饮不按必须预约处理。特别活动、钓鱼、摄影、闭园和恶劣天气规则另行确认。</span></p>
+<div class="link-row"><a class="button" href="https://byodo-in.com/visit/" rel="noreferrer" target="_blank">Byodo-In案内</a><a class="button" href="https://www.honolulu.gov/parks/honolulu/ho-omaluhia-botanical-garden.html" rel="noreferrer" target="_blank">Ho‘omaluhia公式</a><a class="button" href="https://www.nps.gov/perl/faq-s.htm" rel="noreferrer" target="_blank">Pearl Harbor FAQ</a></div>
+<p class="reservation-note"><span class="zh fallback-translation" lang="zh-Hans">这不是设施政策，而是当前方案的分类。闭园、项目变更和满员仍属于当天条件。</span></p>
+</div>
+</div>
+</section>
+<section class="band" id="flights">
+<div class="section-head">
+<h2><span class="ja-text">フライト・到着情報</span><span class="zh" lang="zh-Hans">航班与抵达信息</span></h2>
+<span class="muted small"><span class="ja-text">ユーザー提供の時刻を反映。便名・ターミナル・予約状況は要確認。</span><span class="zh" lang="zh-Hans">已反映用户提供的时间；航班号、航站楼和预订状态待确认。</span></span>
+</div>
+<div class="grid two">
+<article class="card">
+<div class="tag-row"><span class="tag teal">10/1 Thu</span><span class="tag">LAX arrival</span></div>
+<div class="flight">
+<div class="airport"><span class="time">09:20</span><strong>LAX</strong><span class="muted small"><span class="ja-text">到着</span><span class="zh" lang="zh-Hans">抵达</span></span></div>
+<div aria-hidden="true" class="plane-line"></div>
+<div class="airport"><span class="time">11:00–11:30</span><strong>Airport exit</strong><span class="muted small"><span class="ja-text">計画基準</span><span class="zh" lang="zh-Hans">计划基准</span></span></div>
+</div>
+<p class="small muted"><span class="ja-text">入国審査・荷物受取・配車場所への移動を含む想定です。10:40は順調な場合だけの早着目安です。</span><span class="zh" lang="zh-Hans">时间包含入境、取行李和前往网约车上车点；10:40只作为一切顺利时的早到参考。</span></p>
+</article>
+<article class="card">
+<div class="tag-row"><span class="tag coral">10/5 Mon</span><span class="tag">LAX → HNL</span></div>
+<div class="flight">
+<div class="airport"><span class="time">07:00</span><strong>LAX</strong><span class="muted small"><span class="ja-text">出発（暫定）</span><span class="zh" lang="zh-Hans">出发（暂定）</span></span></div>
+<div aria-hidden="true" class="plane-line"></div>
+<div class="airport"><span class="time">10:00</span><strong>HNL</strong><span class="muted small"><span class="ja-text">到着（暫定）</span><span class="zh" lang="zh-Hans">抵达（暂定）</span></span></div>
+</div>
+<p class="small muted"><span class="ja-text">航空会社、便名、ターミナル、所要時間、予約済みかどうかは未入力です。</span><span class="zh" lang="zh-Hans">航空公司、航班号、航站楼、飞行时长及是否已预订尚未输入。</span></p>
+</article>
+</div>
+</section>
+<section class="band" id="maps-source">
+<div class="section-head"><h2><span class="ja-text">ルート・予約リンク</span><span class="zh" lang="zh-Hans">路线与预订链接</span></h2></div>
+<div class="grid two">
+<article class="card"><h3>Day1 Los Angeles</h3><p class="small"><span class="ja-text">LAX → Getty Center → Beverly Hills → 1160 N Vermont Ave付近のBounce → Griffith Observatory → Monterey Park。</span><span class="zh" lang="zh-Hans">LAX → 盖蒂中心 → 比佛利山 → 1160 N Vermont Ave附近Bounce → 格里菲斯天文台 → 蒙特利公园。</span></p><a class="button" href="https://www.google.com/maps/dir/Los+Angeles+International+Airport/Getty+Center/Beverly+Hills/1160+N+Vermont+Ave+Los+Angeles/Griffith+Observatory/Holiday+Inn+%26+Suites+Monterey+Park+Los+Angeles+by+IHG" rel="noreferrer" target="_blank">Google Maps</a></article>
+<article class="card"><h3>Day2–4 tour route</h3><p class="small"><span class="ja-text">ユーザー提供のツアー地図。集合地点・各日の詳細は予約元で確認します。</span><span class="zh" lang="zh-Hans">用户提供的旅游团地图；集合地点和每日详情需向预订方确认。</span></p><a class="button" href="https://maps.app.goo.gl/d6ueUFs1jq4qLbyRA" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">旅游地图</span></a></article>
+</div>
+</section>
+<section class="band" id="daily-plan">
+<div class="section-head"><h2><span class="ja-text">現行日程 + 設計ブリーフ</span><span class="zh" lang="zh-Hans">当前行程 + 设计简报</span></h2><span class="muted small"><span class="ja-text">確定事項と、まだ比較・最適化してほしい部分を分けて表示しています。案がある日付はフォルダ風タブで切り替えます。</span><span class="zh" lang="zh-Hans">分开显示已确定事项，以及仍需比较和优化的部分；有方案的日期可用文件夹式标签切换。</span></span></div>
+<div class="grid two">
+<div class="notice ok"><h3><span class="ja-text">確定事項</span><span class="zh" lang="zh-Hans">已确定事项</span></h3><p><span class="ja-text">Day5〜8のうち、5泊の宿泊予約を表示しています。Day5は街歩き、Day6はマウイでレンタカー、Day7は軽めも可、Day8はPearl Harbor＋North Shoreを軸にする方針です。</span><span class="zh" lang="zh-Hans">第5至8天中显示5晚住宿预订；第5天以街区步行为主，第6天在茂宜岛租车，第7天可安排轻量行程，第8天以Pearl Harbor＋North Shore为轴。</span></p></div>
+<div class="notice risk"><h3><span class="ja-text">まだ設計してほしい部分</span><span class="zh" lang="zh-Hans">仍需设计的部分</span></h3><p><span class="ja-text">候補地の取捨選択、移動時間・営業時間・予約、レンタカーの受取返却、渋滞、ホテル滞在時間、疲労度を比較し、複数案として提示する。日本到着後の自由時間と国内1泊も含む。</span><span class="zh" lang="zh-Hans">比较候选地点、交通时间、营业时间、预约、租车取还车、拥堵、酒店停留时间和疲劳度，并提出多个方案；同时纳入抵达日本后的自由时间和日本国内一晚住宿。</span></p></div>
+</div>
+<div aria-label="宿泊予約" class="notice ok">
+<div class="tag-row"><span class="tag green">宿泊予約</span><span class="tag">表示合計 CNY 6,595</span></div>
+<h3><span class="ja-text">宿泊予約 </span><span class="zh" lang="zh-Hans">住宿预订</span></h3>
+<p><strong><span class="ja-text">10/1–2 Holiday Inn &amp; Suites Monterey Park</span></strong><span class="ja-text"> CNY 1,049（無料キャンセル）／</span><strong><span class="ja-text">10/4–5 Holiday Inn Los Angeles LAX Airport</span></strong><span class="ja-text"> CNY 1,029（キャンセルポリシー表示）／</span><strong><span class="ja-text">10/5–6 Queen Kapiolani Hotel</span></strong><span class="ja-text"> CNY 1,301（返金不可）／</span><strong><span class="ja-text">10/6–7 Kohea Kai Hotel Maui</span></strong><span class="ja-text"> CNY 1,524（パートナー・オファー）／</span><strong><span class="ja-text">10/8–9 The Twin Fin Hotel</span></strong><span class="ja-text"> CNY 1,692（返金不可）。別予約の</span><strong><span class="ja-text">Sheraton Waikiki Beach Resort</span></strong><span class="ja-text">も10/8–9、USD 666.36、確認番号（非公開）として記録されていますが、The Twin Finと日付が重複します。依頼文は10/7の宿泊ですが、予約日は10/8–9です。CNY 6,595はCNY表示分のみで、SheratonのUSD額は含みません。</span><span class="zh" lang="zh-Hans">10/1–2 Holiday Inn &amp; Suites Monterey Park 1,049元（免费取消）；10/4–5 Holiday Inn Los Angeles LAX Airport 1,029元（显示取消政策）；10/5–6 Queen Kapiolani Hotel 1,301元（不可退款）；10/6–7 Kohea Kai Hotel Maui 1,524元（合作伙伴优惠）；10/8–9 The Twin Fin Hotel 1,692元（不可退款）。另有Sheraton Waikiki Beach Resort预订为10/8–9、666.36美元、确认号（不公开），但与The Twin Fin日期重叠。请求写的是10/7住宿，但预订日期为10/8–9。6,595元仅含人民币显示价，不含Sheraton美元金额。</span></p>
+</div>
+<nav aria-label="現行日程内ナビゲーション" class="day-jumpbar">
+<a href="#current-day-ca-1001">10/1 Day1</a><a href="#current-day-ca-1002">10/2 Day2</a><a href="#current-day-ca-1003">10/3 Day3</a><a href="#current-day-ca-1004">10/4 Day4</a><a href="#current-day-hi-1005">10/5 Day5</a><a href="#current-day-hi-1006">10/6 Day6</a><a href="#current-day-hi-1007">10/7 Day7</a><a href="#current-day-hi-1008">10/8 Day8</a><a href="#current-japan-after-arrival">日本到着後</a>
+</nav>
+<div class="daily-plan">
+<article class="daily-section" id="current-day-ca-1001">
+<div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/1</span></strong><span><span class="ja-text">木曜日 / LAX → Los Angeles観光 → Monterey Park</span></span><span class="zh" lang="zh-Hans">星期四 / LAX → 洛杉矶观光 → 蒙特利公园</span></div><p class="route-summary"><span class="ja-text">Getty、Beverly Hills、Griffithを残し、108ドルの荷物配送を避けるためスーツケース1個はGriffith前にEast HollywoodのBounceへ預けます。</span><span class="zh" lang="zh-Hans">保留盖蒂中心、比佛利山和格里菲斯；为避免支付108美元行李配送费，一个行李箱在前往格里菲斯前寄存在东好莱坞Bounce。</span></p></div>
+<article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/1</span></strong><span><span class="ja-text">LAX → Getty → Beverly Hills → Bounce → Griffith → hotel</span></span><span class="zh" lang="zh-Hans">LAX → 盖蒂中心 → 比佛利山 → Bounce → 格里菲斯 → 酒店</span></div><div class="schedule-body">
+<div class="schedule-row"><time>09:20</time><div><strong>LAX到着</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">开始入境审查、取行李并前往网约车上车点。</span></p></div></div>
+<div class="schedule-row"><time>11:00–11:30</time><div><strong>LAX → Getty Center</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">计划在这个时段离开机场，预计12:00左右抵达Getty。基本使用Uber / Lyft；只有明显更便宜且等待更短时才考虑接驳车。</span></p></div></div>
+<div class="schedule-row"><time>12:00–14:30</time><div><strong>Getty Center</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">预约时段入场，参观建筑、景观、Central Garden和1–2处主要展览，并在馆内午餐。入口处寄存行李箱。</span></p></div></div>
+<div class="schedule-row"><time>14:30–15:00</time><div><strong>Getty → Beverly Hills</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">取回行李后乘Uber / Lyft。</span></p></div></div>
+<div class="schedule-row"><time>15:00–15:50</time><div><strong>Beverly Hills: ALO + Erewhon</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">不另行前往Rodeo Drive / Pink Wall；店内狭窄时轮流进入。</span></p></div></div>
+<div class="schedule-row"><time>15:50–16:30</time><div><strong>Beverly Hills → Bounce</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">将一个行李箱寄存在1160 N Vermont Ave附近的酒店式Bounce。</span></p></div></div>
+<div class="schedule-row"><time>16:40–17:15</time><div><strong>Bounce → Griffith Observatory</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">去程乘Uber / Lyft；理想到达17:00–17:15，最晚17:30。</span></p></div></div>
+<div class="schedule-row"><time>17:15–19:05</time><div><strong>Griffith Observatory</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">Hollywood Sign、城市景色、外观、短时间馆内展览、日落和夜景；本次不安排天文馆。</span></p></div></div>
+<div class="schedule-row"><time>19:05以降</time><div><strong><span class="zh fallback-translation" lang="zh-Hans">乘DASH下山 → Bounce</span></strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">返程时间限制较宽，优先DASH；从山脚步行或短途叫车。</span></p></div></div>
+<div class="schedule-row"><time>19:40–20:10</time><div><strong><span class="zh fallback-translation" lang="zh-Hans">在Bounce取回行李</span></strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">当天再次确认营业时间和取件条件。</span></p></div></div>
+<div class="schedule-row"><time>20:40–21:20</time><div><strong><span class="zh fallback-translation" lang="zh-Hans">前往Monterey Park酒店</span></strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">结合道路状况预计抵达Holiday Inn &amp; Suites Monterey Park。</span></p></div></div>
+<div class="cost-line"><span class="cost-pill">交通・Bounce・食事: 約$213–335 / 2人</span><span class="cost-pill">標準: $250–290</span><span class="cost-pill">ALO購入代: 別</span><span class="cost-pill">Getty / Griffith: 無料</span></div>
+<div class="cost-line"><span class="cost-pill">LAX→Getty $55–70</span><span class="cost-pill">Getty→BH $22–35</span><span class="cost-pill">BH→Bounce $23–35</span><span class="cost-pill">Bounce→Griffith $14–25</span><span class="cost-pill">DASH等 $1–10</span><span class="cost-pill"><span class="zh fallback-translation" lang="zh-Hans">Bounce→酒店 $40–65</span></span><span class="cost-pill">Bounce $8–15</span><span class="cost-pill">昼食 $35–55</span><span class="cost-pill">Erewhon $15–25</span></div>
+</div></article>
+<div class="spot-grid">
+<div class="photo-card"><img alt="Getty Center" loading="lazy" src="assets/img/getty-center.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag teal">12:00–14:30</span><span class="tag gold">予約</span></div><h3>Getty Center</h3><p class="small"><span class="ja-text">無料。12:00前後の時間指定予約を取り、昼食込みで約2時間半。</span><span class="zh" lang="zh-Hans">免费；预约12:00左右时段，含午餐约两个半小时。</span></p><div class="link-row"><a class="button" href="https://www.getty.edu/visit/center/" rel="noreferrer" target="_blank">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Getty+Center" rel="noreferrer" target="_blank">地図</a></div></div></div>
+<div class="photo-card"><div class="photo-body"><div class="tag-row"><span class="tag teal">15:00–15:50</span><span class="tag">短時間</span></div><h3>Beverly Hills: ALO + Erewhon</h3><p class="small"><span class="ja-text">ALOで服を確認し、Erewhonでスムージーまたは飲み物。周辺街歩きは移動中だけ。</span><span class="zh" lang="zh-Hans">在ALO看服装，在Erewhon买冰沙或饮料；周边街景只在两店之间顺路看。</span></p></div></div>
+<div class="photo-card"><img alt="Griffith Observatory" loading="lazy" src="assets/img/griffith-observatory.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag teal">17:15–19:05</span><span class="tag green">優先</span></div><h3>Griffith Observatory</h3><p class="small"><span class="ja-text">2026/10/1の日没は18:37頃、薄明終了は19:02頃の見込み。無料・予約不要。</span><span class="zh" lang="zh-Hans">2026年10月1日日落预计18:37、民用曙暮光结束约19:02；免费且无需预约。</span></p><div class="link-row"><a class="button" href="https://griffithobservatory.org/" rel="noreferrer" target="_blank">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Griffith+Observatory" rel="noreferrer" target="_blank">地図</a></div></div></div>
+</div>
+<div class="notice ok hotel-card"><h3><span class="ja-text">宿泊 </span><span class="zh" lang="zh-Hans">住宿</span></h3><figure class="hotel-eyecatch-figure"><img alt="Holiday Inn &amp; Suites Monterey Park の客室" class="hotel-eyecatch" loading="lazy" src="assets/img/hotel-holiday-inn-monterey-park.jpg"/><figcaption><a class="credit" href="https://www.ihg.com/holidayinn/hotels/us/en/monterey-park/burmp/hoteldetail/gallery" rel="noreferrer" target="_blank"><span class="ja-text">写真出典: IHG公式ギャラリー（客室・内観）</span></a><span class="zh" lang="zh-Hans">照片来源：IHG官方画廊（客房・室内）</span></figcaption></figure><p><strong><span class="ja-text">Holiday Inn &amp; Suites Monterey Park – Los Angeles by IHG</span></strong><br/><span class="ja-text">10/1–10/2、Monterey Park、CNY 1,049、無料キャンセル。税・手数料・予約番号・住所は未確認です。</span><span class="zh" lang="zh-Hans">10/1–10/2，Monterey Park，1,049元，免费取消。税费、手续费、预订编号和地址尚未确认。</span></p><div class="link-row"><a class="button" href="https://www.booking.com/hotel/us/holiday-inn-suites-monterey-park-los-angeles-an-ihg.ja.html" rel="noreferrer" target="_blank">Booking</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Holiday+Inn+%26+Suites+Monterey+Park+Los+Angeles+by+IHG" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店地图</span></a></div></div>
+<div class="notice risk"><h3><span class="ja-text">空港を出る時刻による短縮ルール</span><span class="zh" lang="zh-Hans">按离开机场时间缩短</span></h3><p><span class="zh fallback-translation" lang="zh-Hans">11:15前：完成全程。11:15–11:45：Getty约2小时，Beverly Hills控制在40分钟内。11:45–12:15：保留Getty，只在ALO和Erewhon中选一个。12:15后：取消Beverly Hills，改为LAX → Getty → Bounce → Griffith → 酒店。</span></p></div>
+</article>
+<article class="daily-section" id="current-day-ca-1002">
+<div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/2</span></strong><span><span class="ja-text">金曜日 / Fountain Valley → Milpitas</span></span><span class="zh" lang="zh-Hans">星期五 / Fountain Valley → Milpitas</span></div><p class="route-summary"><span class="ja-text">ツアー行程。07:00に9125 Recreation Cir, Fountain Valleyの#1 loadから乗車し、18:00にMilpitasのSheratonへ到着する案です。</span><span class="zh" lang="zh-Hans">旅游团安排：07:00在Fountain Valley 9125 Recreation Cir的#1 load上车，18:00抵达Milpitas Sheraton。</span></p></div>
+<article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/2</span></strong><span><span class="ja-text">Tour day / Fountain Valley → Milpitas</span></span><span class="zh" lang="zh-Hans">旅游日 / Fountain Valley → Milpitas</span></div><div class="schedule-body">
+<div class="schedule-row"><time>07:00</time><div><strong>Tour bus乗車</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">9125 Recreation Cir, Fountain Valley, CA #1 load。集合时间和车辆以预订方信息为准。</span></p></div></div>
+<div class="schedule-row"><time>07:00–18:00</time><div><strong><span class="zh fallback-translation" lang="zh-Hans">旅游团交通</span></strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">按用户提供的路线执行；途中观光内容和休息安排尚未填写。</span></p></div></div>
+<div class="schedule-row"><time>18:00</time><div><strong>Milpitas Sheraton check-in</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">Barber Ln附近；酒店名称、房间和接送条件向预订方确认。</span></p></div></div>
+</div></article>
+<div class="notice"><h3><span class="ja-text">ツアー地図</span><span class="zh" lang="zh-Hans">旅游团地图</span></h3><p><span class="zh fallback-translation" lang="zh-Hans">第2–4天共用的用户提供链接。每天的停靠点和抵达时间向预订方确认。</span></p><a class="button" href="https://maps.app.goo.gl/d6ueUFs1jq4qLbyRA" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">旅游地图</span></a></div>
+<div class="card hotel-card"><h3>宿泊候補: Sheraton San Jose Silicon Valley（SHERATON, Milpitas）</h3><figure class="hotel-eyecatch-figure"><img alt="Sheraton San Jose Silicon Valley の外観" class="hotel-eyecatch" loading="lazy" src="assets/img/hotel-sheraton-san-jose.jpg"/><figcaption><a class="credit" href="https://www.marriott.com/en-us/hotels/sjcsa-sheraton-san-jose-silicon-valley/photos/" rel="noreferrer" target="_blank"><span class="ja-text">写真出典: Marriott公式ギャラリー（外観）</span></a><span class="zh" lang="zh-Hans">照片来源：Marriott官方画廊（外观）</span></figcaption></figure><p class="small"><span class="ja-text">Barber Ln, Milpitas, CA 95035。画像はこの地域の正式名称候補であるSheraton San Jose Silicon Valleyの外観です。予約元に表示された正式ホテル名・予約情報は要確認。</span><span class="zh" lang="zh-Hans">位于Milpitas的Barber Ln附近；图片为该地区正式名称候选Sheraton San Jose Silicon Valley的外观。预约来源显示的正式酒店名称和预订信息待确认。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton+Barber+Lane+Milpitas+California" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店地图</span></a></div></div>
+</article>
+<article class="daily-section" id="current-day-ca-1003">
+<div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/3</span></strong><span><span class="ja-text">土曜日 / Tour → Modesto</span></span><span class="zh" lang="zh-Hans">星期六 / 旅游团 → Modesto</span></div><p class="route-summary"><span class="ja-text">ツアー日。終了時刻や停車地はまだ入力せず、Modestoの宿泊先だけ確定候補として表示します。</span><span class="zh" lang="zh-Hans">旅游团行程日；结束时间和停靠点尚未输入，只显示Modesto住宿候选。</span></p></div>
+<article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/3</span></strong><span><span class="ja-text">Tour day / Modesto</span></span><span class="zh" lang="zh-Hans">旅游日 / Modesto</span></div><div class="schedule-body">
+<div class="schedule-row"><time>未入力</time><div><strong><span class="zh fallback-translation" lang="zh-Hans">旅游团行程</span></strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">根据预订方说明补充集合、出发、停靠点和结束时间。</span></p></div></div>
+<div class="schedule-row"><time>Evening</time><div><strong>Modesto check-in</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">前往La Casa Modesto, Ascend Hotel Collection。</span></p></div></div>
+</div></article>
+<div class="card hotel-card"><h3>宿泊: La Casa Modesto, Ascend Hotel Collection</h3><figure class="hotel-eyecatch-figure"><img alt="La Casa Modesto, Ascend Hotel Collection の館内" class="hotel-eyecatch" loading="lazy" src="assets/img/hotel-la-casa-modesto.jpg"/><figcaption><a class="credit" href="https://www.hrs.com/en/hotel/159335" rel="noreferrer" target="_blank"><span class="ja-text">写真出典: HRSホテルギャラリー（館内・代表画像）</span></a><span class="zh" lang="zh-Hans">照片来源：HRS酒店画廊（室内・代表性照片）</span></figcaption></figure><p class="small"><span class="ja-text">1720 Sisk Rd, Modesto, CA 95350。画像は安定して取得できた館内の代表画像です。チェックイン時刻、ツアーの送迎場所、朝食条件は要確認。</span><span class="zh" lang="zh-Hans">地址：1720 Sisk Rd, Modesto, CA 95350；图片为可稳定取得的室内代表性照片。入住时间、旅游团接送点和早餐条件待确认。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=La+Casa+Modesto+Ascend+Hotel+Collection" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店地图</span></a></div></div>
+</article>
+<article class="daily-section" id="current-day-ca-1004">
+<div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/4</span></strong><span><span class="ja-text">日曜日 / Yosemite・El Capitan → Los Angeles</span></span><span class="zh" lang="zh-Hans">星期日 / 优胜美地・El Capitan → 洛杉矶</span></div><p class="route-summary"><span class="ja-text">07:00出発、YosemiteのEl Capitanを訪問。Union Stationへ18:00頃に戻れるかは未確定です。</span><span class="zh" lang="zh-Hans">07:00出发，参观优胜美地El Capitan；能否在18:00左右返回Union Station尚未确定。</span></p></div>
+<article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/4</span></strong><span><span class="ja-text">Yosemite / El Capitan → Union Station? → LAX hotel</span></span><span class="zh" lang="zh-Hans">优胜美地 / El Capitan → Union Station? → LAX酒店</span></div><div class="schedule-body">
+<div class="schedule-row"><time>07:00</time><div><strong>出発</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">按旅游团指定出发；行李、早餐和集合条件待确认。</span></p></div></div>
+<div class="schedule-row"><time>日中</time><div><strong>Yosemite / El Capitan</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">观光范围和停留时间按旅游团行程执行。</span></p></div></div>
+<div class="schedule-row"><time>18:00頃?</time><div><strong><span class="zh fallback-translation" lang="zh-Hans">返回Union Station？</span></strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">抵达车站和时间尚未确定；若无法确定，向预订方确认前往LAX酒店的方式。</span></p></div></div>
+<div class="schedule-row"><time>Evening</time><div><strong>LAX Airport hotel check-in</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">因次日早班机，确认酒店到LAX的接送和所需时间。</span></p></div></div>
+</div></article>
+<div class="card hotel-card"><h3>宿泊: Holiday Inn Los Angeles LAX Airport by IHG</h3><figure class="hotel-eyecatch-figure"><img alt="Holiday Inn Los Angeles LAX Airport の外観" class="hotel-eyecatch" loading="lazy" src="assets/img/hotel-holiday-inn-lax.jpg"/><figcaption><a class="credit" href="https://www.ihg.com/holidayinn/hotels/us/en/los-angeles/laxia/hoteldetail/gallery" rel="noreferrer" target="_blank"><span class="ja-text">写真出典: IHG公式ギャラリー（外観）</span></a><span class="zh" lang="zh-Hans">照片来源：IHG官方画廊（外观）</span></figcaption></figure><p class="small"><span class="ja-text">10/4–10/5、Los Angeles、CNY 1,029。キャンセルポリシーの表示はあるが、無料キャンセルとは分類しない。税・手数料・空港シャトルは予約画面で再確認。</span><span class="zh" lang="zh-Hans">10/4–10/5，洛杉矶，1,029元。显示取消政策，但不将其分类为免费取消；税费、手续费和机场接驳请在预订页面复核。</span></p><div class="link-row"><a class="button" href="https://www.booking.com/hotel/us/holiday-inn-los-angeles-international-airport.ja.html" rel="noreferrer" target="_blank">Booking</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Holiday+Inn+Los+Angeles+LAX+Airport" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店地图</span></a></div></div>
+</article>
+<article class="daily-section" id="current-day-hi-1005">
+<div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/5</span></strong><span><span class="ja-text">月曜日 / Honolulu・街歩き → Diamond Head</span></span><span class="zh" lang="zh-Hans">星期一 / 檀香山・街区步行 → 钻石山</span></div><p class="route-summary"><span class="ja-text">LAXからHNLへ移動後、Queen Kapiolani Hotel に荷物を預け、ワイキキを歩きながらHenry's Place（高橋果実店、234 Beach Walk）へ立ち寄り、KapahuluのLeonard'sでマラサダを食べてからDiamond Headへ向かう流れを第一案にします。HNLの実到着時刻とDiamond Headの予約枠に合わせて街歩きを短縮します。</span><span class="zh" lang="zh-Hans">从LAX抵达HNL后，先在Queen Kapiolani Hotel寄存行李，步行威基基并前往Henry's Place（高桥水果店，234 Beach Walk），再到Kapahulu的Leonard's吃马拉萨达，之后前往钻石山。根据HNL实际抵达时间和钻石山预约时段缩短街区步行。</span></p></div>
+<article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/5</span></strong><span><span class="ja-text">LAX → Honolulu / Waikiki</span></span><span class="zh" lang="zh-Hans">LAX → 檀香山 / 威基基</span></div><div class="schedule-body">
+<div class="schedule-row"><time>07:00</time><div><strong>LAX出発 → HNL</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">用户提供的暂定时间；航班号、航站楼和行李条件在预订页面确认。</span></p></div></div>
+<div class="schedule-row"><time>10:00以降</time><div><strong><span class="ja-text">HNL到着 → ホテルへ</span><span class="zh" lang="zh-Hans">抵达HNL → 前往酒店</span></strong><p class="day-note"><span class="ja-text">空港からQueen Kapiolani Hotelへ移動し、まず荷物を預ける。入国・荷物受取・移動を含め、街歩き開始は11:00–11:30頃を基準にする。</span><span class="zh" lang="zh-Hans">从机场前往Queen Kapiolani Hotel，先寄存行李。计入入境、取行李和交通，街区步行以11:00–11:30左右开始为基准。</span></p></div></div>
+<div class="schedule-row"><time>11:30–12:45</time><div><strong><span class="ja-text">ワイキキ街歩き → Henry's Place / 高橋果実店</span><span class="zh" lang="zh-Hans">威基基步行 → Henry's Place / 高桥水果店</span></strong><p class="day-note"><span class="ja-text">234 Beach Walkへ歩いて向かい、フルーツ系を軽く食べる。営業時間・在庫・支払方法は変わり得るため、当日に確認し、ここで長居しない。</span><span class="zh" lang="zh-Hans">步行前往234 Beach Walk，吃些水果类食品。营业时间、库存和支付方式可能变化，当天确认并避免久留。</span></p></div></div>
+<div class="schedule-row"><time>12:45–13:15</time><div><strong><span class="ja-text">Kapahuluへ移動</span><span class="zh" lang="zh-Hans">前往Kapahulu</span></strong><p class="day-note"><span class="ja-text">Leonard's Bakery（933 Kapahulu Ave）へ徒歩または短距離配車。行列と暑さを見て、Diamond Headの予約枠に間に合う手段を選ぶ。</span><span class="zh" lang="zh-Hans">步行或短途叫车前往Leonard's Bakery（933 Kapahulu Ave）。根据排队和炎热程度选择能赶上钻石山预约时段的交通方式。</span></p></div></div>
+<div class="schedule-row"><time>13:15–13:45</time><div><strong><span class="ja-text">Leonard'sでマラサダ</span><span class="zh" lang="zh-Hans">在Leonard's吃马拉萨达</span></strong><p class="day-note"><span class="ja-text">食べ歩きは1個程度を目安にし、行列が長ければ購入後すぐ移動。公式掲載のKapahulu店を使う。</span><span class="zh" lang="zh-Hans">以边走边吃一个左右为准，排队较长时买好后立即移动；使用官网列出的Kapahulu店。</span></p></div></div>
+<div class="schedule-row"><time>14:00–16:00</time><div><strong><span class="ja-text">Diamond Head（時間指定予約）</span><span class="zh" lang="zh-Hans">钻石山（预约时段入场）</span></strong><p class="day-note"><span class="ja-text">非居住者は入場予約が必要。駐車する場合は駐車予約も必要で、予約枠の開始から30分以内に到着する。登山は1.5–2時間を見込み、暑さ対策を優先する。</span><span class="zh" lang="zh-Hans">非居民需要预约入场；停车时还需预约停车位，并在预约时段开始后30分钟内抵达。徒步预计1.5–2小时，优先做好防暑准备。</span></p></div></div>
+<div class="schedule-row"><time>Evening</time><div><strong><span class="ja-text">ワイキキで夕食：ガーリックシュリンプ or ステーキ丼</span><span class="zh" lang="zh-Hans">在威基基晚餐：蒜香虾或牛排盖饭</span></strong><p class="day-note"><span class="ja-text">Diamond Head後の回復食は、ガーリックシュリンプまたはステーキ丼を優先する。店は当日の位置・営業時間・行列で決め、到着が遅れた場合は街歩きを短縮して夕食を残す。</span><span class="zh" lang="zh-Hans">钻石山后的恢复餐优先选择蒜香虾或牛排盖饭。根据当天位置、营业时间和排队情况选择店家；若抵达较晚，缩短街区步行也保留晚餐。</span></p></div></div>
+</div></article>
+<div class="grid two">
+<div class="notice ok"><h3><span class="ja-text">確定事項</span><span class="zh" lang="zh-Hans">已确定事项</span></h3><p><span class="ja-text">宿泊はQueen Kapiolani Hotel（10/5–10/6、CNY 1,301、返金不可）。Day5は荷物を預けてから食べ歩きと街歩きを行い、Diamond Headを最後の主目的にする第一案です。</span><span class="zh" lang="zh-Hans">住宿为Queen Kapiolani Hotel（10/5–10/6，1,301元，不可退款）。第5天先寄存行李，再安排吃东西和街区步行，最后以钻石山为主要目的地，这是当前第一方案。</span></p></div>
+<div class="notice risk"><h3><span class="ja-text">成立条件</span><span class="zh" lang="zh-Hans">成立条件</span></h3><p><span class="ja-text">Diamond Headは予約時刻の開始から30分以内に到着できる場合だけ採用する。HNLの実到着が遅い、Henry's Placeの営業・在庫が合わない、またはLeonard'sの行列が長い場合は、食べ歩きを短縮しても無理なら別日に回す。Bishop MuseumはDay5に詰め込まない。</span><span class="zh" lang="zh-Hans">只有能在钻石山预约时段开始后30分钟内抵达时才采用。若HNL实际抵达较晚、Henry's Place营业或库存不合适，或Leonard's排队过长，即使缩短吃东西的时间仍赶不上，就改到其他日期。Bishop Museum不塞进第5天。</span></p></div>
+</div>
+<div class="card hotel-card"><h3><span class="ja-text">ホテル・立ち寄り・確認リンク</span><span class="zh" lang="zh-Hans">酒店・顺路地点・确认链接</span></h3><figure class="hotel-eyecatch-figure"><img alt="Queen Kapiolani Hotel のホテル外観・館内" class="hotel-eyecatch" loading="lazy" src="assets/img/hotel-queen-kapiolani.jpg"/><figcaption><a class="credit" href="https://www.queenkapiolani.com/hotel-amenities/gallery" rel="noreferrer" target="_blank"><span class="ja-text">写真出典: Queen Kapiolani公式ギャラリー</span></a><span class="zh" lang="zh-Hans">照片来源：Queen Kapiolani官方画廊</span></figcaption></figure><p class="small"><strong><span class="ja-text">Queen Kapiolani Hotel </span></strong><span class="ja-text">（10/5–10/6、CNY 1,301、返金不可）。ホテルを起点に、Henry's Place（234 Beach Walk）→ Leonard's Bakery（933 Kapahulu Ave）→ Diamond Headの順で評価する。</span><span class="zh" lang="zh-Hans">Queen Kapiolani Hotel（10/5–10/6，1,301元，不可退款）。以酒店为起点，按Henry's Place（234 Beach Walk）→ Leonard's Bakery（933 Kapahulu Ave）→ 钻石山的顺序评估。</span></p><div class="link-row"><a class="button" href="https://www.queenkapiolani.com/" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店官网</span></a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Henry%27s+Place+234+Beach+Walk+Honolulu" rel="noreferrer" target="_blank">高橋果実店 地図</a><a class="button" href="https://leonardshawaii.com/locations/" rel="noreferrer" target="_blank">Leonard's公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Leonard%27s+Bakery+933+Kapahulu+Ave+Honolulu" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">马拉萨达地图</span></a><a class="button" href="https://gostateparks.hawaii.gov/diamondhead/about" rel="noreferrer" target="_blank">Diamond Head予約</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Queen+Kapiolani+Hotel+Honolulu" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店地图</span></a></div></div>
+</article>
+<article class="daily-section" id="current-day-hi-1006">
+<div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/6</span></strong><span><span class="ja-text">火曜日 / Maui</span></span><span class="zh" lang="zh-Hans">星期二 / 茂宜岛</span></div><p class="route-summary"><span class="ja-text">HNLからOGGへ移動後、空港でレンタカーを借り、Kohea Kai Hotel Maui（Kihei） を拠点にマウイ島滞在を組み立てます。Haleakalāを含める場合は移動量と疲労を優先して候補を絞ります。</span><span class="zh" lang="zh-Hans">从HNL飞往OGG后，在机场取租车，以Kohea Kai Hotel Maui（Kihei）为基地安排茂宜岛行程；若加入Haleakalā，优先控制交通量和疲劳并筛选候选。</span></p></div>
+<div class="plan-options" data-plan-group="current-day-hi-1006" data-plan-options="">
+<div aria-label="10/6の提案" class="plan-tabs" role="tablist"></div>
+<div class="plan-panels">
+<article class="plan-panel" data-plan-id="a" data-plan-label-ja="A案" data-plan-label-zh="方案A">
+<div class="plan-panel-head"><h3><span class="ja-text">A案：Haleakalāを昼〜夕景の主目的に</span><span class="zh" lang="zh-Hans">方案A：以哈雷阿卡拉白天至日落为主</span></h3><span class="tag gold" data-zh="景观优先">景观优先</span></div>
+<p><span class="zh fallback-translation" lang="zh-Hans">方案：08:50抵达OGG并取车后前往哈雷阿卡拉；不安排日出，只考虑白天至夕景，返回后在Kihei休息。</span></p>
+<p class="small"><span class="ja-text">山上の寒さ、雲、道路、帰路の運転時間を確認する。Pāʻia・Ho‘okipaはこの案では削り、詰め込みを避ける。</span><span class="zh" lang="zh-Hans">08:50抵达OGG并取车后前往哈雷阿卡拉；不安排日出，只考虑白天至日落，返回后在Kihei休息。确认山顶低温、云量、道路和回程驾驶时间；本方案删去Pāʻia和Ho‘okipa，避免过度安排。</span></p>
+</article>
+<article class="plan-panel" data-plan-id="b" data-plan-label-ja="B案" data-plan-label-zh="方案B">
+<div class="plan-panel-head"><h3><span class="ja-text">B案：Pāʻia・Ho‘okipa・Kiheiを軽く回る</span><span class="zh" lang="zh-Hans">方案B：轻量游览Pāʻia、Ho‘okipa和Kihei</span></h3><span class="tag green" data-zh="余白优先">余白优先</span></div>
+<p><span class="zh fallback-translation" lang="zh-Hans">方案：08:50抵达OGG并取车后，经过Pāʻia、Mana Foods和Ho‘okipa Beach Park前往Kihei；为抵达当天驾驶和入住保留余量。</span></p>
+<p class="small"><span class="ja-text">Haleakalāの長距離上り下りを避け、翌日のOGG移動に備える。海況・駐車・営業時間を見て、全部ではなく一部だけ採用する。</span><span class="zh" lang="zh-Hans">08:50抵达OGG并取车后，前往Pāʻia、Mana Foods和Ho‘okipa Beach Park，再到Kihei；为抵达当天驾驶和入住保留余量。避开哈雷阿卡拉长距离上下山，为次日OGG移动留力；根据海况、停车和营业时间只选择部分地点。</span></p>
+</article>
+</div>
+</div>
+<article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/6</span></strong><span><span class="ja-text">Honolulu → Maui / rental car</span></span><span class="zh" lang="zh-Hans">檀香山 → 茂宜岛 / 租车</span></div><div class="schedule-body">
+<div class="schedule-row"><time>08:00</time><div><strong>HNL出発 → OGG</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">用户提供的岛际航班时间。</span></p></div></div>
+<div class="schedule-row"><time>08:50</time><div><strong><span class="zh fallback-translation" lang="zh-Hans">抵达OGG并取车</span></strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">确认租车门店位置、取车时间、保险和还车条件。</span></p></div></div>
+<div class="schedule-row"><time>Daytime</time><div><strong><span class="zh fallback-translation" lang="zh-Hans">茂宜岛候选路线</span></strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">按当前Day6方案，08:50抵达OGG后赶不上日出。只有改为其他日期时才需要哈雷阿卡拉车辆预约；当前比较白天/夕景、Pāʻia、Mana Foods、Ho‘okipa Beach Park和Kihei的疲劳度。</span></p></div></div>
+<div class="schedule-row"><time>Evening</time><div><strong><span class="zh fallback-translation" lang="zh-Hans">前往Kohea Kai Maui并休息</span></strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">确认入住、停车、晚餐和次日OGG还车/出发是否从容。</span></p></div></div>
+</div></article>
+<div class="grid two">
+<div class="notice ok"><h3><span class="ja-text">確定事項</span><span class="zh" lang="zh-Hans">已确定事项</span></h3><p><span class="ja-text">08:00 HNL発 → 08:50 OGG着。宿泊はKohea Kai Hotel Maui（Kihei、10/6–10/7、CNY 1,524、パートナー・オファー）です。空港到着後はレンタカーを使う可能性が高い。</span><span class="zh" lang="zh-Hans">08:00从HNL出发 → 08:50抵达OGG。住宿为Kohea Kai Hotel Maui（Kihei，10/6–10/7，1,524元，合作伙伴优惠）。抵达机场后很可能使用租车。</span></p></div>
+<div class="notice risk"><h3><span class="ja-text">設計対象</span><span class="zh" lang="zh-Hans">设计对象</span></h3><p><span class="zh fallback-translation" lang="zh-Hans">按道路、营业时间、预约和疲劳度比较哈雷阿卡拉方案与Pāʻia、Mana Foods、Ho‘okipa、Kihei组合。</span></p></div>
+</div>
+<div class="card hotel-card"><h3><span class="zh fallback-translation" lang="zh-Hans">茂宜岛候选与确认链接</span></h3><figure class="hotel-eyecatch-figure"><img alt="Kohea Kai Hotel Maui の外観" class="hotel-eyecatch" loading="lazy" src="assets/img/hotel-kohea-kai-maui.jpg"/><figcaption><a class="credit" href="https://www.koheakai.com/gallery" rel="noreferrer" target="_blank"><span class="ja-text">写真出典: Kohea Kai公式ギャラリー（外観）</span></a><span class="zh" lang="zh-Hans">照片来源：Kohea Kai官方画廊（外观）</span></figcaption></figure><p class="small"><span class="zh fallback-translation" lang="zh-Hans">不要假设一天内完成所有候选。确认哈雷阿卡拉日出预约、白天入园费用/道路/天气、从OGG驾驶、取车以及Kohea Kai Hotel Maui（Kihei）的停车和入住。</span></p><div class="link-row"><a class="button" href="https://www.nps.gov/hale/planyourvisit/sunrise.htm" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">哈雷阿卡拉日出</span></a><a class="button" href="https://www.nps.gov/hale/index.htm" rel="noreferrer" target="_blank">Haleakalā NPS</a><a class="button" href="https://www.koheakai.com/" rel="noreferrer" target="_blank">Kohea Kai Maui</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Paia+Maui+Mana+Foods+Hookipa+Beach+Park+Kihei" rel="noreferrer" target="_blank">候補地図</a></div></div>
+</article>
+<article class="daily-section" id="current-day-hi-1007">
+<div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/7</span></strong><span><span class="ja-text">水曜日 / Maui → Oahu東側 → いいディナー</span></span><span class="zh" lang="zh-Hans">星期三 / 茂宜岛 → 瓦胡岛东侧 → 精选晚餐</span></div><p class="route-summary"><span class="ja-text">OGGからHNLへ移動後、レンタカーでオアフ島東側を軽く回り、夜はワイキキで予約した良いディナーを主目的にします。Sheraton Waikikiの画像は10/8–10/9泊を示し、The Twin Finの予約とも重複するため、ホテルは未確定のままです。夕食はホテル確定を待たずに候補を選び、昼の立ち寄りを予約時刻に合わせて削ります。</span><span class="zh" lang="zh-Hans">从OGG飞往HNL后，租车轻量游览瓦胡岛东侧，晚上把在威基基预约的精选晚餐作为主要目的。Sheraton Waikiki截图显示的是10/8–10/9住宿，与The Twin Fin预订重叠，因此酒店仍未确定。晚餐先选定候选，不等酒店最终确认，并按预约时间删减白天的停留。</span></p></div>
+<div class="plan-options" data-plan-group="current-day-hi-1007" data-plan-options="">
+<div aria-label="10/7の提案" class="plan-tabs" role="tablist"></div>
+<div class="plan-panels">
+<article class="plan-panel" data-plan-id="a" data-plan-label-ja="A案" data-plan-label-zh="方案A">
+<div class="plan-panel-head"><h3><span class="ja-text">A案：東側を軽く回ってワイキキへ戻る</span><span class="zh" lang="zh-Hans">方案A：轻量游览东侧后返回威基基</span></h3><span class="tag green" data-zh="轻量">轻量</span></div>
+<p><span class="zh fallback-translation" lang="zh-Hans">方案：09:20抵达HNL并取车后，以Ho‘omaluhia和Byodo-In为轴，只从Waimānalo、Halona、Sandy Beach中选择少数地点。</span></p>
+<p class="small"><span class="ja-text">Sheraton / The Twin Finの重複が解消していないため、18:00台の良いディナーに間に合うようホテルへ戻る時間を早めに残す。東側候補は全部回らない。</span><span class="zh" lang="zh-Hans">09:20抵达HNL并取车后，以Ho‘omaluhia和Byodo-In为轴，只从Waimānalo、Halona、Sandy Beach中选择少数地点。Sheraton与The Twin Fin的重复预订尚未解决，因此预留时间尽早返回酒店，以赶上18:00左右的精选晚餐。东侧候选不全部游览。</span></p>
+</article>
+<article class="plan-panel" data-plan-id="b" data-plan-label-ja="B案" data-plan-label-zh="方案B">
+<div class="plan-panel-head"><h3><span class="ja-text">B案：Bishop Museumとワイキキ滞在を優先</span><span class="zh" lang="zh-Hans">方案B：优先Bishop Museum和威基基停留</span></h3><span class="tag teal" data-zh="室内与休息">室内与休息</span></div>
+<p><span class="zh fallback-translation" lang="zh-Hans">方案：根据岛际移动后的疲劳和天气，以Bishop Museum为主，下午安排威基基购物、用餐和酒店休息。</span></p>
+<p class="small"><span class="ja-text">東側の候補を詰め込まず、雨天やレンタカー受取の遅れにも対応しやすい。18:00台のディナーを先に予約し、Bishopの入場券と閉館時刻、ホテルの最終確定日を確認する。</span><span class="zh" lang="zh-Hans">根据岛间移动后的疲劳和天气，以Bishop Museum为主，下午安排威基基购物、用餐和酒店休息。不塞入东侧候选，较能应对雨天或取车延误；先预约18:00左右的晚餐，并确认Bishop门票、闭馆时间和最终酒店日期。</span></p>
+</article>
+</div>
+</div>
+<article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/7</span></strong><span><span class="ja-text">Maui → Oahu east shore</span></span><span class="zh" lang="zh-Hans">茂宜岛 → 瓦胡岛东侧</span></div><div class="schedule-body">
+<div class="schedule-row"><time>08:41</time><div><strong>OGG出発 → HNL</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">用户提供的岛际航班时间。</span></p></div></div>
+<div class="schedule-row"><time>09:20以降</time><div><strong><span class="zh fallback-translation" lang="zh-Hans">抵达HNL并取车</span></strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">确认机场门店、取车手续、行李和酒店停车。</span></p></div></div>
+<div class="schedule-row"><time>Daytime</time><div><strong><span class="zh fallback-translation" lang="zh-Hans">轻量游览东侧候选</span></strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">以Ho‘omaluhia普通入园和Byodo-In当日票为基础，只从Waimānalo、Halona、Sandy Beach中短暂停留部分地点。特别项目另行预约。</span></p></div></div>
+<div class="schedule-row"><time>18:00–20:30</time><div><strong><span class="ja-text">いいディナー（第一候補：La Mer / 代替：Hy's）</span><span class="zh" lang="zh-Hans">精选晚餐（首选：La Mer / 备选：Hy's）</span></strong><p class="day-note"><span class="ja-text">10/7は水曜日。La Merは17:30–20:30、Hy'sは月〜木の最終着席が20:30。どちらも事前予約し、東側の立ち寄り数を予約時刻に合わせて削る。La Merは襟付き・長ズボン等のドレスコード、Hy'sも襟付きシャツと靴が必要。</span><span class="zh" lang="zh-Hans">10月7日为星期三。La Mer营业17:30–20:30，Hy's周一至周四最后入座时间为20:30。两者均需提前预约，并按预约时间删减东侧停留。La Mer要求有领衬衫、长裤等着装；Hy's也要求有领衬衫和鞋子。</span></p></div></div>
+</div></article>
+<div class="grid two">
+<div class="notice ok"><h3><span class="ja-text">Sheraton予約情報</span><span class="zh" lang="zh-Hans">Sheraton预订信息</span></h3><p><span class="ja-text">08:41 OGG発 → 09:20 HNL着。Sheraton Waikiki Beach Resortは確認番号（非公開）、宿泊日は10/8–10/9、1室・大人2名、総額USD 666.36。ただし10/7泊ではなく、The Twin Finの10/8–10/9予約と重複するため、どちらを残すか要確認。</span><span class="zh" lang="zh-Hans">08:41从OGG出发 → 09:20抵达HNL。Sheraton Waikiki Beach Resort的确认号（不公开），住宿日期为10/8–10/9，1间房、2名成人，总额666.36美元。但这不是10/7入住，并与The Twin Fin的10/8–10/9预订重叠，需要决定保留哪一笔。</span></p></div>
+<div class="notice risk"><h3><span class="ja-text">日付と重複の確認が必要</span><span class="zh" lang="zh-Hans">需要确认日期与重复预订</span></h3><p><span class="zh fallback-translation" lang="zh-Hans">请求内容写的是10/7住宿，但图片显示入住2026/10/8 15:00、退房10/9 11:00。不要自行判断已改期或取消，请在预订管理页面确认最终住宿日期。</span></p></div>
+<div class="notice risk"><h3><span class="ja-text">設計対象</span><span class="zh" lang="zh-Hans">设计对象</span></h3><p><span class="ja-text">候補をすべて回らず、18:00台の良いディナーを固定したうえで、ホテル滞在・休息・渋滞を含めて軽量案と観光多め案を比較する。Bishop Museumをここへ移す案も検討する。</span><span class="zh" lang="zh-Hans">不游览所有候选；先固定18:00左右的精选晚餐，再结合酒店停留、休息和拥堵比较轻量与景点较多的方案。也可考虑把Bishop Museum移到这一天。</span></p></div>
+</div>
+<div class="card hotel-card"><h3>Sheraton Waikiki Beach Resort（画像確認: 10/8–10/9）</h3><figure class="hotel-eyecatch-figure"><img alt="Sheraton Waikiki Beach Resort の外観" class="hotel-eyecatch" loading="lazy" src="assets/img/hotel-sheraton-waikiki.jpg"/><figcaption><a class="credit" href="https://www.marriott.com/en-us/hotels/hnlws-sheraton-waikiki-beach-resort/photos/" rel="noreferrer" target="_blank"><span class="ja-text">写真出典: Marriott公式ギャラリー（外観）</span></a><span class="zh" lang="zh-Hans">照片来源：Marriott官方画廊（外观）</span></figcaption></figure><p class="small"><strong><span class="ja-text">確認番号（非公開）</span></strong><span class="ja-text">。2255 Kalākaua Avenue, Honolulu, HI 96815、+1-808-922-4422。チェックイン 2026/10/8 15:00、チェックアウト 2026/10/9 11:00、1室・大人2名。客室は「インフィニティ オーシャンフロント（20〜27階）、1キング」。滞在費総額はUSD 666.36。The Twin Finの同日予約と重複しているため、片方を自動で確定・取消せず、最終予約を選択する。</span><span class="zh" lang="zh-Hans">确认号（不公开）；地址2255 Kalākaua Avenue, Honolulu, HI 96815，电话+1-808-922-4422。入住2026年10月8日15:00，退房10月9日11:00，1间客房、2位成人。房型为“Infinity Oceanfront，20至27层，1张特大床”。住宿总额666.36美元。与The Twin Fin同日期预订重叠，因此不自动确认或取消，需选择最终预订。</span></p><div class="link-row"><a class="button" href="https://www.marriott.com/en-us/hotels/hnlws-sheraton-waikiki/overview/" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店官网</span></a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton+Waikiki+Beach+Resort+2255+Kalakaua+Avenue+Honolulu" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店地图</span></a></div></div>
+<div class="card"><h3><span class="zh fallback-translation" lang="zh-Hans">瓦胡岛东侧候选与确认链接</span></h3><p class="small"><span class="zh fallback-translation" lang="zh-Hans">保留Ho‘omaluhia Botanical Garden、Byodo-In Temple、Waimānalo Beach、Halona Blowhole、Sandy Beach和Poke作为候选。普通入园不预设预约，确认营业时间、周四休园、入场条件、停车和返回酒店时间。</span></p><div class="link-row"><a class="button" href="https://www.honolulu.gov/parks/honolulu/ho-omaluhia-botanical-garden.html" rel="noreferrer" target="_blank">Ho‘omaluhia公式</a><a class="button" href="https://byodo-in.com/visit/" rel="noreferrer" target="_blank">Byodo-In案内</a><a class="button" href="https://tickets.byodo-in.com/mainstore" rel="noreferrer" target="_blank">Byodo-In券</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Hoomaluhia+Botanical+Garden+Byodo-In+Waimanalo+Halona+Sandy+Beach" rel="noreferrer" target="_blank">候補地図</a></div></div>
+<div class="card"><h3><span class="ja-text">7日目のディナー候補</span><span class="zh" lang="zh-Hans">第7天晚餐候选</span></h3><p class="small"><strong><span class="ja-text">第一候補：La Mer at Halekulani。</span></strong><span class="ja-text"> 旅行中に一度は奮発する前提の、海辺のフレンチ系ファインダイニング。10/7（水）は営業日で、17:30–20:30。襟付きシャツ／アロハシャツ、長ズボン、靴が必要。</span><strong><span class="ja-text">代替：Hy's Steak House。</span></strong><span class="ja-text"> ワイキキ内のクラシックなステーキハウスで、月〜木は17:00–20:30が最終着席、水曜はライブ音楽あり。いずれも事前予約し、服装を準備する。</span><span class="zh" lang="zh-Hans"><strong>首选：La Mer at Halekulani。</strong> 以旅行中至少奢侈享受一次为前提的海边法式风格高级餐厅。10月7日（周三）营业，17:30–20:30。需要有领衬衫／夏威夷衬衫、长裤和鞋子。<strong>备选：Hy's Steak House。</strong> 威基基的经典牛排馆，周一至周四最后入座时间为20:30，周三有现场音乐。两者都需提前预约并准备合适服装。</span></p><div class="link-row"><a class="button" href="https://www.halekulani.com/dining/la-mer/" rel="noreferrer" target="_blank">La Mer公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=La+Mer+Halekulani+Honolulu" rel="noreferrer" target="_blank">La Mer地図</a><a class="button" href="https://hyswaikiki.com/" rel="noreferrer" target="_blank">Hy's公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Hy%27s+Steak+House+Waikiki+2440+Kuhio+Ave+Honolulu" rel="noreferrer" target="_blank">Hy's地図</a></div></div>
+</article>
+<article class="daily-section" id="current-day-hi-1008">
+<div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/8</span></strong><span><span class="ja-text">木曜日 / Pearl Harbor → North Shore</span></span><span class="zh" lang="zh-Hans">星期四 / Pearl Harbor → North Shore</span></div><p class="route-summary"><span class="ja-text">レンタカーでPearl HarborとNorth Shore方面をまとめて回る日。宿泊はThe Twin Fin、朝食なし。Pearl Harborを軸に、Dole・Haleiwa・Giovanni’s・Laniakea・Sunset Beachは交通と営業時間を見て絞ります。</span><span class="zh" lang="zh-Hans">租车集中游览Pearl Harbor和North Shore；住宿The Twin Fin且不含早餐。以Pearl Harbor为轴，根据交通和营业时间筛选Dole、Haleiwa、Giovanni’s、Laniakea和Sunset Beach。</span></p></div>
+<div class="plan-options" data-plan-group="current-day-hi-1008" data-plan-options="">
+<div aria-label="10/8の提案" class="plan-tabs" role="tablist"></div>
+<div class="plan-panels">
+<article class="plan-panel" data-plan-id="a" data-plan-label-ja="A案" data-plan-label-zh="方案A">
+<div class="plan-panel-head"><h3><span class="ja-text">A案：Pearl Harbor＋North Shoreを広く回る</span><span class="zh" lang="zh-Hans">方案A：较完整地游览Pearl Harbor和North Shore</span></h3><span class="tag teal" data-zh="景点较多">景点较多</span></div>
+<p><span class="zh fallback-translation" lang="zh-Hans">以Pearl Harbor为早晨主轴，连接Dole Plantation、Haleiwa / Giovanni’s，以及Laniakea或Sunset Beach。</span></p>
+<p class="small"><span class="ja-text">USS Arizonaの予約時刻、Doleの有料アクティビティ、帰路渋滞を基準に削除順位を決める。全部を必須にはしない。</span><span class="zh" lang="zh-Hans">以Pearl Harbor为早晨主轴，连接Dole Plantation、Haleiwa / Giovanni’s，以及Laniakea或Sunset Beach。按USS Arizona预约时间、Dole付费活动和回程拥堵决定删减顺序，不把所有地点都视为必到。</span></p>
+</article>
+<article class="plan-panel" data-plan-id="b" data-plan-label-ja="B案" data-plan-label-zh="方案B">
+<div class="plan-panel-head"><h3><span class="ja-text">B案：Pearl Harbor＋Haleiwaに絞って早めに戻る</span><span class="zh" lang="zh-Hans">方案B：集中Pearl Harbor和Haleiwa，早点返回</span></h3><span class="tag green" data-zh="余白优先">余白优先</span></div>
+<p><span class="zh fallback-translation" lang="zh-Hans">以Pearl Harbor和Haleiwa / Giovanni’s为主，删去或缩短Dole、Laniakea和Sunset Beach。</span></p>
+<p class="small"><span class="ja-text">ホテルへ早く戻り、翌日の出発・レンタカー返却・Sheratonとの重複解消に余白を残す。North Shoreの海況と道路状況が悪い場合にも切り替えやすい。</span><span class="zh" lang="zh-Hans">以Pearl Harbor和Haleiwa / Giovanni’s为主，删去或缩短Dole、Laniakea和Sunset Beach。早点回酒店，为次日出发、还车和解决Sheraton重复预订保留余量；North Shore海况或道路不佳时也更易调整。</span></p>
+</article>
+</div>
+</div>
+<article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/8</span></strong><span><span class="ja-text">Pearl Harbor / North Shore</span></span><span class="zh" lang="zh-Hans">Pearl Harbor / North Shore</span></div><div class="schedule-body">
+<div class="schedule-row"><time>08:00–11:00候補</time><div><strong>Pearl Harbor</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">Visitor Center和博物馆无需预约；若参加USS Arizona Memorial项目，先确保名额并计划提前1小时抵达。</span></p></div></div>
+<div class="schedule-row"><time>11:30頃候補</time><div><strong>Dole Plantation</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">只吃Dole Whip / pineapple ice cream无需预约；若参加列车、迷宫或Garden Tour，先确认活动票。</span></p></div></div>
+<div class="schedule-row"><time>午後候補</time><div><strong>Haleiwa town / Giovanni’s</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">把午餐和街区步行结合；确认营业时间、排队和停车，不要全部塞进一天。</span></p></div></div>
+<div class="schedule-row"><time>午後後半候補</time><div><strong>Laniakea Beach / Sunset Beach</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">根据海况、日落和回程拥堵，选择其中一个或短暂停留。</span></p></div></div>
+<div class="schedule-row"><time>Evening</time><div><strong><span class="zh fallback-translation" lang="zh-Hans">返回The Twin Fin</span></strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">确认返回酒店时间、次日出发和租车还车条件。</span></p></div></div>
+</div></article>
+<div class="grid two">
+<div class="notice ok"><h3><span class="ja-text">確定事項</span><span class="zh" lang="zh-Hans">已确定事项</span></h3><p><span class="ja-text">レンタカー利用。宿泊はThe Twin Fin Hotel（10/8–10/9、CNY 1,692、返金不可）です。ホテル朝食なし。Pearl Harbor＋North Shoreをこの日の軸にする。</span><span class="zh" lang="zh-Hans">使用租车。住宿为The Twin Fin Hotel（10/8–10/9，1,692元，不可退款）。酒店无早餐。当天以Pearl Harbor＋North Shore为轴。</span></p></div>
+<div class="notice risk"><h3><span class="ja-text">宿泊予約の重複に注意</span><span class="zh" lang="zh-Hans">注意住宿预订重复</span></h3><p><span class="zh fallback-translation" lang="zh-Hans">Sheraton Waikiki Beach Resort也有10/8–10/9的预订图片（确认号（不公开）、666.36美元），因此与The Twin Fin日期重叠。在决定保留哪一笔前，不把两者都视为最终确认。</span></p></div>
+<div class="notice risk"><h3><span class="ja-text">設計対象</span><span class="zh" lang="zh-Hans">设计对象</span></h3><p><span class="zh fallback-translation" lang="zh-Hans">以Pearl Harbor预约时段为起点，比较Dole、Haleiwa、Giovanni’s、Laniakea和Sunset的顺序及删减候选。</span></p></div>
+</div>
+<div class="card hotel-card"><h3><span class="zh fallback-translation" lang="zh-Hans">住宿确认与North Shore候选</span></h3><figure class="hotel-eyecatch-figure"><img alt="The Twin Fin Hotel とワイキキの海岸" class="hotel-eyecatch" loading="lazy" src="assets/img/hotel-twin-fin.jpg"/><figcaption><a class="credit" href="https://www.twinfinwaikiki.com/gallery/" rel="noreferrer" target="_blank"><span class="ja-text">写真出典: The Twin Fin公式ギャラリー</span></a><span class="zh" lang="zh-Hans">照片来源：The Twin Fin官方画廊</span></figcaption></figure><p class="small"><strong>The Twin Fin Hotel </strong><span class="zh fallback-translation" lang="zh-Hans">（10/8–10/9，1,692元，不可退款）。酒店不含早餐。保留Pearl Harbor、Dole Plantation、Haleiwa、Giovanni’s Shrimp Truck、Laniakea Beach和Sunset Beach，并确认USS Arizona名额、Dole付费活动、营业时间、停车、野生动物注意事项和回程拥堵。</span></p><div class="link-row"><a class="button" href="https://www.twinfinwaikiki.com/" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店官网</span></a><a class="button" href="https://www.nps.gov/thingstodo/visit-the-uss-arizona-memorial.htm" rel="noreferrer" target="_blank">USS Arizona券</a><a class="button" href="https://www.nps.gov/pearl/index.htm" rel="noreferrer" target="_blank">Pearl Harbor NPS</a><a class="button" href="https://booking.doleplantation.com/" rel="noreferrer" target="_blank">Dole予約</a><a class="button" href="https://www.doleplantation.com/" rel="noreferrer" target="_blank">Dole公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Pearl+Harbor+Dole+Plantation+Haleiwa+Giovannis+Shrimp+Truck+Laniakea+Beach+Sunset+Beach" rel="noreferrer" target="_blank">候補地図</a></div></div>
+</article>
+<article class="daily-section" id="current-japan-after-arrival">
+<div class="daily-head"><div class="daily-date"><strong><span class="ja-text">日本到着後</span></strong><span><span class="ja-text">自由時間 + 国内1泊</span></span><span class="zh" lang="zh-Hans">抵达日本后 / 自由时间 + 日本国内一晚</span></div><p class="route-summary"><span class="ja-text">日本到着後にも自由時間があり、その後に日本国内でさらに1泊する予定です。ショッピング・食事・居酒屋を優先し、到着時刻・場所・翌日の動線が合えば温泉も候補にします。</span><span class="zh" lang="zh-Hans">抵达日本后还有自由时间，之后计划在日本国内再住一晚。优先购物、用餐和居酒屋；若抵达时间、地点及次日动线合适，也将温泉列为候选。</span></p></div>
+<div class="grid two">
+<div class="notice ok"><h3><span class="ja-text">希望の軸</span><span class="zh" lang="zh-Hans">希望重点</span></h3><p><span class="ja-text">ショッピング・食事・居酒屋を優先する。可能なら温泉を追加するが、無理に遠出せず、到着後の疲労と翌日の移動を優先する。</span><span class="zh" lang="zh-Hans">优先购物、用餐和居酒屋。若条件允许再加入温泉；不勉强远行，优先考虑抵达后的疲劳和次日交通。</span></p></div>
+<div class="notice risk"><h3><span class="ja-text">到着後に設計する部分</span><span class="zh" lang="zh-Hans">抵达后需要设计的部分</span></h3><p><span class="ja-text">日本到着時刻・空港・移動手段・宿泊地を確定し、買い物と食事の営業時間、居酒屋の予約・帰路、温泉の日帰り利用や交通条件を比較する。</span><span class="zh" lang="zh-Hans">先确定抵达时间、机场、交通方式和住宿地，再比较购物与餐饮营业时间、居酒屋预约与返程，以及温泉日归利用和交通条件。</span></p></div>
+</div>
+<div class="card"><h3><span class="ja-text">日本でやることの候補</span><span class="zh" lang="zh-Hans">抵达日本后的活动候选</span></h3><div class="grid two">
+<div class="card compact"><h3><span class="ja-text">🛍️ ショッピング</span><span class="zh" lang="zh-Hans">购物</span></h3><p class="small"><span class="ja-text">空港・宿泊地・翌日の移動動線に近い商業施設を優先し、営業時間と荷物の扱いを確認する。</span><span class="zh" lang="zh-Hans">优先选择靠近机场、住宿地或次日交通动线的商业设施，并确认营业时间和行李安排。</span></p></div>
+<div class="card compact"><h3><span class="ja-text">🍜 食事</span><span class="zh" lang="zh-Hans">用餐</span></h3><p class="small"><span class="ja-text">到着後すぐに無理なく入れる店と、翌日に回せる店を分け、移動を増やしすぎない。</span><span class="zh" lang="zh-Hans">区分抵达后可轻松用餐的店和可留到次日的店，避免增加过多移动。</span></p></div>
+<div class="card compact"><h3><span class="ja-text">🍶 居酒屋</span><span class="zh" lang="zh-Hans">居酒屋</span></h3><p class="small"><span class="ja-text">宿泊地から徒歩・公共交通で戻れる範囲を基本にし、営業時間、予約、最終交通を確認する。</span><span class="zh" lang="zh-Hans">以可从住宿地步行或乘公共交通返回的范围为主，并确认营业时间、预约和末班交通。</span></p></div>
+<div class="card compact"><h3><span class="ja-text">♨️ 温泉（可能なら）</span><span class="zh" lang="zh-Hans">温泉（若条件允许）</span></h3><p class="small"><span class="ja-text">到着時刻と翌日の予定に余裕がある場合だけ、日帰り温泉または温泉付き宿を候補にする。</span><span class="zh" lang="zh-Hans">只有抵达时间和次日安排有余量时，才考虑日归温泉或带温泉的住宿。</span></p></div>
+</div><p class="small reservation-note"><span class="ja-text">到着空港と時刻が確定してから、空港近くに泊まる案、翌日の目的地に近い都市に移る案、自由時間を空港周辺で使う案を比較する。現時点では都市名・ホテル名を固定しない。</span><span class="zh" lang="zh-Hans">待抵达机场和时间确定后，再比较住在机场附近、转移到靠近次日目的地的城市，以及在机场周边使用自由时间的方案。现阶段不固定城市名或酒店名。</span></p></div>
+</article>
+</div>
+</section>
+<section class="band" id="legacy-plan">
+<div class="section-head"><h2><span class="ja-text">日付別プラン + 時間割</span><span class="zh" lang="zh-Hans">按日期行程 + 时间表</span></h2><span class="muted small"><span class="ja-text">カードと時間割は閲覧用の固定表示です。案がある日付だけタブで切り替えます。</span><span class="zh" lang="zh-Hans">卡片和时间表为只读固定显示；只有有方案的日期可用标签切换。</span></span></div>
+<nav aria-label="日別プラン内ナビゲーション" class="day-jumpbar">
+<a href="#day-ca-1001">10/1</a><a href="#day-ca-1002">10/2</a><a href="#day-ca-1003">10/3</a><a href="#day-ca-1004">10/4</a><a href="#day-ca-1005">10/5</a><a href="#day-ca-1006">10/6</a><a href="#day-ca-1007">10/7</a><a href="#day-ca-1008">10/8</a><a href="#day-ca-1009">10/9</a><a href="#day-ca-1010">10/10–11</a>
+</nav>
+<div class="daily-plan">
+<article class="daily-section" id="day-ca-1001"><div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/1</span></strong><span><span class="ja-text">木曜日 / SFO到着</span></span><span class="zh" lang="zh-Hans">星期四 / 抵达SFO</span></div><p class="route-summary"><span class="ja-text">15:30着。入国・荷物・市内移動後は、Embarcadero周辺の散歩と夕食だけにします。</span><span class="zh" lang="zh-Hans">15:30抵达。入境、取行李和进城后，只安排Embarcadero附近散步和晚餐。</span></p></div><article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/1</span></strong><span><span class="ja-text">Beijing → San Francisco</span></span><span class="zh" lang="zh-Hans">北京 → 旧金山</span></div><div class="schedule-body">
+<div class="schedule-row"><time>15:30 / 15:30</time><div><strong>PEK T3 → Seoul → SFO</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">总时长15小时，首尔转机2小时30分，当日15:30抵达SFO。</span></p></div></div>
+<div class="schedule-row"><time>15:30–18:00</time><div><strong>Immigration / baggage / hotel</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">抵达后预留余量；若到酒店较晚就删减散步。</span></p></div></div>
+<div class="schedule-row"><time>18:00–20:30</time><div><strong>Embarcadero / dinner optional</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">只安排Ferry Building周边的轻松散步和晚餐。</span></p></div></div>
+<div class="cost-line"><span class="cost-pill">flight 8,870 RMB / 人</span><span class="cost-pill"><span class="zh fallback-translation" lang="zh-Hans">不租车</span></span></div>
+</div></article><div class="spot-grid">
+<div class="photo-card"><img alt="San Francisco waterfront" loading="lazy" src="assets/img/pier-39.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag teal">10/1</span><span class="tag"><span class="zh fallback-translation" lang="zh-Hans">轻松散步</span></span></div><h3>Ferry Building / Embarcadero</h3><p class="small"><span class="ja-text">ホテル到着が遅れなければ短く歩く。Golden GateやTwin Peaksは入れません。</span><span class="zh" lang="zh-Hans">若到酒店不晚，可短暂散步；当天不安排金门大桥或双峰。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Ferry+Building+Embarcadero+San+Francisco" rel="noreferrer" target="_blank">地図</a></div></div></div>
+</div><div class="lodging-box"><img alt="San Francisco waterfront" class="lodging-image" loading="lazy" src="assets/img/pier-39.jpg"/><div class="lodging-body"><h3><span class="ja-text">宿泊: San Francisco 1泊目</span><span class="zh" lang="zh-Hans">住宿：旧金山第1晚</span></h3><p class="small"><span class="ja-text">Union Square、Embarcadero、Fisherman's Wharf、またはBARTアクセスを優先。</span><span class="zh" lang="zh-Hans">优先联合广场、Embarcadero、渔人码头或BART交通方便区域。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/hotels+San+Francisco+Union+Square+Embarcadero" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店</span></a></div><a class="credit" href="https://commons.wikimedia.org/wiki/File:Pier_39_from_Coit_Tower.jpg" rel="noreferrer" target="_blank">写真: Wikimedia Commons</a></div></div></article>
+<article class="daily-section" id="day-ca-1002"><div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/2</span></strong><span><span class="ja-text">金曜日 / San Francisco</span></span><span class="zh" lang="zh-Hans">星期五 / 旧金山</span></div><p class="route-summary"><span class="ja-text">終日車なし。Alcatrazを時間軸の中心に置き、Golden GateとTwin Peaksを前後に組みます。</span><span class="zh" lang="zh-Hans">全天不租车，以恶魔岛预约为时间轴，再安排金门大桥和双峰。</span></p></div><article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/2</span></strong><span><span class="ja-text">San Francisco city</span></span><span class="zh" lang="zh-Hans">旧金山市内</span></div><div class="schedule-body">
+<div class="schedule-row"><time>09:00–11:30</time><div><strong>Cable Car / Chinatown / Fisherman's Wharf</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">步行、公共交通或Uber/Lyft移动。</span></p></div></div>
+<div class="schedule-row"><time>12:00–15:00</time><div><strong>Alcatraz Island</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">先确保预约名额，并确认出航地点和集合时间。</span></p></div></div>
+<div class="schedule-row"><time>15:30–18:30</time><div><strong>Palace of Fine Arts / Golden Gate / Twin Peaks</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">根据雾、风和体力删减Twin Peaks。</span></p></div></div>
+</div></article><div class="spot-grid">
+<div class="photo-card"><img alt="Alcatraz Island" loading="lazy" src="assets/img/alcatraz-island.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag teal">10/2</span><span class="tag gold">予約</span></div><h3><span class="ja-text">Alcatraz Island</span><span class="zh" lang="zh-Hans">恶魔岛</span></h3><p class="small"><span class="ja-text">12:00前後の出航枠を主候補にし、公式枠を早めに確保。</span><span class="zh" lang="zh-Hans">优先考虑12:00左右出航的班次，并尽早通过官方渠道预订。</span></p><div class="link-row"><a class="button" href="https://www.nps.gov/alca/planyourvisit/index.htm" rel="noreferrer" target="_blank">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Alcatraz+Island" rel="noreferrer" target="_blank">地図</a></div></div></div>
+<div class="photo-card"><img alt="Golden Gate Bridge" loading="lazy" src="assets/img/golden-gate.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag teal">10/2</span><span class="tag">午後</span></div><h3>Golden Gate / Crissy Field</h3><p class="small"><span class="ja-text">Palace of Fine Artsと組み合わせる。霧や強風なら短縮。</span><span class="zh" lang="zh-Hans">可与艺术宫组合；遇到大雾或强风时缩短停留。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Golden+Gate+Bridge+Crissy+Field" rel="noreferrer" target="_blank">地図</a></div></div></div>
+<div class="photo-card"><img alt="San Francisco skyline from Twin Peaks" loading="lazy" src="assets/img/twin-peaks.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag coral">10/2</span><span class="tag">夕方候補</span></div><h3><span class="ja-text">Twin Peaks</span><span class="zh" lang="zh-Hans">双峰</span></h3><p class="small"><span class="ja-text">天候と疲労が合う場合のみ。暗くなる前の配車動線を確認。</span><span class="zh" lang="zh-Hans">仅在天气和体力允许时前往，并确认天黑前的网约车动线。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Twin+Peaks+San+Francisco" rel="noreferrer" target="_blank">地図</a></div><a class="credit" href="https://commons.wikimedia.org/wiki/File:Sf-skyline-twin-peaks.30jun2004.jpg" rel="noreferrer" target="_blank">写真: Wikimedia Commons</a></div></div>
+</div><div class="lodging-box"><img alt="San Francisco waterfront" class="lodging-image" loading="lazy" src="assets/img/pier-39.jpg"/><div class="lodging-body"><h3><span class="ja-text">宿泊: San Francisco 2泊目</span><span class="zh" lang="zh-Hans">住宿：旧金山第2晚</span></h3><p class="small"><span class="ja-text">同じホテルを継続し、翌朝のレンタカー営業所、荷物動線、受取開始時刻を確認。</span><span class="zh" lang="zh-Hans">继续住同一家酒店，并确认次日取车门店、行李动线和开始营业时间。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/hotels+San+Francisco+Union+Square+Embarcadero" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店</span></a></div><a class="credit" href="https://commons.wikimedia.org/wiki/File:Pier_39_from_Coit_Tower.jpg" rel="noreferrer" target="_blank">写真: Wikimedia Commons</a></div></div></article>
+<article class="daily-section" id="day-ca-1003"><div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/3</span></strong><span><span class="ja-text">土曜日 / SF → Carmel</span></span><span class="zh" lang="zh-Hans">星期六 / 旧金山 → 卡梅尔</span></div><p class="route-summary"><span class="ja-text">07:30出発を目標に、Pigeon Point、Henry Cowell、Santa Cruz昼食、17-Mile Drive短縮版をつなぎます。</span><span class="zh" lang="zh-Hans">目标07:30出发，依次连接鸽子点、亨利考威尔、圣克鲁斯午餐和17英里路短版。</span></p></div><article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/3</span></strong><span><span class="ja-text">SF → Carmel</span></span><span class="zh" lang="zh-Hans">旧金山 → 卡梅尔</span></div><div class="schedule-body">
+<div class="schedule-row"><time>07:30</time><div><strong>Rental pickup / leave SF</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">确认使用市内门店还是SFO门店、取车时间和单程费用。</span></p></div></div>
+<div class="schedule-row"><time>09:00–11:45</time><div><strong>Pigeon Point → Henry Cowell</strong><p class="day-note">灯台30–40分、Redwoods約70分。</p></div></div>
+<div class="schedule-row"><time>12:05–14:35</time><div><strong>Santa Cruz lunch / Cannery Row optional</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">若迟到，优先删去Cannery Row。</span></p></div></div>
+<div class="schedule-row"><time>14:45–16:45</time><div><strong>17-Mile Drive short → Carmel</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">只看主要观景点，傍晚抵达Carmel。</span></p></div></div>
+</div></article><div class="spot-grid">
+<div class="photo-card"><img alt="Pigeon Point Lighthouse" loading="lazy" src="assets/img/pigeon-point.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag teal">10/3</span><span class="tag">30–40分</span></div><h3>Pigeon Point Lighthouse</h3><p class="small"><span class="ja-text">灯台と海岸を見る短時間停止。Pescadero町とHalf Moon Bayは現行案では廃止。</span><span class="zh" lang="zh-Hans">短暂停留看灯塔和海岸；当前方案不去Pescadero镇和半月湾。</span></p><div class="link-row"><a class="button" href="https://www.parks.ca.gov/?page_id=533" rel="noreferrer" target="_blank">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Pigeon+Point+Lighthouse" rel="noreferrer" target="_blank">地図</a></div></div></div>
+<div class="photo-card"><img alt="Redwood forest in Henry Cowell Redwoods State Park" loading="lazy" src="assets/img/henry-cowell-redwoods.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag green">10/3</span><span class="tag">Redwoods</span></div><h3>Henry Cowell Redwoods</h3><p class="small"><span class="ja-text">Muir Woodsの代替。南下ルート上で約70分の散策に絞ります。</span><span class="zh" lang="zh-Hans">替代穆尔红杉林；位于南下路线，徒步控制在约70分钟。</span></p><div class="link-row"><a class="button" href="https://www.parks.ca.gov/?page_id=546" rel="noreferrer" target="_blank">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Henry+Cowell+Redwoods+State+Park" rel="noreferrer" target="_blank">地図</a></div><a class="credit" href="https://commons.wikimedia.org/wiki/File:USA_-_California_-_Henry_Cowell_Redwoods_State_Park_-_53010743908.jpg" rel="noreferrer" target="_blank">写真: Wikimedia Commons</a></div></div>
+<div class="photo-card"><img alt="17-Mile Drive" loading="lazy" src="assets/img/seventeen-mile-drive.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag gold">10/3</span><span class="tag">60–75分</span></div><h3>17-Mile Drive</h3><p class="small"><span class="ja-text">Spanish Bay、Bird Rock、Lone Cypressを中心に短く回り、Carmelへ抜けます。</span><span class="zh" lang="zh-Hans">以Spanish Bay、Bird Rock和Lone Cypress为主，走短线后前往卡梅尔。</span></p><div class="link-row"><a class="button" href="https://www.pebblebeach.com/17-mile-drive/" rel="noreferrer" target="_blank">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=17-Mile+Drive" rel="noreferrer" target="_blank">地図</a></div></div></div>
+</div><div class="lodging-box"><img alt="Carmel-by-the-Sea coastline" class="lodging-image" loading="lazy" src="assets/img/carmel.jpg"/><div class="lodging-body"><h3><span class="ja-text">宿泊: Carmel</span><span class="zh" lang="zh-Hans">住宿：卡梅尔</span></h3><p class="small"><span class="ja-text">Carmelを優先し、高すぎる場合はMonterey / Pacific Groveへ切り替え。</span><span class="zh" lang="zh-Hans">优先住卡梅尔；价格过高时改住蒙特雷或Pacific Grove。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/hotels+Carmel-by-the-Sea+Monterey+Pacific+Grove" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店</span></a></div><a class="credit" href="https://commons.wikimedia.org/wiki/File:Carmel_by_the_Sea_Coastline_(Unsplash).jpg" rel="noreferrer" target="_blank">写真: Wikimedia Commons</a></div></div></article>
+<article class="daily-section" id="day-ca-1004"><div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/4</span></strong><span><span class="ja-text">日曜日 / Big Sur → Cambria</span></span><span class="zh" lang="zh-Hans">星期日 / 大苏尔 → 坎布里亚</span></div><p class="route-summary"><span class="ja-text">Point Lobosは任意。Bixby、Pfeiffer、McWay、Elephant Sealをつなぎ、夕方Cambriaへ入ります。</span><span class="zh" lang="zh-Hans">Point Lobos为可选；依次前往Bixby、Pfeiffer、McWay和象海豹观景点，傍晚抵达坎布里亚。</span></p></div><article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/4</span></strong><span><span class="ja-text">Carmel → Big Sur → Cambria</span></span><span class="zh" lang="zh-Hans">卡梅尔 → 大苏尔 → 坎布里亚</span></div><div class="schedule-body">
+<div class="schedule-row"><time>08:00–10:05</time><div><strong>Point Lobos optional / Bixby Bridge</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">如果早上延误，删去Point Lobos。</span></p></div></div>
+<div class="schedule-row"><time>10:45–13:45</time><div><strong>Pfeiffer / Big Sur lunch / McWay Falls</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">不要让Pfeiffer停车等待过久。</span></p></div></div>
+<div class="schedule-row"><time>13:45–18:00</time><div><strong>Highway 1 → Elephant Seal → Cambria</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">当天早上再次确认道路状况。</span></p></div></div>
+</div></article><div class="spot-grid">
+<div class="photo-card"><img alt="Bixby Creek Bridge" loading="lazy" src="assets/img/bixby-bridge.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag teal">10/4</span><span class="tag">短時間</span></div><h3>Bixby Creek Bridge</h3><p class="small"><span class="ja-text">混雑時は停車を短くし、安全な駐車位置を優先。</span><span class="zh" lang="zh-Hans">拥挤时缩短停留，优先安全停车。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Bixby+Creek+Bridge" rel="noreferrer" target="_blank">地図</a></div></div></div>
+<div class="photo-card"><img alt="McWay Falls" loading="lazy" src="assets/img/mcway-falls.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag green">10/4</span><span class="tag">展望</span></div><h3>McWay Falls</h3><p class="small"><span class="ja-text">Trail閉鎖時は道路側の展望だけに切り替え。</span><span class="zh" lang="zh-Hans">步道关闭时改为仅从公路侧观景。</span></p><div class="link-row"><a class="button" href="https://www.parks.ca.gov/?page_id=578" rel="noreferrer" target="_blank">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=McWay+Falls" rel="noreferrer" target="_blank">地図</a></div></div></div>
+<div class="photo-card"><img alt="Elephant seals" loading="lazy" src="assets/img/piedras-blancas.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag green">10/4</span><span class="tag">高効率</span></div><h3>Elephant Seal Vista Point</h3><p class="small"><span class="ja-text">短時間で立ち寄りやすいため維持。季節差を前提にします。</span><span class="zh" lang="zh-Hans">停留时间短、效率高，因此保留；需考虑季节差异。</span></p><div class="link-row"><a class="button" href="https://www.blm.gov/visit/piedras-blancas-elephant-seal-viewing-area" rel="noreferrer" target="_blank">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Piedras+Blancas+Elephant+Seal+Vista+Point" rel="noreferrer" target="_blank">地図</a></div></div></div>
+</div><div class="lodging-box"><img alt="Cambria coastline" class="lodging-image" loading="lazy" src="assets/img/cambria.jpg"/><div class="lodging-body"><h3><span class="ja-text">宿泊: Cambria</span><span class="zh" lang="zh-Hans">住宿：坎布里亚</span></h3><p class="small"><span class="ja-text">Moonstone Beach周辺を優先。翌朝は08:30出発。</span><span class="zh" lang="zh-Hans">优先Moonstone Beach附近，次日08:30出发。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/hotels+Cambria+Moonstone+Beach" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店</span></a></div><a class="credit" href="https://commons.wikimedia.org/wiki/File:Cambria,_California.jpg" rel="noreferrer" target="_blank">写真: Wikimedia Commons</a></div></div></article>
+<article class="daily-section" id="day-ca-1005"><div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/5</span></strong><span><span class="ja-text">月曜日 / Cambria → LA</span></span><span class="zh" lang="zh-Hans">星期一 / 坎布里亚 → 洛杉矶</span></div><p class="route-summary"><span class="ja-text">Hearst Castleは廃止。Morro Bay、Solvang、Santa Barbaraを軽くつなぎ、夕方LA到着を優先します。</span><span class="zh" lang="zh-Hans">取消赫氏古堡；轻量连接莫罗湾、索尔万和圣巴巴拉，优先傍晚抵达洛杉矶。</span></p></div><article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/5</span></strong><span><span class="ja-text">Cambria → Los Angeles</span></span><span class="zh" lang="zh-Hans">坎布里亚 → 洛杉矶</span></div><div class="schedule-body">
+<div class="schedule-row"><time>08:30–12:20</time><div><strong>Morro Bay → Solvang</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">Morro Rock短停，Solvang以午餐为主。</span></p></div></div>
+<div class="schedule-row"><time>13:10–15:00</time><div><strong>Santa Barbara 1–2h</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">当前方案已取消Hearst Castle。</span></p></div></div>
+<div class="schedule-row"><time>15:00–18:30</time><div><strong>Drive to LA / check-in</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">按拥堵情况计算；抵达后不再增加观光。</span></p></div></div>
+</div></article><div class="spot-grid">
+<div class="photo-card"><img alt="Morro Rock" loading="lazy" src="assets/img/morro-rock.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag teal">10/5</span><span class="tag">40分</span></div><h3>Morro Bay</h3><p class="small"><span class="ja-text">Morro Rockと港の雰囲気を見る短時間停止。</span><span class="zh" lang="zh-Hans">短暂停留观看Morro Rock和港口氛围。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Morro+Rock" rel="noreferrer" target="_blank">地図</a></div></div></div>
+<div class="photo-card"><img alt="Solvang" loading="lazy" src="assets/img/solvang.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag teal">10/5</span><span class="tag">昼食</span></div><h3>Solvang</h3><p class="small"><span class="ja-text">昼食と短い街歩き。深い観光はしません。</span><span class="zh" lang="zh-Hans">以午餐和短时间散步为主，不做深度游览。</span></p><div class="link-row"><a class="button" href="https://www.solvangusa.com/" rel="noreferrer" target="_blank">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Solvang+California" rel="noreferrer" target="_blank">地図</a></div></div></div>
+<div class="photo-card"><img alt="Santa Barbara" loading="lazy" src="assets/img/santa-barbara.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag gold">10/5</span><span class="tag">1–2時間</span></div><h3>Santa Barbara</h3><p class="small"><span class="ja-text">Stearns WharfまたはCounty Courthouseから絞る。</span><span class="zh" lang="zh-Hans">在Stearns Wharf和县法院中择重点游览。</span></p><div class="link-row"><a class="button" href="https://santabarbaraca.com/" rel="noreferrer" target="_blank">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Santa+Barbara+Stearns+Wharf+County+Courthouse" rel="noreferrer" target="_blank">地図</a></div></div></div>
+</div><div class="lodging-box"><img alt="Los Angeles and Griffith Observatory" class="lodging-image" loading="lazy" src="assets/img/griffith-observatory.jpg"/><div class="lodging-body"><h3><span class="ja-text">宿泊: Los Angeles 1泊目</span><span class="zh" lang="zh-Hans">住宿：洛杉矶第1晚</span></h3><p class="small"><span class="ja-text">West Hollywood / Beverly Grove / Fairfaxを優先し、駐車料金を必ず確認。</span><span class="zh" lang="zh-Hans">优先West Hollywood、Beverly Grove或Fairfax，并务必确认停车费。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/hotels+West+Hollywood+Beverly+Grove+Fairfax" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店</span></a></div><a class="credit" href="https://commons.wikimedia.org/wiki/File:Griffith_observatory_2006.jpg" rel="noreferrer" target="_blank">写真: Wikimedia Commons</a></div></div></article>
+<article class="daily-section" id="day-ca-1006"><div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/6</span></strong><span><span class="ja-text">火曜日 / Getty + LA</span></span><span class="zh" lang="zh-Hans">星期二 / 盖蒂 + 洛杉矶</span></div><p class="route-summary"><span class="ja-text">Getty Centerを主目的にし、Westside、Hollywood、Griffithは時間と体力で調整します。</span><span class="zh" lang="zh-Hans">以盖蒂中心为主，Westside、好莱坞和格里菲斯按时间与体力调整。</span></p></div><article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/6</span></strong><span><span class="ja-text">Getty / LA Westside</span></span><span class="zh" lang="zh-Hans">盖蒂 / 洛杉矶西区</span></div><div class="schedule-body">
+<div class="schedule-row"><time>10:00–13:00</time><div><strong>Getty Center</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">预订前确认停车和入场条件。</span></p></div></div>
+<div class="schedule-row"><time>14:00–17:00</time><div><strong>Westside / Hollywood short</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">从Beverly Hills、The Grove和Hollywood中筛选。</span></p></div></div>
+<div class="schedule-row"><time>18:00–20:00</time><div><strong>Griffith Observatory optional</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">疲劳时删减。</span></p></div></div>
+</div></article><div class="spot-grid">
+<div class="photo-card"><img alt="Getty Center garden and Los Angeles view" loading="lazy" src="assets/img/getty-center.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag teal">10/6</span><span class="tag">主目的</span></div><h3>Getty Center</h3><p class="small"><span class="ja-text">10:00–13:00を軸にする。予約、休館、駐車条件を直前確認。</span><span class="zh" lang="zh-Hans">以10:00–13:00为核心，并在出发前确认预约、闭馆和停车条件。</span></p><div class="link-row"><a class="button" href="https://www.getty.edu/visit/center/" rel="noreferrer" target="_blank">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Getty+Center" rel="noreferrer" target="_blank">地図</a></div><a class="credit" href="https://commons.wikimedia.org/wiki/File:Getty_Center_-_Los_Angeles_from_the_Getty_Research_Institute.jpg" rel="noreferrer" target="_blank">写真: Wikimedia Commons</a></div></div>
+<div class="photo-card"><img alt="Griffith Observatory" loading="lazy" src="assets/img/griffith-observatory.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag coral">10/6</span><span class="tag">任意</span></div><h3>Griffith Observatory</h3><p class="small"><span class="ja-text">夕方の追加候補。疲れていれば削ります。</span><span class="zh" lang="zh-Hans">傍晚附加项；疲劳时取消。</span></p><div class="link-row"><a class="button" href="https://griffithobservatory.org/visit/" rel="noreferrer" target="_blank">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Griffith+Observatory" rel="noreferrer" target="_blank">地図</a></div></div></div>
+</div><div class="lodging-box"><img alt="Los Angeles and Griffith Observatory" class="lodging-image" loading="lazy" src="assets/img/griffith-observatory.jpg"/><div class="lodging-body"><h3><span class="ja-text">宿泊: Los Angeles 2泊目</span><span class="zh" lang="zh-Hans">住宿：洛杉矶第2晚</span></h3><p class="small"><span class="ja-text">ホテル移動はせず、連泊時の駐車料金と出入庫条件を確認。</span><span class="zh" lang="zh-Hans">不更换酒店，并确认连住期间的停车费和车辆进出条件。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/hotels+West+Hollywood+Beverly+Grove+Fairfax" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店</span></a></div><a class="credit" href="https://commons.wikimedia.org/wiki/File:Griffith_observatory_2006.jpg" rel="noreferrer" target="_blank">写真: Wikimedia Commons</a></div></div></article>
+<article class="daily-section" id="day-ca-1007"><div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/7</span></strong><span><span class="ja-text">水曜日 / Universal Studios</span></span><span class="zh" lang="zh-Hans">星期三 / 环球影城</span></div><p class="route-summary"><span class="ja-text">終日Universal。車はホテルに置き、Halloween Horror Nightsは翌日のJoshua Treeを優先して廃止します。</span><span class="zh" lang="zh-Hans">全天环球影城；车停在酒店。为保证次日约书亚树行程，取消万圣节恐怖之夜。</span></p></div><article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/7</span></strong><span><span class="ja-text">Universal Studios Hollywood</span></span><span class="zh" lang="zh-Hans">好莱坞环球影城</span></div><div class="schedule-body">
+<div class="schedule-row"><time>10:00–18:00</time><div><strong>Universal Studios Hollywood</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">优先从酒店乘Uber/Lyft或Metro，车辆留在酒店。</span></p></div></div>
+<div class="schedule-row"><time>Evening</time><div><strong>Return / prepare for Joshua Tree</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">因次日07:00出发，早点休息。</span></p></div></div>
+</div></article><div class="spot-grid">
+<div class="photo-card"><img alt="Entrance to Universal Studios Hollywood" loading="lazy" src="assets/img/universal-studios-hollywood.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag teal">10/7</span><span class="tag gold"><span class="zh fallback-translation" lang="zh-Hans">需要门票</span></span></div><h3>Universal Studios Hollywood</h3><p class="small"><span class="ja-text">RegularとExpressの価格差、営業時間、ホテルからの移動を確認。</span><span class="zh" lang="zh-Hans">确认普通票与Express价差、营业时间及酒店往返方式。</span></p><div class="link-row"><a class="button" href="https://www.universalstudioshollywood.com/web/en/us" rel="noreferrer" target="_blank">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Universal+Studios+Hollywood" rel="noreferrer" target="_blank">地図</a></div><a class="credit" href="https://commons.wikimedia.org/wiki/File:Entrance_of_Universal_Studios_Hollywood,_July_2022.jpg" rel="noreferrer" target="_blank">写真: Wikimedia Commons</a></div></div>
+</div><div class="lodging-box"><img alt="Los Angeles and Griffith Observatory" class="lodging-image" loading="lazy" src="assets/img/griffith-observatory.jpg"/><div class="lodging-body"><h3><span class="ja-text">宿泊: Los Angeles 3泊目</span><span class="zh" lang="zh-Hans">住宿：洛杉矶第3晚</span></h3><p class="small"><span class="ja-text">翌朝07:00出発。駐車場の早朝出庫可否を確認し、荷造りと休息を優先。</span><span class="zh" lang="zh-Hans">次日07:00出发，确认停车场能否清晨出库，并优先整理行李和休息。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/hotels+West+Hollywood+Beverly+Grove+Fairfax" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店</span></a></div><a class="credit" href="https://commons.wikimedia.org/wiki/File:Griffith_observatory_2006.jpg" rel="noreferrer" target="_blank">写真: Wikimedia Commons</a></div></div></article>
+<article class="daily-section" id="day-ca-1008"><div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/8</span></strong><span><span class="ja-text">木曜日 / Joshua Tree</span></span><span class="zh" lang="zh-Hans">星期四 / 约书亚树</span></div><p class="route-summary"><span class="ja-text">07:00 LA発。Hidden Valley、Cap Rock、Keys View、Skull Rockから無理のない範囲で回り、公園近郊に宿泊します。</span><span class="zh" lang="zh-Hans">07:00从洛杉矶出发，在Hidden Valley、Cap Rock、Keys View和Skull Rock中合理选择，并在公园附近住宿。</span></p></div><article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/8</span></strong><span><span class="ja-text">LA → Joshua Tree</span></span><span class="zh" lang="zh-Hans">洛杉矶 → 约书亚树</span></div><div class="schedule-body">
+<div class="schedule-row"><time>07:00–10:30</time><div><strong>Drive to Joshua Tree</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">计入早晨拥堵和休息时间。</span></p></div></div>
+<div class="schedule-row"><time>10:30–16:00</time><div><strong>Hidden Valley / Cap Rock / Keys View / Skull Rock</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">炎热时段安排休息，并优先补水和防晒。</span></p></div></div>
+<div class="schedule-row"><time>Evening</time><div><strong>Check-in / stargazing optional</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">从Joshua Tree Village、Yucca Valley和Twentynine Palms中选择。</span></p></div></div>
+</div></article><div class="spot-grid">
+<div class="photo-card"><img alt="Joshua tree under a starry night sky" loading="lazy" src="assets/img/joshua-tree-night.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag green">10/8</span><span class="tag">必須</span></div><h3>Joshua Tree National Park</h3><p class="small"><span class="ja-text">昼の暑さを避ける休憩、水、日差し対策を旅程に組み込みます。</span><span class="zh" lang="zh-Hans">行程中必须安排避开正午高温的休息，并准备饮水和防晒。</span></p><div class="link-row"><a class="button" href="https://www.nps.gov/jotr/planyourvisit/index.htm" rel="noreferrer" target="_blank">NPS</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Joshua+Tree+National+Park" rel="noreferrer" target="_blank">地図</a></div><a class="credit" href="https://commons.wikimedia.org/wiki/File:Joshua_tree_at_Night_(53434076903).jpg" rel="noreferrer" target="_blank">写真: NPS / Wikimedia Commons</a></div></div>
+<div class="photo-card"><img alt="Joshua tree beneath the stars" loading="lazy" src="assets/img/joshua-tree-night.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag violet">10/8</span><span class="tag">夜</span></div><h3><span class="ja-text">Stargazing optional</span><span class="zh" lang="zh-Hans">可选观星</span></h3><p class="small"><span class="ja-text">運転疲労、天候、月齢が合う場合だけ。</span><span class="zh" lang="zh-Hans">仅在驾驶疲劳、天气和月相都合适时安排。</span></p><a class="credit" href="https://commons.wikimedia.org/wiki/File:Joshua_tree_at_Night_(53434076903).jpg" rel="noreferrer" target="_blank">写真: NPS / Wikimedia Commons</a></div></div>
+</div><div class="lodging-box"><img alt="Joshua tree under a starry night sky" class="lodging-image" loading="lazy" src="assets/img/joshua-tree-night.jpg"/><div class="lodging-body"><h3><span class="ja-text">宿泊: Joshua Tree / Yucca Valley / Twentynine Palms</span><span class="zh" lang="zh-Hans">住宿：约书亚树 / Yucca Valley / Twentynine Palms</span></h3><p class="small"><span class="ja-text">雰囲気はJoshua Tree Village、利便性はYucca Valley、North Entrance重視はTwentynine Palms。</span><span class="zh" lang="zh-Hans">氛围优先选Joshua Tree Village，便利性选Yucca Valley，靠近北门选Twentynine Palms。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/hotels+Joshua+Tree+Yucca+Valley+Twentynine+Palms" rel="noreferrer" target="_blank"><span class="zh fallback-translation" lang="zh-Hans">酒店</span></a></div><a class="credit" href="https://commons.wikimedia.org/wiki/File:Joshua_tree_at_Night_(53434076903).jpg" rel="noreferrer" target="_blank">写真: NPS / Wikimedia Commons</a></div></div></article>
+<article class="daily-section" id="day-ca-1009"><div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/9</span></strong><span><span class="ja-text">金曜日 / Joshua Tree → LAX</span></span><span class="zh" lang="zh-Hans">星期五 / 约书亚树 → LAX</span></div><p class="route-summary"><span class="ja-text">午前に出発し、Santa Monica / Veniceを軽く回ってからレンタカーを返却。23:00の国際線に備えます。</span><span class="zh" lang="zh-Hans">上午出发，轻量游览圣莫尼卡和威尼斯海滩后还车，为23:00国际航班预留时间。</span></p></div><article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/9</span></strong><span><span class="ja-text">Joshua Tree → LAX</span></span><span class="zh" lang="zh-Hans">约书亚树 → LAX</span></div><div class="schedule-body">
+<div class="schedule-row"><time>09:00–13:30</time><div><strong>Leave Joshua Tree → Santa Monica / Venice</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">若因拥堵晚到，缩短海岸散步。</span></p></div></div>
+<div class="schedule-row"><time>13:30–16:00</time><div><strong>Santa Monica / Venice light visit</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">优先做好行李和车内盗窃防范。</span></p></div></div>
+<div class="schedule-row"><time>17:00–20:00</time><div><strong><span class="zh fallback-translation" lang="zh-Hans">前往LAX / 还车 / 入住</span></strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">预留国际航班和还车缓冲时间。</span></p></div></div>
+<div class="schedule-row"><time>23:00</time><div><strong>LAX B → Seoul → PEK</strong><p class="day-note">10/11 09:40 PEK T3着。</p></div></div>
+</div></article><div class="spot-grid">
+<div class="photo-card"><img alt="Santa Monica" loading="lazy" src="assets/img/santa-monica.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag teal">10/9</span><span class="tag"><span class="zh fallback-translation" lang="zh-Hans">轻量观光</span></span></div><h3>Santa Monica / Venice</h3><p class="small"><span class="ja-text">13:30–16:00程度。渋滞時は短縮し、荷物を車内に見せない。</span><span class="zh" lang="zh-Hans">约13:30–16:00；堵车时缩短，并避免让行李暴露在车内。</span></p><div class="link-row"><a class="button" href="https://www.santamonica.com/" rel="noreferrer" target="_blank">参考</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Santa+Monica+Venice+Beach" rel="noreferrer" target="_blank">地図</a></div></div></div>
+<div class="photo-card"><img alt="LAX airport" loading="lazy" src="assets/img/lax-airport.jpg"/><div class="photo-body"><div class="tag-row"><span class="tag gold">10/9</span><span class="tag">固定</span></div><h3>LAX rental return / Terminal B</h3><p class="small"><span class="ja-text">17:00–18:30を目安に海岸を出て、返車後19:00–20:00までに空港手続きを始めます。</span><span class="zh" lang="zh-Hans">目标17:00–18:30离开海边，还车后在19:00–20:00前开始机场手续。</span></p><div class="link-row"><a class="button" href="https://www.flylax.com/" rel="noreferrer" target="_blank">LAX</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Los+Angeles+International+Airport+Terminal+B" rel="noreferrer" target="_blank">地図</a></div></div></div>
+</div></article>
+<article class="daily-section" id="day-ca-1010"><div class="daily-head"><div class="daily-date"><strong><span class="ja-text">10/10–11</span></strong><span><span class="ja-text">土–日 / Flight・Seoul・Beijing</span></span><span class="zh" lang="zh-Hans">周六至周日 / 飞行・首尔・北京</span></div><p class="route-summary"><span class="ja-text">10/11 04:10ソウル着、4時間10分乗継、08:20発、09:40 PEK T3着。航空会社・空港・ターミナル・荷物直通を予約後に確定します。</span><span class="zh" lang="zh-Hans">10月11日04:10抵达首尔，转机4小时10分，08:20起飞，09:40抵达PEK T3。订票后确认航空公司、机场、航站楼和行李直挂。</span></p></div><article class="schedule-day inline-schedule"><div class="schedule-date"><strong><span class="ja-text">10/10–11</span></strong><span><span class="ja-text">Flight / Seoul transit / Beijing</span></span><span class="zh" lang="zh-Hans">飞行 / 首尔转机 / 北京</span></div><div class="schedule-body">
+<div class="schedule-row"><time>10/11 04:10–08:20</time><div><strong>Seoul layover</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">转机4小时10分；确认航站楼、安检和行李直挂。</span></p></div></div>
+<div class="schedule-row"><time>10/11 09:40</time><div><strong>PEK T3 arrival</strong><p class="day-note"><span class="zh fallback-translation" lang="zh-Hans">抵达后只回家和休息。</span></p></div></div>
+</div></article></article>
+</div>
+</section>
+<section class="band" id="sources">
+<div class="section-head"><h2><span class="ja-text">公式・確認リンク</span><span class="zh" lang="zh-Hans">官方与确认链接</span></h2><span class="muted small"><span class="ja-text">道路、予約、航空券条件は出発前に再確認。</span><span class="zh" lang="zh-Hans">道路、预约和机票条件需在出发前复核。</span></span></div>
+<ul class="source-list">
+<li><a href="https://www.flylax.com/" rel="noreferrer" target="_blank">Los Angeles International Airport</a></li>
+<li><a href="https://www.getty.edu/visit/center/" rel="noreferrer" target="_blank">Getty Center</a></li>
+<li><a href="https://www.getty.edu/visit/center/faqs/" rel="noreferrer" target="_blank">Getty timed-entry FAQ</a></li>
+<li><a href="https://griffithobservatory.org/" rel="noreferrer" target="_blank">Griffith Observatory</a></li>
+<li><a href="https://www.booking.com/hotel/us/holiday-inn-suites-monterey-park-los-angeles-an-ihg.ja.html" rel="noreferrer" target="_blank">Holiday Inn Monterey Park - Booking</a></li>
+<li><a href="https://www.booking.com/hotel/us/holiday-inn-los-angeles-international-airport.ja.html" rel="noreferrer" target="_blank">Holiday Inn LAX - Booking</a></li>
+<li><a href="https://maps.app.goo.gl/d6ueUFs1jq4qLbyRA" rel="noreferrer" target="_blank">Day2–4 tour map</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Bounce+1160+N+Vermont+Ave+Los+Angeles" rel="noreferrer" target="_blank">Bounce候補地図</a></li>
+<li><a href="https://bounce.com/" rel="noreferrer" target="_blank">Bounce luggage storage</a></li>
+<li><a href="https://www.nps.gov/yose/planyourvisit/index.htm" rel="noreferrer" target="_blank">Yosemite National Park - NPS</a></li>
+<li><a href="https://www.queenkapiolani.com/" rel="noreferrer" target="_blank">Queen Kapiolani Hotel</a></li>
+<li><a href="https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument/" rel="noreferrer" target="_blank">Diamond Head State Monument</a></li>
+<li><a href="https://gostateparks.hawaii.gov/diamondhead/about" rel="noreferrer" target="_blank">Diamond Head reservation system</a></li>
+<li><a href="https://www.bishopmuseum.org/" rel="noreferrer" target="_blank">Bishop Museum</a></li>
+<li><a href="https://www.bishopmuseum.org/visit/tickets/" rel="noreferrer" target="_blank">Bishop Museum tickets</a></li>
+<li><a href="https://www.nps.gov/hale/index.htm" rel="noreferrer" target="_blank">Haleakalā National Park</a></li>
+<li><a href="https://www.nps.gov/hale/planyourvisit/sunrise.htm" rel="noreferrer" target="_blank">Haleakalā sunrise reservations</a></li>
+<li><a href="https://www.koheakai.com/" rel="noreferrer" target="_blank">Kohea Kai Maui</a></li>
+<li><a href="https://www.marriott.com/en-us/hotels/hnlws-sheraton-waikiki/overview/" rel="noreferrer" target="_blank">Sheraton Waikiki</a></li>
+<li><a href="https://byodo-in.com/" rel="noreferrer" target="_blank">Byodo-In Temple</a></li>
+<li><a href="https://www.honolulu.gov/parks/honolulu/ho-omaluhia-botanical-garden.html" rel="noreferrer" target="_blank">Ho‘omaluhia Botanical Garden</a></li>
+<li><a href="https://www.nps.gov/pearl/index.htm" rel="noreferrer" target="_blank">Pearl Harbor National Memorial</a></li>
+<li><a href="https://www.nps.gov/thingstodo/visit-the-uss-arizona-memorial.htm" rel="noreferrer" target="_blank">USS Arizona Memorial tickets</a></li>
+<li><a href="https://www.doleplantation.com/" rel="noreferrer" target="_blank">Dole Plantation</a></li>
+<li><a href="https://booking.doleplantation.com/" rel="noreferrer" target="_blank">Dole activity booking</a></li>
+<li><a href="https://www.twinfinwaikiki.com/" rel="noreferrer" target="_blank">The Twin Fin</a></li>
+</ul>
+</section>
+</main>
+<footer>
+<div class="wrap"><span class="ja-text">
+      このHTMLは検討用です。航空会社、空港、公園、予約枠、道路、ビザ・入国条件は予約前と出発前に再確認してください。予約分類の公式確認日は2026/9/11です。
+      </span><span class="zh" lang="zh-Hans">本HTML仅用于行程讨论。航空公司、机场、公园、预约名额、道路、签证和入境条件请在预订前和出发前再次确认。预约分类的官方核对日期为2026年9月11日。</span>
+</div>
+</footer>
+<script>
+  (function () {
+    "use strict";
+
+    function cleanText(node) {
+      var clone = node.cloneNode(true);
+      var zh = clone.querySelectorAll(".zh");
+      for (var i = 0; i < zh.length; i++) zh[i].parentNode.removeChild(zh[i]);
+      return (clone.textContent || "").trim().replace(/\s+/g, " ");
+    }
+
+    function spotName(h3) {
+      return cleanText(h3);
+    }
+
+    function mapQueryFromLink(link) {
+      var href = link ? link.getAttribute("href") || "" : "";
+      var match = href.match(/[?&]query=([^&]+)/i);
+      if (!match) match = href.match(/google\.com\/maps\/search\/([^?]+)/i);
+      if (!match) return "";
+      try {
+        return decodeURIComponent(match[1].replace(/\+/g, " "));
+      } catch (error) {
+        return match[1].replace(/\+/g, " ");
+      }
+    }
+
+    function initPlaceMaps() {
+      var language = document.documentElement.getAttribute("data-language") === "zh" ? "zh" : "ja";
+      var cards = document.querySelectorAll("#daily-plan .photo-card, #daily-plan .lodging-box, #daily-plan .daily-section > .card");
+      for (var i = 0; i < cards.length; i++) {
+        var card = cards[i];
+        if (card.querySelector(":scope > .place-map")) continue;
+        var link = card.querySelector('a[href*="google.com/maps/search"]');
+        var query = mapQueryFromLink(link);
+        if (!link || !query) continue;
+        var heading = card.querySelector("h3");
+        var name = heading ? spotName(heading) : query;
+        var map = document.createElement("div");
+        map.className = "place-map";
+        var frame = document.createElement("iframe");
+        frame.title = (language === "zh" ? "地点地图：" : "場所の地図: ") + name;
+        frame.loading = "lazy";
+        frame.referrerPolicy = "no-referrer-when-downgrade";
+        frame.hidden = true;
+        frame.setAttribute("data-map-src", "https://www.google.com/maps?q=" + encodeURIComponent(query) + "&output=embed");
+        var caption = document.createElement("div");
+        caption.className = "map-caption";
+        var label = document.createElement("span");
+        label.textContent = language === "zh" ? "地点地图（可在新标签页打开）" : "場所の地図（新しいタブでも開けます）";
+        var fallback = document.createElement("a");
+        fallback.href = link.href;
+        fallback.target = "_blank";
+        fallback.rel = "noreferrer";
+        fallback.textContent = language === "zh" ? "打开 Google Maps" : "Google Mapsで開く";
+        caption.appendChild(label);
+        caption.appendChild(fallback);
+        map.appendChild(frame);
+        map.appendChild(caption);
+        card.appendChild(map);
+      }
+    }
+
+
+    function initMapLoadButtons() {
+      var language = document.documentElement.getAttribute("data-language") === "zh" ? "zh" : "ja";
+      var frames = document.querySelectorAll("iframe[data-map-src]");
+      for (var i = 0; i < frames.length; i++) {
+        (function (frame) {
+          frame.hidden = true;
+          var prompt = document.createElement("div");
+          prompt.className = "map-load-prompt";
+          var button = document.createElement("button");
+          button.type = "button";
+          button.className = "button map-load-button";
+          button.textContent = language === "zh" ? "加载 Google 地图" : "Googleマップを読み込む";
+          button.setAttribute("aria-label", button.textContent + ": " + frame.title);
+          var note = document.createElement("p");
+          note.className = "map-load-note";
+          note.textContent = language === "zh" ? "需要连接 Google Maps；文字和照片不受影响。" : "Google Mapsへの接続が必要です。本文・写真はそのまま読めます。";
+          prompt.appendChild(button);
+          prompt.appendChild(note);
+          if (!frame.parentNode.querySelector(".map-caption")) {
+            var fallback = document.createElement("a");
+            var mapUrl = new URL(frame.getAttribute("data-map-src"));
+            mapUrl.searchParams.delete("output");
+            fallback.href = mapUrl.href;
+            fallback.target = "_blank";
+            fallback.rel = "noreferrer";
+            fallback.textContent = language === "zh" ? "在新标签页打开" : "新しいタブで開く";
+            prompt.appendChild(fallback);
+          }
+          button.addEventListener("click", function () {
+            frame.src = frame.getAttribute("data-map-src");
+            frame.hidden = false;
+            prompt.hidden = true;
+          });
+          frame.parentNode.insertBefore(prompt, frame);
+        })(frames[i]);
+      }
+    }
+
+    var SCHEDULE_ROW_BY_SPOT = {
+      "current-day-ca-1001": { "Getty Center": 2, "Griffith Observatory": 7 },
+      "current-day-ca-1002": {},
+      "current-day-ca-1003": {},
+      "current-day-ca-1004": {},
+      "current-day-hi-1005": {},
+      "current-day-hi-1006": {},
+      "current-day-hi-1007": {},
+      "current-day-hi-1008": {},
+      "current-japan-after-arrival": {}
+    };
+
+    var DAILY_MAP_SECTION_BY_TITLE = {
+      "San Francisco map": "current-day-ca-1002",
+      "California coast map": "current-day-ca-1003",
+      "Los Angeles map": "current-day-hi-1005",
+      "Joshua Tree to LAX map": "current-day-hi-1008"
+    };
+
+    function mergeDailyMaps() {
+      var source = document.getElementById("maps-source");
+      if (!source) return;
+      var maps = source.querySelectorAll(".mini-map");
+      if (!maps.length) return;
+      for (var i = 0; i < maps.length; i++) {
+        var map = maps[i];
+        var frame = map.querySelector("iframe");
+        var title = frame ? frame.getAttribute("title") : "";
+        var sectionId = DAILY_MAP_SECTION_BY_TITLE[title];
+        if (!sectionId) continue;
+        var section = document.getElementById(sectionId);
+        var schedule = section ? section.querySelector(":scope > .inline-schedule") : null;
+        if (!schedule) continue;
+        var wrapper = document.createElement("div");
+        wrapper.className = "daily-route-map";
+        wrapper.appendChild(map);
+        section.insertBefore(wrapper, schedule);
+      }
+      source.remove();
+    }
+
+    function initPlanTabs() {
+      var groups = document.querySelectorAll("#daily-plan .plan-options");
+      var language = document.documentElement.getAttribute("data-language") === "zh" ? "zh" : "ja";
+      for (var i = 0; i < groups.length; i++) {
+        (function (group, groupIndex) {
+          var tabs = group.querySelector(":scope > .plan-tabs");
+          var panels = group.querySelectorAll(":scope > .plan-panels > .plan-panel");
+          if (!tabs || !panels.length) return;
+          if (panels.length < 2) {
+            tabs.hidden = true;
+            panels[0].hidden = false;
+            return;
+          }
+
+          var groupKey = group.getAttribute("data-plan-group") || "date-plan-" + groupIndex;
+          var safeGroupKey = groupKey.replace(/[^a-z0-9_-]/gi, "-");
+          var buttons = [];
+          tabs.innerHTML = "";
+
+          function panelLabel(panel, index) {
+            var fallbackJa = String.fromCharCode(65 + index) + "案";
+            var fallbackZh = "方案" + String.fromCharCode(65 + index);
+            return panel.getAttribute(language === "zh" ? "data-plan-label-zh" : "data-plan-label-ja") || (language === "zh" ? fallbackZh : fallbackJa);
+          }
+
+          function activate(planId, focusButton) {
+            for (var j = 0; j < panels.length; j++) {
+              var panel = panels[j];
+              var active = panel.getAttribute("data-plan-id") === planId;
+              panel.hidden = !active;
+              panel.classList.toggle("is-active", active);
+              buttons[j].setAttribute("aria-selected", active ? "true" : "false");
+              buttons[j].tabIndex = active ? 0 : -1;
+              if (active && focusButton) buttons[j].focus();
+            }
+          }
+
+          for (var j = 0; j < panels.length; j++) {
+            var panel = panels[j];
+            var planId = panel.getAttribute("data-plan-id") || String(j);
+            var button = document.createElement("button");
+            var buttonId = "plan-tab-" + safeGroupKey + "-" + planId;
+            var panelId = "plan-panel-" + safeGroupKey + "-" + planId;
+            button.type = "button";
+            button.className = "plan-tab";
+            button.id = buttonId;
+            button.setAttribute("role", "tab");
+            button.setAttribute("aria-selected", "false");
+            button.setAttribute("aria-controls", panelId);
+            button.tabIndex = -1;
+            button.textContent = panelLabel(panel, j);
+            panel.id = panelId;
+            panel.setAttribute("role", "tabpanel");
+            panel.setAttribute("aria-labelledby", buttonId);
+            tabs.appendChild(button);
+            buttons.push(button);
+            (function (index, id, tabButton) {
+              tabButton.addEventListener("click", function () { activate(id, false); });
+              tabButton.addEventListener("keydown", function (event) {
+                var next = index;
+                if (event.key === "ArrowRight" || event.key === "ArrowDown") next = (index + 1) % panels.length;
+                else if (event.key === "ArrowLeft" || event.key === "ArrowUp") next = (index + panels.length - 1) % panels.length;
+                else if (event.key === "Home") next = 0;
+                else if (event.key === "End") next = panels.length - 1;
+                else return;
+                event.preventDefault();
+                activate(panels[next].getAttribute("data-plan-id") || String(next), true);
+              });
+            })(j, planId, button);
+          }
+          tabs.hidden = false;
+          activate(panels[0].getAttribute("data-plan-id") || "0", false);
+        })(groups[i], i);
+      }
+    }
+
+    function mergeScheduledCards() {
+      var sections = document.querySelectorAll("#daily-plan .daily-section");
+      for (var i = 0; i < sections.length; i++) {
+        var section = sections[i];
+        var mapping = SCHEDULE_ROW_BY_SPOT[section.id] || {};
+        var rows = section.querySelectorAll(".schedule-row");
+        var grid = section.querySelector(":scope > .spot-grid");
+        if (!grid) continue;
+
+        var cards = Array.prototype.slice.call(grid.querySelectorAll(":scope > .photo-card"));
+        for (var j = 0; j < cards.length; j++) {
+          var card = cards[j];
+          var h3 = card.querySelector("h3");
+          var name = h3 ? spotName(h3) : "";
+          if (!Object.prototype.hasOwnProperty.call(mapping, name)) continue;
+          var target = rows[mapping[name]];
+          if (!target) continue;
+          var details = target.querySelector(":scope > .scheduled-details");
+          if (!details) {
+            details = document.createElement("div");
+            details.className = "scheduled-details";
+            target.appendChild(details);
+          }
+          details.appendChild(card);
+        }
+
+        if (grid.querySelector(":scope > .photo-card")) {
+          var heading = document.createElement("div");
+          heading.className = "proposal-heading";
+          heading.innerHTML = "<h3>提案カード <span class=\"zh\" lang=\"zh-Hans\">提案卡片</span></h3><p>時間割にはまだ入れていない追加候補です。<span class=\"zh\" lang=\"zh-Hans\">尚未加入时间表的备选地点。</span></p>";
+          grid.parentNode.insertBefore(heading, grid);
+        } else {
+          grid.parentNode.removeChild(grid);
+        }
+      }
+    }
+
+    function boot() {
+      mergeDailyMaps();
+      initPlanTabs();
+      mergeScheduledCards();
+      initPlaceMaps();
+      initMapLoadButtons();
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", boot);
+    } else {
+      boot();
+    }
+  })();
+  </script>
+</body>
+</html>
