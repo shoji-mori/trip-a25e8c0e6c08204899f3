@@ -1387,6 +1387,15 @@
       }
     }
 
+    #overview .hero-grid { grid-template-columns: 1fr; }
+    #overview .stats { display: none; }
+    .day-route { margin-top: 14px; }
+    .day-cost { font-size: .8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 10px; margin: 16px 0 0; line-height: 1.6; }
+    .planning-link { display: inline-block; margin-top: 12px; font-size: .875rem; }
+    .planning-alternatives { margin-top: 22px; }
+    .planning-alternatives summary { cursor: pointer; font-weight: 700; padding: 12px 0; }
+    .comparison-day { margin-top: 18px; scroll-margin-top: 150px; }
+
     /* Keep the itinerary independent of external map availability. */
     iframe[data-map-src][hidden], .map-load-prompt[hidden] {
       display: none !important;
@@ -1427,11 +1436,8 @@
       <nav aria-label="ページ内ナビゲーション">
         <a href="#overview" data-ja="概要" data-zh="概览">概要</a>
         <a href="#daily-plan" data-ja="日別" data-zh="按日期">日別</a>
-        <a href="#flights" data-ja="フライト" data-zh="航班">フライト</a>
-        <a href="#glossary" data-ja="用語" data-zh="术语">用語</a>
+        <a href="#trip-decisions" data-ja="予約・調整" data-zh="预约与调整">予約・調整</a>
         <a href="#packing" data-ja="持ち物" data-zh="行李">持ち物</a>
-        <a href="#reservations" data-ja="予約" data-zh="预约">予約</a>
-        <a href="#sources" data-ja="リンク" data-zh="链接">リンク</a>
         <span class="language-links" aria-label="言語 / 语言">
           <a href="index.html" data-ja="日本語" data-zh="日文" aria-current="page">日本語</a>
           <a href="zh.html" data-ja="中文" data-zh="中文">中文</a>
@@ -1447,7 +1453,7 @@
           <div class="tag-row">
             <span class="tag teal">現行プラン / 当前方案</span>
             <span class="tag green">2人 / 2人</span>
-            <span class="tag gold">更新 / 更新: 2026-09-11</span>
+            <span class="tag gold">更新 / 更新: 2026-09-12</span>
           </div>
           <h1>LAX → Los Angeles → HNL → Maui → Oahu → 日本</h1>
           <p class="lead">Day1〜4はLAX到着後のLos Angeles観光とツアー行程、Day5〜8はホノルル・マウイ・オアフ島の後半案です。Day5〜8は宿泊とフライトの骨格を反映しつつ、候補地の組み合わせ、移動時間、営業時間、予約、レンタカー、疲労度を見ながら設計します。日本到着後の自由時間と国内1泊も未定です。<span class="zh" lang="zh-Hans">第1至4天为抵达LAX后的洛杉矶观光和旅游团行程，第5至8天为檀香山、茂宜岛和瓦胡岛的后半方案。第5至8天已反映住宿和航班骨架，但地点组合、交通时间、营业时间、预约、租车和疲劳度仍需比较设计。抵达日本后的自由时间及日本国内一晚住宿尚未确定。</span></p>
@@ -1458,77 +1464,247 @@
             <div class="stat"><span>設計方針<span class="zh" lang="zh-Hans">设计方针</span></span><strong>余白・疲労優先</strong></div>
           </div>
         </div>
-        <div class="route-map" aria-label="Day1 Los Angelesルートの地図">
+
+      </div>
+    </section>
+
+    <section id="daily-plan" class="band">
+      <div class="section-head"><h2>日別の行程<span class="zh" lang="zh-Hans">每日行程</span></h2><span class="muted small">時刻は各地の現地時刻。小計は2人分の記載済み費用。CNYは人民元、USDは米ドル。未計上分は別記しています。<span class="zh" lang="zh-Hans">时间为各地当地时间。小计为两人已记录的费用。CNY为人民币，USD为美元；未计入的项目另列。</span></span></div>
+      <nav class="day-jumpbar" aria-label="現行日程内ナビゲーション">
+        <a href="#current-day-ca-1001">10/1 Day1</a><a href="#current-day-ca-1002">10/2 Day2</a><a href="#current-day-ca-1003">10/3 Day3</a><a href="#current-day-ca-1004">10/4 Day4</a><a href="#current-day-hi-1005">10/5 Day5</a><a href="#current-day-hi-1006">10/6 Day6</a><a href="#current-day-hi-1007">10/7 Day7</a><a href="#current-day-hi-1008">10/8 Day8</a><a href="#current-japan-after-arrival">日本到着後</a>
+      </nav>
+      <div class="daily-plan">
+        <article id="current-day-ca-1001" class="daily-section">
+          <div class="daily-head"><div class="daily-date"><strong>10/1</strong><span>木曜日 / LAX → Los Angeles観光 → Monterey Park</span><span class="zh" lang="zh-Hans">星期四 / LAX → 洛杉矶观光 → 蒙特利公园</span></div><p class="route-summary">Getty、Beverly Hills、Griffithを残し、108ドルの荷物配送を避けるためスーツケース1個はGriffith前にEast Hollywoodの荷物預かりサービス Bounceへ預けます。<span class="zh" lang="zh-Hans">保留盖蒂中心、比佛利山和格里菲斯；为避免支付108美元行李配送费，一个行李箱在前往格里菲斯前寄存在东好莱坞的行李寄存服务 Bounce。</span></p></div>
+          <article class="card">
+          <div class="tag-row"><span class="tag teal">10/1 Thu</span><span class="tag">LAX arrival</span></div>
+          <div class="flight">
+            <div class="airport"><span class="time">09:20</span><strong>LAX</strong><span class="muted small">到着<span class="zh" lang="zh-Hans">抵达</span></span></div>
+            <div class="plane-line" aria-hidden="true"></div>
+            <div class="airport"><span class="time">11:00–11:30</span><strong>Airport exit</strong><span class="muted small">計画基準<span class="zh" lang="zh-Hans">计划基准</span></span></div>
+          </div>
+          <p class="small muted">入国審査・荷物受取・配車場所への移動を含む想定です。10:40は順調な場合だけの早着目安です。<span class="zh" lang="zh-Hans">时间包含入境、取行李和前往网约车上车点；10:40只作为一切顺利时的早到参考。</span></p>
+        </article>
+          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/1</strong><span>LAX → Getty → Beverly Hills → Bounce → Griffith → hotel</span><span class="zh" lang="zh-Hans">LAX → 盖蒂中心 → 比佛利山 → Bounce → 格里菲斯 → 酒店</span></div><div class="schedule-body">
+            <div class="schedule-row"><time>09:20</time><div><strong data-zh="抵达洛杉矶机场 LAX">ロサンゼルス空港 LAX到着</strong><p class="day-note">入国審査・荷物受取・配車場所への移動を開始。</p></div></div>
+            <div class="schedule-row"><time>11:00–11:30</time><div><strong>LAX → Getty Center</strong><p class="day-note">空港を出る時間帯。Getty到着は12:00前後を想定。基本はアプリ配車のUber / Lyft、シャトルは明確に安く待ち時間が短い場合だけ。</p></div></div>
+            <div class="schedule-row"><time>12:00–14:30</time><div><strong>Getty Center</strong><p class="day-note">時間指定予約、建築・景色・Central Garden・主要展示1–2か所・館内昼食。入口でスーツケースを預ける。</p></div></div>
+            <div class="schedule-row"><time>14:30–15:00</time><div><strong>Getty → Beverly Hills</strong><p class="day-note">荷物を回収してUber / Lyft。</p></div></div>
+            <div class="schedule-row"><time>15:00–15:50</time><div><strong>Beverly Hills: ALO + Erewhon</strong><p class="day-note">Rodeo Drive / Pink Wallへは別移動しない。店内が狭ければ交代で入る。</p></div></div>
+            <div class="schedule-row"><time>15:50–16:30</time><div><strong>Beverly Hills → Bounce</strong><p class="day-note">1160 N Vermont Ave付近のホテル型Bounceへスーツケース1個を預ける。</p></div></div>
+            <div class="schedule-row"><time>16:40–17:15</time><div><strong>Bounce → Griffith Observatory</strong><p class="day-note">往路はUber / Lyft。理想17:00–17:15、遅くとも17:30。</p></div></div>
+            <div class="schedule-row"><time>17:15–19:05</time><div><strong>Griffith Observatory</strong><p class="day-note">Hollywood Sign、市街景色、外観、短時間の館内展示、日没・夜景。プラネタリウムは今回は入れない。</p></div></div>
+            <div class="schedule-row"><time>19:05以降</time><div><strong>路線バスDASHで下山 → Bounce</strong><p class="day-note">帰りは時間制約が緩いためDASHを優先。山麓から徒歩または短距離配車。</p></div></div>
+            <div class="schedule-row"><time>19:40–20:10</time><div><strong>Bounceで荷物回収</strong><p class="day-note">営業時間・受取条件は予約時と当日に再確認。</p></div></div>
+            <div class="schedule-row"><time>20:40–21:20</time><div><strong>Monterey Parkのホテルへ</strong><p class="day-note">道路状況込みの到着見込み。Holiday Inn &amp; Suites Monterey Park へ向かう。</p></div></div>
+            <div class="cost-line"><span class="cost-pill">交通・Bounce・食事: 約$213–335 / 2人</span><span class="cost-pill">標準: $250–290</span><span class="cost-pill">ALO購入代: 別</span><span class="cost-pill">Getty / Griffith: 無料</span></div>
+            <div class="cost-line"><span class="cost-pill">LAX→Getty $55–70</span><span class="cost-pill">Getty→BH $22–35</span><span class="cost-pill">BH→Bounce $23–35</span><span class="cost-pill">Bounce→Griffith $14–25</span><span class="cost-pill">DASH等 $1–10</span><span class="cost-pill">Bounce→ホテル $40–65</span><span class="cost-pill">Bounce $8–15</span><span class="cost-pill">昼食 $35–55</span><span class="cost-pill">Erewhon $15–25</span></div>
+          </div></article>
+          <div class="spot-grid">
+            <div class="photo-card"><img src="assets/img/getty-center.jpg" alt="Getty Center" loading="lazy"><div class="photo-body"><div class="tag-row"><span class="tag teal">12:00–14:30</span><span class="tag gold">予約</span></div><h3>Getty Center</h3><p class="small">無料。12:00前後の時間指定予約を取り、昼食込みで約2時間半。<span class="zh" lang="zh-Hans">免费；预约12:00左右时段，含午餐约两个半小时。</span></p><div class="link-row"><a class="button" href="https://www.getty.edu/visit/center/" target="_blank" rel="noreferrer">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Getty+Center" target="_blank" rel="noreferrer">地図</a></div></div></div>
+            <div class="photo-card"><div class="photo-body"><div class="tag-row"><span class="tag teal">15:00–15:50</span><span class="tag">短時間</span></div><h3>Beverly Hills: ALO + Erewhon</h3><p class="small">アパレル店ALOで服を確認し、食品店Erewhonでスムージーまたは飲み物。周辺街歩きは移動中だけ。<span class="zh" lang="zh-Hans">在服装店ALO看衣服，在食品店Erewhon买冰沙或饮料；周边街景只在两店之间顺路看。</span></p></div></div>
+            <div class="photo-card"><img src="assets/img/griffith-observatory.jpg" alt="Griffith Observatory" loading="lazy"><div class="photo-body"><div class="tag-row"><span class="tag teal">17:15–19:05</span><span class="tag green">優先</span></div><h3>Griffith Observatory</h3><p class="small">2026/10/1の日没は18:37頃、薄明終了は19:02頃の見込み。無料・予約不要。<span class="zh" lang="zh-Hans">2026年10月1日日落预计18:37、民用曙暮光结束约19:02；免费且无需预约。</span></p><div class="link-row"><a class="button" href="https://griffithobservatory.org/" target="_blank" rel="noreferrer">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Griffith+Observatory" target="_blank" rel="noreferrer">地図</a></div></div></div>
+          </div>
+          <div class="notice ok hotel-card"><h3>宿泊 <span class="zh" lang="zh-Hans">住宿</span></h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-holiday-inn-monterey-park.jpg" alt="Holiday Inn &amp; Suites Monterey Park の客室" loading="lazy"><figcaption><a class="credit" href="https://www.ihg.com/holidayinn/hotels/us/en/monterey-park/burmp/hoteldetail/gallery" target="_blank" rel="noreferrer">写真出典: IHG公式ギャラリー（客室・内観）</a><span class="zh" lang="zh-Hans">照片来源：IHG官方画廊（客房・室内）</span></figcaption></figure><p><strong>Holiday Inn &amp; Suites Monterey Park – Los Angeles by IHG</strong><br>10/1–10/2、Monterey Park、CNY 1,049、指定期限までは無料キャンセル。税・手数料・予約番号・住所は未確認です。<span class="zh" lang="zh-Hans">10/1–10/2，Monterey Park，1,049元，可在指定期限前免费取消。税费、手续费、预订编号和地址尚未确认。</span></p><div class="link-row"><a class="button" href="https://www.booking.com/hotel/us/holiday-inn-suites-monterey-park-los-angeles-an-ihg.ja.html" target="_blank" rel="noreferrer">Booking</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Holiday+Inn+%26+Suites+Monterey+Park+Los+Angeles+by+IHG" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
+
+        <div class="day-route"><div class="route-map" aria-label="Day1 Los Angelesルートの地図">
           <iframe title="Los Angeles Day1 route map" hidden data-map-src="https://www.google.com/maps?q=LAX%20Getty%20Center%20Beverly%20Hills%201160%20N%20Vermont%20Ave%20Griffith%20Observatory%20Monterey%20Park&amp;output=embed" loading="lazy"></iframe>
-        </div>
+        </div><div class="link-row"><a class="button" href="https://www.google.com/maps/dir/Los+Angeles+International+Airport/Getty+Center/Beverly+Hills/1160+N+Vermont+Ave+Los+Angeles/Griffith+Observatory/Holiday+Inn+%26+Suites+Monterey+Park+Los+Angeles+by+IHG" target="_blank" rel="noreferrer">Google Maps</a><a class="button" href="https://www.getty.edu/visit/center/faqs/" target="_blank" rel="noreferrer" data-zh="Getty入场预约与行李">Getty入場予約・手荷物</a><a class="button" href="https://bounce.com/" target="_blank" rel="noreferrer" data-zh="行李寄存 Bounce">荷物預かり Bounce</a></div></div>
+          <p class="day-cost">小計：宿泊 CNY 1,049 ＋ 当日の交通・荷物預かり・食事 USD 213–335（概算）。航空券・夕食・買い物・追加税等は未計上。<span class="zh" lang="zh-Hans">小计：住宿 CNY 1,049 ＋ 当天交通、行李寄存与餐饮 USD 213–335（估算）。未计机票、晚餐、购物及额外税费。</span></p>
+        </article>
+
+        <article id="current-day-ca-1002" class="daily-section">
+          <div class="daily-head"><div class="daily-date"><strong>10/2</strong><span>金曜日 / Fountain Valley → Milpitas</span><span class="zh" lang="zh-Hans">星期五 / Fountain Valley → Milpitas</span></div><p class="route-summary">ツアー行程。07:00に9125 Recreation Cir, Fountain Valleyの#1 loadから乗車し、18:00にMilpitasのSheratonへ到着する案です。<span class="zh" lang="zh-Hans">旅游团安排：07:00在Fountain Valley 9125 Recreation Cir的#1 load上车，18:00抵达Milpitas Sheraton。</span></p></div>
+          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/2</strong><span>Tour day / Fountain Valley → Milpitas</span><span class="zh" lang="zh-Hans">旅游日 / Fountain Valley → Milpitas</span></div><div class="schedule-body">
+            <div class="schedule-row"><time>07:00</time><div><strong>Tour bus乗車</strong><p class="day-note">9125 Recreation Cir, Fountain Valley, CA #1 load。集合時刻・車両は予約元で要確認。</p></div></div>
+            <div class="schedule-row"><time>07:00–18:00</time><div><strong>ツアー移動</strong><p class="day-note">ユーザー提供のルートに従う。途中の観光内容・休憩は未入力。</p></div></div>
+            <div class="schedule-row"><time>18:00</time><div><strong>Milpitas Sheraton check-in</strong><p class="day-note">Barber Ln周辺。ホテル名・部屋・送迎条件は予約元で確認。</p></div></div>
+          </div></article>
+          <div class="notice"><h3>ツアー地図<span class="zh" lang="zh-Hans">旅游团地图</span></h3><p>Day2–4共通のユーザー提供リンクです。各日の停車地と到着時刻は予約元で確認します。</p><a class="button" href="https://maps.app.goo.gl/d6ueUFs1jq4qLbyRA" target="_blank" rel="noreferrer">ツアー地図 / 旅游地图</a></div>
+          <div class="card hotel-card"><h3>宿泊候補: Sheraton San Jose Silicon Valley（SHERATON, Milpitas）</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-sheraton-san-jose.jpg" alt="Sheraton San Jose Silicon Valley の外観" loading="lazy"><figcaption><a class="credit" href="https://www.marriott.com/en-us/hotels/sjcsa-sheraton-san-jose-silicon-valley/photos/" target="_blank" rel="noreferrer">写真出典: Marriott公式ギャラリー（外観）</a><span class="zh" lang="zh-Hans">照片来源：Marriott官方画廊（外观）</span></figcaption></figure><p class="small">Barber Ln, Milpitas, CA 95035。画像はこの地域の正式名称候補であるSheraton San Jose Silicon Valleyの外観です。予約元に表示された正式ホテル名・予約情報は要確認。<span class="zh" lang="zh-Hans">位于Milpitas的Barber Ln附近（CA 95035）；图片为该地区正式名称候选Sheraton San Jose Silicon Valley的外观。预约来源显示的正式酒店名称和预订信息待确认。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton+Barber+Lane+Milpitas+California" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
+          <p class="day-cost">小計：金額未記録。ツアー代・宿泊・食事の内訳と、ツアー料金に含まれる範囲を確認。<span class="zh" lang="zh-Hans">小计：金额尚未记录。需确认团费、住宿、餐饮明细及团费包含范围。</span></p>
+        </article>
+
+        <article id="current-day-ca-1003" class="daily-section">
+          <div class="daily-head"><div class="daily-date"><strong>10/3</strong><span>土曜日 / Tour → Modesto</span><span class="zh" lang="zh-Hans">星期六 / 旅游团 → Modesto</span></div><p class="route-summary">ツアー日。終了時刻や停車地はまだ入力せず、Modestoの宿泊先だけ確定候補として表示します。<span class="zh" lang="zh-Hans">旅游团行程日；结束时间和停靠点尚未输入，只显示Modesto住宿候选。</span></p></div>
+          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/3</strong><span>Tour day / Modesto</span><span class="zh" lang="zh-Hans">旅游日 / Modesto</span></div><div class="schedule-body">
+            <div class="schedule-row"><time>未入力</time><div><strong>ツアー行程</strong><p class="day-note">集合・出発・停車地・終了時刻を予約元の案内で補完する。</p></div></div>
+            <div class="schedule-row"><time>Evening</time><div><strong>Modesto check-in</strong><p class="day-note">La Casa Modesto, Ascend Hotel Collectionへ移動。</p></div></div>
+          </div></article>
+          <div class="card hotel-card"><h3>宿泊: La Casa Modesto, Ascend Hotel Collection</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-la-casa-modesto.jpg" alt="La Casa Modesto, Ascend Hotel Collection の館内" loading="lazy"><figcaption><a class="credit" href="https://www.hrs.com/en/hotel/159335" target="_blank" rel="noreferrer">写真出典: HRSホテルギャラリー（館内・代表画像）</a><span class="zh" lang="zh-Hans">照片来源：HRS酒店画廊（室内・代表性照片）</span></figcaption></figure><p class="small">1720 Sisk Rd, Modesto, CA 95350。画像は安定して取得できた館内の代表画像です。チェックイン時刻、ツアーの送迎場所、朝食条件は要確認。<span class="zh" lang="zh-Hans">地址：1720 Sisk Rd, Modesto, CA 95350；图片为可稳定取得的室内代表性照片。入住时间、旅游团接送点和早餐条件待确认。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=La+Casa+Modesto+Ascend+Hotel+Collection" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
+
+        <div class="link-row"><a class="button" href="https://maps.app.goo.gl/d6ueUFs1jq4qLbyRA" target="_blank" rel="noreferrer" data-zh="旅游团路线地图">ツアーのルート地図</a></div>
+          <p class="day-cost">小計：金額未記録。宿泊・食事がツアー代に含まれるか確認し、重複計上しない。<span class="zh" lang="zh-Hans">小计：金额尚未记录。先确认住宿与餐饮是否包含在团费中，避免重复计算。</span></p>
+        </article>
+
+        <article id="current-day-ca-1004" class="daily-section">
+          <div class="daily-head"><div class="daily-date"><strong>10/4</strong><span>日曜日 / Yosemite・El Capitan → Los Angeles</span><span class="zh" lang="zh-Hans">星期日 / 优胜美地・El Capitan → 洛杉矶</span></div><p class="route-summary">07:00出発、YosemiteのEl Capitanを訪問。Union Stationへ18:00頃に戻れるかは未確定です。<span class="zh" lang="zh-Hans">07:00出发，参观优胜美地El Capitan；能否在18:00左右返回Union Station尚未确定。</span></p></div>
+          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/4</strong><span>Yosemite / El Capitan → Union Station? → LAX hotel</span><span class="zh" lang="zh-Hans">优胜美地 / El Capitan → Union Station? → LAX酒店</span></div><div class="schedule-body">
+            <div class="schedule-row"><time>07:00</time><div><strong>出発</strong><p class="day-note">ツアー指定の出発。荷物・朝食・集合条件は要確認。</p></div></div>
+            <div class="schedule-row"><time>日中</time><div><strong>Yosemite / El Capitan</strong><p class="day-note">観光範囲・滞在時間はツアー行程に従う。</p></div></div>
+            <div class="schedule-row"><time>18:00頃?</time><div><strong>Union Stationへ戻る?</strong><p class="day-note">到着駅と時刻は未確定。確定しない場合はLAXホテルへの移動方法を予約元に確認。</p></div></div>
+            <div class="schedule-row"><time>Evening</time><div><strong>LAX Airport hotel check-in</strong><p class="day-note">翌朝便のため、ホテルからLAXまでの送迎と所要時間を確認。</p></div></div>
+          </div></article>
+          <div class="card hotel-card"><h3>宿泊: Holiday Inn Los Angeles LAX Airport by IHG</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-holiday-inn-lax.jpg" alt="Holiday Inn Los Angeles LAX Airport の外観" loading="lazy"><figcaption><a class="credit" href="https://www.ihg.com/holidayinn/hotels/us/en/los-angeles/laxia/hoteldetail/gallery" target="_blank" rel="noreferrer">写真出典: IHG公式ギャラリー（外観）</a><span class="zh" lang="zh-Hans">照片来源：IHG官方画廊（外观）</span></figcaption></figure><p class="small">10/4–10/5、Los Angeles、CNY 1,029。キャンセルポリシーの表示はあるが、無料キャンセルとは分類しない。税・手数料・空港シャトルは予約画面で再確認。<span class="zh" lang="zh-Hans">10/4–10/5，洛杉矶，1,029元。显示取消政策，但不将其分类为免费取消；税费、手续费和机场接驳请在预订页面复核。</span></p><div class="link-row"><a class="button" href="https://www.booking.com/hotel/us/holiday-inn-los-angeles-international-airport.ja.html" target="_blank" rel="noreferrer">Booking</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Holiday+Inn+Los+Angeles+LAX+Airport" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
+
+        <div class="link-row"><a class="button" href="https://maps.app.goo.gl/d6ueUFs1jq4qLbyRA" target="_blank" rel="noreferrer" data-zh="旅游团路线地图">ツアーのルート地図</a></div>
+          <p class="day-cost">小計：宿泊 CNY 1,029。ツアー代・食事・ホテルへの移動費は未計上。<span class="zh" lang="zh-Hans">小计：住宿 CNY 1,029。未计团费、餐饮及前往酒店的交通费。</span></p>
+        </article>
+
+        <article id="current-day-hi-1005" class="daily-section">
+          <div class="daily-head"><div class="daily-date"><strong>10/5</strong><span>月曜日 / Honolulu・街歩き → Diamond Head</span><span class="zh" lang="zh-Hans">星期一 / 檀香山・街区步行 → 钻石山</span></div><p class="route-summary">ロサンゼルス空港（LAX）からホノルル空港（HNL）へ移動後、Queen Kapiolani Hotel に荷物を預け、ワイキキを歩きながらHenry's Place（高橋果実店、234 Beach Walk）へ立ち寄り、KapahuluのLeonard'sで揚げ菓子マラサダを食べてからDiamond Headへ向かう流れを第一案にします。HNLの実到着時刻とDiamond Headの予約枠に合わせて街歩きを短縮します。<span class="zh" lang="zh-Hans">从洛杉矶机场（LAX）抵达檀香山机场（HNL）后，先在Queen Kapiolani Hotel寄存行李，步行威基基并前往Henry's Place（高桥水果店，234 Beach Walk），再到Kapahulu的Leonard's吃油炸点心马拉萨达，之后前往钻石山。根据HNL实际抵达时间和钻石山预约时段缩短街区步行。</span></p></div>
+          <article class="card">
+          <div class="tag-row"><span class="tag coral">10/5 Mon</span><span class="tag">LAX → HNL</span></div>
+          <div class="flight">
+            <div class="airport"><span class="time">07:00</span><strong>LAX</strong><span class="muted small">出発（暫定）<span class="zh" lang="zh-Hans">出发（暂定）</span></span></div>
+            <div class="plane-line" aria-hidden="true"></div>
+            <div class="airport"><span class="time">10:00</span><strong>HNL</strong><span class="muted small">到着（暫定）<span class="zh" lang="zh-Hans">抵达（暂定）</span></span></div>
+          </div>
+          <p class="small muted">航空会社、便名、ターミナル、所要時間、予約済みかどうかは未入力です。<span class="zh" lang="zh-Hans">航空公司、航班号、航站楼、飞行时长及是否已预订尚未输入。</span></p>
+        </article>
+          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/5</strong><span>LAX → Honolulu / Waikiki</span><span class="zh" lang="zh-Hans">LAX → 檀香山 / 威基基</span></div><div class="schedule-body">
+            <div class="schedule-row"><time>07:00</time><div><strong>LAX出発 → HNL</strong><p class="day-note">ユーザー提供の暫定時刻。便名・ターミナル・荷物条件は予約画面で確認。</p></div></div>
+            <div class="schedule-row"><time>10:00以降</time><div><strong>HNL到着 → ホテルへ<span class="zh" lang="zh-Hans">抵达HNL → 前往酒店</span></strong><p class="day-note">空港からQueen Kapiolani Hotelへ移動し、まず荷物を預ける。国内線の荷物受取・移動を含め、街歩き開始は11:00–11:30頃を基準にする。<span class="zh" lang="zh-Hans">从机场前往Queen Kapiolani Hotel，先寄存行李。计入国内航班取行李和交通，街区步行以11:00–11:30左右开始为基准。</span></p></div></div>
+            <div class="schedule-row"><time>11:30–12:45</time><div><strong>ワイキキ街歩き → Henry's Place / 高橋果実店<span class="zh" lang="zh-Hans">威基基步行 → Henry's Place / 高桥水果店</span></strong><p class="day-note">234 Beach Walkへ歩いて向かい、フルーツ系を軽く食べる。営業時間・在庫・支払方法は変わり得るため、当日に確認し、ここで長居しない。<span class="zh" lang="zh-Hans">步行前往234 Beach Walk，吃些水果类食品。营业时间、库存和支付方式可能变化，当天确认并避免久留。</span></p></div></div>
+            <div class="schedule-row"><time>12:45–13:15</time><div><strong>Kapahuluへ移動<span class="zh" lang="zh-Hans">前往Kapahulu</span></strong><p class="day-note">Leonard's Bakery（933 Kapahulu Ave）へ徒歩または短距離配車。行列と暑さを見て、Diamond Headの予約枠に間に合う手段を選ぶ。<span class="zh" lang="zh-Hans">步行或短途叫车前往Leonard's Bakery（933 Kapahulu Ave）。根据排队和炎热程度选择能赶上钻石山预约时段的交通方式。</span></p></div></div>
+            <div class="schedule-row"><time>13:15–13:45</time><div><strong>Leonard'sで揚げ菓子マラサダ<span class="zh" lang="zh-Hans">在Leonard's吃油炸点心马拉萨达</span></strong><p class="day-note">食べ歩きは1個程度を目安にし、行列が長ければ購入後すぐ移動。公式掲載のKapahulu店を使う。<span class="zh" lang="zh-Hans">以边走边吃一个左右为准，排队较长时买好后立即移动；使用官网列出的Kapahulu店。</span></p></div></div>
+            <div class="schedule-row"><time>14:00–16:00</time><div><strong>Diamond Head（時間指定予約）<span class="zh" lang="zh-Hans">钻石山（预约时段入场）</span></strong><p class="day-note">非居住者は入場予約が必要。駐車する場合は駐車予約も必要で、予約枠の開始から30分以内に到着する。登山は1.5–2時間を見込み、暑さ対策を優先する。<span class="zh" lang="zh-Hans">非居民需要预约入场；停车时还需预约停车位，并在预约时段开始后30分钟内抵达。徒步预计1.5–2小时，优先做好防暑准备。</span></p></div></div>
+            <div class="schedule-row"><time>Evening</time><div><strong>ワイキキで夕食：ガーリックシュリンプ or ステーキ丼<span class="zh" lang="zh-Hans">在威基基晚餐：蒜香虾或牛排盖饭</span></strong><p class="day-note">Diamond Head後の回復食は、ガーリックシュリンプまたはステーキ丼を優先する。店は当日の位置・営業時間・行列で決め、到着が遅れた場合は街歩きを短縮して夕食を残す。<span class="zh" lang="zh-Hans">钻石山后的恢复餐优先选择蒜香虾或牛排盖饭。根据当天位置、营业时间和排队情况选择店家；若抵达较晚，缩短街区步行也保留晚餐。</span></p></div></div>
+          </div></article>
+
+          <div class="card hotel-card"><h3>ホテル・立ち寄り・確認リンク<span class="zh" lang="zh-Hans">酒店・顺路地点・确认链接</span></h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-queen-kapiolani.jpg" alt="Queen Kapiolani Hotel のホテル外観・館内" loading="lazy"><figcaption><a class="credit" href="https://www.queenkapiolani.com/hotel-amenities/gallery" target="_blank" rel="noreferrer">写真出典: Queen Kapiolani公式ギャラリー</a><span class="zh" lang="zh-Hans">照片来源：Queen Kapiolani官方画廊</span></figcaption></figure><p class="small"><strong>Queen Kapiolani Hotel </strong>（10/5–10/6、CNY 1,301、取消しても返金なし）。ホテルを起点に、Henry's Place（234 Beach Walk）→ Leonard's Bakery（933 Kapahulu Ave）→ Diamond Headの順で評価する。<span class="zh" lang="zh-Hans">Queen Kapiolani Hotel（10/5–10/6，1,301元，取消后不退款）。以酒店为起点，按Henry's Place（234 Beach Walk）→ Leonard's Bakery（933 Kapahulu Ave）→ 钻石山的顺序评估。</span></p><div class="link-row"><a class="button" href="https://www.queenkapiolani.com/" target="_blank" rel="noreferrer">ホテル公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Henry%27s+Place+234+Beach+Walk+Honolulu" target="_blank" rel="noreferrer">高橋果実店 地図</a><a class="button" href="https://leonardshawaii.com/locations/" target="_blank" rel="noreferrer">Leonard's公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Leonard%27s+Bakery+933+Kapahulu+Ave+Honolulu" target="_blank" rel="noreferrer">マラサダ 地図</a><a class="button" href="https://gostateparks.hawaii.gov/diamondhead/about" target="_blank" rel="noreferrer">Diamond Head予約</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Queen+Kapiolani+Hotel+Honolulu" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
+          <p class="day-cost">小計：宿泊 CNY 1,301。航空券・空港移動・食事・Diamond Head入場料は未計上。<span class="zh" lang="zh-Hans">小计：住宿 CNY 1,301。未计机票、机场交通、餐饮及钻石山门票。</span></p>
+        </article>
+
+        <article id="current-day-hi-1006" class="daily-section">
+          <div class="daily-head"><div class="daily-date"><strong>10/6</strong><span>火曜日 / Maui</span><span class="zh" lang="zh-Hans">星期二 / 茂宜岛</span></div><p class="route-summary">ホノルル空港（HNL）からマウイ島のカフルイ空港（OGG）へ移動後、空港でレンタカーを借り、Kohea Kai Hotel Maui（Kihei） を拠点にマウイ島滞在を組み立てます。Haleakalāを含める場合は移動量と疲労を優先して候補を絞ります。<span class="zh" lang="zh-Hans">从檀香山机场（HNL）飞往茂宜岛卡胡卢伊机场（OGG）后，在机场取租车，以Kohea Kai Hotel Maui（Kihei）为基地安排茂宜岛行程；若加入Haleakalā，优先控制交通量和疲劳并筛选候选。</span></p></div>
+
+          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/6</strong><span>Honolulu → Maui / rental car</span><span class="zh" lang="zh-Hans">檀香山 → 茂宜岛 / 租车</span></div><div class="schedule-body">
+            <div class="schedule-row"><time>08:00</time><div><strong>HNL出発 → OGG</strong><p class="day-note">ユーザー提供の島間フライト時刻。航空会社・便名・ターミナル・手荷物条件は予約控えで確認。<span class="zh" lang="zh-Hans">时间由用户提供；航空公司、航班号、航站楼与行李条件请核对预订凭证。</span></p></div></div>
+            <div class="schedule-row"><time>08:50</time><div><strong>OGG到着・レンタカー受取</strong><p class="day-note">営業所の場所、受取時間、保険、返却条件を確認。</p></div></div>
+            <div class="schedule-row"><time>Daytime</time><div><strong>Maui候補ルート</strong><p class="day-note">現在の08:50 OGG到着後のDay6案では日の出に間に合わない。日の出を別日程で選ぶ場合だけHaleakalāの3:00–7:00入園予約が必要となり、現行案は昼間・夕景とPāʻia、Mana Foods、Ho‘okipa Beach Park、Kiheiの疲労度を比較する。</p></div></div>
+            <div class="schedule-row"><time>Evening</time><div><strong>Kohea Kai Mauiへ移動・休息</strong><p class="day-note">チェックイン、駐車、夕食、翌日のOGG返却・出発に無理がないか確認。</p></div></div>
+          </div></article>
+
+          <div class="card hotel-card"><h3>Maui候補と確認先</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-kohea-kai-maui.jpg" alt="Kohea Kai Hotel Maui の外観" loading="lazy"><figcaption><a class="credit" href="https://www.koheakai.com/gallery" target="_blank" rel="noreferrer">写真出典: Kohea Kai公式ギャラリー（外観）</a><span class="zh" lang="zh-Hans">照片来源：Kohea Kai官方画廊（外观）</span></figcaption></figure><p class="small">山頂の景色を見るHaleakalāか、Pāʻia・Kiheiの街歩きを中心に選ぶ。08:50着の日は日の出を予定せず、昼間・夕景の入園料、道路・天候、ホテルへの帰り道を確認する。<span class="zh" lang="zh-Hans">选择哈雷阿卡拉山顶景色，或以Pāʻia、Kihei街区步行为主。08:50抵达当天不安排日出；确认白天或日落时段的门票、道路、天气及返回酒店路线。</span></p><div class="link-row"><a class="button" href="https://www.nps.gov/hale/planyourvisit/sunrise.htm" target="_blank" rel="noreferrer">Haleakalā日の出</a><a class="button" href="https://www.nps.gov/hale/index.htm" target="_blank" rel="noreferrer">Haleakalā NPS</a><a class="button" href="https://www.koheakai.com/" target="_blank" rel="noreferrer">Kohea Kai Maui</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Paia+Maui+Mana+Foods+Hookipa+Beach+Park+Kihei" target="_blank" rel="noreferrer">候補地図</a></div></div>
+        <a class="planning-link" href="#compare-1006">この日の別案・調整条件を見る<span class="zh" lang="zh-Hans">查看当天备选方案与调整条件</span></a>
+
+        <p class="small">Kohea Kai Hotel Maui：10/6–10/7、Kihei泊。予約画面の提携販売プランでCNY 1,524。取消条件・駐車料金は予約元で確認。<span class="zh" lang="zh-Hans">Kohea Kai Hotel Maui：10/6–10/7住在Kihei，预订页面的合作伙伴优惠为CNY 1,524。取消条件与停车费向预订方确认。</span></p>
+          <p class="day-cost">小計：宿泊 CNY 1,524。航空券・レンタカー・燃料・駐車・食事・入園料は未計上。<span class="zh" lang="zh-Hans">小计：住宿 CNY 1,524。未计机票、租车、燃油、停车、餐饮及公园门票。</span></p>
+        </article>
+
+        <article id="current-day-hi-1007" class="daily-section">
+          <div class="daily-head"><div class="daily-date"><strong>10/7</strong><span>水曜日 / Maui → Oahu東側 → いいディナー</span><span class="zh" lang="zh-Hans">星期三 / 茂宜岛 → 瓦胡岛东侧 → 精选晚餐</span></div><p class="route-summary">カフルイ空港（OGG）からホノルル空港（HNL）へ移動後、レンタカーでオアフ島東側を軽く回り、夜はワイキキで予約した良いディナーを主目的にします。Sheraton Waikikiの画像は10/8–10/9泊を示し、The Twin Finの予約とも重複するため、ホテルは未確定のままです。夕食はホテル確定を待たずに候補を選び、昼の立ち寄りを予約時刻に合わせて削ります。<span class="zh" lang="zh-Hans">从卡胡卢伊机场（OGG）飞往檀香山机场（HNL）后，租车轻量游览瓦胡岛东侧，晚上把在威基基预约的精选晚餐作为主要目的。Sheraton Waikiki截图显示的是10/8–10/9住宿，与The Twin Fin预订重叠，因此酒店仍未确定。晚餐先选定候选，不等酒店最终确认，并按预约时间删减白天的停留。</span></p></div>
+
+          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/7</strong><span>Maui → Oahu east shore</span><span class="zh" lang="zh-Hans">茂宜岛 → 瓦胡岛东侧</span></div><div class="schedule-body">
+            <div class="schedule-row"><time>08:41</time><div><strong>OGG出発 → HNL</strong><p class="day-note">ユーザー提供の島間フライト時刻。航空会社・便名・ターミナル・手荷物条件は予約控えで確認。<span class="zh" lang="zh-Hans">时间由用户提供；航空公司、航班号、航站楼与行李条件请核对预订凭证。</span></p></div></div>
+            <div class="schedule-row"><time>09:20以降</time><div><strong>HNL到着・レンタカー受取</strong><p class="day-note">空港営業所、受取手続き、荷物、ホテル駐車を確認。</p></div></div>
+            <div class="schedule-row"><time>Daytime</time><div><strong>東側候補を軽く回る</strong><p class="day-note">Ho‘omaluhiaの通常入園とByodo-Inの当日券を基本に、Waimānalo、Halona、Sandy Beachから一部を短時間立ち寄りにする。特別プログラムは別予約。</p></div></div>
+            <div class="schedule-row"><time>18:00–20:30</time><div><strong>いいディナー（第一候補：La Mer / 代替：Hy's）<span class="zh" lang="zh-Hans">精选晚餐（首选：La Mer / 备选：Hy's）</span></strong><p class="day-note">10/7は水曜日。La Merは17:30–20:30、Hy'sは月〜木の最終着席が20:30。どちらも事前予約し、東側の立ち寄り数を予約時刻に合わせて削る。La Merは襟付き・長ズボン等のドレスコード、Hy'sも襟付きシャツと靴が必要。<span class="zh" lang="zh-Hans">10月7日为星期三。La Mer营业17:30–20:30，Hy's周一至周四最后入座时间为20:30。两者均需提前预约，并按预约时间删减东侧停留。La Mer要求有领衬衫、长裤等着装；Hy's也要求有领衬衫和鞋子。</span></p></div></div>
+          </div></article>
+
+          <div class="card"><h3>Oahu東側候補と確認先</h3><p class="small">Ho‘omaluhia Botanical Garden、Byodo-In Temple、Waimānalo Beach、Halona Blowhole、Sandy Beach、魚をご飯などと食べるポケを候補として保持する。通常入園は予約前提にせず、営業時間・木曜休園・入場条件・駐車・ホテル戻り時刻を確認する。</p><div class="link-row"><a class="button" href="https://www.honolulu.gov/parks/honolulu/ho-omaluhia-botanical-garden.html" target="_blank" rel="noreferrer">Ho‘omaluhia公式</a><a class="button" href="https://byodo-in.com/visit/" target="_blank" rel="noreferrer">Byodo-In案内</a><a class="button" href="https://tickets.byodo-in.com/mainstore" target="_blank" rel="noreferrer">Byodo-In券</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Hoomaluhia+Botanical+Garden+Byodo-In+Waimanalo+Halona+Sandy+Beach" target="_blank" rel="noreferrer">候補地図</a></div></div>
+          <div class="card"><h3>7日目のディナー候補<span class="zh" lang="zh-Hans">第7天晚餐候选</span></h3><p class="small"><strong>第一候補：La Mer at Halekulani。</strong> 旅行中に一度は奮発する前提の、海辺のフレンチ系ファインダイニング。10/7（水）は営業日で、17:30–20:30。襟付きシャツ／アロハシャツ、長ズボン、靴が必要。<strong>代替：Hy's Steak House。</strong> ワイキキ内のクラシックなステーキハウスで、月〜木は17:00–20:30が最終着席、水曜はライブ音楽あり。いずれも事前予約し、服装を準備する。<span class="zh" lang="zh-Hans"><strong>首选：La Mer at Halekulani。</strong> 以旅行中至少奢侈享受一次为前提的海边法式风格高级餐厅。10月7日（周三）营业，17:30–20:30。需要有领衬衫／夏威夷衬衫、长裤和鞋子。<strong>备选：Hy's Steak House。</strong> 威基基的经典牛排馆，周一至周四营业时间为17:00–20:30（20:30最后入座），周三有现场音乐。两者都需提前预约并准备合适服装。</span></p><div class="link-row"><a class="button" href="https://www.halekulani.com/dining/la-mer/" target="_blank" rel="noreferrer">La Mer公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=La+Mer+Halekulani+Honolulu" target="_blank" rel="noreferrer">La Mer地図</a><a class="button" href="https://hyswaikiki.com/" target="_blank" rel="noreferrer">Hy's公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Hy%27s+Steak+House+Waikiki+2440+Kuhio+Ave+Honolulu" target="_blank" rel="noreferrer">Hy's地図</a></div></div>
+        <a class="planning-link" href="#compare-1007">この日の別案・調整条件を見る<span class="zh" lang="zh-Hans">查看当天备选方案与调整条件</span></a>
+
+        <p class="small">10/7–10/8の宿泊は未確定。10/8–10/9のSheraton予約を今夜の宿泊とみなさず、今夜の部屋を先に確保する。<span class="zh" lang="zh-Hans">10/7–10/8住宿尚未确定。不要把10/8–10/9的Sheraton预订当作今晚住宿，应先确认今晚的房间。</span></p>
+        <div class="link-row"><a class="button" href="https://www.bishopmuseum.org/visit/tickets/" target="_blank" rel="noreferrer" data-zh="了解夏威夷历史文化的Bishop Museum门票">ハワイの歴史・文化を学ぶ Bishop Museumの入場券</a></div>
+          <p class="day-cost">小計：金額未記録。今夜の宿泊・航空券・レンタカー・食事は未計上。SheratonのUSD 666.36は10/8泊のため本日には含めない。<span class="zh" lang="zh-Hans">小计：金额尚未记录。未计今晚住宿、机票、租车及餐饮。Sheraton的USD 666.36属于10/8住宿，不计入今天。</span></p>
+        </article>
+
+        <article id="current-day-hi-1008" class="daily-section">
+          <div class="daily-head"><div class="daily-date"><strong>10/8</strong><span>木曜日 / Pearl Harbor → North Shore</span><span class="zh" lang="zh-Hans">星期四 / Pearl Harbor → North Shore</span></div><p class="route-summary">レンタカーでPearl HarborとNorth Shore方面をまとめて回る日。宿泊はThe Twin Fin、朝食なし。Pearl Harborを軸に、Dole・Haleiwa・Giovanni’s・Laniakea・Sunset Beachは交通と営業時間を見て絞ります。<span class="zh" lang="zh-Hans">租车集中游览Pearl Harbor和North Shore；住宿The Twin Fin且不含早餐。以Pearl Harbor为轴，根据交通和营业时间筛选Dole、Haleiwa、Giovanni’s、Laniakea和Sunset Beach。</span></p></div>
+
+          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/8</strong><span>Pearl Harbor / North Shore</span><span class="zh" lang="zh-Hans">Pearl Harbor / North Shore</span></div><div class="schedule-body">
+            <div class="schedule-row"><time>08:00–11:00候補</time><div><strong>Pearl Harbor</strong><p class="day-note">案内・展示のあるビジターセンターと博物館は予約不要。船で渡るUSS Arizona記念館のプログラムに参加するなら事前予約し、開始1時間前到着を計画する。<span class="zh" lang="zh-Hans">提供咨询与展览的游客中心和博物馆无需预约。若参加乘船前往USS Arizona纪念馆的项目，提前预约，并计划在开始前1小时抵达。</span></p></div></div>
+            <div class="schedule-row"><time>11:30頃候補</time><div><strong>Dole Plantation</strong><p class="day-note">パイナップルソフトのDole Whipだけなら予約不要。園内列車・迷路・庭園ツアーを入れる場合はチケットを先に確認する。</p></div></div>
+            <div class="schedule-row"><time>午後候補</time><div><strong>Haleiwa town / Giovanni’s</strong><p class="day-note">昼食と街歩きを一体化。営業時間・列・駐車を確認し、全部を詰め込まない。</p></div></div>
+            <div class="schedule-row"><time>午後後半候補</time><div><strong>Laniakea Beach / Sunset Beach</strong><p class="day-note">海況・日没・帰路渋滞を見て一方または短時間立ち寄りにする。</p></div></div>
+            <div class="schedule-row"><time>Evening</time><div><strong>The Twin Finへ戻る</strong><p class="day-note">ホテル戻り時刻と翌日の出発、レンタカー返却条件を確認。</p></div></div>
+          </div></article>
+
+          <div class="card hotel-card"><h3>宿泊確認とNorth Shore候補</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-twin-fin.jpg" alt="The Twin Fin Hotel とワイキキの海岸" loading="lazy"><figcaption><a class="credit" href="https://www.twinfinwaikiki.com/gallery/" target="_blank" rel="noreferrer">写真出典: The Twin Fin公式ギャラリー</a><span class="zh" lang="zh-Hans">照片来源：The Twin Fin官方画廊</span></figcaption></figure><p class="small"><strong>The Twin Fin Hotel </strong>（10/8–10/9、CNY 1,692、返金不可）。ホテル朝食なし。Pearl Harbor、Dole Plantation、Haleiwa、Giovanni’s Shrimp Truck、Laniakea Beach、Sunset Beachを保持し、USS Arizonaの枠、Dole有料アクティビティ、営業時間、駐車、野生動物への配慮、帰路渋滞を確認する。</p><div class="link-row"><a class="button" href="https://www.twinfinwaikiki.com/" target="_blank" rel="noreferrer">ホテル公式</a><a class="button" href="https://www.nps.gov/thingstodo/visit-the-uss-arizona-memorial.htm" target="_blank" rel="noreferrer">USS Arizona券</a><a class="button" href="https://www.nps.gov/pearl/index.htm" target="_blank" rel="noreferrer">Pearl Harbor NPS</a><a class="button" href="https://booking.doleplantation.com/" target="_blank" rel="noreferrer">Dole予約</a><a class="button" href="https://www.doleplantation.com/" target="_blank" rel="noreferrer">Dole公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Pearl+Harbor+Dole+Plantation+Haleiwa+Giovannis+Shrimp+Truck+Laniakea+Beach+Sunset+Beach" target="_blank" rel="noreferrer">候補地図</a></div></div>
+        <a class="planning-link" href="#compare-1008">この日の別案・調整条件を見る<span class="zh" lang="zh-Hans">查看当天备选方案与调整条件</span></a>
+        <div class="card hotel-card"><h3>Sheraton Waikiki Beach Resort（画像確認: 10/8–10/9）</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-sheraton-waikiki.jpg" alt="Sheraton Waikiki Beach Resort の外観" loading="lazy"><figcaption><a class="credit" href="https://www.marriott.com/en-us/hotels/hnlws-sheraton-waikiki-beach-resort/photos/" target="_blank" rel="noreferrer">写真出典: Marriott公式ギャラリー（外観）</a><span class="zh" lang="zh-Hans">照片来源：Marriott官方画廊（外观）</span></figcaption></figure><p class="small"><strong>確認番号（非公開）</strong>。2255 Kalākaua Avenue, Honolulu, HI 96815、+1-808-922-4422。チェックイン 2026/10/8 15:00、チェックアウト 2026/10/9 11:00、1室・大人2名。客室は「インフィニティ オーシャンフロント（20〜27階）、1キング」。滞在費総額はUSD 666.36。The Twin Finの同日予約と重複しているため、片方を自動で確定・取消せず、最終予約を選択する。<span class="zh" lang="zh-Hans">确认号（不公开）；地址2255 Kalākaua Avenue, Honolulu, HI 96815，电话+1-808-922-4422。入住2026年10月8日15:00，退房2026年10月9日11:00，1间客房、2位成人。房型为“Infinity Oceanfront，20至27层，1张特大床”。住宿总额666.36美元。与The Twin Fin同日期预订重叠，因此不自动确认或取消，需选择最终预订。</span></p><div class="link-row"><a class="button" href="https://www.marriott.com/en-us/hotels/hnlws-sheraton-waikiki/overview/" target="_blank" rel="noreferrer">ホテル公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton+Waikiki+Beach+Resort+2255+Kalakaua+Avenue+Honolulu" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
+
+        <div class="link-row"><a class="button" href="https://www.nps.gov/perl/uss-arizona-memorial-programs.htm" target="_blank" rel="noreferrer" data-zh="USS Arizona预约与集合说明">USS Arizonaの予約・集合案内</a></div>
+          <p class="day-cost">宿泊小計候補：The Twin Fin CNY 1,692 ／ Sheraton USD 666.36。同日重複のため合算せず、最終選択・取消費用の確認待ち。レンタカー・食事・有料施設等は未計上。<span class="zh" lang="zh-Hans">住宿小计候选：The Twin Fin CNY 1,692 ／ Sheraton USD 666.36。两笔预订日期重叠，不合计，待确认最终选择及取消费用。未计租车、餐饮及收费景点等。</span></p>
+        </article>
+
+        <article id="current-japan-after-arrival" class="daily-section">
+          <div class="daily-head"><div class="daily-date"><strong>日本到着後</strong><span>自由時間 + 国内1泊</span><span class="zh" lang="zh-Hans">抵达日本后 / 自由时间 + 日本国内一晚</span></div><p class="route-summary">日本到着後にも自由時間があり、その後に日本国内でさらに1泊する予定です。ショッピング・食事・居酒屋を優先し、到着時刻・場所・翌日の動線が合えば温泉も候補にします。<span class="zh" lang="zh-Hans">抵达日本后还有自由时间，之后计划在日本国内再住一晚。优先购物、用餐和居酒屋；若抵达时间、地点及次日动线合适，也将温泉列为候选。</span></p></div>
+
+          <div class="card"><h3>日本でやることの候補<span class="zh" lang="zh-Hans">抵达日本后的活动候选</span></h3><div class="grid two">
+            <div class="card compact"><h3>🛍️ ショッピング<span class="zh" lang="zh-Hans">购物</span></h3><p class="small">空港・宿泊地・翌日の移動動線に近い商業施設を優先し、営業時間と荷物の扱いを確認する。<span class="zh" lang="zh-Hans">优先选择靠近机场、住宿地或次日交通动线的商业设施，并确认营业时间和行李安排。</span></p></div>
+            <div class="card compact"><h3>🍜 食事<span class="zh" lang="zh-Hans">用餐</span></h3><p class="small">到着後すぐに無理なく入れる店と、翌日に回せる店を分け、移動を増やしすぎない。<span class="zh" lang="zh-Hans">区分抵达后可轻松用餐的店和可留到次日的店，避免增加过多移动。</span></p></div>
+            <div class="card compact"><h3>🍶 居酒屋<span class="zh" lang="zh-Hans">居酒屋</span></h3><p class="small">宿泊地から徒歩・公共交通で戻れる範囲を基本にし、営業時間、予約、最終交通を確認する。<span class="zh" lang="zh-Hans">以可从住宿地步行或乘公共交通返回的范围为主，并确认营业时间、预约和末班交通。</span></p></div>
+            <div class="card compact"><h3>♨️ 温泉（可能なら）<span class="zh" lang="zh-Hans">温泉（若条件允许）</span></h3><p class="small">到着時刻と翌日の予定に余裕がある場合だけ、日帰り温泉または温泉付き宿を候補にする。<span class="zh" lang="zh-Hans">只有抵达时间和次日安排有余量时，才考虑日归温泉或带温泉的住宿。</span></p></div>
+          </div><p class="small reservation-note">到着空港と時刻が確定してから、空港近くに泊まる案、翌日の目的地に近い都市に移る案、自由時間を空港周辺で使う案を比較する。現時点では都市名・ホテル名を固定しない。<span class="zh" lang="zh-Hans">待抵达机场和时间确定后，再比较住在机场附近、转移到靠近次日目的地的城市，以及在机场周边使用自由时间的方案。现阶段不固定城市名或酒店名。</span></p></div>
+          <p class="day-cost">小計：金額未記録。日本への航空券・国内1泊・交通・食事・買い物・温泉は未計上。<span class="zh" lang="zh-Hans">小计：金额尚未记录。未计赴日机票、日本国内一晚住宿、交通、餐饮、购物及温泉。</span></p>
+        </article>
       </div>
     </section>
 
-    <section id="glossary" class="band">
-      <div class="section-head">
-        <h2>用語ミニ解説<span class="zh" lang="zh-Hans">术语小注</span></h2>
-        <span class="muted small">このページで使う略語・タグ・旅行用語を短く整理しています。<span class="zh" lang="zh-Hans">简要整理本页面使用的缩写、标签和旅行术语。</span></span>
-      </div>
-      <div class="grid two">
-        <article class="card compact">
-          <h3>固定・候補・条件付き<span class="zh" lang="zh-Hans">已定、候选、有条件</span></h3>
-          <p>「固定」は予約や方針として決まったもの、「候補」は比較中、「条件付き」は時刻・天候・体力などを満たす場合だけ採用する案です。<span class="zh" lang="zh-Hans">“已定”表示已经预约或确定的事项；“候选”表示仍在比较；“有条件”表示只有满足时间、天气或体力等条件时才采用。</span></p>
-        </article>
-        <article class="card compact">
-          <h3>LAX・HNL・OGG・PEK<span class="zh" lang="zh-Hans">LAX、HNL、OGG、PEK</span></h3>
-          <p>空港コードです。LAX＝ロサンゼルス国際空港、HNL＝ホノルル、OGG＝マウイ島カフルイ、PEK＝北京首都国際空港を指します。<span class="zh" lang="zh-Hans">这些是机场代码：LAX＝洛杉矶国际机场，HNL＝檀香山机场，OGG＝茂宜岛卡胡卢伊机场，PEK＝北京首都国际机场。</span></p>
-        </article>
-        <article class="card compact">
-          <h3>時間指定予約・通常入園<span class="zh" lang="zh-Hans">预约时段、普通入场</span></h3>
-          <p>「時間指定予約」は指定された時間帯に入場する予約です。「通常入園」は特別イベントや指定プログラムを含まない通常の入場を指します。<span class="zh" lang="zh-Hans">“预约时段”表示在指定时间段入场；“普通入场”表示不包含特别活动或指定项目的日常参观。</span></p>
-        </article>
-        <article class="card compact">
-          <h3>動線・余白・buffer<span class="zh" lang="zh-Hans">动线、缓冲时间、buffer</span></h3>
-          <p>「動線」は荷物・交通・次の目的地を含めた移動の流れ、「余白」やbufferは、入国審査・行列・渋滞・道迷いのために残す追加時間です。<span class="zh" lang="zh-Hans">“动线”是结合行李、交通和下一站的整体移动路线；“余量”或buffer是为入境审查、排队、堵车和迷路预留的额外时间。</span></p>
-        </article>
-        <article class="card compact">
-          <h3>Bounce・Uber / Lyft・DASH<span class="zh" lang="zh-Hans">Bounce、Uber / Lyft、DASH</span></h3>
-          <p>Bounceは行李預かりサービス、Uber / Lyftはアプリ配車、DASHはロサンゼルスの路線バスです。Bounceは予約後に住所やQRコードが確定します。<span class="zh" lang="zh-Hans">Bounce是行李寄存服务，Uber / Lyft是网约车，DASH是洛杉矶的公交系统。Bounce通常在预约后才确定地址和二维码。</span></p>
-        </article>
-        <article class="card compact">
-          <h3>返金不可・無料キャンセル<span class="zh" lang="zh-Hans">不可退款、免费取消</span></h3>
-          <p>「返金不可」は取消しても宿泊費が戻らない条件、「無料キャンセル」は表示された締切時刻までなら料金なしで取消できる条件です。予約画面の期限を優先します。<span class="zh" lang="zh-Hans">“不可退款”表示取消后通常不退住宿费；“免费取消”表示在预订页面标明的截止时间前取消不会收费。以预订页面期限为准。</span></p>
-        </article>
-        <article class="card compact">
-          <h3>Visitor Center・USS Arizona Memorial<span class="zh" lang="zh-Hans">游客中心、USS Arizona Memorial</span></h3>
-          <p>Pearl HarborのVisitor Centerは案内・展示の入口、USS Arizona Memorialは別枠の記念施設プログラムです。後者に参加する場合だけ、枠の予約を先に確認します。<span class="zh" lang="zh-Hans">Pearl Harbor的游客中心是咨询和展览入口；USS Arizona Memorial是另一个纪念设施项目。只有参加后者时，才需要优先确认项目名额。</span></p>
-        </article>
-        <article class="card compact">
-          <h3>Dole Whip・Pineapple Express・Maze<span class="zh" lang="zh-Hans">Dole Whip、Pineapple Express、Maze</span></h3>
-          <p>Dole Whipはパイナップル味のソフトクリーム、Pineapple Expressは園内列車、Mazeは迷路、Garden Tourは庭園ガイドツアーです。後ろ3つは有料アクティビティとして確認します。<span class="zh" lang="zh-Hans">Dole Whip是菠萝软冰淇淋，Pineapple Express是园内小火车，Maze是迷宫，Garden Tour是花园导览。后三项按付费活动确认。</span></p>
-        </article>
-      </div>
-    </section>
-
-    <section class="grid two" aria-label="旅行前ToDo">
-      <div class="band">
-        <div class="section-head"><h2>旅行前ToDo<span class="zh" lang="zh-Hans">出发前待办</span></h2></div>
-        <ul class="checklist">
-          <li><span>Gettyの12:00前後の時間指定予約を確保する。<span class="zh" lang="zh-Hans">确认盖蒂中心12:00左右的预约时段。</span></span></li>
-          <li><span>1160 N Vermont Ave付近のBounceが24時間営業の掲載を維持しているか再確認する。<span class="zh" lang="zh-Hans">再次确认1160 N Vermont Ave附近Bounce是否仍标注为24小时营业。</span></span></li>
-          <li><span>現金を必要額だけ確保し、少額紙幣と予備の支払い手段を用意する。<span class="zh" lang="zh-Hans">准备必要金额的现金，并备好小额纸币和备用支付方式。</span></span></li>
-          <li><span>eSIMを契約し、対応端末・開通手順・データ容量・現地到着後の切替を確認する。<span class="zh" lang="zh-Hans">办理eSIM，确认设备兼容性、开通步骤、流量额度及抵达后切换方式。</span></span></li>
-          <li><span>クレカの海外利用設定、暗証番号、利用通知、予備カードを準備する。<span class="zh" lang="zh-Hans">准备信用卡境外使用设置、PIN、消费通知和备用卡。</span></span></li>
-          <li><span>Day2–4ツアーの集合場所・車両・各日の詳細を予約元で確認する。<span class="zh" lang="zh-Hans">向旅行团确认第2至4天的集合地点、车辆和每日详情。</span></span></li>
-          <li><span>Day4のUnion Station到着可否と、Day5の航空会社・便名・ターミナルを確定する。<span class="zh" lang="zh-Hans">确认第4天能否返回Union Station，以及第5天航空公司、航班号和航站楼。</span></span></li>
-        </ul>
-      </div>
-      <div class="band">
-        <div class="section-head"><h2>リスクと判断<span class="zh" lang="zh-Hans">风险与判断</span></h2></div>
-        <div class="grid">
-          <div class="notice risk"><h3>LAXの遅延はBeverly Hillsから調整<span class="zh" lang="zh-Hans">延误时先缩短比佛利山</span></h3><p>11:15までに空港を出られれば全行程。11:45以降はBeverly Hillsを短縮し、12:15以降は外します。GettyとGriffithを優先します。<span class="zh" lang="zh-Hans">11:15前离开机场可完成全程；11:45后缩短比佛利山，12:15后取消。优先保留盖蒂中心和格里菲斯。</span></p></div>
-          <div class="notice"><h3>荷物はBounceへ<span class="zh" lang="zh-Hans">行李寄存Bounce</span></h3><p>スーツケース1個のみ預け、パスポート・現金・カード・薬・PC・カメラは手元に残します。営業時間と受取条件は要確認です。<span class="zh" lang="zh-Hans">只寄存一个行李箱；护照、现金、银行卡、药品、电脑和相机随身携带。营业时间和取件条件待确认。</span></p></div>
-          <div class="notice"><h3>Day4・Day5は未確定点あり<span class="zh" lang="zh-Hans">第4至5天仍有待确认事项</span></h3><p>YosemiteからUnion Stationへ戻る時刻と、07:00 LAX→10:00 HNL便の実予約情報は要確認です。<span class="zh" lang="zh-Hans">从优胜美地返回Union Station的时间，以及07:00 LAX→10:00 HNL航班的实际预订信息待确认。</span></p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="packing" class="band">
+    <section id="trip-decisions" class="band">
+<div class="section-head"><h2>出発前の予約・調整<span class="zh" lang="zh-Hans">出发前的预约与调整</span></h2></div>
+<p class="small">予約の未確定点と、当日どこを短縮するかを日付順にまとめました。Getty・Diamond Head・Haleakalā・USS Arizonaの条件は2026/9/12に公式案内を再確認。空き状況・天候・運行は出発前に確認します。<span class="zh" lang="zh-Hans">按日期整理尚未确定的预订与当天可缩短的安排。Getty、钻石山、哈雷阿卡拉与USS Arizona的条件于2026年9月12日再次核对官方说明；余位、天气及运行情况需在出发前确认。</span></p><div class="grid two">
+<article class="card compact"><h3>10/1：到着遅れと荷物預かり<span class="zh" lang="zh-Hans">10/1：抵达延误与行李寄存</span></h3><p class="small">Gettyの入場枠を先に取り、当日の到着見込みに合わせてBeverly Hillsを短縮する。12:15以降の空港出発ならBeverly Hillsを外す目安とし、Gettyも予約時刻に間に合うか確認。荷物預かりサービス Bounceは住所・営業時間・夜の受取条件を予約画面で確認し、貴重品は持ち歩く。<span class="zh" lang="zh-Hans">先订Getty入场时段，再按当天预计抵达时间缩短比佛利山。若12:15后才离开机场，以取消比佛利山为调整基准，并确认是否仍赶得上Getty预约。通过行李寄存服务Bounce的预订页面核对地址、营业时间和晚间取件条件，贵重物品随身携带。</span></p><a href="#current-day-ca-1001">該当日の行程へ<span class="zh" lang="zh-Hans">前往当天行程</span></a></article>
+<article class="card compact"><h3>10/2–5：ツアー終了と翌朝の飛行機<span class="zh" lang="zh-Hans">10/2–5：旅游团结束与次日早班机</span></h3><p class="small">10/2の集合時刻・場所、10/3の行程、10/4の最終降車地点と時刻をツアー会社に確認する。Union Stationへ戻れると仮定せず、LAX近くのホテルへの移動を確保。10/5の07:00発に合わせ、航空会社の手続き締切から逆算してホテル出発と送迎を決める。<span class="zh" lang="zh-Hans">向旅行团确认10/2集合时间地点、10/3行程、10/4最终下车地点与时间。不要预设会返回Union Station，需安排前往LAX附近酒店的交通。根据10/5的07:00航班及航空公司的办理截止时间，倒推酒店出发与接驳安排。</span></p><a href="#current-day-ca-1004">該当日の行程へ<span class="zh" lang="zh-Hans">前往当天行程</span></a></article>
+<article class="card compact"><h3>10/5：到着日の歩きすぎと入場時刻<span class="zh" lang="zh-Hans">10/5：抵达当天的体力与入场时间</span></h3><p class="small">ホノルル到着後は国内線の荷物受取とホテルへの移動を見込む。Diamond Headは入場枠の開始から30分以内に着けるときだけ予約案を採用する。暑さ・行列・遅延があればHenry’s PlaceかLeonard’sを短縮し、それでも間に合わなければハイキングを別日に回す。<span class="zh" lang="zh-Hans">抵达檀香山后需预留国内航班取行李及前往酒店的时间。只有能在钻石山预约时段开始后30分钟内到达时才采用该安排。遇炎热、排队或延误，缩短Henry’s Place或Leonard’s；仍赶不上则把徒步改到其他日期。</span></p><a href="#current-day-hi-1005">該当日の行程へ<span class="zh" lang="zh-Hans">前往当天行程</span></a></article>
+<article class="card compact"><h3>10/6–7：マウイの運転と翌朝の返車<span class="zh" lang="zh-Hans">10/6–7：茂宜岛驾驶与次晨还车</span></h3><p class="small">08:50 OGG着の当日は日の出観光を組まない。Haleakalāの昼間・夕景案は山上の天候と暗くなる時間、Kiheiへの帰路、翌朝08:41便の返車に余裕があるかで判断。疲労や天候が厳しければPāʻia・Kihei中心の短い行程を選ぶ。レンタカーの受取・返却営業時間と保険・駐車を予約時に確認する。<span class="zh" lang="zh-Hans">08:50抵达OGG当天不安排日出。哈雷阿卡拉白天或日落方案取决于山顶天气、天黑时间、返回Kihei的驾驶，以及次晨08:41航班前是否有足够还车时间。疲劳或天气不佳时选择Pāʻia、Kihei为主的短路线。预订租车时核对取还车营业时间、保险及停车。</span></p><a href="#current-day-hi-1006">該当日の行程へ<span class="zh" lang="zh-Hans">前往当天行程</span></a></article>
+<article class="card compact"><h3>10/7–9：宿泊の空白と重複を先に解消<span class="zh" lang="zh-Hans">10/7–9：先解决住宿空缺与重叠</span></h3><p class="small">10/7–10/8の部屋が未確定。一方、10/8–10/9はThe Twin FinとSheratonが重複している。予約日・取消条件・取消後に残る費用を見て最終予約を選ぶ。10/7は18:00台の夕食を先に予約し、ホテルへ戻って着替える時間を確保して東側の立ち寄り数を決める。<span class="zh" lang="zh-Hans">10/7–10/8的房间尚未确定，而10/8–10/9的The Twin Fin与Sheraton预订重叠。核对住宿日期、取消条件及取消后仍需支付的费用后选择最终预订。10/7先预约18:00左右的晚餐，留出返回酒店更衣的时间，再决定东侧停留数量。</span></p><a href="#current-day-hi-1007">該当日の行程へ<span class="zh" lang="zh-Hans">前往当天行程</span></a></article>
+<article class="card compact"><h3>10/8：Pearl Harborを起点に立ち寄りを絞る<span class="zh" lang="zh-Hans">10/8：以Pearl Harbor为起点筛选停留点</span></h3><p class="small">USS Arizona記念館の船で渡るプログラムに参加するなら事前予約し、開始1時間前の現地到着を目安にする。予約不要のビジターセンターと博物館だけを見る案も残す。Doleの有料体験やNorth Shoreの浜は必須にせず、帰路の渋滞と翌日の出発に合わせて省く。<span class="zh" lang="zh-Hans">若参加乘船前往USS Arizona纪念馆的项目，需提前预约，并以开始前1小时到达为目标。也可只参观无需预约的游客中心与博物馆。Dole收费体验和North Shore海滩并非必到，按返程拥堵及次日出发安排删减。</span></p><a href="#current-day-hi-1008">該当日の行程へ<span class="zh" lang="zh-Hans">前往当天行程</span></a></article>
+<article class="card compact"><h3>日本滞在：帰国便と国内1泊をつなげる<span class="zh" lang="zh-Hans">日本停留：衔接赴日航班与国内一晚</span></h3><p class="small">日本への到着日・空港・時刻と、その翌日の移動が未確定。先に航空券と宿泊地をつなげてから、近くの買い物・食事・居酒屋を選ぶ。温泉は移動と休息の時間が残る場合だけ追加する。<span class="zh" lang="zh-Hans">赴日抵达日期、机场、时间及次日交通尚未确定。先衔接机票与住宿地，再选择附近购物、餐饮和居酒屋。只有交通与休息时间充足时才加入温泉。</span></p><a href="#current-japan-after-arrival">該当日の行程へ<span class="zh" lang="zh-Hans">前往当天行程</span></a></article>
+</div>
+<p class="small">出発までに、海外用の通信プラン eSIMをスマホへ設定し、現金・少額紙幣、カードの海外利用設定を準備する。予約控えと地図はオフラインで見られるよう保存する。<span class="zh" lang="zh-Hans">出发前在手机设置境外数据套餐eSIM，准备现金与小额纸币，并开通银行卡境外使用。离线保存预订凭证与地图。</span></p><details class="planning-alternatives"><summary>10/6–8の別案を比較する<span class="zh" lang="zh-Hans">比较10/6–8的备选方案</span></summary>
+<div id="compare-1006" class="comparison-day"><h3>10/6</h3><div class="plan-options" data-plan-options data-plan-group="current-day-hi-1006">
+            <div class="plan-tabs" role="tablist" aria-label="10/6の提案"></div>
+            <div class="plan-panels">
+              <article class="plan-panel" data-plan-id="a" data-plan-label-ja="A案" data-plan-label-zh="方案A">
+                <div class="plan-panel-head"><h3>A案：Haleakalāを昼〜夕景の主目的に<span class="zh" lang="zh-Hans">方案A：以哈雷阿卡拉白天至日落为主</span></h3><span class="tag gold" data-zh="景观优先">景観優先</span></div>
+                <p>08:50 OGG着・レンタカー受取後、Haleakalāへ向かう案。日の出ではなく昼間〜夕景に限定し、帰りはKiheiで休息する。</p>
+                <p class="small">山上の寒さ、雲、道路、帰路の運転時間を確認する。Pāʻia・Ho‘okipaはこの案では削り、詰め込みを避ける。<span class="zh" lang="zh-Hans">确认山顶低温、云量、道路和回程驾驶时间；本方案删去Pāʻia和Ho‘okipa，避免过度安排。</span></p>
+              </article>
+              <article class="plan-panel" data-plan-id="b" data-plan-label-ja="B案" data-plan-label-zh="方案B">
+                <div class="plan-panel-head"><h3>B案：Pāʻia・Ho‘okipa・Kiheiを軽く回る<span class="zh" lang="zh-Hans">方案B：轻量游览Pāʻia、Ho‘okipa和Kihei</span></h3><span class="tag green" data-zh="余白优先">余白優先</span></div>
+                <p>08:50 OGG着・レンタカー受取後、PāʻiaとMana Foods、Ho‘okipa Beach Parkを経てKiheiへ向かう案。到着初日の運転とチェックインに余白を残す。</p>
+                <p class="small">Haleakalāの長距離上り下りを避け、翌日のOGG移動に備える。海況・駐車・営業時間を見て、全部ではなく一部だけ採用する。<span class="zh" lang="zh-Hans">避开哈雷阿卡拉长距离上下山，为次日OGG移动留力；根据海况、停车和营业时间只选择部分地点。</span></p>
+              </article>
+            </div>
+          </div></div>
+<div id="compare-1007" class="comparison-day"><h3>10/7</h3><div class="plan-options" data-plan-options data-plan-group="current-day-hi-1007">
+            <div class="plan-tabs" role="tablist" aria-label="10/7の提案"></div>
+            <div class="plan-panels">
+              <article class="plan-panel" data-plan-id="a" data-plan-label-ja="A案" data-plan-label-zh="方案A">
+                <div class="plan-panel-head"><h3>A案：東側を軽く回ってワイキキへ戻る<span class="zh" lang="zh-Hans">方案A：轻量游览东侧后返回威基基</span></h3><span class="tag green" data-zh="轻量">軽量</span></div>
+                <p>09:20 HNL着・レンタカー受取後、Ho‘omaluhiaとByodo-Inを軸に、Waimānalo・Halona・Sandy Beachから一部だけ立ち寄る案。</p>
+                <p class="small">Sheraton / The Twin Finの重複が解消していないため、18:00台の良いディナーに間に合うようホテルへ戻る時間を早めに残す。東側候補は全部回らない。<span class="zh" lang="zh-Hans">Sheraton与The Twin Fin的重复预订尚未解决，因此预留时间尽早返回酒店，以赶上18:00左右的精选晚餐。东侧候选不全部游览。</span></p>
+              </article>
+              <article class="plan-panel" data-plan-id="b" data-plan-label-ja="B案" data-plan-label-zh="方案B">
+                <div class="plan-panel-head"><h3>B案：Bishop Museumとワイキキ滞在を優先<span class="zh" lang="zh-Hans">方案B：优先Bishop Museum和威基基停留</span></h3><span class="tag teal" data-zh="室内与休息">室内・休息</span></div>
+                <p>島間移動後の疲労と天候を見て、Bishop Museumを主目的にし、午後はワイキキで買い物・食事・ホテル休息に寄せる案。</p>
+                <p class="small">東側の候補を詰め込まず、雨天やレンタカー受取の遅れにも対応しやすい。18:00台のディナーを先に予約し、Bishopの入場券と閉館時刻、ホテルの最終確定日を確認する。<span class="zh" lang="zh-Hans">不塞入东侧候选，较能应对雨天或取车延误；先预约18:00左右的晚餐，并确认Bishop门票、闭馆时间和最终酒店日期。</span></p>
+              </article>
+            </div>
+          </div></div>
+<div id="compare-1008" class="comparison-day"><h3>10/8</h3><div class="plan-options" data-plan-options data-plan-group="current-day-hi-1008">
+            <div class="plan-tabs" role="tablist" aria-label="10/8の提案"></div>
+            <div class="plan-panels">
+              <article class="plan-panel" data-plan-id="a" data-plan-label-ja="A案" data-plan-label-zh="方案A">
+                <div class="plan-panel-head"><h3>A案：Pearl Harbor＋North Shoreを広く回る<span class="zh" lang="zh-Hans">方案A：较完整地游览Pearl Harbor和North Shore</span></h3><span class="tag teal" data-zh="景点较多">景点多め</span></div>
+                <p>Pearl Harborを朝の軸にして、Dole Plantation、Haleiwa / Giovanni’s、LaniakeaまたはSunset Beachまでつなぐ案。</p>
+                <p class="small">USS Arizonaの予約時刻、Doleの有料アクティビティ、帰路渋滞を基準に削除順位を決める。全部を必須にはしない。<span class="zh" lang="zh-Hans">按USS Arizona预约时间、Dole付费活动和回程拥堵决定删减顺序，不把所有地点都视为必到。</span></p>
+              </article>
+              <article class="plan-panel" data-plan-id="b" data-plan-label-ja="B案" data-plan-label-zh="方案B">
+                <div class="plan-panel-head"><h3>B案：Pearl Harbor＋Haleiwaに絞って早めに戻る<span class="zh" lang="zh-Hans">方案B：集中Pearl Harbor和Haleiwa，早点返回</span></h3><span class="tag green" data-zh="余白优先">余白優先</span></div>
+                <p>Pearl HarborとHaleiwa / Giovanni’sを中心にし、Dole・Laniakea・Sunset Beachは削るか短時間にする案。</p>
+                <p class="small">ホテルへ早く戻り、翌日の出発・レンタカー返却・Sheratonとの重複解消に余白を残す。North Shoreの海況と道路状況が悪い場合にも切り替えやすい。<span class="zh" lang="zh-Hans">早点回酒店，为次日出发、还车和解决Sheraton重复预订保留余量；North Shore海况或道路不佳时也更易调整。</span></p>
+              </article>
+            </div>
+          </div></div>
+</details>
+</section>
+<section id="packing" class="band">
       <div class="section-head">
         <h2>持ち物チェックリスト<span class="zh" lang="zh-Hans">行李清单</span></h2>
         <span class="muted small">LAX・Los Angeles／Yosemite・Hawaii・長時間フライト向け。必要なものから確認。<span class="zh" lang="zh-Hans">适用于LAX、洛杉矶／优胜美地、夏威夷和长途飞行；先确认必需品。</span></span>
@@ -1549,7 +1725,7 @@
           <div class="tag-row"><span class="tag teal" data-zh="电子设备">電子機器</span></div>
           <h3>通信・充電・機内持込み<span class="zh" lang="zh-Hans">通信、充电与随身携带</span></h3>
           <ul class="checklist">
-            <li><span>スマホ・eSIM開通情報・オフライン地図。<span class="zh" lang="zh-Hans">手机、eSIM开通信息和离线地图。</span></span></li>
+            <li><span>スマホ・海外通信プランeSIMの開通情報・オフライン地図。<span class="zh" lang="zh-Hans">手机、境外数据套餐eSIM的开通信息和离线地图。</span></span></li>
             <li><span>充電器・USBケーブル・予備バッテリー。<span class="zh" lang="zh-Hans">充电器、USB线和备用电池。</span></span></li>
             <li><span>モバイルバッテリーは機内持込みに分ける。<span class="zh" lang="zh-Hans">将充电宝单独放在随身行李中登机。</span></span></li>
             <li><span>変換プラグ・延長タップ（必要な機器がある場合）。<span class="zh" lang="zh-Hans">转换插头和多孔插座（有需要的设备时）。</span></span></li>
@@ -1582,283 +1758,6 @@
         </article>
       </div>
       <p class="reservation-note">液体・電池・薬・モバイルバッテリーの機内持込み条件は、利用する航空会社と空港の最新案内を出発前に確認します。<span class="zh" lang="zh-Hans">液体、电池、药品和充电宝的登机规则，请在出发前按所乘航空公司和机场的最新说明确认。</span></p>
-    </section>
-
-    <section id="reservations" class="band">
-      <div class="section-head">
-        <h2>予約が必要なもの / 予約推奨と不要<span class="zh" lang="zh-Hans">需要预约的项目 / 建议预约与通常无需预约</span></h2>
-        <span class="muted small">公式ページ確認: 2026/9/11。空き・営業時間・休園は出発前に再確認。<span class="zh" lang="zh-Hans">官方页面核对：2026年9月11日。余位、营业时间和闭园信息请在出发前复核。</span></span>
-      </div>
-      <div class="grid two">
-        <div class="notice risk">
-          <div class="tag-row"><span class="tag coral">先に予約</span><span class="tag">旅程を成立させる項目</span></div>
-          <h3>この旅を成立させる予約<span class="zh" lang="zh-Hans">使行程成立的预约</span></h3>
-          <ul class="reservation-list">
-            <li><strong>航空券・宿泊</strong> — 未予約のLAX→HNL、HNL→OGG、OGG→HNL、帰国便、日本国内1泊と、Day1–8の各ホテルを確定する。<span class="zh" lang="zh-Hans">确认尚未预订的航班、回国航班、日本国内一晚及第1至8天各晚住宿。</span></li>
-            <li><strong>Day2–4ツアー</strong> — 予約元で集合場所・車両・各日の詳細を確認し、予約番号を手元に置く。<span class="zh" lang="zh-Hans">向旅行团确认集合点、车辆、每日详情，并保存预订编号。</span></li>
-            <li><strong>Getty Center</strong> — 無料だが時間指定入場予約が必要。10/1は12:00前後を先に確保する。<span class="zh" lang="zh-Hans">免费但需要预约入场时段；10月1日先确保12点左右的时段。</span></li>
-            <li><strong>Diamond Head</strong> — 非居住者は入場・駐車予約が必要。Day5に採用する場合だけ、候補を決めたら予約する。<span class="zh" lang="zh-Hans">非居民需要预约入场和停车；只有在第5天采用时才预约。</span></li>
-            <li><strong>レンタカー</strong> — Day6 OGG、Day7–8 HNLを使うなら、受取・返却場所、保険、営業時間を含めて予約する。<span class="zh" lang="zh-Hans">若第6天在OGG、第7至8天在HNL租车，连同取还车地点、保险和营业时间一起预订。</span></li>
-            <li><strong>Pearl Harbor / USS Arizona Memorial</strong> — Visitor Center・博物館ではなく、USS Arizona Memorialプログラムを選ぶ場合の枠を先に確保する。<span class="zh" lang="zh-Hans">需要预订的是USS Arizona Memorial项目，不是游客中心或博物馆本身。</span></li>
-          </ul>
-          <p class="reservation-note">航空券・宿泊・レンタカーは「予約必須」という施設規則ではなく、今回の移動計画を実行するための実務上の必須項目です。</p>
-          <div class="link-row"><a class="button" href="https://www.getty.edu/visit/center/faqs/" target="_blank" rel="noreferrer">Getty公式FAQ</a><a class="button" href="https://gostateparks.hawaii.gov/diamondhead/about" target="_blank" rel="noreferrer">Diamond Head予約</a><a class="button" href="https://www.nps.gov/thingstodo/visit-the-uss-arizona-memorial.htm" target="_blank" rel="noreferrer">Pearl Harbor公式</a></div>
-        </div>
-        <div class="notice">
-          <div class="tag-row"><span class="tag gold">条件付き</span><span class="tag teal">早め推奨</span></div>
-          <h3>候補に採るなら確保・確認<span class="zh" lang="zh-Hans">若纳入方案则应预订或确认</span></h3>
-          <ul class="reservation-list">
-            <li><strong>Haleakalā</strong> — 日の出（3:00–7:00）なら車両ごとの事前予約が必須。現在の08:50 OGG到着後のDay6案では日の出に間に合わないため、希望するなら前泊・日程変更と予約が必要。昼間・夕景は日の出予約の対象外だが、入園料・道路・天候を確認する。<span class="zh" lang="zh-Hans">若看日出（3:00–7:00），每辆车必须提前预约；按目前08:50抵达OGG后的第6天方案赶不上日出，若要看日出需前一晚住宿或调整日期并预约。白天或日落不需要日出预约，但要确认门票、道路和天气。</span></li>
-            <li><strong>Bishop Museum</strong> — 一般入場はオンライン購入を推奨。予約枠がなくても当日入場できるとは限らず、最終チェックインは16:00。<span class="zh" lang="zh-Hans">建议提前购买普通入场券；无预约不保证当天入场，最后签到时间为16:00。</span></li>
-            <li><strong>Bounce</strong> — その場利用も可能だが、予約後に住所・QRコードが確定する。今回の荷物動線なら事前予約で保管枠と受取時間を押さえる。<span class="zh" lang="zh-Hans">可现场使用，但预约后才会确定地址和二维码；本行程应提前锁定容量和取件时间。</span></li>
-            <li><strong>Dole Plantation</strong> — Dole Whip・売店だけなら予約不要。Pineapple Express、Maze、Garden Tourなど有料アクティビティを入れるならチケットを先に確認・購入する。<span class="zh" lang="zh-Hans">只吃Dole Whip或逛商店通常无需预约；若参加火车、迷宫或花园导览等付费活动，先确认并购票。</span></li>
-          </ul>
-          <div class="link-row"><a class="button" href="https://www.nps.gov/hale/planyourvisit/sunrise.htm" target="_blank" rel="noreferrer">Haleakalā日の出</a><a class="button" href="https://www.bishopmuseum.org/visit/tickets/" target="_blank" rel="noreferrer">Bishop入場券</a><a class="button" href="https://bounce.com/" target="_blank" rel="noreferrer">Bounce</a><a class="button" href="https://booking.doleplantation.com/" target="_blank" rel="noreferrer">Dole予約</a></div>
-        </div>
-        <div class="notice ok">
-          <div class="tag-row"><span class="tag green">通常予約不要</span><span class="tag">当日条件を確認</span></div>
-          <h3>予約を前提にしない候補<span class="zh" lang="zh-Hans">不以预约为前提的候选</span></h3>
-          <p><strong>Pearl Harbor Visitor Center・2つの博物館</strong>は入場予約不要。<strong>Byodo-In</strong>はオンラインまたは入口でチケット購入可。<strong>Ho‘omaluhia</strong>の通常入園、Griffith Observatory、North Shoreの浜・街歩き・通常の飲食も予約必須とは扱わない。特別イベント、釣り、写真撮影、休園・荒天時の扱いは別途確認する。<span class="zh" lang="zh-Hans"><strong>Pearl Harbor游客中心和两座博物馆</strong>无需预约；<strong>Byodo-In</strong>可在线或入口购票；<strong>Ho‘omaluhia</strong>普通入园、Griffith Observatory、North Shore海滩/街区/一般餐饮不按必须预约处理。特别活动、钓鱼、摄影、闭园和恶劣天气规则另行确认。</span></p>
-          <div class="link-row"><a class="button" href="https://byodo-in.com/visit/" target="_blank" rel="noreferrer">Byodo-In案内</a><a class="button" href="https://www.honolulu.gov/parks/honolulu/ho-omaluhia-botanical-garden.html" target="_blank" rel="noreferrer">Ho‘omaluhia公式</a><a class="button" href="https://www.nps.gov/perl/faq-s.htm" target="_blank" rel="noreferrer">Pearl Harbor FAQ</a></div>
-          <p class="reservation-note">施設ポリシーではなく、この旅行案の現時点の分類です。閉園・プログラム変更・満員は当日条件として残ります。</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="flights" class="band">
-      <div class="section-head">
-        <h2>フライト・到着情報<span class="zh" lang="zh-Hans">航班与抵达信息</span></h2>
-        <span class="muted small">ユーザー提供の時刻を反映。便名・ターミナル・予約状況は要確認。<span class="zh" lang="zh-Hans">已反映用户提供的时间；航班号、航站楼和预订状态待确认。</span></span>
-      </div>
-      <div class="grid two">
-        <article class="card">
-          <div class="tag-row"><span class="tag teal">10/1 Thu</span><span class="tag">LAX arrival</span></div>
-          <div class="flight">
-            <div class="airport"><span class="time">09:20</span><strong>LAX</strong><span class="muted small">到着<span class="zh" lang="zh-Hans">抵达</span></span></div>
-            <div class="plane-line" aria-hidden="true"></div>
-            <div class="airport"><span class="time">11:00–11:30</span><strong>Airport exit</strong><span class="muted small">計画基準<span class="zh" lang="zh-Hans">计划基准</span></span></div>
-          </div>
-          <p class="small muted">入国審査・荷物受取・配車場所への移動を含む想定です。10:40は順調な場合だけの早着目安です。<span class="zh" lang="zh-Hans">时间包含入境、取行李和前往网约车上车点；10:40只作为一切顺利时的早到参考。</span></p>
-        </article>
-        <article class="card">
-          <div class="tag-row"><span class="tag coral">10/5 Mon</span><span class="tag">LAX → HNL</span></div>
-          <div class="flight">
-            <div class="airport"><span class="time">07:00</span><strong>LAX</strong><span class="muted small">出発（暫定）<span class="zh" lang="zh-Hans">出发（暂定）</span></span></div>
-            <div class="plane-line" aria-hidden="true"></div>
-            <div class="airport"><span class="time">10:00</span><strong>HNL</strong><span class="muted small">到着（暫定）<span class="zh" lang="zh-Hans">抵达（暂定）</span></span></div>
-          </div>
-          <p class="small muted">航空会社、便名、ターミナル、所要時間、予約済みかどうかは未入力です。<span class="zh" lang="zh-Hans">航空公司、航班号、航站楼、飞行时长及是否已预订尚未输入。</span></p>
-        </article>
-      </div>
-    </section>
-
-    <section id="maps-source" class="band">
-      <div class="section-head"><h2>ルート・予約リンク<span class="zh" lang="zh-Hans">路线与预订链接</span></h2></div>
-      <div class="grid two">
-        <article class="card"><h3>Day1 Los Angeles</h3><p class="small">LAX → Getty Center → Beverly Hills → 1160 N Vermont Ave付近のBounce → Griffith Observatory → Monterey Park。<span class="zh" lang="zh-Hans">LAX → 盖蒂中心 → 比佛利山 → 1160 N Vermont Ave附近Bounce → 格里菲斯天文台 → 蒙特利公园。</span></p><a class="button" href="https://www.google.com/maps/dir/Los+Angeles+International+Airport/Getty+Center/Beverly+Hills/1160+N+Vermont+Ave+Los+Angeles/Griffith+Observatory/Holiday+Inn+%26+Suites+Monterey+Park+Los+Angeles+by+IHG" target="_blank" rel="noreferrer">Google Maps</a></article>
-        <article class="card"><h3>Day2–4 tour route</h3><p class="small">ユーザー提供のツアー地図。集合地点・各日の詳細は予約元で確認します。<span class="zh" lang="zh-Hans">用户提供的旅游团地图；集合地点和每日详情需向预订方确认。</span></p><a class="button" href="https://maps.app.goo.gl/d6ueUFs1jq4qLbyRA" target="_blank" rel="noreferrer">ツアー地図 / 旅游地图</a></article>
-      </div>
-    </section>
-
-    <section id="daily-plan" class="band">
-      <div class="section-head"><h2>現行日程 + 設計ブリーフ<span class="zh" lang="zh-Hans">当前行程 + 设计简报</span></h2><span class="muted small">確定事項と、まだ比較・最適化してほしい部分を分けて表示しています。案がある日付はフォルダ風タブで切り替えます。<span class="zh" lang="zh-Hans">分开显示已确定事项，以及仍需比较和优化的部分；有方案的日期可用文件夹式标签切换。</span></span></div>
-      <div class="grid two">
-        <div class="notice ok"><h3>確定事項<span class="zh" lang="zh-Hans">已确定事项</span></h3><p>Day5〜8のうち、5泊の宿泊予約を表示しています。Day5は街歩き、Day6はマウイでレンタカー、Day7は軽めも可、Day8はPearl Harbor＋North Shoreを軸にする方針です。<span class="zh" lang="zh-Hans">第5至8天中显示5晚住宿预订；第5天以街区步行为主，第6天在茂宜岛租车，第7天可安排轻量行程，第8天以Pearl Harbor＋North Shore为轴。</span></p></div>
-        <div class="notice risk"><h3>まだ設計してほしい部分<span class="zh" lang="zh-Hans">仍需设计的部分</span></h3><p>候補地の取捨選択、移動時間・営業時間・予約、レンタカーの受取返却、渋滞、ホテル滞在時間、疲労度を比較し、複数案として提示する。日本到着後の自由時間と国内1泊も含む。<span class="zh" lang="zh-Hans">比较候选地点、交通时间、营业时间、预约、租车取还车、拥堵、酒店停留时间和疲劳度，并提出多个方案；同时纳入抵达日本后的自由时间和日本国内一晚住宿。</span></p></div>
-      </div>
-      <div class="notice ok" aria-label="宿泊予約">
-        <div class="tag-row"><span class="tag green">宿泊予約</span><span class="tag">表示合計 CNY 6,595</span></div>
-        <h3>宿泊予約 <span class="zh" lang="zh-Hans">住宿预订</span></h3>
-        <p><strong>10/1–2 Holiday Inn &amp; Suites Monterey Park</strong> CNY 1,049（無料キャンセル）／<strong>10/4–5 Holiday Inn Los Angeles LAX Airport</strong> CNY 1,029（キャンセルポリシー表示）／<strong>10/5–6 Queen Kapiolani Hotel</strong> CNY 1,301（返金不可）／<strong>10/6–7 Kohea Kai Hotel Maui</strong> CNY 1,524（パートナー・オファー）／<strong>10/8–9 The Twin Fin Hotel</strong> CNY 1,692（返金不可）。別予約の<strong>Sheraton Waikiki Beach Resort</strong>も10/8–9、USD 666.36、確認番号（非公開）として記録されていますが、The Twin Finと日付が重複します。依頼文は10/7の宿泊ですが、予約日は10/8–9です。CNY 6,595はCNY表示分のみで、SheratonのUSD額は含みません。<span class="zh" lang="zh-Hans">10/1–2 Holiday Inn &amp; Suites Monterey Park 1,049元（免费取消）；10/4–5 Holiday Inn Los Angeles LAX Airport 1,029元（显示取消政策）；10/5–6 Queen Kapiolani Hotel 1,301元（不可退款）；10/6–7 Kohea Kai Hotel Maui 1,524元（合作伙伴优惠）；10/8–9 The Twin Fin Hotel 1,692元（不可退款）。另有Sheraton Waikiki Beach Resort预订为10/8–9、666.36美元、确认号（不公开），但与The Twin Fin日期重叠。请求写的是10/7住宿，但预订日期为10/8–9。6,595元仅含人民币显示价，不含Sheraton美元金额。</span></p>
-      </div>
-      <nav class="day-jumpbar" aria-label="現行日程内ナビゲーション">
-        <a href="#current-day-ca-1001">10/1 Day1</a><a href="#current-day-ca-1002">10/2 Day2</a><a href="#current-day-ca-1003">10/3 Day3</a><a href="#current-day-ca-1004">10/4 Day4</a><a href="#current-day-hi-1005">10/5 Day5</a><a href="#current-day-hi-1006">10/6 Day6</a><a href="#current-day-hi-1007">10/7 Day7</a><a href="#current-day-hi-1008">10/8 Day8</a><a href="#current-japan-after-arrival">日本到着後</a>
-      </nav>
-      <div class="daily-plan">
-        <article id="current-day-ca-1001" class="daily-section">
-          <div class="daily-head"><div class="daily-date"><strong>10/1</strong><span>木曜日 / LAX → Los Angeles観光 → Monterey Park</span><span class="zh" lang="zh-Hans">星期四 / LAX → 洛杉矶观光 → 蒙特利公园</span></div><p class="route-summary">Getty、Beverly Hills、Griffithを残し、108ドルの荷物配送を避けるためスーツケース1個はGriffith前にEast HollywoodのBounceへ預けます。<span class="zh" lang="zh-Hans">保留盖蒂中心、比佛利山和格里菲斯；为避免支付108美元行李配送费，一个行李箱在前往格里菲斯前寄存在东好莱坞Bounce。</span></p></div>
-          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/1</strong><span>LAX → Getty → Beverly Hills → Bounce → Griffith → hotel</span><span class="zh" lang="zh-Hans">LAX → 盖蒂中心 → 比佛利山 → Bounce → 格里菲斯 → 酒店</span></div><div class="schedule-body">
-            <div class="schedule-row"><time>09:20</time><div><strong>LAX到着</strong><p class="day-note">入国審査・荷物受取・配車場所への移動を開始。</p></div></div>
-            <div class="schedule-row"><time>11:00–11:30</time><div><strong>LAX → Getty Center</strong><p class="day-note">空港を出る時間帯。Getty到着は12:00前後を想定。基本はUber / Lyft、シャトルは明確に安く待ち時間が短い場合だけ。</p></div></div>
-            <div class="schedule-row"><time>12:00–14:30</time><div><strong>Getty Center</strong><p class="day-note">時間指定予約、建築・景色・Central Garden・主要展示1–2か所・館内昼食。入口でスーツケースを預ける。</p></div></div>
-            <div class="schedule-row"><time>14:30–15:00</time><div><strong>Getty → Beverly Hills</strong><p class="day-note">荷物を回収してUber / Lyft。</p></div></div>
-            <div class="schedule-row"><time>15:00–15:50</time><div><strong>Beverly Hills: ALO + Erewhon</strong><p class="day-note">Rodeo Drive / Pink Wallへは別移動しない。店内が狭ければ交代で入る。</p></div></div>
-            <div class="schedule-row"><time>15:50–16:30</time><div><strong>Beverly Hills → Bounce</strong><p class="day-note">1160 N Vermont Ave付近のホテル型Bounceへスーツケース1個を預ける。</p></div></div>
-            <div class="schedule-row"><time>16:40–17:15</time><div><strong>Bounce → Griffith Observatory</strong><p class="day-note">往路はUber / Lyft。理想17:00–17:15、遅くとも17:30。</p></div></div>
-            <div class="schedule-row"><time>17:15–19:05</time><div><strong>Griffith Observatory</strong><p class="day-note">Hollywood Sign、市街景色、外観、短時間の館内展示、日没・夜景。プラネタリウムは今回は入れない。</p></div></div>
-            <div class="schedule-row"><time>19:05以降</time><div><strong>DASHで下山 → Bounce</strong><p class="day-note">帰りは時間制約が緩いためDASHを優先。山麓から徒歩または短距離配車。</p></div></div>
-            <div class="schedule-row"><time>19:40–20:10</time><div><strong>Bounceで荷物回収</strong><p class="day-note">営業時間・受取条件は予約時と当日に再確認。</p></div></div>
-            <div class="schedule-row"><time>20:40–21:20</time><div><strong>Monterey Parkのホテルへ</strong><p class="day-note">道路状況込みの到着見込み。Holiday Inn &amp; Suites Monterey Park へ向かう。</p></div></div>
-            <div class="cost-line"><span class="cost-pill">交通・Bounce・食事: 約$213–335 / 2人</span><span class="cost-pill">標準: $250–290</span><span class="cost-pill">ALO購入代: 別</span><span class="cost-pill">Getty / Griffith: 無料</span></div>
-            <div class="cost-line"><span class="cost-pill">LAX→Getty $55–70</span><span class="cost-pill">Getty→BH $22–35</span><span class="cost-pill">BH→Bounce $23–35</span><span class="cost-pill">Bounce→Griffith $14–25</span><span class="cost-pill">DASH等 $1–10</span><span class="cost-pill">Bounce→ホテル $40–65</span><span class="cost-pill">Bounce $8–15</span><span class="cost-pill">昼食 $35–55</span><span class="cost-pill">Erewhon $15–25</span></div>
-          </div></article>
-          <div class="spot-grid">
-            <div class="photo-card"><img src="assets/img/getty-center.jpg" alt="Getty Center" loading="lazy"><div class="photo-body"><div class="tag-row"><span class="tag teal">12:00–14:30</span><span class="tag gold">予約</span></div><h3>Getty Center</h3><p class="small">無料。12:00前後の時間指定予約を取り、昼食込みで約2時間半。<span class="zh" lang="zh-Hans">免费；预约12:00左右时段，含午餐约两个半小时。</span></p><div class="link-row"><a class="button" href="https://www.getty.edu/visit/center/" target="_blank" rel="noreferrer">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Getty+Center" target="_blank" rel="noreferrer">地図</a></div></div></div>
-            <div class="photo-card"><div class="photo-body"><div class="tag-row"><span class="tag teal">15:00–15:50</span><span class="tag">短時間</span></div><h3>Beverly Hills: ALO + Erewhon</h3><p class="small">ALOで服を確認し、Erewhonでスムージーまたは飲み物。周辺街歩きは移動中だけ。<span class="zh" lang="zh-Hans">在ALO看服装，在Erewhon买冰沙或饮料；周边街景只在两店之间顺路看。</span></p></div></div>
-            <div class="photo-card"><img src="assets/img/griffith-observatory.jpg" alt="Griffith Observatory" loading="lazy"><div class="photo-body"><div class="tag-row"><span class="tag teal">17:15–19:05</span><span class="tag green">優先</span></div><h3>Griffith Observatory</h3><p class="small">2026/10/1の日没は18:37頃、薄明終了は19:02頃の見込み。無料・予約不要。<span class="zh" lang="zh-Hans">2026年10月1日日落预计18:37、民用曙暮光结束约19:02；免费且无需预约。</span></p><div class="link-row"><a class="button" href="https://griffithobservatory.org/" target="_blank" rel="noreferrer">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Griffith+Observatory" target="_blank" rel="noreferrer">地図</a></div></div></div>
-          </div>
-          <div class="notice ok hotel-card"><h3>宿泊 <span class="zh" lang="zh-Hans">住宿</span></h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-holiday-inn-monterey-park.jpg" alt="Holiday Inn &amp; Suites Monterey Park の客室" loading="lazy"><figcaption><a class="credit" href="https://www.ihg.com/holidayinn/hotels/us/en/monterey-park/burmp/hoteldetail/gallery" target="_blank" rel="noreferrer">写真出典: IHG公式ギャラリー（客室・内観）</a><span class="zh" lang="zh-Hans">照片来源：IHG官方画廊（客房・室内）</span></figcaption></figure><p><strong>Holiday Inn &amp; Suites Monterey Park – Los Angeles by IHG</strong><br>10/1–10/2、Monterey Park、CNY 1,049、無料キャンセル。税・手数料・予約番号・住所は未確認です。<span class="zh" lang="zh-Hans">10/1–10/2，Monterey Park，1,049元，免费取消。税费、手续费、预订编号和地址尚未确认。</span></p><div class="link-row"><a class="button" href="https://www.booking.com/hotel/us/holiday-inn-suites-monterey-park-los-angeles-an-ihg.ja.html" target="_blank" rel="noreferrer">Booking</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Holiday+Inn+%26+Suites+Monterey+Park+Los+Angeles+by+IHG" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
-          <div class="notice risk"><h3>空港を出る時刻による短縮ルール<span class="zh" lang="zh-Hans">按离开机场时间缩短</span></h3><p>11:15まで: 全行程。11:15–11:45: Getty約2時間、Beverly Hillsは40分以内。11:45–12:15: Gettyを残してALOまたはErewhonの一方だけ。12:15以降: Beverly Hillsを外し、LAX → Getty → Bounce → Griffith → ホテル。</p></div>
-        </article>
-
-        <article id="current-day-ca-1002" class="daily-section">
-          <div class="daily-head"><div class="daily-date"><strong>10/2</strong><span>金曜日 / Fountain Valley → Milpitas</span><span class="zh" lang="zh-Hans">星期五 / Fountain Valley → Milpitas</span></div><p class="route-summary">ツアー行程。07:00に9125 Recreation Cir, Fountain Valleyの#1 loadから乗車し、18:00にMilpitasのSheratonへ到着する案です。<span class="zh" lang="zh-Hans">旅游团安排：07:00在Fountain Valley 9125 Recreation Cir的#1 load上车，18:00抵达Milpitas Sheraton。</span></p></div>
-          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/2</strong><span>Tour day / Fountain Valley → Milpitas</span><span class="zh" lang="zh-Hans">旅游日 / Fountain Valley → Milpitas</span></div><div class="schedule-body">
-            <div class="schedule-row"><time>07:00</time><div><strong>Tour bus乗車</strong><p class="day-note">9125 Recreation Cir, Fountain Valley, CA #1 load。集合時刻・車両は予約元で要確認。</p></div></div>
-            <div class="schedule-row"><time>07:00–18:00</time><div><strong>ツアー移動</strong><p class="day-note">ユーザー提供のルートに従う。途中の観光内容・休憩は未入力。</p></div></div>
-            <div class="schedule-row"><time>18:00</time><div><strong>Milpitas Sheraton check-in</strong><p class="day-note">Barber Ln周辺。ホテル名・部屋・送迎条件は予約元で確認。</p></div></div>
-          </div></article>
-          <div class="notice"><h3>ツアー地図<span class="zh" lang="zh-Hans">旅游团地图</span></h3><p>Day2–4共通のユーザー提供リンクです。各日の停車地と到着時刻は予約元で確認します。</p><a class="button" href="https://maps.app.goo.gl/d6ueUFs1jq4qLbyRA" target="_blank" rel="noreferrer">ツアー地図 / 旅游地图</a></div>
-          <div class="card hotel-card"><h3>宿泊候補: Sheraton San Jose Silicon Valley（SHERATON, Milpitas）</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-sheraton-san-jose.jpg" alt="Sheraton San Jose Silicon Valley の外観" loading="lazy"><figcaption><a class="credit" href="https://www.marriott.com/en-us/hotels/sjcsa-sheraton-san-jose-silicon-valley/photos/" target="_blank" rel="noreferrer">写真出典: Marriott公式ギャラリー（外観）</a><span class="zh" lang="zh-Hans">照片来源：Marriott官方画廊（外观）</span></figcaption></figure><p class="small">Barber Ln, Milpitas, CA 95035。画像はこの地域の正式名称候補であるSheraton San Jose Silicon Valleyの外観です。予約元に表示された正式ホテル名・予約情報は要確認。<span class="zh" lang="zh-Hans">位于Milpitas的Barber Ln附近（CA 95035）；图片为该地区正式名称候选Sheraton San Jose Silicon Valley的外观。预约来源显示的正式酒店名称和预订信息待确认。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton+Barber+Lane+Milpitas+California" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
-        </article>
-
-        <article id="current-day-ca-1003" class="daily-section">
-          <div class="daily-head"><div class="daily-date"><strong>10/3</strong><span>土曜日 / Tour → Modesto</span><span class="zh" lang="zh-Hans">星期六 / 旅游团 → Modesto</span></div><p class="route-summary">ツアー日。終了時刻や停車地はまだ入力せず、Modestoの宿泊先だけ確定候補として表示します。<span class="zh" lang="zh-Hans">旅游团行程日；结束时间和停靠点尚未输入，只显示Modesto住宿候选。</span></p></div>
-          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/3</strong><span>Tour day / Modesto</span><span class="zh" lang="zh-Hans">旅游日 / Modesto</span></div><div class="schedule-body">
-            <div class="schedule-row"><time>未入力</time><div><strong>ツアー行程</strong><p class="day-note">集合・出発・停車地・終了時刻を予約元の案内で補完する。</p></div></div>
-            <div class="schedule-row"><time>Evening</time><div><strong>Modesto check-in</strong><p class="day-note">La Casa Modesto, Ascend Hotel Collectionへ移動。</p></div></div>
-          </div></article>
-          <div class="card hotel-card"><h3>宿泊: La Casa Modesto, Ascend Hotel Collection</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-la-casa-modesto.jpg" alt="La Casa Modesto, Ascend Hotel Collection の館内" loading="lazy"><figcaption><a class="credit" href="https://www.hrs.com/en/hotel/159335" target="_blank" rel="noreferrer">写真出典: HRSホテルギャラリー（館内・代表画像）</a><span class="zh" lang="zh-Hans">照片来源：HRS酒店画廊（室内・代表性照片）</span></figcaption></figure><p class="small">1720 Sisk Rd, Modesto, CA 95350。画像は安定して取得できた館内の代表画像です。チェックイン時刻、ツアーの送迎場所、朝食条件は要確認。<span class="zh" lang="zh-Hans">地址：1720 Sisk Rd, Modesto, CA 95350；图片为可稳定取得的室内代表性照片。入住时间、旅游团接送点和早餐条件待确认。</span></p><div class="link-row"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=La+Casa+Modesto+Ascend+Hotel+Collection" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
-        </article>
-
-        <article id="current-day-ca-1004" class="daily-section">
-          <div class="daily-head"><div class="daily-date"><strong>10/4</strong><span>日曜日 / Yosemite・El Capitan → Los Angeles</span><span class="zh" lang="zh-Hans">星期日 / 优胜美地・El Capitan → 洛杉矶</span></div><p class="route-summary">07:00出発、YosemiteのEl Capitanを訪問。Union Stationへ18:00頃に戻れるかは未確定です。<span class="zh" lang="zh-Hans">07:00出发，参观优胜美地El Capitan；能否在18:00左右返回Union Station尚未确定。</span></p></div>
-          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/4</strong><span>Yosemite / El Capitan → Union Station? → LAX hotel</span><span class="zh" lang="zh-Hans">优胜美地 / El Capitan → Union Station? → LAX酒店</span></div><div class="schedule-body">
-            <div class="schedule-row"><time>07:00</time><div><strong>出発</strong><p class="day-note">ツアー指定の出発。荷物・朝食・集合条件は要確認。</p></div></div>
-            <div class="schedule-row"><time>日中</time><div><strong>Yosemite / El Capitan</strong><p class="day-note">観光範囲・滞在時間はツアー行程に従う。</p></div></div>
-            <div class="schedule-row"><time>18:00頃?</time><div><strong>Union Stationへ戻る?</strong><p class="day-note">到着駅と時刻は未確定。確定しない場合はLAXホテルへの移動方法を予約元に確認。</p></div></div>
-            <div class="schedule-row"><time>Evening</time><div><strong>LAX Airport hotel check-in</strong><p class="day-note">翌朝便のため、ホテルからLAXまでの送迎と所要時間を確認。</p></div></div>
-          </div></article>
-          <div class="card hotel-card"><h3>宿泊: Holiday Inn Los Angeles LAX Airport by IHG</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-holiday-inn-lax.jpg" alt="Holiday Inn Los Angeles LAX Airport の外観" loading="lazy"><figcaption><a class="credit" href="https://www.ihg.com/holidayinn/hotels/us/en/los-angeles/laxia/hoteldetail/gallery" target="_blank" rel="noreferrer">写真出典: IHG公式ギャラリー（外観）</a><span class="zh" lang="zh-Hans">照片来源：IHG官方画廊（外观）</span></figcaption></figure><p class="small">10/4–10/5、Los Angeles、CNY 1,029。キャンセルポリシーの表示はあるが、無料キャンセルとは分類しない。税・手数料・空港シャトルは予約画面で再確認。<span class="zh" lang="zh-Hans">10/4–10/5，洛杉矶，1,029元。显示取消政策，但不将其分类为免费取消；税费、手续费和机场接驳请在预订页面复核。</span></p><div class="link-row"><a class="button" href="https://www.booking.com/hotel/us/holiday-inn-los-angeles-international-airport.ja.html" target="_blank" rel="noreferrer">Booking</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Holiday+Inn+Los+Angeles+LAX+Airport" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
-        </article>
-
-        <article id="current-day-hi-1005" class="daily-section">
-          <div class="daily-head"><div class="daily-date"><strong>10/5</strong><span>月曜日 / Honolulu・街歩き → Diamond Head</span><span class="zh" lang="zh-Hans">星期一 / 檀香山・街区步行 → 钻石山</span></div><p class="route-summary">LAXからHNLへ移動後、Queen Kapiolani Hotel に荷物を預け、ワイキキを歩きながらHenry's Place（高橋果実店、234 Beach Walk）へ立ち寄り、KapahuluのLeonard'sでマラサダを食べてからDiamond Headへ向かう流れを第一案にします。HNLの実到着時刻とDiamond Headの予約枠に合わせて街歩きを短縮します。<span class="zh" lang="zh-Hans">从LAX抵达HNL后，先在Queen Kapiolani Hotel寄存行李，步行威基基并前往Henry's Place（高桥水果店，234 Beach Walk），再到Kapahulu的Leonard's吃马拉萨达，之后前往钻石山。根据HNL实际抵达时间和钻石山预约时段缩短街区步行。</span></p></div>
-          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/5</strong><span>LAX → Honolulu / Waikiki</span><span class="zh" lang="zh-Hans">LAX → 檀香山 / 威基基</span></div><div class="schedule-body">
-            <div class="schedule-row"><time>07:00</time><div><strong>LAX出発 → HNL</strong><p class="day-note">ユーザー提供の暫定時刻。便名・ターミナル・荷物条件は予約画面で確認。</p></div></div>
-            <div class="schedule-row"><time>10:00以降</time><div><strong>HNL到着 → ホテルへ<span class="zh" lang="zh-Hans">抵达HNL → 前往酒店</span></strong><p class="day-note">空港からQueen Kapiolani Hotelへ移動し、まず荷物を預ける。入国・荷物受取・移動を含め、街歩き開始は11:00–11:30頃を基準にする。<span class="zh" lang="zh-Hans">从机场前往Queen Kapiolani Hotel，先寄存行李。计入入境、取行李和交通，街区步行以11:00–11:30左右开始为基准。</span></p></div></div>
-            <div class="schedule-row"><time>11:30–12:45</time><div><strong>ワイキキ街歩き → Henry's Place / 高橋果実店<span class="zh" lang="zh-Hans">威基基步行 → Henry's Place / 高桥水果店</span></strong><p class="day-note">234 Beach Walkへ歩いて向かい、フルーツ系を軽く食べる。営業時間・在庫・支払方法は変わり得るため、当日に確認し、ここで長居しない。<span class="zh" lang="zh-Hans">步行前往234 Beach Walk，吃些水果类食品。营业时间、库存和支付方式可能变化，当天确认并避免久留。</span></p></div></div>
-            <div class="schedule-row"><time>12:45–13:15</time><div><strong>Kapahuluへ移動<span class="zh" lang="zh-Hans">前往Kapahulu</span></strong><p class="day-note">Leonard's Bakery（933 Kapahulu Ave）へ徒歩または短距離配車。行列と暑さを見て、Diamond Headの予約枠に間に合う手段を選ぶ。<span class="zh" lang="zh-Hans">步行或短途叫车前往Leonard's Bakery（933 Kapahulu Ave）。根据排队和炎热程度选择能赶上钻石山预约时段的交通方式。</span></p></div></div>
-            <div class="schedule-row"><time>13:15–13:45</time><div><strong>Leonard'sでマラサダ<span class="zh" lang="zh-Hans">在Leonard's吃马拉萨达</span></strong><p class="day-note">食べ歩きは1個程度を目安にし、行列が長ければ購入後すぐ移動。公式掲載のKapahulu店を使う。<span class="zh" lang="zh-Hans">以边走边吃一个左右为准，排队较长时买好后立即移动；使用官网列出的Kapahulu店。</span></p></div></div>
-            <div class="schedule-row"><time>14:00–16:00</time><div><strong>Diamond Head（時間指定予約）<span class="zh" lang="zh-Hans">钻石山（预约时段入场）</span></strong><p class="day-note">非居住者は入場予約が必要。駐車する場合は駐車予約も必要で、予約枠の開始から30分以内に到着する。登山は1.5–2時間を見込み、暑さ対策を優先する。<span class="zh" lang="zh-Hans">非居民需要预约入场；停车时还需预约停车位，并在预约时段开始后30分钟内抵达。徒步预计1.5–2小时，优先做好防暑准备。</span></p></div></div>
-            <div class="schedule-row"><time>Evening</time><div><strong>ワイキキで夕食：ガーリックシュリンプ or ステーキ丼<span class="zh" lang="zh-Hans">在威基基晚餐：蒜香虾或牛排盖饭</span></strong><p class="day-note">Diamond Head後の回復食は、ガーリックシュリンプまたはステーキ丼を優先する。店は当日の位置・営業時間・行列で決め、到着が遅れた場合は街歩きを短縮して夕食を残す。<span class="zh" lang="zh-Hans">钻石山后的恢复餐优先选择蒜香虾或牛排盖饭。根据当天位置、营业时间和排队情况选择店家；若抵达较晚，缩短街区步行也保留晚餐。</span></p></div></div>
-          </div></article>
-          <div class="grid two">
-            <div class="notice ok"><h3>確定事項<span class="zh" lang="zh-Hans">已确定事项</span></h3><p>宿泊はQueen Kapiolani Hotel（10/5–10/6、CNY 1,301、返金不可）。Day5は荷物を預けてから食べ歩きと街歩きを行い、Diamond Headを最後の主目的にする第一案です。<span class="zh" lang="zh-Hans">住宿为Queen Kapiolani Hotel（10/5–10/6，1,301元，不可退款）。第5天先寄存行李，再安排吃东西和街区步行，最后以钻石山为主要目的地，这是当前第一方案。</span></p></div>
-            <div class="notice risk"><h3>成立条件<span class="zh" lang="zh-Hans">成立条件</span></h3><p>Diamond Headは予約時刻の開始から30分以内に到着できる場合だけ採用する。HNLの実到着が遅い、Henry's Placeの営業・在庫が合わない、またはLeonard'sの行列が長い場合は、食べ歩きを短縮しても無理なら別日に回す。Bishop MuseumはDay5に詰め込まない。<span class="zh" lang="zh-Hans">只有能在钻石山预约时段开始后30分钟内抵达时才采用。若HNL实际抵达较晚、Henry's Place营业或库存不合适，或Leonard's排队过长，即使缩短吃东西的时间仍赶不上，就改到其他日期。Bishop Museum不塞进第5天。</span></p></div>
-          </div>
-          <div class="card hotel-card"><h3>ホテル・立ち寄り・確認リンク<span class="zh" lang="zh-Hans">酒店・顺路地点・确认链接</span></h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-queen-kapiolani.jpg" alt="Queen Kapiolani Hotel のホテル外観・館内" loading="lazy"><figcaption><a class="credit" href="https://www.queenkapiolani.com/hotel-amenities/gallery" target="_blank" rel="noreferrer">写真出典: Queen Kapiolani公式ギャラリー</a><span class="zh" lang="zh-Hans">照片来源：Queen Kapiolani官方画廊</span></figcaption></figure><p class="small"><strong>Queen Kapiolani Hotel </strong>（10/5–10/6、CNY 1,301、返金不可）。ホテルを起点に、Henry's Place（234 Beach Walk）→ Leonard's Bakery（933 Kapahulu Ave）→ Diamond Headの順で評価する。<span class="zh" lang="zh-Hans">Queen Kapiolani Hotel（10/5–10/6，1,301元，不可退款）。以酒店为起点，按Henry's Place（234 Beach Walk）→ Leonard's Bakery（933 Kapahulu Ave）→ 钻石山的顺序评估。</span></p><div class="link-row"><a class="button" href="https://www.queenkapiolani.com/" target="_blank" rel="noreferrer">ホテル公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Henry%27s+Place+234+Beach+Walk+Honolulu" target="_blank" rel="noreferrer">高橋果実店 地図</a><a class="button" href="https://leonardshawaii.com/locations/" target="_blank" rel="noreferrer">Leonard's公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Leonard%27s+Bakery+933+Kapahulu+Ave+Honolulu" target="_blank" rel="noreferrer">マラサダ 地図</a><a class="button" href="https://gostateparks.hawaii.gov/diamondhead/about" target="_blank" rel="noreferrer">Diamond Head予約</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Queen+Kapiolani+Hotel+Honolulu" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
-        </article>
-
-        <article id="current-day-hi-1006" class="daily-section">
-          <div class="daily-head"><div class="daily-date"><strong>10/6</strong><span>火曜日 / Maui</span><span class="zh" lang="zh-Hans">星期二 / 茂宜岛</span></div><p class="route-summary">HNLからOGGへ移動後、空港でレンタカーを借り、Kohea Kai Hotel Maui（Kihei） を拠点にマウイ島滞在を組み立てます。Haleakalāを含める場合は移動量と疲労を優先して候補を絞ります。<span class="zh" lang="zh-Hans">从HNL飞往OGG后，在机场取租车，以Kohea Kai Hotel Maui（Kihei）为基地安排茂宜岛行程；若加入Haleakalā，优先控制交通量和疲劳并筛选候选。</span></p></div>
-          <div class="plan-options" data-plan-options data-plan-group="current-day-hi-1006">
-            <div class="plan-tabs" role="tablist" aria-label="10/6の提案"></div>
-            <div class="plan-panels">
-              <article class="plan-panel" data-plan-id="a" data-plan-label-ja="A案" data-plan-label-zh="方案A">
-                <div class="plan-panel-head"><h3>A案：Haleakalāを昼〜夕景の主目的に<span class="zh" lang="zh-Hans">方案A：以哈雷阿卡拉白天至日落为主</span></h3><span class="tag gold" data-zh="景观优先">景観優先</span></div>
-                <p>08:50 OGG着・レンタカー受取後、Haleakalāへ向かう案。日の出ではなく昼間〜夕景に限定し、帰りはKiheiで休息する。</p>
-                <p class="small">山上の寒さ、雲、道路、帰路の運転時間を確認する。Pāʻia・Ho‘okipaはこの案では削り、詰め込みを避ける。<span class="zh" lang="zh-Hans">确认山顶低温、云量、道路和回程驾驶时间；本方案删去Pāʻia和Ho‘okipa，避免过度安排。</span></p>
-              </article>
-              <article class="plan-panel" data-plan-id="b" data-plan-label-ja="B案" data-plan-label-zh="方案B">
-                <div class="plan-panel-head"><h3>B案：Pāʻia・Ho‘okipa・Kiheiを軽く回る<span class="zh" lang="zh-Hans">方案B：轻量游览Pāʻia、Ho‘okipa和Kihei</span></h3><span class="tag green" data-zh="余白优先">余白優先</span></div>
-                <p>08:50 OGG着・レンタカー受取後、PāʻiaとMana Foods、Ho‘okipa Beach Parkを経てKiheiへ向かう案。到着初日の運転とチェックインに余白を残す。</p>
-                <p class="small">Haleakalāの長距離上り下りを避け、翌日のOGG移動に備える。海況・駐車・営業時間を見て、全部ではなく一部だけ採用する。<span class="zh" lang="zh-Hans">避开哈雷阿卡拉长距离上下山，为次日OGG移动留力；根据海况、停车和营业时间只选择部分地点。</span></p>
-              </article>
-            </div>
-          </div>
-          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/6</strong><span>Honolulu → Maui / rental car</span><span class="zh" lang="zh-Hans">檀香山 → 茂宜岛 / 租车</span></div><div class="schedule-body">
-            <div class="schedule-row"><time>08:00</time><div><strong>HNL出発 → OGG</strong><p class="day-note">ユーザー提供の島間フライト時刻。</p></div></div>
-            <div class="schedule-row"><time>08:50</time><div><strong>OGG到着・レンタカー受取</strong><p class="day-note">営業所の場所、受取時間、保険、返却条件を確認。</p></div></div>
-            <div class="schedule-row"><time>Daytime</time><div><strong>Maui候補ルート</strong><p class="day-note">現在の08:50 OGG到着後のDay6案では日の出に間に合わない。日の出を別日程で選ぶ場合だけHaleakalāの車両予約が必須とし、現行案は昼間・夕景とPāʻia、Mana Foods、Ho‘okipa Beach Park、Kiheiの疲労度を比較する。</p></div></div>
-            <div class="schedule-row"><time>Evening</time><div><strong>Kohea Kai Mauiへ移動・休息</strong><p class="day-note">チェックイン、駐車、夕食、翌日のOGG返却・出発に無理がないか確認。</p></div></div>
-          </div></article>
-          <div class="grid two">
-            <div class="notice ok"><h3>確定事項<span class="zh" lang="zh-Hans">已确定事项</span></h3><p>08:00 HNL発 → 08:50 OGG着。宿泊はKohea Kai Hotel Maui（Kihei、10/6–10/7、CNY 1,524、パートナー・オファー）です。空港到着後はレンタカーを使う可能性が高い。<span class="zh" lang="zh-Hans">08:00从HNL出发 → 08:50抵达OGG。住宿为Kohea Kai Hotel Maui（Kihei，10/6–10/7，1,524元，合作伙伴优惠）。抵达机场后很可能使用租车。</span></p></div>
-            <div class="notice risk"><h3>設計対象<span class="zh" lang="zh-Hans">设计对象</span></h3><p>Haleakalāを入れる案とPāʻia・Mana Foods・Ho‘okipa・Kiheiを組み合わせる案を、道路・営業時間・予約・疲労度で比較する。</p></div>
-          </div>
-          <div class="card hotel-card"><h3>Maui候補と確認先</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-kohea-kai-maui.jpg" alt="Kohea Kai Hotel Maui の外観" loading="lazy"><figcaption><a class="credit" href="https://www.koheakai.com/gallery" target="_blank" rel="noreferrer">写真出典: Kohea Kai公式ギャラリー（外観）</a><span class="zh" lang="zh-Hans">照片来源：Kohea Kai官方画廊（外观）</span></figcaption></figure><p class="small">全候補を1日で消化する前提にしない。Haleakalāの日の出予約、昼間入園の料金・道路・天候、OGGからの運転、レンタカー受取、Kohea Kai Hotel Maui（Kihei）の駐車・チェックインを確認する。</p><div class="link-row"><a class="button" href="https://www.nps.gov/hale/planyourvisit/sunrise.htm" target="_blank" rel="noreferrer">Haleakalā日の出</a><a class="button" href="https://www.nps.gov/hale/index.htm" target="_blank" rel="noreferrer">Haleakalā NPS</a><a class="button" href="https://www.koheakai.com/" target="_blank" rel="noreferrer">Kohea Kai Maui</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Paia+Maui+Mana+Foods+Hookipa+Beach+Park+Kihei" target="_blank" rel="noreferrer">候補地図</a></div></div>
-        </article>
-
-        <article id="current-day-hi-1007" class="daily-section">
-          <div class="daily-head"><div class="daily-date"><strong>10/7</strong><span>水曜日 / Maui → Oahu東側 → いいディナー</span><span class="zh" lang="zh-Hans">星期三 / 茂宜岛 → 瓦胡岛东侧 → 精选晚餐</span></div><p class="route-summary">OGGからHNLへ移動後、レンタカーでオアフ島東側を軽く回り、夜はワイキキで予約した良いディナーを主目的にします。Sheraton Waikikiの画像は10/8–10/9泊を示し、The Twin Finの予約とも重複するため、ホテルは未確定のままです。夕食はホテル確定を待たずに候補を選び、昼の立ち寄りを予約時刻に合わせて削ります。<span class="zh" lang="zh-Hans">从OGG飞往HNL后，租车轻量游览瓦胡岛东侧，晚上把在威基基预约的精选晚餐作为主要目的。Sheraton Waikiki截图显示的是10/8–10/9住宿，与The Twin Fin预订重叠，因此酒店仍未确定。晚餐先选定候选，不等酒店最终确认，并按预约时间删减白天的停留。</span></p></div>
-          <div class="plan-options" data-plan-options data-plan-group="current-day-hi-1007">
-            <div class="plan-tabs" role="tablist" aria-label="10/7の提案"></div>
-            <div class="plan-panels">
-              <article class="plan-panel" data-plan-id="a" data-plan-label-ja="A案" data-plan-label-zh="方案A">
-                <div class="plan-panel-head"><h3>A案：東側を軽く回ってワイキキへ戻る<span class="zh" lang="zh-Hans">方案A：轻量游览东侧后返回威基基</span></h3><span class="tag green" data-zh="轻量">軽量</span></div>
-                <p>09:20 HNL着・レンタカー受取後、Ho‘omaluhiaとByodo-Inを軸に、Waimānalo・Halona・Sandy Beachから一部だけ立ち寄る案。</p>
-                <p class="small">Sheraton / The Twin Finの重複が解消していないため、18:00台の良いディナーに間に合うようホテルへ戻る時間を早めに残す。東側候補は全部回らない。<span class="zh" lang="zh-Hans">Sheraton与The Twin Fin的重复预订尚未解决，因此预留时间尽早返回酒店，以赶上18:00左右的精选晚餐。东侧候选不全部游览。</span></p>
-              </article>
-              <article class="plan-panel" data-plan-id="b" data-plan-label-ja="B案" data-plan-label-zh="方案B">
-                <div class="plan-panel-head"><h3>B案：Bishop Museumとワイキキ滞在を優先<span class="zh" lang="zh-Hans">方案B：优先Bishop Museum和威基基停留</span></h3><span class="tag teal" data-zh="室内与休息">室内・休息</span></div>
-                <p>島間移動後の疲労と天候を見て、Bishop Museumを主目的にし、午後はワイキキで買い物・食事・ホテル休息に寄せる案。</p>
-                <p class="small">東側の候補を詰め込まず、雨天やレンタカー受取の遅れにも対応しやすい。18:00台のディナーを先に予約し、Bishopの入場券と閉館時刻、ホテルの最終確定日を確認する。<span class="zh" lang="zh-Hans">不塞入东侧候选，较能应对雨天或取车延误；先预约18:00左右的晚餐，并确认Bishop门票、闭馆时间和最终酒店日期。</span></p>
-              </article>
-            </div>
-          </div>
-          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/7</strong><span>Maui → Oahu east shore</span><span class="zh" lang="zh-Hans">茂宜岛 → 瓦胡岛东侧</span></div><div class="schedule-body">
-            <div class="schedule-row"><time>08:41</time><div><strong>OGG出発 → HNL</strong><p class="day-note">ユーザー提供の島間フライト時刻。</p></div></div>
-            <div class="schedule-row"><time>09:20以降</time><div><strong>HNL到着・レンタカー受取</strong><p class="day-note">空港営業所、受取手続き、荷物、ホテル駐車を確認。</p></div></div>
-            <div class="schedule-row"><time>Daytime</time><div><strong>東側候補を軽く回る</strong><p class="day-note">Ho‘omaluhiaの通常入園とByodo-Inの当日券を基本に、Waimānalo、Halona、Sandy Beachから一部を短時間立ち寄りにする。特別プログラムは別予約。</p></div></div>
-            <div class="schedule-row"><time>18:00–20:30</time><div><strong>いいディナー（第一候補：La Mer / 代替：Hy's）<span class="zh" lang="zh-Hans">精选晚餐（首选：La Mer / 备选：Hy's）</span></strong><p class="day-note">10/7は水曜日。La Merは17:30–20:30、Hy'sは月〜木の最終着席が20:30。どちらも事前予約し、東側の立ち寄り数を予約時刻に合わせて削る。La Merは襟付き・長ズボン等のドレスコード、Hy'sも襟付きシャツと靴が必要。<span class="zh" lang="zh-Hans">10月7日为星期三。La Mer营业17:30–20:30，Hy's周一至周四最后入座时间为20:30。两者均需提前预约，并按预约时间删减东侧停留。La Mer要求有领衬衫、长裤等着装；Hy's也要求有领衬衫和鞋子。</span></p></div></div>
-          </div></article>
-          <div class="grid two">
-            <div class="notice ok"><h3>Sheraton予約情報<span class="zh" lang="zh-Hans">Sheraton预订信息</span></h3><p>08:41 OGG発 → 09:20 HNL着。Sheraton Waikiki Beach Resortは確認番号（非公開）、宿泊日は10/8–10/9、1室・大人2名、総額USD 666.36。ただし10/7泊ではなく、The Twin Finの10/8–10/9予約と重複するため、どちらを残すか要確認。<span class="zh" lang="zh-Hans">08:41从OGG出发 → 09:20抵达HNL。Sheraton Waikiki Beach Resort的确认号（不公开），住宿日期为10/8–10/9，1间房、2名成人，总额666.36美元。但这不是10/7入住，并与The Twin Fin的10/8–10/9预订重叠，需要决定保留哪一笔。</span></p></div>
-            <div class="notice risk"><h3>日付と重複の確認が必要<span class="zh" lang="zh-Hans">需要确认日期与重复预订</span></h3><p>依頼文は10/7の宿泊情報だが、画像のチェックインは2026/10/8 15:00、チェックアウトは10/9 11:00。予約を変更・取消したとは判断せず、予約管理画面で最終的な宿泊日を確認する。</p></div>
-            <div class="notice risk"><h3>設計対象<span class="zh" lang="zh-Hans">设计对象</span></h3><p>候補をすべて回らず、18:00台の良いディナーを固定したうえで、ホテル滞在・休息・渋滞を含めて軽量案と観光多め案を比較する。Bishop Museumをここへ移す案も検討する。<span class="zh" lang="zh-Hans">不游览所有候选；先固定18:00左右的精选晚餐，再结合酒店停留、休息和拥堵比较轻量与景点较多的方案。也可考虑把Bishop Museum移到这一天。</span></p></div>
-          </div>
-          <div class="card hotel-card"><h3>Sheraton Waikiki Beach Resort（画像確認: 10/8–10/9）</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-sheraton-waikiki.jpg" alt="Sheraton Waikiki Beach Resort の外観" loading="lazy"><figcaption><a class="credit" href="https://www.marriott.com/en-us/hotels/hnlws-sheraton-waikiki-beach-resort/photos/" target="_blank" rel="noreferrer">写真出典: Marriott公式ギャラリー（外観）</a><span class="zh" lang="zh-Hans">照片来源：Marriott官方画廊（外观）</span></figcaption></figure><p class="small"><strong>確認番号（非公開）</strong>。2255 Kalākaua Avenue, Honolulu, HI 96815、+1-808-922-4422。チェックイン 2026/10/8 15:00、チェックアウト 2026/10/9 11:00、1室・大人2名。客室は「インフィニティ オーシャンフロント（20〜27階）、1キング」。滞在費総額はUSD 666.36。The Twin Finの同日予約と重複しているため、片方を自動で確定・取消せず、最終予約を選択する。<span class="zh" lang="zh-Hans">确认号（不公开）；地址2255 Kalākaua Avenue, Honolulu, HI 96815，电话+1-808-922-4422。入住2026年10月8日15:00，退房2026年10月9日11:00，1间客房、2位成人。房型为“Infinity Oceanfront，20至27层，1张特大床”。住宿总额666.36美元。与The Twin Fin同日期预订重叠，因此不自动确认或取消，需选择最终预订。</span></p><div class="link-row"><a class="button" href="https://www.marriott.com/en-us/hotels/hnlws-sheraton-waikiki/overview/" target="_blank" rel="noreferrer">ホテル公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton+Waikiki+Beach+Resort+2255+Kalakaua+Avenue+Honolulu" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
-          <div class="card"><h3>Oahu東側候補と確認先</h3><p class="small">Ho‘omaluhia Botanical Garden、Byodo-In Temple、Waimānalo Beach、Halona Blowhole、Sandy Beach、Pokeを候補として保持する。通常入園は予約前提にせず、営業時間・木曜休園・入場条件・駐車・ホテル戻り時刻を確認する。</p><div class="link-row"><a class="button" href="https://www.honolulu.gov/parks/honolulu/ho-omaluhia-botanical-garden.html" target="_blank" rel="noreferrer">Ho‘omaluhia公式</a><a class="button" href="https://byodo-in.com/visit/" target="_blank" rel="noreferrer">Byodo-In案内</a><a class="button" href="https://tickets.byodo-in.com/mainstore" target="_blank" rel="noreferrer">Byodo-In券</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Hoomaluhia+Botanical+Garden+Byodo-In+Waimanalo+Halona+Sandy+Beach" target="_blank" rel="noreferrer">候補地図</a></div></div>
-          <div class="card"><h3>7日目のディナー候補<span class="zh" lang="zh-Hans">第7天晚餐候选</span></h3><p class="small"><strong>第一候補：La Mer at Halekulani。</strong> 旅行中に一度は奮発する前提の、海辺のフレンチ系ファインダイニング。10/7（水）は営業日で、17:30–20:30。襟付きシャツ／アロハシャツ、長ズボン、靴が必要。<strong>代替：Hy's Steak House。</strong> ワイキキ内のクラシックなステーキハウスで、月〜木は17:00–20:30が最終着席、水曜はライブ音楽あり。いずれも事前予約し、服装を準備する。<span class="zh" lang="zh-Hans"><strong>首选：La Mer at Halekulani。</strong> 以旅行中至少奢侈享受一次为前提的海边法式风格高级餐厅。10月7日（周三）营业，17:30–20:30。需要有领衬衫／夏威夷衬衫、长裤和鞋子。<strong>备选：Hy's Steak House。</strong> 威基基的经典牛排馆，周一至周四营业时间为17:00–20:30（20:30最后入座），周三有现场音乐。两者都需提前预约并准备合适服装。</span></p><div class="link-row"><a class="button" href="https://www.halekulani.com/dining/la-mer/" target="_blank" rel="noreferrer">La Mer公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=La+Mer+Halekulani+Honolulu" target="_blank" rel="noreferrer">La Mer地図</a><a class="button" href="https://hyswaikiki.com/" target="_blank" rel="noreferrer">Hy's公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Hy%27s+Steak+House+Waikiki+2440+Kuhio+Ave+Honolulu" target="_blank" rel="noreferrer">Hy's地図</a></div></div>
-        </article>
-
-        <article id="current-day-hi-1008" class="daily-section">
-          <div class="daily-head"><div class="daily-date"><strong>10/8</strong><span>木曜日 / Pearl Harbor → North Shore</span><span class="zh" lang="zh-Hans">星期四 / Pearl Harbor → North Shore</span></div><p class="route-summary">レンタカーでPearl HarborとNorth Shore方面をまとめて回る日。宿泊はThe Twin Fin、朝食なし。Pearl Harborを軸に、Dole・Haleiwa・Giovanni’s・Laniakea・Sunset Beachは交通と営業時間を見て絞ります。<span class="zh" lang="zh-Hans">租车集中游览Pearl Harbor和North Shore；住宿The Twin Fin且不含早餐。以Pearl Harbor为轴，根据交通和营业时间筛选Dole、Haleiwa、Giovanni’s、Laniakea和Sunset Beach。</span></p></div>
-          <div class="plan-options" data-plan-options data-plan-group="current-day-hi-1008">
-            <div class="plan-tabs" role="tablist" aria-label="10/8の提案"></div>
-            <div class="plan-panels">
-              <article class="plan-panel" data-plan-id="a" data-plan-label-ja="A案" data-plan-label-zh="方案A">
-                <div class="plan-panel-head"><h3>A案：Pearl Harbor＋North Shoreを広く回る<span class="zh" lang="zh-Hans">方案A：较完整地游览Pearl Harbor和North Shore</span></h3><span class="tag teal" data-zh="景点较多">景点多め</span></div>
-                <p>Pearl Harborを朝の軸にして、Dole Plantation、Haleiwa / Giovanni’s、LaniakeaまたはSunset Beachまでつなぐ案。</p>
-                <p class="small">USS Arizonaの予約時刻、Doleの有料アクティビティ、帰路渋滞を基準に削除順位を決める。全部を必須にはしない。<span class="zh" lang="zh-Hans">按USS Arizona预约时间、Dole付费活动和回程拥堵决定删减顺序，不把所有地点都视为必到。</span></p>
-              </article>
-              <article class="plan-panel" data-plan-id="b" data-plan-label-ja="B案" data-plan-label-zh="方案B">
-                <div class="plan-panel-head"><h3>B案：Pearl Harbor＋Haleiwaに絞って早めに戻る<span class="zh" lang="zh-Hans">方案B：集中Pearl Harbor和Haleiwa，早点返回</span></h3><span class="tag green" data-zh="余白优先">余白優先</span></div>
-                <p>Pearl HarborとHaleiwa / Giovanni’sを中心にし、Dole・Laniakea・Sunset Beachは削るか短時間にする案。</p>
-                <p class="small">ホテルへ早く戻り、翌日の出発・レンタカー返却・Sheratonとの重複解消に余白を残す。North Shoreの海況と道路状況が悪い場合にも切り替えやすい。<span class="zh" lang="zh-Hans">早点回酒店，为次日出发、还车和解决Sheraton重复预订保留余量；North Shore海况或道路不佳时也更易调整。</span></p>
-              </article>
-            </div>
-          </div>
-          <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/8</strong><span>Pearl Harbor / North Shore</span><span class="zh" lang="zh-Hans">Pearl Harbor / North Shore</span></div><div class="schedule-body">
-            <div class="schedule-row"><time>08:00–11:00候補</time><div><strong>Pearl Harbor</strong><p class="day-note">Visitor Centerと博物館は予約不要。USS Arizona Memorialプログラムに参加するなら枠を先に確保し、開始1時間前到着を計画する。</p></div></div>
-            <div class="schedule-row"><time>11:30頃候補</time><div><strong>Dole Plantation</strong><p class="day-note">Dole Whip / pineapple ice creamだけなら予約不要。列車・迷路・Garden Tourを入れる場合はアクティビティ券を先に確認する。</p></div></div>
-            <div class="schedule-row"><time>午後候補</time><div><strong>Haleiwa town / Giovanni’s</strong><p class="day-note">昼食と街歩きを一体化。営業時間・列・駐車を確認し、全部を詰め込まない。</p></div></div>
-            <div class="schedule-row"><time>午後後半候補</time><div><strong>Laniakea Beach / Sunset Beach</strong><p class="day-note">海況・日没・帰路渋滞を見て一方または短時間立ち寄りにする。</p></div></div>
-            <div class="schedule-row"><time>Evening</time><div><strong>The Twin Finへ戻る</strong><p class="day-note">ホテル戻り時刻と翌日の出発、レンタカー返却条件を確認。</p></div></div>
-          </div></article>
-          <div class="grid two">
-            <div class="notice ok"><h3>確定事項<span class="zh" lang="zh-Hans">已确定事项</span></h3><p>レンタカー利用。宿泊はThe Twin Fin Hotel（10/8–10/9、CNY 1,692、返金不可）です。ホテル朝食なし。Pearl Harbor＋North Shoreをこの日の軸にする。<span class="zh" lang="zh-Hans">使用租车。住宿为The Twin Fin Hotel（10/8–10/9，1,692元，不可退款）。酒店无早餐。当天以Pearl Harbor＋North Shore为轴。</span></p></div>
-            <div class="notice risk"><h3>宿泊予約の重複に注意<span class="zh" lang="zh-Hans">注意住宿预订重复</span></h3><p>Sheraton Waikiki Beach Resortにも10/8–10/9の予約画像（確認番号（非公開）、USD 666.36）があるため、The Twin Finと同日重複しています。どちらを残すか決めるまで、両方を最終確定とは扱いません。</p></div>
-            <div class="notice risk"><h3>設計対象<span class="zh" lang="zh-Hans">设计对象</span></h3><p>Pearl Harborの予約枠を起点に、Dole・Haleiwa・Giovanni’s・Laniakea・Sunsetの順序と削除候補を比較する。</p></div>
-          </div>
-          <div class="card hotel-card"><h3>宿泊確認とNorth Shore候補</h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-twin-fin.jpg" alt="The Twin Fin Hotel とワイキキの海岸" loading="lazy"><figcaption><a class="credit" href="https://www.twinfinwaikiki.com/gallery/" target="_blank" rel="noreferrer">写真出典: The Twin Fin公式ギャラリー</a><span class="zh" lang="zh-Hans">照片来源：The Twin Fin官方画廊</span></figcaption></figure><p class="small"><strong>The Twin Fin Hotel </strong>（10/8–10/9、CNY 1,692、返金不可）。ホテル朝食なし。Pearl Harbor、Dole Plantation、Haleiwa、Giovanni’s Shrimp Truck、Laniakea Beach、Sunset Beachを保持し、USS Arizonaの枠、Dole有料アクティビティ、営業時間、駐車、野生動物への配慮、帰路渋滞を確認する。</p><div class="link-row"><a class="button" href="https://www.twinfinwaikiki.com/" target="_blank" rel="noreferrer">ホテル公式</a><a class="button" href="https://www.nps.gov/thingstodo/visit-the-uss-arizona-memorial.htm" target="_blank" rel="noreferrer">USS Arizona券</a><a class="button" href="https://www.nps.gov/pearl/index.htm" target="_blank" rel="noreferrer">Pearl Harbor NPS</a><a class="button" href="https://booking.doleplantation.com/" target="_blank" rel="noreferrer">Dole予約</a><a class="button" href="https://www.doleplantation.com/" target="_blank" rel="noreferrer">Dole公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Pearl+Harbor+Dole+Plantation+Haleiwa+Giovannis+Shrimp+Truck+Laniakea+Beach+Sunset+Beach" target="_blank" rel="noreferrer">候補地図</a></div></div>
-        </article>
-
-        <article id="current-japan-after-arrival" class="daily-section">
-          <div class="daily-head"><div class="daily-date"><strong>日本到着後</strong><span>自由時間 + 国内1泊</span><span class="zh" lang="zh-Hans">抵达日本后 / 自由时间 + 日本国内一晚</span></div><p class="route-summary">日本到着後にも自由時間があり、その後に日本国内でさらに1泊する予定です。ショッピング・食事・居酒屋を優先し、到着時刻・場所・翌日の動線が合えば温泉も候補にします。<span class="zh" lang="zh-Hans">抵达日本后还有自由时间，之后计划在日本国内再住一晚。优先购物、用餐和居酒屋；若抵达时间、地点及次日动线合适，也将温泉列为候选。</span></p></div>
-          <div class="grid two">
-            <div class="notice ok"><h3>希望の軸<span class="zh" lang="zh-Hans">希望重点</span></h3><p>ショッピング・食事・居酒屋を優先する。可能なら温泉を追加するが、無理に遠出せず、到着後の疲労と翌日の移動を優先する。<span class="zh" lang="zh-Hans">优先购物、用餐和居酒屋。若条件允许再加入温泉；不勉强远行，优先考虑抵达后的疲劳和次日交通。</span></p></div>
-            <div class="notice risk"><h3>到着後に設計する部分<span class="zh" lang="zh-Hans">抵达后需要设计的部分</span></h3><p>日本到着時刻・空港・移動手段・宿泊地を確定し、買い物と食事の営業時間、居酒屋の予約・帰路、温泉の日帰り利用や交通条件を比較する。<span class="zh" lang="zh-Hans">先确定抵达时间、机场、交通方式和住宿地，再比较购物与餐饮营业时间、居酒屋预约与返程，以及温泉日归利用和交通条件。</span></p></div>
-          </div>
-          <div class="card"><h3>日本でやることの候補<span class="zh" lang="zh-Hans">抵达日本后的活动候选</span></h3><div class="grid two">
-            <div class="card compact"><h3>🛍️ ショッピング<span class="zh" lang="zh-Hans">购物</span></h3><p class="small">空港・宿泊地・翌日の移動動線に近い商業施設を優先し、営業時間と荷物の扱いを確認する。<span class="zh" lang="zh-Hans">优先选择靠近机场、住宿地或次日交通动线的商业设施，并确认营业时间和行李安排。</span></p></div>
-            <div class="card compact"><h3>🍜 食事<span class="zh" lang="zh-Hans">用餐</span></h3><p class="small">到着後すぐに無理なく入れる店と、翌日に回せる店を分け、移動を増やしすぎない。<span class="zh" lang="zh-Hans">区分抵达后可轻松用餐的店和可留到次日的店，避免增加过多移动。</span></p></div>
-            <div class="card compact"><h3>🍶 居酒屋<span class="zh" lang="zh-Hans">居酒屋</span></h3><p class="small">宿泊地から徒歩・公共交通で戻れる範囲を基本にし、営業時間、予約、最終交通を確認する。<span class="zh" lang="zh-Hans">以可从住宿地步行或乘公共交通返回的范围为主，并确认营业时间、预约和末班交通。</span></p></div>
-            <div class="card compact"><h3>♨️ 温泉（可能なら）<span class="zh" lang="zh-Hans">温泉（若条件允许）</span></h3><p class="small">到着時刻と翌日の予定に余裕がある場合だけ、日帰り温泉または温泉付き宿を候補にする。<span class="zh" lang="zh-Hans">只有抵达时间和次日安排有余量时，才考虑日归温泉或带温泉的住宿。</span></p></div>
-          </div><p class="small reservation-note">到着空港と時刻が確定してから、空港近くに泊まる案、翌日の目的地に近い都市に移る案、自由時間を空港周辺で使う案を比較する。現時点では都市名・ホテル名を固定しない。<span class="zh" lang="zh-Hans">待抵达机场和时间确定后，再比较住在机场附近、转移到靠近次日目的地的城市，以及在机场周边使用自由时间的方案。现阶段不固定城市名或酒店名。</span></p></div>
-        </article>
-      </div>
     </section>
 
     <section id="legacy-plan" class="band">
@@ -1959,44 +1858,12 @@
       </div>
     </section>
 
-    <section id="sources" class="band">
-      <div class="section-head"><h2>公式・確認リンク<span class="zh" lang="zh-Hans">官方与确认链接</span></h2><span class="muted small">道路、予約、航空券条件は出発前に再確認。<span class="zh" lang="zh-Hans">道路、预约和机票条件需在出发前复核。</span></span></div>
-      <ul class="source-list">
-        <li><a href="https://www.flylax.com/" target="_blank" rel="noreferrer">Los Angeles International Airport</a></li>
-        <li><a href="https://www.getty.edu/visit/center/" target="_blank" rel="noreferrer">Getty Center</a></li>
-        <li><a href="https://www.getty.edu/visit/center/faqs/" target="_blank" rel="noreferrer">Getty timed-entry FAQ</a></li>
-        <li><a href="https://griffithobservatory.org/" target="_blank" rel="noreferrer">Griffith Observatory</a></li>
-        <li><a href="https://www.booking.com/hotel/us/holiday-inn-suites-monterey-park-los-angeles-an-ihg.ja.html" target="_blank" rel="noreferrer">Holiday Inn Monterey Park - Booking</a></li>
-        <li><a href="https://www.booking.com/hotel/us/holiday-inn-los-angeles-international-airport.ja.html" target="_blank" rel="noreferrer">Holiday Inn LAX - Booking</a></li>
-        <li><a href="https://maps.app.goo.gl/d6ueUFs1jq4qLbyRA" target="_blank" rel="noreferrer">Day2–4 tour map</a></li>
-        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Bounce+1160+N+Vermont+Ave+Los+Angeles" target="_blank" rel="noreferrer">Bounce候補地図</a></li>
-        <li><a href="https://bounce.com/" target="_blank" rel="noreferrer">Bounce luggage storage</a></li>
-        <li><a href="https://www.nps.gov/yose/planyourvisit/index.htm" target="_blank" rel="noreferrer">Yosemite National Park - NPS</a></li>
-        <li><a href="https://www.queenkapiolani.com/" target="_blank" rel="noreferrer">Queen Kapiolani Hotel</a></li>
-        <li><a href="https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument/" target="_blank" rel="noreferrer">Diamond Head State Monument</a></li>
-        <li><a href="https://gostateparks.hawaii.gov/diamondhead/about" target="_blank" rel="noreferrer">Diamond Head reservation system</a></li>
-        <li><a href="https://www.bishopmuseum.org/" target="_blank" rel="noreferrer">Bishop Museum</a></li>
-        <li><a href="https://www.bishopmuseum.org/visit/tickets/" target="_blank" rel="noreferrer">Bishop Museum tickets</a></li>
-        <li><a href="https://www.nps.gov/hale/index.htm" target="_blank" rel="noreferrer">Haleakalā National Park</a></li>
-        <li><a href="https://www.nps.gov/hale/planyourvisit/sunrise.htm" target="_blank" rel="noreferrer">Haleakalā sunrise reservations</a></li>
-        <li><a href="https://www.koheakai.com/" target="_blank" rel="noreferrer">Kohea Kai Maui</a></li>
-        <li><a href="https://www.marriott.com/en-us/hotels/hnlws-sheraton-waikiki/overview/" target="_blank" rel="noreferrer">Sheraton Waikiki</a></li>
-        <li><a href="https://byodo-in.com/" target="_blank" rel="noreferrer">Byodo-In Temple</a></li>
-        <li><a href="https://www.honolulu.gov/parks/honolulu/ho-omaluhia-botanical-garden.html" target="_blank" rel="noreferrer">Ho‘omaluhia Botanical Garden</a></li>
-        <li><a href="https://www.nps.gov/pearl/index.htm" target="_blank" rel="noreferrer">Pearl Harbor National Memorial</a></li>
-        <li><a href="https://www.nps.gov/thingstodo/visit-the-uss-arizona-memorial.htm" target="_blank" rel="noreferrer">USS Arizona Memorial tickets</a></li>
-        <li><a href="https://www.doleplantation.com/" target="_blank" rel="noreferrer">Dole Plantation</a></li>
-        <li><a href="https://booking.doleplantation.com/" target="_blank" rel="noreferrer">Dole activity booking</a></li>
-        <li><a href="https://www.twinfinwaikiki.com/" target="_blank" rel="noreferrer">The Twin Fin</a></li>
-      </ul>
-    </section>
   </main>
-
 
   <footer>
     <div class="wrap">
-      このHTMLは検討用です。航空会社、空港、公園、予約枠、道路、ビザ・入国条件は予約前と出発前に再確認してください。予約分類の公式確認日は2026/9/11です。
-      <span class="zh" lang="zh-Hans">本HTML仅用于行程讨论。航空公司、机场、公园、预约名额、道路、签证和入境条件请在预订前和出发前再次确认。预约分类的官方核对日期为2026年9月11日。</span>
+      このHTMLは検討用です。航空会社、空港、公園、予約枠、道路、ビザ・入国条件は予約前と出発前に再確認してください。予約条件の公式確認日は2026/9/12です。
+      <span class="zh" lang="zh-Hans">本HTML仅用于行程讨论。航空公司、机场、公园、预约名额、道路、签证和入境条件请在预订前和出发前再次确认。预约条件的官方核对日期为2026年9月12日。</span>
     </div>
   </footer>
 
@@ -2010,6 +1877,17 @@
       for (var i = 0; i < zh.length; i++) zh[i].parentNode.removeChild(zh[i]);
       return (clone.textContent || "").trim().replace(/\s+/g, " ");
     }
+
+    function openLinkedComparison() {
+      if (location.hash.indexOf("#compare-") !== 0) return;
+      var target = document.getElementById(location.hash.slice(1));
+      if (!target) return;
+      var details = target.closest("details");
+      if (details) details.open = true;
+      target.scrollIntoView();
+    }
+    window.addEventListener("hashchange", openLinkedComparison);
+    window.addEventListener("load", openLinkedComparison);
 
     function visibleText(node, language) {
       var clone = node.cloneNode(true);
@@ -2151,7 +2029,7 @@
     }
 
     function initPlanTabs() {
-      var groups = document.querySelectorAll("#daily-plan .plan-options");
+      var groups = document.querySelectorAll("#trip-decisions .plan-options");
       var language = document.documentElement.getAttribute("data-language") === "zh" ? "zh" : "ja";
       for (var i = 0; i < groups.length; i++) {
         (function (group, groupIndex) {
