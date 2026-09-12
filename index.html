@@ -1389,6 +1389,7 @@
 
     #overview .hero-grid { grid-template-columns: 1fr; }
     #overview .stats { display: none; }
+    .place-name-link { color: inherit; text-decoration: underline; text-decoration-color: var(--teal); text-underline-offset: 3px; }
     .day-route { margin-top: 14px; }
     .day-cost { font-size: .8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 10px; margin: 16px 0 0; line-height: 1.6; }
     .planning-link { display: inline-block; margin-top: 12px; font-size: .875rem; }
@@ -1502,8 +1503,8 @@
           </div></article>
           <div class="spot-grid">
             <div class="photo-card"><img src="assets/img/getty-center.jpg" alt="Getty Center" loading="lazy"><div class="photo-body"><div class="tag-row"><span class="tag teal">12:00–14:30</span><span class="tag gold">予約</span></div><h3>Getty Center</h3><p class="small">無料。12:00前後の時間指定予約を取り、昼食込みで約2時間半。<span class="zh" lang="zh-Hans">免费；预约12:00左右时段，含午餐约两个半小时。</span></p><div class="link-row"><a class="button" href="https://www.getty.edu/visit/center/" target="_blank" rel="noreferrer">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Getty+Center" target="_blank" rel="noreferrer">地図</a></div></div></div>
-            <div class="photo-card"><div class="photo-body"><div class="tag-row"><span class="tag teal">15:00–15:50</span><span class="tag">短時間</span></div><h3>Beverly Hills: ALO + Erewhon</h3><p class="small">アパレル店ALOで服を確認し、食品店Erewhonでスムージーまたは飲み物。周辺街歩きは移動中だけ。<span class="zh" lang="zh-Hans">在服装店ALO看衣服，在食品店Erewhon买冰沙或饮料；周边街景只在两店之间顺路看。</span></p></div></div>
-            <div class="photo-card"><img src="assets/img/griffith-observatory.jpg" alt="Griffith Observatory" loading="lazy"><div class="photo-body"><div class="tag-row"><span class="tag teal">17:15–19:05</span><span class="tag green">優先</span></div><h3>Griffith Observatory</h3><p class="small">2026/10/1の日没は18:37頃、薄明終了は19:02頃の見込み。無料・予約不要。<span class="zh" lang="zh-Hans">2026年10月1日日落预计18:37、民用曙暮光结束约19:02；免费且无需预约。</span></p><div class="link-row"><a class="button" href="https://griffithobservatory.org/" target="_blank" rel="noreferrer">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Griffith+Observatory" target="_blank" rel="noreferrer">地図</a></div></div></div>
+            <div class="photo-card"><div class="photo-body"><div class="tag-row"><span class="tag teal">15:00–15:50</span><span class="tag green" data-zh="行程已定">行程確定</span></div><h3>Beverly Hills: ALO + Erewhon</h3><p class="small">アパレル店ALOで服を確認し、食品店Erewhonでスムージーまたは飲み物。周辺街歩きは移動中だけ。<span class="zh" lang="zh-Hans">在服装店ALO看衣服，在食品店Erewhon买冰沙或饮料；周边街景只在两店之间顺路看。</span></p></div></div>
+            <div class="photo-card"><img src="assets/img/griffith-observatory.jpg" alt="Griffith Observatory" loading="lazy"><div class="photo-body"><div class="tag-row"><span class="tag teal">17:15–19:05</span><span class="tag green">優先</span></div><h3>Griffith Observatory</h3><p class="small"><strong>18:40 日没</strong>。日没前の景色から夜景まで滞在。無料・予約不要。<span class="zh" lang="zh-Hans"><strong>18:40 日落</strong>。从日落前的景色看到夜景；免费且无需预约。</span></p><div class="link-row"><a class="button" href="https://griffithobservatory.org/" target="_blank" rel="noreferrer">公式</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Griffith+Observatory" target="_blank" rel="noreferrer">地図</a></div></div></div>
           </div>
           <div class="notice ok hotel-card"><h3>宿泊 <span class="zh" lang="zh-Hans">住宿</span></h3><figure class="hotel-eyecatch-figure"><img class="hotel-eyecatch" src="assets/img/hotel-holiday-inn-monterey-park.jpg" alt="Holiday Inn &amp; Suites Monterey Park の客室" loading="lazy"><figcaption><a class="credit" href="https://www.ihg.com/holidayinn/hotels/us/en/monterey-park/burmp/hoteldetail/gallery" target="_blank" rel="noreferrer">写真出典: IHG公式ギャラリー（客室・内観）</a><span class="zh" lang="zh-Hans">照片来源：IHG官方画廊（客房・室内）</span></figcaption></figure><p><strong>Holiday Inn &amp; Suites Monterey Park – Los Angeles by IHG</strong><br>10/1–10/2、Monterey Park、CNY 1,049、指定期限までは無料キャンセル。税・手数料・予約番号・住所は未確認です。<span class="zh" lang="zh-Hans">10/1–10/2，Monterey Park，1,049元，可在指定期限前免费取消。税费、手续费、预订编号和地址尚未确认。</span></p><div class="link-row"><a class="button" href="https://www.booking.com/hotel/us/holiday-inn-suites-monterey-park-los-angeles-an-ihg.ja.html" target="_blank" rel="noreferrer">Booking</a><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Holiday+Inn+%26+Suites+Monterey+Park+Los+Angeles+by+IHG" target="_blank" rel="noreferrer">ホテル地図</a></div></div>
 
@@ -1988,7 +1989,7 @@
     }
 
     var SCHEDULE_ROW_BY_SPOT = {
-      "current-day-ca-1001": { "Getty Center": 2, "Griffith Observatory": 7 },
+      "current-day-ca-1001": { "Getty Center": 2, "Beverly Hills: ALO + Erewhon": 4, "Griffith Observatory": 7 },
       "current-day-ca-1002": {},
       "current-day-ca-1003": {},
       "current-day-ca-1004": {},
@@ -2144,12 +2145,89 @@
       }
     }
 
+    function linkPlaceNames() {
+      var root = document.getElementById("daily-plan");
+      var language = document.documentElement.getAttribute("data-language");
+      var places = [
+        ["9125 Recreation Cir, Fountain Valley", "9125 Recreation Cir Fountain Valley California"],
+        ["1720 Sisk Rd, Modesto, CA 95350", "1720 Sisk Rd Modesto CA 95350"],
+        ["2255 Kalākaua Avenue, Honolulu, HI 96815", "2255 Kalakaua Avenue Honolulu HI 96815"],
+        ["1160 N Vermont Ave", "1160 N Vermont Ave Los Angeles"],
+        ["234 Beach Walk", "234 Beach Walk Honolulu"],
+        ["933 Kapahulu Ave", "933 Kapahulu Ave Honolulu"],
+        ["Barber Ln", "Barber Lane Milpitas California"],
+        ["Holiday Inn & Suites Monterey Park", "Holiday Inn Suites Monterey Park"],
+        ["Holiday Inn Los Angeles LAX Airport", "Holiday Inn Los Angeles LAX Airport"],
+        ["Sheraton San Jose Silicon Valley", "Sheraton San Jose Silicon Valley"],
+        ["La Casa Modesto", "La Casa Modesto Ascend Hotel Collection"],
+        ["Queen Kapiolani Hotel", "Queen Kapiolani Hotel Honolulu"],
+        ["Kohea Kai Hotel Maui", "Kohea Kai Hotel Maui Kihei"],
+        ["Sheraton Waikiki Beach Resort", "Sheraton Waikiki Beach Resort"],
+        ["The Twin Fin", "The Twin Fin Hotel Honolulu"],
+        ["Getty Center", "Getty Center Los Angeles"], ["盖蒂中心", "Getty Center Los Angeles"],
+        ["Griffith Observatory", "Griffith Observatory Los Angeles"], ["格里菲斯", "Griffith Observatory Los Angeles"],
+        ["Beverly Hills", "Beverly Hills California"], ["比佛利山", "Beverly Hills California"],
+        ["ALO", "Alo Yoga Beverly Hills"], ["Erewhon", "Erewhon Beverly Hills"],
+        ["Hollywood Sign", "Hollywood Sign Los Angeles"], ["Central Garden", "Getty Center Central Garden"],
+        ["Fountain Valley", "Fountain Valley California"], ["Milpitas", "Milpitas California"],
+        ["Modesto", "Modesto California"], ["Monterey Park", "Monterey Park California"], ["蒙特利公园", "Monterey Park California"],
+        ["Union Station", "Union Station Los Angeles"], ["El Capitan", "El Capitan Yosemite"],
+        ["Yosemite", "Yosemite National Park"], ["优胜美地", "Yosemite National Park"],
+        ["Henry's Place", "Henrys Place 234 Beach Walk Honolulu"], ["Leonard's", "Leonards Bakery 933 Kapahulu Ave Honolulu"],
+        ["Diamond Head", "Diamond Head State Monument"], ["钻石山", "Diamond Head State Monument"],
+        ["Waikiki", "Waikiki Honolulu"], ["ワイキキ", "Waikiki Honolulu"], ["威基基", "Waikiki Honolulu"],
+        ["Kapahulu", "Kapahulu Honolulu"],
+        ["Haleakalā", "Haleakala National Park Summit"], ["哈雷阿卡拉", "Haleakala National Park Summit"],
+        ["Pāʻia", "Paia Maui"], ["Mana Foods", "Mana Foods Paia Maui"], ["Ho‘okipa", "Hookipa Beach Park Maui"], ["Kihei", "Kihei Maui"],
+        ["Ho‘omaluhia", "Hoomaluhia Botanical Garden"], ["Byodo-In", "Byodo In Temple Kaneohe"],
+        ["Waimānalo", "Waimanalo Beach Oahu"], ["Halona", "Halona Blowhole Oahu"], ["Sandy Beach", "Sandy Beach Park Oahu"],
+        ["Bishop Museum", "Bishop Museum Honolulu"], ["La Mer", "La Mer Halekulani Honolulu"], ["Hy's", "Hys Steak House Waikiki"],
+        ["Pearl Harbor", "Pearl Harbor National Memorial Visitor Center"], ["USS Arizona", "USS Arizona Memorial Pearl Harbor"],
+        ["Dole Plantation", "Dole Plantation Oahu"], ["North Shore", "North Shore Oahu"], ["Haleiwa", "Haleiwa Oahu"],
+        ["Giovanni’s", "Giovannis Shrimp Truck Haleiwa"], ["Laniakea", "Laniakea Beach Oahu"], ["Sunset Beach", "Sunset Beach Oahu"],
+        ["LAX", "Los Angeles International Airport"], ["HNL", "Daniel K Inouye International Airport"], ["OGG", "Kahului Airport Maui"]
+      ].sort(function (a, b) { return b[0].length - a[0].length; });
+      var used = {};
+      var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+      var nodes = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+      nodes.forEach(function (node) {
+        if (node.parentElement.closest("a, script, style, .ja-text, nav")) return;
+        if (language !== "zh" && node.parentElement.closest(".zh")) return;
+        var remaining = node.nodeValue;
+        var fragment = document.createDocumentFragment();
+        var changed = false;
+        while (remaining) {
+          var match = null;
+          var position = remaining.length;
+          places.forEach(function (place) {
+            var index = used[place[0]] ? -1 : remaining.indexOf(place[0]);
+            if (index >= 0 && index < position) { position = index; match = place; }
+          });
+          if (!match) { fragment.appendChild(document.createTextNode(remaining)); break; }
+          fragment.appendChild(document.createTextNode(remaining.slice(0, position)));
+          var anchor = document.createElement("a");
+          anchor.href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(match[1]);
+          anchor.target = "_blank";
+          anchor.rel = "noreferrer";
+          anchor.className = "place-name-link";
+          anchor.textContent = match[0];
+          fragment.appendChild(anchor);
+          used[match[0]] = true;
+          remaining = remaining.slice(position + match[0].length);
+          changed = true;
+        }
+        if (changed) node.parentNode.replaceChild(fragment, node);
+      });
+    }
+
     function boot() {
       mergeDailyMaps();
       initPlanTabs();
       mergeScheduledCards();
       initPlaceMaps();
       initMapLoadButtons();
+      linkPlaceNames();
     }
 
     if (document.readyState === "loading") {
