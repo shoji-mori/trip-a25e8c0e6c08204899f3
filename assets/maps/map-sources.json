@@ -1,0 +1,434 @@
+{
+  "created": "2026-09-26",
+  "map_data": "© OpenStreetMap contributors",
+  "map_data_license": "https://www.openstreetmap.org/copyright",
+  "basemap": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+  "tile_policy": "https://operations.osmfoundation.org/policies/tiles/",
+  "views": {
+    "day01-los-angeles": {
+      "image": "assets/maps/day01-los-angeles.webp",
+      "zoom": 11,
+      "size": [
+        768,
+        512
+      ],
+      "pins": [
+        {
+          "number": 1,
+          "id": "lax",
+          "optional": false,
+          "lat": 33.9421675,
+          "lon": -118.4213591,
+          "name": "Los Angeles International Airport, 1, World Way, Westchester, Los Angeles, Los Angeles County, California, 90045, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Los+Angeles+International+Airport&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 2,
+          "id": "getty",
+          "optional": false,
+          "lat": 34.0770168,
+          "lon": -118.47401,
+          "name": "The J. Paul Getty Museum, Beverly Park Drive, Los Angeles, Los Angeles County, California, 90049, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Getty+Center%2C+Los+Angeles&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 3,
+          "id": "beverly",
+          "optional": false,
+          "lat": 34.0696501,
+          "lon": -118.3963062,
+          "name": "Beverly Hills, Los Angeles County, California, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Beverly+Hills%2C+Los+Angeles+County&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 4,
+          "id": "bounce",
+          "optional": false,
+          "lat": 34.0928217,
+          "lon": -118.291181,
+          "name": "Hollywood Hotel, 1160, North Vermont Avenue, East Hollywood, Los Angeles, Los Angeles County, California, 90029, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=1160+North+Vermont+Avenue%2C+Los+Angeles&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 5,
+          "id": "griffith",
+          "optional": false,
+          "lat": 34.1182187,
+          "lon": -118.3002933,
+          "name": "Griffith Observatory, 2800, East Observatory Road, Los Feliz Neighborhood Council District, Los Angeles, Los Angeles County, California, 90027, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Griffith+Observatory%2C+Los+Angeles&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 6,
+          "id": "holiday-mp",
+          "optional": false,
+          "lat": 34.0664373,
+          "lon": -118.1340511,
+          "name": "Holiday Inn, 400, North Atlantic Boulevard, Monterey Park, Los Angeles County, California, 91754, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Holiday+Inn+Monterey+Park%2C+400+North+Atlantic+Boulevard&format=jsonv2&limit=1&countrycodes=us"
+        }
+      ]
+    },
+    "day02-monterey-park": {
+      "image": "assets/maps/day02-monterey-park.webp",
+      "zoom": 17,
+      "size": [
+        768,
+        512
+      ],
+      "pins": [
+        {
+          "number": 1,
+          "id": "holiday-mp",
+          "optional": false,
+          "lat": 34.0664373,
+          "lon": -118.1340511,
+          "name": "Holiday Inn, 400, North Atlantic Boulevard, Monterey Park, Los Angeles County, California, 91754, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Holiday+Inn+Monterey+Park%2C+400+North+Atlantic+Boulevard&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 2,
+          "id": "courtyard",
+          "optional": false,
+          "lat": 34.0688708,
+          "lon": -118.1347551,
+          "name": "Courtyard Los Angeles Monterey Park, 555, North Atlantic Boulevard, Monterey Park, Los Angeles County, California, 91754, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Courtyard+Monterey+Park&format=jsonv2&limit=1&countrycodes=us"
+        }
+      ]
+    },
+    "day03-san-francisco": {
+      "image": "assets/maps/day03-san-francisco.webp",
+      "zoom": 13,
+      "size": [
+        768,
+        512
+      ],
+      "pins": [
+        {
+          "number": 1,
+          "id": "golden-gate",
+          "optional": false,
+          "lat": 37.8166502,
+          "lon": -122.4782518,
+          "name": "Golden Gate Bridge, San Francisco, California, 24129, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Golden+Gate+Bridge%2C+San+Francisco&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 2,
+          "id": "palace",
+          "optional": false,
+          "lat": 37.8029186,
+          "lon": -122.4484029,
+          "name": "Palace of Fine Arts, 3301, Lyon Street, Marina District, San Francisco, California, 94123, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Palace+of+Fine+Arts%2C+San+Francisco&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 3,
+          "id": "lombard",
+          "optional": false,
+          "lat": 37.8021367,
+          "lon": -122.4192063,
+          "name": "1070, Lombard Street, Russian Hill, Nob Hill, San Francisco, California, 94109, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=1070+Lombard+Street%2C+San+Francisco&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 4,
+          "id": "wharf",
+          "optional": false,
+          "lat": 37.8081325,
+          "lon": -122.4165913,
+          "name": "Fisherman's Wharf, North Beach, San Francisco, California, 94133, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Fisherman%E2%80%99s+Wharf%2C+San+Francisco&format=jsonv2&limit=1&countrycodes=us"
+        }
+      ]
+    },
+    "day04-union-lax": {
+      "image": "assets/maps/day04-union-lax.webp",
+      "zoom": 12,
+      "size": [
+        768,
+        512
+      ],
+      "pins": [
+        {
+          "number": 1,
+          "id": "union",
+          "optional": false,
+          "lat": 34.0558624,
+          "lon": -118.2342859,
+          "name": "Los Angeles Union Station, Union Station Underground Walkway, Little Tokyo, Chinatown, Los Angeles, Los Angeles County, California, 90086, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Los+Angeles+Union+Station&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 2,
+          "id": "holiday-lax",
+          "optional": false,
+          "lat": 33.946221,
+          "lon": -118.370139,
+          "name": "9901, South La Cienega Boulevard, Inglewood, Los Angeles County, California, 90045, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=9901+South+La+Cienega+Boulevard%2C+Los+Angeles&format=jsonv2&limit=1&countrycodes=us"
+        }
+      ]
+    },
+    "day05-waikiki": {
+      "image": "assets/maps/day05-waikiki.webp",
+      "zoom": 14,
+      "size": [
+        768,
+        512
+      ],
+      "pins": [
+        {
+          "number": 1,
+          "id": "queen",
+          "optional": false,
+          "lat": 21.2720212,
+          "lon": -157.8211381,
+          "name": "Queen Kapiolani Hotel, 150, Kapahulu Avenue, Kapahulu, East Honolulu, Honolulu, Honolulu County, Hawaii, 96815, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Queen+Kapiolani+Hotel%2C+Honolulu&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 2,
+          "id": "henry",
+          "optional": false,
+          "lat": 21.2796098,
+          "lon": -157.831623,
+          "name": "Henry's Place, 234, Beach Walk, Waikīkī, East Honolulu, Honolulu, Honolulu County, Hawaii, 96815, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Henry%27s+Place%2C+Honolulu&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 3,
+          "id": "diamond",
+          "optional": false,
+          "lat": 21.2624863,
+          "lon": -157.8067896,
+          "name": "Diamond Head State Monument, Kaimukī, East Honolulu, Honolulu, Honolulu County, Hawaii, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Diamond+Head+State+Monument&format=jsonv2&limit=1&countrycodes=us"
+        }
+      ]
+    },
+    "day06-maui": {
+      "image": "assets/maps/day06-maui.webp",
+      "zoom": 11,
+      "size": [
+        768,
+        512
+      ],
+      "pins": [
+        {
+          "number": 1,
+          "id": "ogg-avis",
+          "optional": false,
+          "lat": 20.891191,
+          "lon": -156.441361,
+          "name": "Avis, 101 Mayor Elmer F Cravalho Way, Kahului",
+          "source": "https://www.google.com/maps/place/Avis+Car+Rental/@20.891191,-156.441361,17z/"
+        },
+        {
+          "number": 2,
+          "id": "haleakala",
+          "optional": false,
+          "lat": 20.7151133,
+          "lon": -156.2498143,
+          "name": "Haleakalā Visitor Center, Pā Kaʻoao Trail, Maui County, Hawaii, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Haleakala+Visitor+Center&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 3,
+          "id": "kohea",
+          "optional": false,
+          "lat": 20.769073,
+          "lon": -156.458786,
+          "name": "551, South Kihei Road, Kihei, Maui County, Hawaii, 96753, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=551+South+Kihei+Road%2C+Kihei&format=jsonv2&limit=1&countrycodes=us"
+        }
+      ]
+    },
+    "day07-oahu-east": {
+      "image": "assets/maps/day07-oahu-east.webp",
+      "zoom": 11,
+      "size": [
+        768,
+        512
+      ],
+      "pins": [
+        {
+          "number": 1,
+          "id": "hnl-conrac",
+          "optional": false,
+          "lat": 21.33317072604166,
+          "lon": -157.91699464166663,
+          "name": "HNL Consolidated Rent-A-Car Facility (CONRAC)",
+          "source": "https://www.openstreetmap.org/relation/15980066"
+        },
+        {
+          "number": 2,
+          "id": "bishop",
+          "optional": false,
+          "lat": 21.3330841,
+          "lon": -157.8707112,
+          "name": "Bernice Pauahi Bishop Museum, 1525, Bernice Street, Kalihi, Honolulu, Honolulu County, Hawaii, 96817, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Bishop+Museum%2C+Honolulu&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 3,
+          "id": "garden",
+          "optional": false,
+          "lat": 21.3871682,
+          "lon": -157.8038244,
+          "name": "Hoʻomaluhia Botanical Garden, 45-680 Luluku Rd, Kaneohe",
+          "source": "https://www.google.com/maps/place/Hoʻomaluhia+Botanical+Garden/@21.3871682,-157.8038244,17z/"
+        },
+        {
+          "number": 4,
+          "id": "tomb",
+          "optional": false,
+          "lat": 21.4314496,
+          "lon": -157.8308123,
+          "name": "The Tomb of General Chang Hsueh Liang and Edith Chao Chang, 47-200 Kahekili Hwy, Kaneohe",
+          "source": "https://www.waze.com/live-map/directions/us/hi/kaneohe/the-tomb-of-general-chang-hsueh-liang-and-edith-chao-chang?to=place.ChIJRVujJEdqAHwRHqpSL4PSNIs"
+        },
+        {
+          "number": 5,
+          "id": "waimanalo",
+          "optional": true,
+          "lat": 21.3318495,
+          "lon": -157.6947961,
+          "name": "Waimānalo Beach Park, 41-741, East Honolulu, Waimanalo, Honolulu County, Hawaii, 96795, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Waimanalo+Beach+Park&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 6,
+          "id": "sheraton",
+          "optional": false,
+          "lat": 21.27762,
+          "lon": -157.8302445,
+          "name": "Sheraton Waikiki, 2255, Kalākaua Avenue, Kalakaua Shopping District, Waikīkī, East Honolulu, Honolulu, Honolulu County, Hawaii, 96815, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Sheraton+Waikiki%2C+Honolulu&format=jsonv2&limit=1&countrycodes=us"
+        }
+      ]
+    },
+    "day07-chang-tomb": {
+      "image": "assets/maps/day07-chang-tomb.webp",
+      "zoom": 16,
+      "size": [
+        768,
+        512
+      ],
+      "pins": [
+        {
+          "number": 1,
+          "id": "tomb",
+          "optional": false,
+          "lat": 21.4314496,
+          "lon": -157.8308123,
+          "name": "The Tomb of General Chang Hsueh Liang and Edith Chao Chang, 47-200 Kahekili Hwy, Kaneohe",
+          "source": "https://www.waze.com/live-map/directions/us/hi/kaneohe/the-tomb-of-general-chang-hsueh-liang-and-edith-chao-chang?to=place.ChIJRVujJEdqAHwRHqpSL4PSNIs"
+        }
+      ]
+    },
+    "day08-oahu-north": {
+      "image": "assets/maps/day08-oahu-north.webp",
+      "zoom": 10,
+      "size": [
+        768,
+        512
+      ],
+      "pins": [
+        {
+          "number": 1,
+          "id": "pearl",
+          "optional": false,
+          "lat": 21.3674843,
+          "lon": -157.9384488,
+          "name": "Pearl Harbor Visitor Center, 1, Āliamanu, Waipahu, Honolulu County, Hawaii, 96818, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Pearl+Harbor+Visitor+Center&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 2,
+          "id": "dole",
+          "optional": false,
+          "lat": 21.5259081,
+          "lon": -158.0378039,
+          "name": "The Dole Plantation, 64-1550, Kamehameha Highway, Honolulu County, Hawaii, 96786, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Dole+Plantation&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 3,
+          "id": "haleiwa",
+          "optional": true,
+          "lat": 21.5876272,
+          "lon": -158.1035648,
+          "name": "Haleiwa, Haleʻiwa, Honolulu County, Hawaii, 96712, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Haleiwa%2C+Hawaii&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 4,
+          "id": "laniakea",
+          "optional": true,
+          "lat": 21.6091839,
+          "lon": -158.0948452,
+          "name": "Laniakea Beach, Kamehameha Highway, Kapaeloa, Honolulu County, Hawaii, 96712, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Laniakea+Beach%2C+Hawaii&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 5,
+          "id": "sunset",
+          "optional": true,
+          "lat": 21.6708463,
+          "lon": -158.0456707,
+          "name": "Sunset Beach, Pūpūkea, Waiale‘e, Honolulu County, Hawaii, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Sunset+Beach%2C+Pupukea&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 6,
+          "id": "ala-moana",
+          "optional": false,
+          "lat": 21.2914679,
+          "lon": -157.8437756,
+          "name": "Ala Moana Center, 1450, Ala Moana Boulevard, Ala Moana, East Honolulu, Honolulu, Honolulu County, Hawaii, 96841, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=Ala+Moana+Center%2C+Honolulu&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 7,
+          "id": "twin-fin",
+          "optional": false,
+          "lat": 21.2723556,
+          "lon": -157.8224714,
+          "name": "The Twin Fin, 2570, Kalākaua Avenue, Waikīkī, East Honolulu, Honolulu, Honolulu County, Hawaii, 96815, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=The+Twin+Fin%2C+Honolulu&format=jsonv2&limit=1&countrycodes=us"
+        }
+      ]
+    },
+    "day09-waikiki-hnl": {
+      "image": "assets/maps/day09-waikiki-hnl.webp",
+      "zoom": 13,
+      "size": [
+        768,
+        512
+      ],
+      "pins": [
+        {
+          "number": 1,
+          "id": "twin-fin",
+          "optional": false,
+          "lat": 21.2723556,
+          "lon": -157.8224714,
+          "name": "The Twin Fin, 2570, Kalākaua Avenue, Waikīkī, East Honolulu, Honolulu, Honolulu County, Hawaii, 96815, United States",
+          "source": "https://nominatim.openstreetmap.org/search?q=The+Twin+Fin%2C+Honolulu&format=jsonv2&limit=1&countrycodes=us"
+        },
+        {
+          "number": 2,
+          "id": "hnl-conrac",
+          "optional": false,
+          "lat": 21.33317072604166,
+          "lon": -157.91699464166663,
+          "name": "HNL Consolidated Rent-A-Car Facility (CONRAC)",
+          "source": "https://www.openstreetmap.org/relation/15980066"
+        }
+      ]
+    }
+  },
+  "source_tile_count": 116
+}
