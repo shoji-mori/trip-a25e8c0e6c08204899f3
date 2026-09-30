@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- GENERATED from index.html; source-sha256: aec33a1a71161e79; run scripts/build_language_pages.py -->
+<!-- GENERATED from index.html; source-sha256: 463ac92ff00e2b19; run scripts/build_language_pages.py -->
 <html data-language="zh" lang="zh-Hans">
 <head>
 <meta charset="utf-8"/>
@@ -1541,6 +1541,15 @@
     .day-essentials dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 20px; margin: 0; }
     .day-essentials dt { font-size: .875rem; font-weight: 700; color: #16595c; }
     .day-essentials dd { margin: 2px 0 0; font-size: 1rem; }
+    .weather-snapshot { margin: 10px 0 16px; }
+    .daily-weather { padding: 12px 14px; border: 1px solid #c9dce5; border-radius: 10px; background: #f4f8fa; }
+    .daily-weather + .day-essentials { margin-top: 0; }
+    .weather-title { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 12px; margin-bottom: 4px; }
+    .weather-title strong { color: #205464; }
+    .weather-source { color: var(--muted); font-size: .82rem; }
+    .weather-spot { display: grid; grid-template-columns: minmax(8rem, 1.1fr) minmax(8rem, 1fr) minmax(12rem, 1.4fr) minmax(5rem, .6fr); gap: 6px 12px; align-items: baseline; padding: 7px 0; border-top: 1px solid #dbe8ed; font-size: .91rem; }
+    .weather-place { font-weight: 700; color: #234c5a; }
+    .weather-caveat { margin: 7px 0 0; font-size: .85rem; }
     .day-details > summary { cursor: pointer; font-size: 1rem; font-weight: 700; }
     .day-details[open] > summary { margin-bottom: 12px; }
     .parking-guide { margin: 16px 0; scroll-margin-top: 150px; }
@@ -1558,6 +1567,7 @@
     .route-map-details > summary { padding: 10px 12px; font-size: .9rem; font-weight: 700; color: var(--teal); cursor: pointer; }
     select:focus-visible, summary:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
     @media (max-width: 940px) { .quick-nav { justify-content: flex-start; } }
+    @media (max-width: 760px) { .weather-spot { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     @media (max-width: 680px) {
       .header-controls { width: 100%; }
       .header-controls > nav { display: none; }
@@ -1565,6 +1575,7 @@
       .day-essentials dl { grid-template-columns: 1fr; }
       .day-essentials { padding: 12px; }
     }
+    @media (max-width: 430px) { .weather-place { grid-column: 1 / -1; } }
   </style>
 </head>
 <body class="language-zh">
@@ -1629,12 +1640,17 @@
 </div>
 <section class="band" id="daily-plan">
 <div class="section-head"><h2><span lang="zh-Hans">每日行程</span></h2><span class="muted small"><span lang="zh-Hans">时间为各地当地时间。小计为两人已记录的费用（机票订单总額在开头单列，不分摊到每日）。CNY为人民币，USD为美元；未计入的项目另列。</span></span></div>
+<p class="weather-snapshot small"><span lang="zh-Hans"><strong>天气预报为2026年9月30日台北时间17点时段获取的固定快照。</strong>日期均为当地日期。10月1日至6日采用NWS白天预报及夜间最低温，10月7日至11日采用Open-Meteo的16天预报。降水概率分别为NWS白天值、Open-Meteo当日最大值。气温换算并取整，天气文字经过概括。后半程以及山地和海岸天气变化较快，请在前一天及当天再次查看。</span> <a data-zh="美国气象局 NWS" href="https://www.weather.gov/" rel="noreferrer" target="_blank">美国气象局 NWS</a><a data-zh="Open-Meteo 预报数据" href="https://open-meteo.com/en/docs" rel="noreferrer" target="_blank">Open-Meteo 预报数据</a></p>
 <nav aria-label="当前行程导航" class="day-jumpbar">
 <a href="#current-day-ca-1001">10/1 Day1</a><a href="#current-day-ca-1002">10/2 Day2</a><a href="#current-day-ca-1003">10/3 Day3</a><a href="#current-day-ca-1004">10/4 Day4</a><a href="#current-day-hi-1005">10/5 Day5</a><a href="#current-day-hi-1006">10/6 Day6</a><a href="#current-day-hi-1007">10/7 Day7</a><a href="#current-day-hi-1008">10/8 Day8</a><a href="#current-day-hi-1009">10/9 Day9</a><a href="#current-day-jp-1010">10/10 Day10</a><a href="#current-day-jp-1011">10/11 Day11</a>
 </nav>
 <div class="daily-plan">
 <article class="daily-section" id="current-day-ca-1001">
 <div class="daily-head"><div class="daily-date"><strong>10/1</strong><span lang="zh-Hans">星期四 / 北京出发 → LAX → 洛杉矶观光 → 蒙特利公园</span></div><p class="route-summary"><span lang="zh-Hans">以盖蒂中心12:00预约为核心游览比佛利山和格里菲斯。行李除现行的Bounce寄存方案外，也可考虑从LAX先送往酒店的LuggAgent或Uber Courier；若能落实配送，可省去往返Bounce及夜间取件，缩短观光动线。</span></p></div>
+<div class="daily-weather" data-weather-date="2026-10-01" data-weather-source="nws">
+<div class="weather-title"><strong data-zh="天气预报">天气预报</strong><span class="weather-source" data-zh="美国气象局 NWS">美国气象局 NWS</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="洛杉矶">洛杉矶</span><span class="weather-condition" data-zh="晴">晴</span><span class="weather-temp" data-zh="最高32°C / 最低19°C">最高32°C / 最低19°C</span><span class="weather-rain" data-zh="降水0%">降水0%</span></div>
+</div>
 <aside class="day-essentials"><h3><span lang="zh-Hans">当天要点</span></h3><dl><div><dt><span lang="zh-Hans">机场与预约</span></dt><dd><span lang="zh-Hans">目标09:00到PEK T3／盖蒂12:00已预约，目标11:30–11:40到下车点</span></dd></div><div><dt><span lang="zh-Hans">行李</span></dt><dd><span lang="zh-Hans">盖蒂寄存并取回 → Bounce；晚间在同一网点取回</span></dd></div><div><dt><span lang="zh-Hans">交通</span></dt><dd><span lang="zh-Hans">盖蒂约14:00开始离馆准备，目标14:30乘车；格里菲斯返程可选DASH</span></dd></div><div><dt><span lang="zh-Hans">延误时</span></dt><dd><span lang="zh-Hans">先确认盖蒂改约，再缩短或取消比佛利山</span></dd></div></dl></aside>
 <article class="card">
 <div class="tag-row"><span class="tag teal">10/1 Thu</span><span class="tag">UA772</span></div>
@@ -1702,6 +1718,10 @@
 </article>
 <article class="daily-section" id="current-day-ca-1002">
 <div class="daily-head"><div class="daily-date"><strong>10/2</strong><span lang="zh-Hans">星期五 / 团程第1天：洛杉矶 → 17里湾 → 圣何塞</span></div><p class="route-summary"><span lang="zh-Hans">9月17日出团通知书确认<strong>在Courtyard by Marriott Los Angeles Monterey Park于08:00上车</strong>；目标07:40前到达。景点顺序和抵达时间以商品资料为参考，实际按导游安排。</span></p></div>
+<div class="daily-weather" data-weather-date="2026-10-02" data-weather-source="nws">
+<div class="weather-title"><strong data-zh="天气预报">天气预报</strong><span class="weather-source" data-zh="美国气象局 NWS">美国气象局 NWS</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="蒙特雷／17里湾">蒙特雷／17里湾</span><span class="weather-condition" data-zh="多云间晴">多云间晴</span><span class="weather-temp" data-zh="最高21°C / 最低15°C">最高21°C / 最低15°C</span><span class="weather-rain" data-zh="降水0%">降水0%</span></div>
+</div>
 <aside class="day-essentials"><h3><span lang="zh-Hans">当天要点</span></h3><dl><div><dt><span lang="zh-Hans">集合</span></dt><dd><span lang="zh-Hans">07:40前到Courtyard，555 N Atlantic Blvd／08:00上车</span></dd></div><div><dt><span lang="zh-Hans">行李</span></dt><dd><span lang="zh-Hans">带全部行李前往；前晚Holiday Inn地址为400 N Atlantic Blvd</span></dd></div><div><dt><span lang="zh-Hans">现场付款</span></dt><dd><span lang="zh-Hans">指定景点费140美元＋本日两人小费36美元</span></dd></div><div><dt><span lang="zh-Hans">餐饮与时间</span></dt><dd><span lang="zh-Hans">餐饮自理，集合及停靠时刻按导游安排</span></dd></div></dl></aside>
 <figure class="map-preview">
 <a class="map-preview-image" href="https://www.google.com/maps/dir/?api=1&amp;origin=400+N+Atlantic+Blvd%2C+Monterey+Park%2C+CA+91754&amp;destination=555+N+Atlantic+Blvd%2C+Monterey+Park%2C+CA+91754&amp;travelmode=walking" rel="noreferrer" target="_blank">
@@ -1754,6 +1774,10 @@
 </article>
 <article class="daily-section" id="current-day-ca-1003">
 <div class="daily-head"><div class="daily-date"><strong>10/3</strong><span lang="zh-Hans">星期六 / 团程第2天：圣何塞 → 旧金山 → 莫德斯托</span></div><p class="route-summary"><span lang="zh-Hans">游览旧金山主要景观，傍晚前往莫德斯托。海湾游船与深度市区游为自愿自费项目，不自动加入基本行程。</span></p></div>
+<div class="daily-weather" data-weather-date="2026-10-03" data-weather-source="nws">
+<div class="weather-title"><strong data-zh="天气预报">天气预报</strong><span class="weather-source" data-zh="美国气象局 NWS">美国气象局 NWS</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="旧金山">旧金山</span><span class="weather-condition" data-zh="晴朗为主">晴朗为主</span><span class="weather-temp" data-zh="最高25°C / 最低15°C">最高25°C / 最低15°C</span><span class="weather-rain" data-zh="降水0%">降水0%</span></div>
+</div>
 <aside class="day-essentials"><h3><span lang="zh-Hans">当天要点</span></h3><dl><div><dt><span lang="zh-Hans">出发</span></dt><dd><span lang="zh-Hans">前夜确认导游指定的酒店集合时刻</span></dd></div><div><dt><span lang="zh-Hans">行李</span></dt><dd><span lang="zh-Hans">更换酒店日，集合前取齐房间行李</span></dd></div><div><dt><span lang="zh-Hans">现场付款</span></dt><dd><span lang="zh-Hans">两人小费36美元＋餐饮，自选活动另计</span></dd></div><div><dt><span lang="zh-Hans">自选活动</span></dt><dd><span lang="zh-Hans">游船与市区深度游仅选实际参加项目</span></dd></div></dl></aside>
 <figure class="map-preview">
 <a class="map-preview-image" href="https://www.google.com/maps/dir/?api=1&amp;origin=Golden+Gate+Bridge%2C+San+Francisco&amp;destination=Fisherman%27s+Wharf%2C+San+Francisco&amp;travelmode=driving&amp;waypoints=Palace+of+Fine+Arts%2C+San+Francisco%7C1070+Lombard+St%2C+San+Francisco" rel="noreferrer" target="_blank">
@@ -1785,6 +1809,10 @@
 </article>
 <article class="daily-section" id="current-day-ca-1004">
 <div class="daily-head"><div class="daily-date"><strong>10/4</strong><span lang="zh-Hans">星期日 / 团程第3天：莫德斯托 → 优胜美地 → 洛杉矶</span></div><p class="route-summary"><span lang="zh-Hans">游览优胜美地后，在通知书指定的<strong>Union Station（Alameda St一侧正门）</strong>下车。通知书未列抵达时间，商品页面19:00–20:00仅供参考；之后前往LAX附近酒店，为次日07:00航班做准备。</span></p></div>
+<div class="daily-weather" data-weather-date="2026-10-04" data-weather-source="nws">
+<div class="weather-title"><strong data-zh="天气预报">天气预报</strong><span class="weather-source" data-zh="美国气象局 NWS">美国气象局 NWS</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="优胜美地山谷">优胜美地山谷</span><span class="weather-condition" data-zh="晴">晴</span><span class="weather-temp" data-zh="最高31°C / 最低12°C">最高31°C / 最低12°C</span><span class="weather-rain" data-zh="降水6%">降水6%</span></div>
+</div>
 <aside class="day-essentials"><h3><span lang="zh-Hans">当天要点</span></h3><dl><div><dt><span lang="zh-Hans">团程结束</span></dt><dd><span lang="zh-Hans">Union Station下车，抵达时间未定</span></dd></div><div><dt><span lang="zh-Hans">行李与交通</span></dt><dd><span lang="zh-Hans">取齐全部行李，叫车等前往Holiday Inn LAX</span></dd></div><div><dt><span lang="zh-Hans">现场付款</span></dt><dd><span lang="zh-Hans">小费36美元；Yosemite两人附加费按条件可为200美元</span></dd></div><div><dt><span lang="zh-Hans">次晨准备</span></dt><dd><span lang="zh-Hans">确认酒店接驳班次；第5天暂定04:15大堂集合</span></dd></div></dl></aside>
 <figure class="map-preview">
 <a class="map-preview-image" href="https://www.google.com/maps/dir/?api=1&amp;origin=800+N+Alameda+St%2C+Los+Angeles%2C+CA+90012&amp;destination=9901+S+La+Cienega+Blvd%2C+Los+Angeles%2C+CA+90045&amp;travelmode=driving" rel="noreferrer" target="_blank">
@@ -1815,6 +1843,10 @@
 </article>
 <article class="daily-section" id="current-day-hi-1005">
 <div class="daily-head"><div class="daily-date"><strong>10/5</strong><span lang="zh-Hans">星期一 / 檀香山午餐 → 钻石山</span></div><p class="route-summary"><span lang="zh-Hans">抵达HNL后先在Queen Kapiolani Hotel寄存行李并用午餐，然后计划前往高桥果实店（Henry's Place）。Leonard's尚未决定；约15:15前往已预约的钻石山。</span></p></div>
+<div class="daily-weather" data-weather-date="2026-10-05" data-weather-source="nws">
+<div class="weather-title"><strong data-zh="天气预报">天气预报</strong><span class="weather-source" data-zh="美国气象局 NWS">美国气象局 NWS</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="檀香山／钻石山">檀香山／钻石山</span><span class="weather-condition" data-zh="局部阵雨后晴间多云">局部阵雨后晴间多云</span><span class="weather-temp" data-zh="最高29°C / 最低24°C">最高29°C / 最低24°C</span><span class="weather-rain" data-zh="降水19%">降水19%</span></div>
+</div>
 <aside class="day-essentials"><h3><span lang="zh-Hans">当天要点</span></h3><dl><div><dt><span lang="zh-Hans">离开酒店</span></dt><dd><span lang="zh-Hans">参考04:15大堂集合、04:30上车 → 目标05:00到LAX T6</span></dd></div><div><dt><span lang="zh-Hans">固定预约</span></dt><dd><span lang="zh-Hans">AS801 07:00／钻石山目标16:00入场、18:00前离园</span></dd></div><div><dt><span lang="zh-Hans">行李</span></dt><dd><span lang="zh-Hans">抵达HNL后前往Queen Kapiolani，确认寄存</span></dd></div><div><dt><span lang="zh-Hans">顺路地点</span></dt><dd><span lang="zh-Hans">计划高桥果实店；Leonard’s未定，延误则取消</span></dd></div></dl></aside>
 <article class="card">
 <div class="tag-row"><span class="tag coral">10/5 Mon</span><span class="tag">LAX → HNL</span></div>
@@ -1860,6 +1892,12 @@
 </article>
 <article class="daily-section" id="current-day-hi-1006">
 <div class="daily-head"><div class="daily-date"><strong>10/6</strong><span lang="zh-Hans">星期二 / 茂宜岛・哈雷阿卡拉国家公园</span></div><p class="route-summary"><span lang="zh-Hans">从檀香山机场（HNL）飞往茂宜岛卡胡卢伊机场（OGG），取车后以哈雷阿卡拉国家公园Summit District为当天主要目的地。普通入园所需的Private Vehicle Pass已预订。白天游览山顶区域，优先在天黑前下山并前往Kihei的Kohea Kai Hotel Maui。</span></p></div>
+<div class="daily-weather" data-weather-date="2026-10-06" data-weather-source="nws">
+<div class="weather-title"><strong data-zh="天气预报">天气预报</strong><span class="weather-source" data-zh="美国气象局 NWS">美国气象局 NWS</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="哈雷阿卡拉山顶附近">哈雷阿卡拉山顶附近</span><span class="weather-condition" data-zh="晴间多云">晴间多云</span><span class="weather-temp" data-zh="白天约21°C">白天约21°C</span><span class="weather-rain" data-zh="降水6%">降水6%</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="基黑">基黑</span><span class="weather-condition" data-zh="晴朗为主">晴朗为主</span><span class="weather-temp" data-zh="白天约30°C">白天约30°C</span><span class="weather-rain" data-zh="降水6%">降水6%</span></div>
+<p class="weather-caveat"><span lang="zh-Hans">山顶预报分歧较大：Open-Meteo预报最高约7°C、有阵雨（当日最大降水概率100%）。请备好保暖衣物和雨具，当天核对山顶天气及道路状况。</span></p>
+</div>
 <aside class="day-essentials"><h3><span lang="zh-Hans">当天要点</span></h3><dl><div><dt><span lang="zh-Hans">离开酒店</span></dt><dd><span lang="zh-Hans">参考05:00集合、05:15出发 → 目标06:00到HNL T2</span></dd></div><div><dt><span lang="zh-Hans">航班与取车</span></dt><dd><span lang="zh-Hans">WN1978 08:00→08:50／Avis OGG预约09:00，实际预计稍晚</span></dd></div><div><dt><span lang="zh-Hans">山顶与返程</span></dt><dd><span lang="zh-Hans">暂按13:15到山顶 → 15:15离开 → 17:45到酒店</span></dd></div><div><dt><span lang="zh-Hans">通信与补给</span></dt><dd><span lang="zh-Hans">提前下载地图，在Pukalani或之前备好燃油、水和食物；延误则缩短山顶停留</span></dd></div></dl></aside>
 <article class="card"><div class="tag-row"><span class="tag coral">10/6 Tue</span><span class="tag">WN1978 / Southwest Airlines</span></div>
 <div class="flight"><div class="airport"><span class="time">08:00</span><strong>HNL T2</strong><span class="muted small"><span lang="zh-Hans">檀香山出发</span></span></div><div aria-hidden="true" class="plane-line"></div><div class="airport"><span class="time">08:50</span><strong>OGG</strong><span class="muted small"><span lang="zh-Hans">抵达茂宜岛</span></span></div></div>
@@ -1909,6 +1947,11 @@
 </article>
 <article class="daily-section" id="current-day-hi-1007">
 <div class="daily-head"><div class="daily-date"><strong>10/7</strong><span lang="zh-Hans">星期三 / 茂宜岛 → Bishop Museum → 张学良与赵一荻之墓 → 东海岸 → 威基基</span></div><p class="route-summary"><span lang="zh-Hans">清晨离开Kohea Kai，在OGG还车后搭AS1045飞往HNL。参观Bishop Museum约2至3小时，再前往Hoʻomaluhia植物园及张学良与赵一荻之墓。有余裕时再短暂停留东侧海滩，目标17:00左右回到Sheraton Waikiki；如博物馆停留3小时则取消海滩。</span></p></div>
+<div class="daily-weather" data-weather-date="2026-10-07" data-weather-source="open-meteo">
+<div class="weather-title"><strong data-zh="天气预报">天气预报</strong><span class="weather-source" data-zh="Open-Meteo 16天预报">Open-Meteo 16天预报</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="檀香山／Bishop Museum">檀香山／Bishop Museum</span><span class="weather-condition" data-zh="阵雨">阵雨</span><span class="weather-temp" data-zh="最高24°C / 最低22°C">最高24°C / 最低22°C</span><span class="weather-rain" data-zh="降水31%">降水31%</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="卡内奥赫／Hoʻomaluhia">卡内奥赫／Hoʻomaluhia</span><span class="weather-condition" data-zh="阵雨">阵雨</span><span class="weather-temp" data-zh="最高24°C / 最低22°C">最高24°C / 最低22°C</span><span class="weather-rain" data-zh="降水73%">降水73%</span></div>
+</div>
 <aside class="day-essentials"><h3><span lang="zh-Hans">当天要点</span></h3><dl><div><dt><span lang="zh-Hans">早间出发与还车</span></dt><dd><span lang="zh-Hans">目标05:30离开酒店 → 06:10到Avis、06:30完成还车 → 06:40到OGG航站楼</span></dd></div><div><dt><span lang="zh-Hans">博物馆与下午</span></dt><dd><span lang="zh-Hans">Bishop两位成人门票已订；暂按11:15–13:15参观 → 14:30离开植物园 → 15:10离开墓址</span></dd></div><div><dt><span lang="zh-Hans">行李与驾驶</span></dt><dd><span lang="zh-Hans">两件行李均寄存Bishop时共10美元，取回后轮流参观；额外驾驶员先在柜台登记</span></dd></div><div><dt><span lang="zh-Hans">返回与停车</span></dt><dd><span lang="zh-Hans">目标17:00左右回Sheraton，自助停车55美元/日；参观3小时或延误则取消海滩</span></dd></div></dl></aside>
 <article class="card"><div class="tag-row"><span class="tag coral">10/7 Wed</span><span class="tag">AS1045 / Alaska Airlines</span></div><div class="flight"><div class="airport"><span class="time">08:41</span><strong>OGG</strong><span class="muted small"><span lang="zh-Hans">茂宜岛出发</span></span></div><div aria-hidden="true" class="plane-line"></div><div class="airport"><span class="time">09:20</span><strong>HNL T1</strong><span class="muted small"><span lang="zh-Hans">抵达檀香山</span></span></div></div><p class="small muted"><span lang="zh-Hans">两人电子客票已出票，飞行约39分钟。此前“航班有调整”的提示已确认无问题；出发前仅按常规核对航班动态及行李规定。</span></p></article>
 <figure class="map-preview">
@@ -1992,6 +2035,11 @@
 </article>
 <article class="daily-section" id="current-day-hi-1008">
 <div class="daily-head"><div class="daily-date"><strong>10/8</strong><span lang="zh-Hans">星期四 / Pearl Harbor → North Shore</span></div><p class="route-summary"><span lang="zh-Hans">租车集中游览Pearl Harbor和North Shore；早上从Sheraton退房并在The Twin Fin寄存行李后前往Pearl Harbor。在Dole Plantation吃菠萝冰淇淋，精选North Shore停留点；晚餐计划在Ala Moana Center简单解决。</span></p></div>
+<div class="daily-weather" data-weather-date="2026-10-08" data-weather-source="open-meteo">
+<div class="weather-title"><strong data-zh="天气预报">天气预报</strong><span class="weather-source" data-zh="Open-Meteo 16天预报">Open-Meteo 16天预报</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="珍珠港">珍珠港</span><span class="weather-condition" data-zh="细雨">细雨</span><span class="weather-temp" data-zh="最高27°C / 最低22°C">最高27°C / 最低22°C</span><span class="weather-rain" data-zh="降水74%">降水74%</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="哈雷伊瓦／北岸">哈雷伊瓦／北岸</span><span class="weather-condition" data-zh="细雨">细雨</span><span class="weather-temp" data-zh="最高26°C / 最低22°C">最高26°C / 最低22°C</span><span class="weather-rain" data-zh="降水74%">降水74%</span></div>
+</div>
 <aside class="day-essentials"><h3><span lang="zh-Hans">当天要点</span></h3><dl><div><dt><span lang="zh-Hans">早间出发</span></dt><dd><span lang="zh-Hans">07:00左右Sheraton退房 → Twin Fin，提前确认寄存</span></dd></div><div><dt><span lang="zh-Hans">预约与行李</span></dt><dd><span lang="zh-Hans">USS Arizona预售额满、等候临时放票；确认座位后提前1小时到达／普通包袋须寄存</span></dd></div><div><dt><span lang="zh-Hans">餐饮</span></dt><dd><span lang="zh-Hans">计划Dole Whip，晚餐在Ala Moana简单解决；午餐从候选中选择</span></dd></div><div><dt><span lang="zh-Hans">停车与删减</span></dt><dd><span lang="zh-Hans">Pearl Harbor停车7美元，预订USS Arizona时手续费2美元／酒店代客泊车约62.83美元（如使用）</span></dd></div><div><dt><span lang="zh-Hans">北海岸返程</span></dt><dd><span lang="zh-Hans">16:00前出发 → 目标18:00到Ala Moana；预计车程超过90分钟时提前，取消海滩</span></dd></div></dl></aside>
 <figure class="map-preview">
 <a class="map-preview-image" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pearl+Harbor+Visitor+Center&amp;destination=The+Twin+Fin%2C+Honolulu&amp;travelmode=driving&amp;waypoints=Dole+Plantation%7CHaleiwa%2C+Hawaii%7CAla+Moana+Center" rel="noreferrer" target="_blank">
@@ -2050,6 +2098,10 @@
 </article>
 <article class="daily-section" id="current-day-hi-1009">
 <div class="daily-head"><div class="daily-date"><strong>10/9</strong><span lang="zh-Hans">星期五 / 檀香山出发 → 机上过夜</span></div><p class="route-summary"><span lang="zh-Hans">从The Twin Fin退房，在HNL还车后搭乘JL073。10月9日中午从檀香山出发，次日10月10日下午抵达羽田。</span></p></div>
+<div class="daily-weather" data-weather-date="2026-10-09" data-weather-source="open-meteo">
+<div class="weather-title"><strong data-zh="天气预报">天气预报</strong><span class="weather-source" data-zh="Open-Meteo 16天预报">Open-Meteo 16天预报</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="檀香山／HNL">檀香山／HNL</span><span class="weather-condition" data-zh="零星细雨">零星细雨</span><span class="weather-temp" data-zh="最高26°C / 最低21°C">最高26°C / 最低21°C</span><span class="weather-rain" data-zh="降水19%">降水19%</span></div>
+</div>
 <aside class="day-essentials"><h3><span lang="zh-Hans">当天要点</span></h3><dl><div><dt><span lang="zh-Hans">离开酒店</span></dt><dd><span lang="zh-Hans">参考07:45请取车 → 08:15出发，计入加油与早间交通</span></dd></div><div><dt><span lang="zh-Hans">还车与机场</span></dt><dd><span lang="zh-Hans">09:30 Avis还车，CONRAC四楼 → 目标09:45–10:00到T2・Lobby 5（JAL）</span></dd></div><div><dt><span lang="zh-Hans">航班</span></dt><dd><span lang="zh-Hans">JL073 12:15 HNL起飞 → 次日10月10日15:55到HND</span></dd></div><div><dt><span lang="zh-Hans">费用</span></dt><dd><span lang="zh-Hans">租车计入第7天、前晚停车计入第8天，不重复计算</span></dd></div><div><dt><span lang="zh-Hans">东京一晚的行李</span></dt><dd><span lang="zh-Hans">在HNL确认托运目的地及羽田取件可否；一晚用品放随身行李</span></dd></div></dl></aside>
 <article class="card"><div class="tag-row"><span class="tag coral">10/9 Fri</span><span class="tag">JL073 / Japan Airlines</span></div><div class="flight"><div class="airport"><span class="time">12:15</span><strong>HNL T2</strong><span class="muted small"><span lang="zh-Hans">10月9日出发</span></span></div><div aria-hidden="true" class="plane-line"></div><div class="airport"><span class="time">15:55</span><strong>HND T3</strong><span class="muted small"><span lang="zh-Hans">10月10日抵达</span></span></div></div><p class="small muted"><span lang="zh-Hans">两人电子客票已出票，飞行约8小时40分钟；因时差次日抵达羽田。出发前确认行李、值机截止时间与航班动态。</span></p></article>
 <figure class="map-preview">
@@ -2079,6 +2131,10 @@
 </article>
 <article class="daily-section" id="current-day-jp-1010">
 <div class="daily-head"><div class="daily-date"><strong>10/10</strong><span lang="zh-Hans">星期六 / 抵达羽田 → 东京一晚</span></div><p class="route-summary"><span lang="zh-Hans">搭JL073于15:55抵达羽田T3。入境后在东京住一晚，傍晚就近购物、用餐或去居酒屋；是否在羽田取托运行李按HNL确认结果办理；温泉只作有余暇时的候选。酒店尚未确定。</span></p></div>
+<div class="daily-weather" data-weather-date="2026-10-10" data-weather-source="open-meteo">
+<div class="weather-title"><strong data-zh="天气预报">天气预报</strong><span class="weather-source" data-zh="Open-Meteo 16天预报">Open-Meteo 16天预报</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="东京／羽田">东京／羽田</span><span class="weather-condition" data-zh="零星细雨">零星细雨</span><span class="weather-temp" data-zh="最高24°C / 最低19°C">最高24°C / 最低19°C</span><span class="weather-rain" data-zh="降水19%">降水19%</span></div>
+</div>
 <aside class="day-essentials"><h3><span lang="zh-Hans">当天要点</span></h3><dl><div><dt><span lang="zh-Hans">抵达</span></dt><dd><span lang="zh-Hans">JL073于15:55抵达HND T3，入境后去酒店；托运行李按HNL指示办理</span></dd></div><div><dt><span lang="zh-Hans">住宿</span></dt><dd><span lang="zh-Hans">东京一晚未定，选择次晨前往HND较便捷的酒店</span></dd></div><div><dt><span lang="zh-Hans">傍晚候选</span></dt><dd><span lang="zh-Hans">餐饮与购物在酒店附近，仅有时间时考虑温泉</span></dd></div><div><dt><span lang="zh-Hans">次晨</span></dt><dd><span lang="zh-Hans">JL021 08:50起飞／暂以06:50到HND T3为目标</span></dd></div></dl></aside>
 <article class="card"><div class="tag-row"><span class="tag coral" data-zh="10/9出发 → 10/10抵达">10/9出发 → 10/10抵达</span><span class="tag">JL073 / Japan Airlines</span></div><div class="flight"><div class="airport"><span class="time">10/9 12:15</span><strong>HNL T2</strong><span class="muted small"><span lang="zh-Hans">前一天10月9日出发</span></span></div><div aria-hidden="true" class="plane-line"></div><div class="airport"><span class="time">10/10 15:55</span><strong>HND T3</strong><span class="muted small"><span lang="zh-Hans">10月10日抵达</span></span></div></div><p class="small muted"><span lang="zh-Hans">时刻均为各机场当地时间。此处按抵达日期再次显示10月9日出发的同一航班；次日JL021于08:50从羽田T3出发。</span></p></article>
 <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/10</strong><span lang="zh-Hans">抵达羽田 / 东京过夜</span></div><div class="schedule-body"><div class="schedule-row"><time>15:55</time><div><strong><span lang="zh-Hans">抵达羽田HND T3</span></strong><p class="day-note"><span lang="zh-Hans">办理入境及海关手续后，前往便于次晨到机场的酒店。仅在HNL已告知羽田取件时领取托运行李；若直挂北京，按工作人员指示办理。</span></p></div></div><div class="schedule-row"><time data-zh="傍晚至晚上">傍晚至晚上</time><div><strong><span lang="zh-Hans">在东京吃饭与购物（尚未决定）</span></strong><p class="day-note"><span lang="zh-Hans">居酒屋选择方便回酒店的区域；仅在交通与休息时间充裕时考虑温泉。次晨需早起，不排得太满。</span></p></div></div></div></article>
@@ -2088,6 +2144,11 @@
 </article>
 <article class="daily-section" id="current-day-jp-1011">
 <div class="daily-head"><div class="daily-date"><strong>10/11</strong><span lang="zh-Hans">星期日 / 羽田 → 北京</span></div><p class="route-summary"><span lang="zh-Hans">从东京酒店前往羽田T3，乘JL021飞往北京首都机场T3，计划10月11日12:00抵达。</span></p></div>
+<div class="daily-weather" data-weather-date="2026-10-11" data-weather-source="open-meteo">
+<div class="weather-title"><strong data-zh="天气预报">天气预报</strong><span class="weather-source" data-zh="Open-Meteo 16天预报">Open-Meteo 16天预报</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="东京／羽田">东京／羽田</span><span class="weather-condition" data-zh="零星细雨">零星细雨</span><span class="weather-temp" data-zh="最高20°C / 最低18°C">最高20°C / 最低18°C</span><span class="weather-rain" data-zh="降水20%">降水20%</span></div>
+<div class="weather-spot"><span class="weather-place" data-zh="北京首都机场">北京首都机场</span><span class="weather-condition" data-zh="阴">阴</span><span class="weather-temp" data-zh="最高18°C / 最低10°C">最高18°C / 最低10°C</span><span class="weather-rain" data-zh="降水17%">降水17%</span></div>
+</div>
 <aside class="day-essentials"><h3><span lang="zh-Hans">当天要点</span></h3><dl><div><dt><span lang="zh-Hans">离开酒店</span></dt><dd><span lang="zh-Hans">酒店确定后按交通倒推，目标06:50到HND T3</span></dd></div><div><dt><span lang="zh-Hans">航班</span></dt><dd><span lang="zh-Hans">JL021 08:50 HND T3起飞 → 12:00到PEK T3</span></dd></div><div><dt><span lang="zh-Hans">行李</span></dt><dd><span lang="zh-Hans">按HNL说明办理；羽田取件则重新托运，直挂北京则确认新增行李</span></dd></div><div><dt><span lang="zh-Hans">抵达后</span></dt><dd><span lang="zh-Hans">北京机场后的交通尚未记录</span></dd></div></dl></aside>
 <article class="card"><div class="tag-row"><span class="tag coral">10/11 Sun</span><span class="tag">JL021 / Japan Airlines</span></div><div class="flight"><div class="airport"><span class="time">08:50</span><strong>HND T3</strong><span class="muted small"><span lang="zh-Hans">羽田出发</span></span></div><div aria-hidden="true" class="plane-line"></div><div class="airport"><span class="time">12:00</span><strong>PEK T3</strong><span class="muted small"><span lang="zh-Hans">抵达北京</span></span></div></div><p class="small muted"><span lang="zh-Hans">两人电子客票已出票，飞行约4小时10分钟。出发前确认行李规定与航班动态。</span></p></article>
 <article class="schedule-day inline-schedule"><div class="schedule-date"><strong>10/11</strong><span lang="zh-Hans">东京 → 北京</span></div><div class="schedule-body"><div class="schedule-row"><time data-zh="06:50左右为目标">06:50左右为目标</time><div><strong><span lang="zh-Hans">抵达羽田T3并办理出境</span></strong><p class="day-note"><span lang="zh-Hans">暂以08:50起飞前约2小时到达为目标；酒店确定后按交通方式倒推出发时刻。在羽田已领取的托运行李需重新托运；确认直挂北京的行李原则上继续转运，东京新增行李的处理向JAL确认。</span></p></div></div><div class="schedule-row"><time>08:50 → 12:00</time><div><strong><span lang="zh-Hans">JL021 羽田T3 → 北京首都T3</span></strong><p class="day-note"><span lang="zh-Hans">两端均为当地时间；抵达北京后的交通尚未记录。</span></p></div></div></div></article>
