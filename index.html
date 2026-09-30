@@ -2501,7 +2501,8 @@
         var readingLine = (header ? header.getBoundingClientRect().height : 0) + 16;
         var current = targets[0];
         for (var j = 0; j < targets.length; j++) {
-          if (targets[j].getBoundingClientRect().top > readingLine) break;
+          var activationLine = Math.max(readingLine, parseFloat(window.getComputedStyle(targets[j]).scrollMarginTop) || 0);
+          if (targets[j].getBoundingClientRect().top > activationLine + 1) break;
           current = targets[j];
         }
         if (!current) return;

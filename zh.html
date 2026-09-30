@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- GENERATED from index.html; source-sha256: c8939222ddf5afb6; run scripts/build_language_pages.py -->
+<!-- GENERATED from index.html; source-sha256: 32b0458472495a29; run scripts/build_language_pages.py -->
 <html data-language="zh" lang="zh-Hans">
 <head>
 <meta charset="utf-8"/>
@@ -2440,7 +2440,8 @@
         var readingLine = (header ? header.getBoundingClientRect().height : 0) + 16;
         var current = targets[0];
         for (var j = 0; j < targets.length; j++) {
-          if (targets[j].getBoundingClientRect().top > readingLine) break;
+          var activationLine = Math.max(readingLine, parseFloat(window.getComputedStyle(targets[j]).scrollMarginTop) || 0);
+          if (targets[j].getBoundingClientRect().top > activationLine + 1) break;
           current = targets[j];
         }
         if (!current) return;
